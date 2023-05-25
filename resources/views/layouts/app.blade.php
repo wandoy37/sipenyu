@@ -13,9 +13,11 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
 
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/5983388006.js" crossorigin="anonymous"></script>
 
-
-
+    {{-- DataTables --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
 
     <link href="{{ asset('assets/dist/css/bootstrap.min.css') }}" rel="stylesheet">
 
@@ -145,6 +147,11 @@
         integrity="sha384-gdQErvCNWvHQZj6XZM0dNsAoY4v+j5P1XDpNkcM3HJG1Yx04ecqIHk7+4VBOCHOG" crossorigin="anonymous">
     </script>
     <script src="{{ asset('assets/dashboard/dashboard.js') }}"></script>
+    {{-- DataTables --}}
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+    @stack('scripts')
 </body>
 
 </html>
