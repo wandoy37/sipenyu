@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\KabKota;
+use App\Models\Kantor;
 use App\Models\Kecamatan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
-class KecamatanController extends Controller
+use function PHPUnit\Framework\returnSelf;
+
+class KantorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +21,8 @@ class KecamatanController extends Controller
      */
     public function index()
     {
-        $kecamatans = Kecamatan::latest()->get();
-        return view('kecamatan.index', compact('kecamatans'));
+        $kantors = Kantor::latest()->get();
+        return view('kantor.index', compact('kantors'));
     }
 
     /**
@@ -30,7 +33,7 @@ class KecamatanController extends Controller
     public function create()
     {
         $kabkotas = KabKota::latest()->get();
-        return view('kecamatan.create', compact('kabkotas'));
+        return view('kantor.create', compact('kabkotas'));
     }
 
     /**
@@ -45,12 +48,16 @@ class KecamatanController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'name' => 'required',
                 'kabkota_id' => 'required',
+                'kecamatan_id' => 'required',
+                'name' => 'required',
+                'alamat' => 'required',
             ],
             [
-                'name.required' => 'nama kabupaten kota wajib di isi',
-                'kabkota_id.required' => 'nama kabupaten kota wajib di isi',
+                'kabkota_id.required' => 'kabupaten kota wajib di isi',
+                'kecamatan_id.required' => 'kecamatan wajib di isi',
+                'name.required' => 'nama kantor wajib di isi',
+                'alamat.required' => 'alamat kantor wajib di isi',
             ],
         );
 
@@ -63,19 +70,22 @@ class KecamatanController extends Controller
         DB::beginTransaction();
         try {
             // Last data
-            $lastKecamatan = Kecamatan::all()->count();
-            $lastKecamatan++;
+            $lastKantor = Kantor::all()->count();
+            $lastKantor++;
 
-            Kecamatan::create([
-                'code' => 'kecamatan-' . str_pad($lastKecamatan, 4, '0', STR_PAD_LEFT),
+            Kantor::create([
+                'code' => str_pad($lastKantor, 5, '0', STR_PAD_LEFT),
                 'name' => $request->name,
-                'kabkota_id' => $request->kabkota_id
+                'alamat' => $request->alamat,
+                'kabkota_id' => $request->kabkota_id,
+                'kecamatan_id' => $request->kecamatan_id,
+
             ]);
 
-            return redirect()->route('kecamatan.index')->with('success', $request->name . ' telah di tambahkan.');
+            return redirect()->route('kantor.index')->with('success', $request->name . ' telah di tambahkan.');
         } catch (\Throwable $th) {
             DB::rollBack();
-            return redirect()->route('kecamatan.index')->with('fails', $request->name . ' gagal di tambahkan.');
+            return redirect()->route('kantor.index')->with('fails', $request->name . ' gagal di tambahkan.');
         } finally {
             DB::commit();
         }
@@ -100,9 +110,9 @@ class KecamatanController extends Controller
      */
     public function edit($code)
     {
-        $kecamatan = Kecamatan::where('code', $code)->first();
+        $kantor = Kantor::where('code', $code)->first();
         $kabkotas = KabKota::latest()->get();
-        return view('kecamatan.edit', compact('kecamatan', 'kabkotas'));
+        return view('kantor.edit', compact('kantor', 'kabkotas'));
     }
 
     /**
@@ -118,12 +128,16 @@ class KecamatanController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'name' => 'required',
                 'kabkota_id' => 'required',
+                'kecamatan_id' => 'required',
+                'name' => 'required',
+                'alamat' => 'required',
             ],
             [
-                'name.required' => 'nama kabupaten kota wajib di isi',
-                'kabkota_id.required' => 'nama kabupaten kota wajib di isi',
+                'kabkota_id.required' => 'kabupaten kota wajib di isi',
+                'kecamatan_id.required' => 'kecamatan wajib di isi',
+                'name.required' => 'nama kantor wajib di isi',
+                'alamat.required' => 'alamat kantor wajib di isi',
             ],
         );
 
@@ -135,18 +149,19 @@ class KecamatanController extends Controller
         // If validator success
         DB::beginTransaction();
         try {
-            $kecamatan = Kecamatan::where('code', $code)->first();
-            $name = $kecamatan->name;
-
-            $kecamatan->update([
+            $kantor = Kantor::where('code', $code)->first();
+            $kantor->update([
                 'name' => $request->name,
-                'kabkota_id' => $request->kabkota_id
+                'alamat' => $request->alamat,
+                'kabkota_id' => $request->kabkota_id,
+                'kecamatan_id' => $request->kecamatan_id,
+
             ]);
 
-            return redirect()->route('kecamatan.index')->with('success', 'kecamatan ' . $name . ' berhasil di ubah menjadi ' . $request->name);
+            return redirect()->route('kantor.index')->with('success', 'berhasil update kantor ' . $request->name);
         } catch (\Throwable $th) {
             DB::rollBack();
-            return redirect()->route('kecamatan.index')->with('fails', 'kecamatan ' . $name . ' gagal di ubah');
+            return redirect()->route('kantor.index')->with('error', 'gagal update kantor ' . $request->name);
         } finally {
             DB::commit();
         }
@@ -160,14 +175,14 @@ class KecamatanController extends Controller
      */
     public function destroy($code)
     {
-        $kecamatan = Kecamatan::where('code', $code)->first();
+        $kantor = Kantor::where('code', $code)->first();
         DB::beginTransaction();
         try {
-            $kecamatan->delete($kecamatan);
-            return redirect()->route('kecamatan.index')->with('warning', 'Berhasil menghapus kecamatan ' . $kecamatan->name);
+            $kantor->delete($kantor);
+            return redirect()->route('kantor.index')->with('warning', 'Berhasil menghapus kantor ' . $kantor->name);
         } catch (\Throwable $th) {
             DB::rollBack();
-            return redirect()->route('kecamatan.index')->with('error', 'Gagal menghapus kecamatan ' . $kecamatan->name);
+            return redirect()->route('kantor.index')->with('error', 'Gagal menghapus kantor ' . $kantor->name);
         } finally {
             DB::commit();
         }

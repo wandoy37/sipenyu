@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KabKotaController;
+use App\Http\Controllers\KantorController;
 use App\Http\Controllers\KecamatanController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,7 +37,20 @@ Route::middleware('auth')->group(function () {
     Route::get('/kecamatan', [KecamatanController::class, 'index'])->name('kecamatan.index');
     Route::get('/kecamatan/tambah', [KecamatanController::class, 'create'])->name('kecamatan.create');
     Route::post('/kecamatan/store', [KecamatanController::class, 'store'])->name('kecamatan.store');
+    // Show Kecamatan By kabkota_id
+    Route::get('/get-kecamatan/{id}', function ($id) {
+        $kecamatan = App\Models\Kecamatan::where('kabkota_id', $id)->get();
+        return response()->json($kecamatan);
+    })->name('get.kecamatan');
     Route::get('/kecamatan/{code}', [KecamatanController::class, 'edit'])->name('kecamatan.edit');
     Route::patch('/kecamatan/{code}/update', [KecamatanController::class, 'update'])->name('kecamatan.update');
     Route::delete('/kecamatan/{code}/delete', [KecamatanController::class, 'destroy'])->name('kecamatan.delete');
+
+    // Kantor
+    Route::get('/kantor', [KantorController::class, 'index'])->name('kantor.index');
+    Route::get('/kantor/tambah', [KantorController::class, 'create'])->name('kantor.create');
+    Route::post('/kantor/store', [KantorController::class, 'store'])->name('kantor.store');
+    Route::get('/kantor/{code}/edit', [KantorController::class, 'edit'])->name('kantor.edit');
+    Route::patch('/kantor/{code}/update', [KantorController::class, 'update'])->name('kantor.update');
+    Route::delete('/kantor/{code}/delete', [KantorController::class, 'destroy'])->name('kantor.delete');
 });

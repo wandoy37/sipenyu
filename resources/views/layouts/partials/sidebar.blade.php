@@ -22,6 +22,19 @@
                     Kecamatan
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->segment(1) == 'kantor' ? 'active' : '' }}"
+                    href="{{ route('kantor.index') }}">
+                    <span data-feather="layers" class="align-text-bottom"></span>
+                    Kantor BPP
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span data-feather="users" class="align-text-bottom"></span>
+                    Tenaga Kerja
+                </a>
+            </li>
             {{-- <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span data-feather="file" class="align-text-bottom"></span>

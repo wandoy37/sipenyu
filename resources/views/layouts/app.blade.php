@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="auto">
 
 <head>
-    <script src="{{ asset('assets/js/color-modes.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/color-modes.js') }}"></script> --}}
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -150,6 +150,7 @@
     {{-- DataTables --}}
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
 
     @stack('scripts')
 </body>
