@@ -4,6 +4,7 @@
 @section('content')
     <div class="my-4">
         <h1>Tambah | Kabupaten Kota</h1>
+        @include('flash-message')
     </div>
 
     <section class="my-2">

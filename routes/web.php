@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KabKotaController;
+use App\Http\Controllers\KecamatanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,4 +31,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/kabupaten-kota/{code}', [KabKotaController::class, 'edit'])->name('kabkota.edit');
     Route::patch('/kabupaten-kota/{code}/update', [KabKotaController::class, 'update'])->name('kabkota.update');
     Route::delete('/kabupaten-kota/{code}/delete', [KabKotaController::class, 'destroy'])->name('kabkota.delete');
+
+    // Kecamatan
+    Route::get('/kecamatan', [KecamatanController::class, 'index'])->name('kecamatan.index');
+    Route::get('/kecamatan/tambah', [KecamatanController::class, 'create'])->name('kecamatan.create');
+    Route::post('/kecamatan/store', [KecamatanController::class, 'store'])->name('kecamatan.store');
+    Route::get('/kecamatan/{code}', [KecamatanController::class, 'edit'])->name('kecamatan.edit');
+    Route::patch('/kecamatan/{code}/update', [KecamatanController::class, 'update'])->name('kecamatan.update');
+    Route::delete('/kecamatan/{code}/delete', [KecamatanController::class, 'destroy'])->name('kecamatan.delete');
 });

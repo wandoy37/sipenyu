@@ -15,6 +15,13 @@
                     Kab Kota
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->segment(1) == 'kecamatan' ? 'active' : '' }}"
+                    href="{{ route('kecamatan.index') }}">
+                    <span data-feather="file-text" class="align-text-bottom"></span>
+                    Kecamatan
+                </a>
+            </li>
             {{-- <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span data-feather="file" class="align-text-bottom"></span>

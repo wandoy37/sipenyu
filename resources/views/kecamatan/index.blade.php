@@ -1,16 +1,16 @@
 @extends('layouts.app')
-@section('title', 'Kabupaten Kota')
+@section('title', 'Kecamatan')
 
 @section('content')
     <div class="my-4">
-        <h1>Kabupaten Kota</h1>
+        <h1>Kecamatan</h1>
         @include('flash-message')
     </div>
 
     <section class="my-2">
-        <a href="{{ route('kabkota.create') }}" class="btn btn-outline-primary">
+        <a href="{{ route('kecamatan.create') }}" class="btn btn-outline-primary">
             <i class="fas fa-plus"></i>
-            Kab Kota
+            Kecamatan
         </a>
     </section>
 
@@ -21,25 +21,21 @@
                     <thead>
                         <tr>
                             <th class="text-center">Kode</th>
-                            <th>Kabupaten / Kota</th>
-                            <th class="text-center">Kecamatan</th>
+                            <th>Kab/Kota</th>
+                            <th>Kecamatan</th>
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($kabkotas as $kabkota)
+                        @foreach ($kecamatans as $kecamatan)
                             <tr>
-                                <td class="text-center">{{ $kabkota->code }}</td>
-                                <td>{{ $kabkota->name }}</td>
-                                <td class="text-center">
-                                    <a href="{{ route('kecamatan.index') }}" class="text-dark">
-                                        {{ $kabkota->kecamatans->count() }}
-                                    </a>
-                                </td>
+                                <td class="text-center">{{ $kecamatan->code }}</td>
+                                <td>{{ $kecamatan->kabkota->name }}</td>
+                                <td>{{ $kecamatan->name }}</td>
                                 <td width="15%" class="text-center">
-                                    <form action="{{ route('kabkota.delete', $kabkota->code) }}" method="POST">
+                                    <form action="{{ route('kecamatan.delete', $kecamatan->code) }}" method="POST">
                                         @csrf @method('DELETE')
-                                        <a href="{{ route('kabkota.edit', $kabkota->code) }}" class="text-warning">
+                                        <a href="{{ route('kecamatan.edit', $kecamatan->code) }}" class="text-warning">
                                             <i class="fas fa-pen"></i>
                                         </a>
                                         <button type="submit" class="ms-4 btn btn-link text-danger">
