@@ -4,6 +4,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KabKotaController;
 use App\Http\Controllers\KantorController;
 use App\Http\Controllers\KecamatanController;
+use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -53,4 +54,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/kantor/{code}/edit', [KantorController::class, 'edit'])->name('kantor.edit');
     Route::patch('/kantor/{code}/update', [KantorController::class, 'update'])->name('kantor.update');
     Route::delete('/kantor/{code}/delete', [KantorController::class, 'destroy'])->name('kantor.delete');
+
+    // Pegawai
+    Route::get('/tenaga-kerja', [PegawaiController::class, 'index'])->name('pegawai.index');
+    Route::get('/tenaga-kerja/tambah', [PegawaiController::class, 'create'])->name('pegawai.create');
+    Route::post('/tenaga-kerja/store', [PegawaiController::class, 'store'])->name('pegawai.store');
+    Route::get('/tenaga-kerja/{code}/edit', [PegawaiController::class, 'edit'])->name('pegawai.edit');
+    Route::patch('/tenaga-kerja/{code}/update', [PegawaiController::class, 'update'])->name('pegawai.update');
+    Route::delete('/tenaga-kerja/{code}/delete', [PegawaiController::class, 'destroy'])->name('pegawai.delete');
 });

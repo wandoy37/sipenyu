@@ -30,7 +30,8 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link {{ request()->segment(1) == 'tenaga-kerja' ? 'active' : '' }}"
+                    href="{{ route('pegawai.index') }}">
                     <span data-feather="users" class="align-text-bottom"></span>
                     Tenaga Kerja
                 </a>
