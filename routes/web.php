@@ -1,11 +1,13 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KabKotaController;
 use App\Http\Controllers\KantorController;
 use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +20,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/polygon', function () {
+    $indonesia = URL('https://raw.githubusercontent.com/superpikar/indonesia-geojson/master/indonesia-province.json');
+    return response()->json($indonesia);
 });
 
+// ======================================================================================================================== //
+// HOME CONTROLLER
+
+Route::get('/', [HomeController::class, 'index'])->name('index');
+// ======================================================================================================================== //
 Route::middleware('auth')->group(function () {
     // dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');

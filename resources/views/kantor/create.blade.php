@@ -41,6 +41,16 @@
                         <input type="text" name="alamat" class="form-control" id="alamat" placeholder="Alamat"
                             value="{{ old('alamat') }}">
                     </div>
+                    <div class="mb-3 row">
+                        <div class="col-lg-6">
+                            <label for="marker" class="form-label">Marker</label>
+                            <textarea class="form-control" id="marker" name="marker" rows="3">{{ old('marker') }}</textarea>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="polygon" class="form-label">Polygon</label>
+                            <textarea class="form-control" id="polygon" name="polygon" rows="3">{{ old('polygon') }}</textarea>
+                        </div>
+                    </div>
                     <div class="mb-3 float-end">
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-plus"></i>
