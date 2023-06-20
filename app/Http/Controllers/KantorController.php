@@ -79,8 +79,8 @@ class KantorController extends Controller
                 'alamat' => $request->alamat,
                 'kabkota_id' => $request->kabkota_id,
                 'kecamatan_id' => $request->kecamatan_id,
-                'marker' => $request->marker,
-                'polygon' => $request->polygon,
+                // 'marker' => $request->marker,
+                // 'polygon' => $request->polygon,
 
             ]);
 

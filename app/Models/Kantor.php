@@ -21,4 +21,8 @@ class Kantor extends Model
     {
         return $this->belongsTo(KabKota::class, 'kabkota_id', 'id');
     }
+
+    function pegawais() {
+        return $this->hasMany(Pegawai::class);
+    }
 }

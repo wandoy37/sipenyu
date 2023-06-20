@@ -114,7 +114,7 @@
         </div>
     </div>
 
-    @stack('scripts')
+    
 
     <!--   Core JS Files   -->
     <script src="{{ asset('assets2/js/core/jquery.3.2.1.min.js') }}"></script>
@@ -191,6 +191,7 @@
 
     <!-- Atlantis JS -->
     <script src="{{ asset('assets2/js/atlantis.min.js') }}"></script>
+    @stack('scripts')
 </body>
 
 </html>

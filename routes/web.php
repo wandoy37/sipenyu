@@ -6,6 +6,8 @@ use App\Http\Controllers\KabKotaController;
 use App\Http\Controllers\KantorController;
 use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\PegawaiController;
+use App\Models\KabKota;
+use App\Models\Kecamatan;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 
@@ -27,6 +29,47 @@ use Illuminate\Support\Facades\URL;
 Route::get('/polygon', function () {
     $indonesia = URL('https://raw.githubusercontent.com/superpikar/indonesia-geojson/master/indonesia-province.json');
     return response()->json($indonesia);
+});
+
+Route::get('feature-kecamatan', function () {
+    $features = [];
+    $kecamatans = Kecamatan::all();
+
+    foreach ($kecamatans as $kecamatan) {
+        $getData = file_get_contents(public_path("Indonesia-Postal-And-Area/data/geojson/62/64/".$kecamatan->kabkota->code."/".$kecamatan->code."/".$kecamatan->code.".json"));
+        $json = json_decode($getData);
+        $feature = $json->features[0];
+        //jumlah kantor di kecamatan
+        $feature->properties->Jumlah_Kantor = $kecamatan->kantors->count();
+        //jumlah pegawai di kantor
+        $feature->properties->Jumlah_Pegawai = $kecamatan->kantors->sum(function($kantor){
+            return $kantor->pegawais->count();
+        });
+        $features[] = $feature;
+    }
+    $format = [
+        "type"=>"FeatureCollection",
+        "features"=>$features
+    ];
+    return response()->json($format);
+});
+
+Route::get('feature-kecamatan/{kode_kab_kota}', function ($kode_kab_kota) {
+    $features = [];
+    $kecamatans = Kecamatan::whereHas('kabkota',function($w)use($kode_kab_kota){
+        $w->where('code',$kode_kab_kota);
+    })->get();
+
+    foreach ($kecamatans as $kecamatan) {
+        $getData = file_get_contents(public_path("Indonesia-Postal-And-Area/data/geojson/62/64/".$kecamatan->kabkota->code."/".$kecamatan->code."/".$kecamatan->code.".json"));
+        $json = json_decode($getData);
+        $features[] = $json->features[0];
+    }
+    $format = [
+        "type"=>"FeatureCollection",
+        "features"=>$features
+    ];
+    return response()->json($format);
 });
 
 // ======================================================================================================================== //

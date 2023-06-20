@@ -8,9 +8,9 @@
                 <p>Provinsi Kalimantan Timur</p>
                 <h3>List Kabupaten/Kota</h3>
                 <div class="form-group">
-                    <label for="kabkota">Kabupaten/Kota</label>
+                    <label for="kabkota">Kecamatan per Kabupaten/Kota</label>
                     <select name="kabkota" id="kabkota" class="form-control">
-                        <option value="">-pilih kabupaten-</option>
+                        <option value="">-semua kabupaten/kota-</option>
                         @foreach ($kabkotas as $kabkota)
                             <option value="{{ $kabkota->code }}">{{ $kabkota->name }}</option>
                         @endforeach
@@ -35,14 +35,49 @@
     </div>
 
     @push('scripts')
+       
         <script>
-            var map = L.map('map').setView([0.1039772, 113.787918], 7);
+            var map = L.map('map').setView([-0.416893, 117.178523], 7);
             var marker = L.marker([-0.416893, 117.178523]).addTo(map);
 
             var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             }).addTo(map);
+            var geojsonLayer = null;
+            $("#kabkota").on("change",function(){
+                if($(this).val() != ""){
+                    var url = '{{ url("feature-kecamatan") }}/'+$(this).val();
+                    loadAllKecamatan(url);
+                } else {
+                    loadAllKecamatan('{{ url("feature-kecamatan") }}');
+                }
+            });
+
+            function loadAllKecamatan(url) {
+                $("#kabkota").prop("disabled",true);
+                map.spin(true);
+                if(geojsonLayer==null){
+                    geojsonLayer = new L.GeoJSON.AJAX(url, {
+                        onEachFeature: function(feature, layer) {
+                            layer.bindPopup(`<p>Kec : ${feature.properties.Name}</p><p>Kab/Kota : ${feature.properties.City}</p><p>Jumlah Kantor : ${feature.properties.Jumlah_Kantor}</p><p>Jumlah Pegawai : ${feature.properties.Jumlah_Pegawai}</p>`);
+                        }
+                        
+                    });
+                    
+                    geojsonLayer.on('data:loaded', function (e) {
+                        $("#kabkota").prop("disabled",false);
+                        map.spin(false);
+                        //fly and zoom
+                        map.fitBounds(geojsonLayer.getBounds());
+                    });
+                    geojsonLayer.addTo(map);
+                } else {
+                    geojsonLayer.refresh(url);
+                }
+                
+            }
+            loadAllKecamatan('{{ url("feature-kecamatan") }}');
         </script>
     @endpush
 @endsection

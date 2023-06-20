@@ -18,6 +18,9 @@
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/5983388006.js" crossorigin="anonymous"></script>
+    <script src="{{asset("/leaflet-plugin/leaflet.ajax.min.js")}}"></script>
+    <script src="https://www.unpkg.com/spin@0.0.1/dist/spin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.Spin/1.1.2/leaflet.spin.min.js" ></script>
 
     <style>
         #map {
