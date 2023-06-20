@@ -1,46 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SIPENYU - Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Login | SIPP</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <link rel="icon" href="{{ asset('assets2') }}/img/logo-pemprov.png" type="image/x-icon" />
+
+    <!-- Fonts and icons -->
+    <script src="{{ asset('assets2') }}/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                "families": ["Lato:300,400,700,900"]
+            },
+            custom: {
+                "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands",
+                    "simple-line-icons"
+                ],
+                urls: ['{{ asset('assets2') }}/css/fonts.min.css']
+            },
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{{ asset('assets2') }}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('assets2') }}/css/atlantis.css">
 </head>
 
-<body>
-    <div class="vh-100 d-flex justify-content-center align-items-center ">
-        <div class="col-md-5 p-5 shadow-sm border rounded-5 border-primary bg-white">
-            <h2 class="text-center mb-4 text-primary">SIPENYU - LOGIN</h2>
-            <form action="{{ route('login') }}" method="POST">
-                @csrf
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" name="email" class="form-control border border-primary"
-                        id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" name="password" class="form-control border border-primary"
-                        id="exampleInputPassword1">
-                </div>
-                <p class="small"><a class="text-primary" href="forget-password.html">Forgot password?</a></p>
-                <div class="d-grid">
-                    <button class="btn btn-primary" type="submit">Login</button>
-                </div>
-            </form>
-            <div class="mt-3">
-                <p class="mb-0  text-center">Don't have an account?
-                    <a href="signup.html" class="text-primary fw-bold">Sign Up</a>
-                </p>
+<body class="login">
+    <div class="wrapper wrapper-login wrapper-login-full p-0">
+        <div
+            class="login-aside w-50 d-flex flex-column align-items-center justify-content-center text-center bg-secondary-gradient">
+            <h1 class="title fw-bold text-white mb-3">SIPP</h1>
+            <p class="subtitle text-white op-7">Sistem Informasi Penyuluh dan Teknis Pertanian</p>
+        </div>
+        <div class="login-aside w-50 d-flex align-items-center justify-content-center bg-white">
+            <div class="container container-login container-transparent animated fadeIn">
+                <h3 class="text-center">Sign In To Admin</h3>
+                <form action="{{ route('login') }}" method="POST">
+                    @csrf
+                    <div class="login-form">
+                        <div class="form-group">
+                            <label for="username" class="placeholder"><b>Username</b></label>
+                            <input id="username" name="username" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="placeholder"><b>Password</b></label>
+                            <div class="position-relative">
+                                <input id="password" name="password" type="password" class="form-control" required>
+                                <div class="show-password">
+                                    <i class="icon-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-action-d-flex mb-3">
+                            <div class="custom-control custom-checkbox">
+                                <a href="#" class="link float-right">Forget Password ?</a>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-secondary btn-round col-md-5 float-right mt-3 mt-sm-0 fw-bold">Sign
+                                In</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-    </script>
+    <script src="{{ asset('assets2') }}/js/core/jquery.3.2.1.min.js"></script>
+    <script src="{{ asset('assets2') }}/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="{{ asset('assets2') }}/js/core/popper.min.js"></script>
+    <script src="{{ asset('assets2') }}/js/core/bootstrap.min.js"></script>
+    <script src="{{ asset('assets2') }}/js/atlantis.min.js"></script>
 </body>
 
 </html>

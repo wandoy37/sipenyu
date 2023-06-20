@@ -1,105 +1,59 @@
-<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-body-tertiary sidebar collapse">
-    <div class="position-sticky pt-3 sidebar-sticky">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link {{ request()->segment(1) == 'dashboard' ? 'active' : '' }}" aria-current="page"
-                    href="{{ route('dashboard.index') }}">
-                    <span data-feather="home" class="align-text-bottom"></span>
-                    Dashboard
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ request()->segment(1) == 'kabupaten-kota' ? 'active' : '' }}"
-                    href="{{ route('kabkota.index') }}">
-                    <span data-feather="file" class="align-text-bottom"></span>
-                    Kab Kota
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ request()->segment(1) == 'kecamatan' ? 'active' : '' }}"
-                    href="{{ route('kecamatan.index') }}">
-                    <span data-feather="file-text" class="align-text-bottom"></span>
-                    Kecamatan
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ request()->segment(1) == 'kantor' ? 'active' : '' }}"
-                    href="{{ route('kantor.index') }}">
-                    <span data-feather="layers" class="align-text-bottom"></span>
-                    Kantor BPP
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ request()->segment(1) == 'tenaga-kerja' ? 'active' : '' }}"
-                    href="{{ route('pegawai.index') }}">
-                    <span data-feather="users" class="align-text-bottom"></span>
-                    Tenaga Kerja
-                </a>
-            </li>
-            {{-- <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="file" class="align-text-bottom"></span>
-                    Orders
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="shopping-cart" class="align-text-bottom"></span>
-                    Products
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="users" class="align-text-bottom"></span>
-                    Customers
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-                    Reports
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="layers" class="align-text-bottom"></span>
-                    Integrations
-                </a>
-            </li> --}}
-        </ul>
-
-        {{-- <h6
-            class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
-            <span>Saved reports</span>
-            <a class="link-secondary" href="#" aria-label="Add a new report">
-                <span data-feather="plus-circle" class="align-text-bottom"></span>
-            </a>
-        </h6>
-        <ul class="nav flex-column mb-2">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="file-text" class="align-text-bottom"></span>
-                    Current month
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="file-text" class="align-text-bottom"></span>
-                    Last quarter
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="file-text" class="align-text-bottom"></span>
-                    Social engagement
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="file-text" class="align-text-bottom"></span>
-                    Year-end sale
-                </a>
-            </li>
-        </ul> --}}
+<div class="sidebar sidebar-style-2">
+    <div class="sidebar-wrapper scrollbar scrollbar-inner">
+        <div class="sidebar-content">
+            <div class="user">
+                <div class="avatar-sm float-left mr-2">
+                    <img src="{{ asset('assets2/img/profile.jpg') }}" alt="..." class="avatar-img rounded-circle">
+                </div>
+                <div class="info">
+                    <a data-toggle="collapse" href="{{ route('dashboard.index') }}" aria-expanded="true">
+                        <span class="text-capitalize">
+                            {{ Auth::user()->name }}
+                            <span class="user-level">{{ Auth::user()->role }}</span>
+                            {{-- <span class="caret"></span> --}}
+                        </span>
+                    </a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <ul class="nav nav-primary">
+                <li class="nav-section">
+                    <span class="sidebar-mini-icon">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </span>
+                    <h4 class="text-section">MENU NAVIGATION</h4>
+                </li>
+                <li class="nav-item {{ request()->segment(1) == 'dashboard' ? 'active' : '' }}">
+                    <a href="{{ route('dashboard.index') }}">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item {{ request()->segment(1) == 'kabupaten-kota' ? 'active' : '' }}">
+                    <a href="{{ route('kabkota.index') }}">
+                        <i class="fas fa-file-contract"></i>
+                        <p>Kab Kota</p>
+                    </a>
+                </li>
+                <li class="nav-item {{ request()->segment(1) == 'kecamatan' ? 'active' : '' }}">
+                    <a href="{{ route('kecamatan.index') }}">
+                        <i class="fas fa-file-alt"></i>
+                        <p>Kecamatan</p>
+                    </a>
+                </li>
+                <li class="nav-item {{ request()->segment(1) == 'kantor' ? 'active' : '' }}">
+                    <a href="{{ route('kantor.index') }}">
+                        <i class="fas fa-layer-group"></i>
+                        <p>Kantor BPP</p>
+                    </a>
+                </li>
+                <li class="nav-item {{ request()->segment(1) == 'tenaga-kerja' ? 'active' : '' }}">
+                    <a href="{{ route('pegawai.index') }}">
+                        <i class="fas fa-users"></i>
+                        <p>Tenaga Kerja</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</nav>
+</div>
