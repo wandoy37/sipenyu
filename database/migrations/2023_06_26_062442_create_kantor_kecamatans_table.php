@@ -13,15 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pegawais', function (Blueprint $table) {
+        Schema::create('kantor_kecamatans', function (Blueprint $table) {
             $table->id();
-            $table->string('code')->unique();
-            $table->string('name');
-            $table->enum('role', ['penyuluh pns', 'thl-tbpp pppk','thl-tbpp apbn', 'penyuluh swadaya', 'penyuluh swasta']);
-            $table->unsignedBigInteger('kantor_id');
-            $table->timestamps();
-
+            $table->unsignedBigInteger('kantor_id')->index();
+            $table->unsignedBigInteger('kecamatan_id')->index();
             $table->foreign('kantor_id')->references('id')->on('kantors')->onDelete('cascade');
+            $table->foreign('kecamatan_id')->references('id')->on('kecamatans')->onDelete('cascade');
+            $table->timestamps();
         });
     }
 
@@ -32,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pegawais');
+        Schema::dropIfExists('kantor_kecamatans');
     }
 };

@@ -37,28 +37,34 @@
                     <form action="{{ route('kantor.store') }}" method="POST">
                         @csrf
                         <div class="mb-3">
+                            <label for="kabkota">
+                                Pilih Kabupaten/Kota
+                            </label>
                             <select class="form-control" id="kabkota" name="kabkota_id">
-                                <option value="">-pilih kabupaten-</option>
+                                <option value="" disabled selected>-pilih kabupaten-</option>
                                 @foreach ($kabkotas as $kabkota)
                                     <option value="{{ $kabkota->id }}">{{ $kabkota->name }}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="mb-3">
-                            <select class="form-control" id="kecamatan" name="kecamatan_id">
+                            <label for="kecamatan">
+                                Pilih Kecamatan
+                            </label>
+                            <select class="form-control" id="kecamatan" name="kecamatan_id[]" multiple>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="kantor" class="form-label">Kantor</label>
-                            <input type="text" name="name" class="form-control" id="kantor" placeholder="Kantor"
+                            <label for="kantor" class="form-label">Nama Kantor</label>
+                            <input type="text" name="name" class="form-control" id="kantor" placeholder="Kantor..."
                                 value="{{ old('name') }}">
                         </div>
                         <div class="mb-3">
                             <label for="alamat" class="form-label">Alamat</label>
-                            <input type="text" name="alamat" class="form-control" id="alamat" placeholder="Alamat"
+                            <input type="text" name="alamat" class="form-control" id="alamat" placeholder="Alamat..."
                                 value="{{ old('alamat') }}">
                         </div>
-                        <div class="mb-3 row">
+                        {{-- <div class="mb-3 row">
                             <div class="col-lg-6">
                                 <label for="marker" class="form-label">Marker</label>
                                 <textarea class="form-control" id="marker" name="marker" rows="3">{{ old('marker') }}</textarea>
@@ -67,7 +73,7 @@
                                 <label for="polygon" class="form-label">Polygon</label>
                                 <textarea class="form-control" id="polygon" name="polygon" rows="3">{{ old('polygon') }}</textarea>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="mb-3 float-end">
                             <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-plus"></i>
@@ -83,7 +89,13 @@
 
 
     @push('scripts')
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
         <script>
+            $('#kabkota').select2({
+                placeholder:"-pilih kabupaten-"
+            });
+            $('#kecamatan').select2();
             $("#kabkota").change(function() {
                 var id = $(this).val();
                 var url = "{{ URL::to('/get-kecamatan') }}" + "/" + id;
@@ -94,11 +106,14 @@
                     method: "GET",
                     dataType: 'json',
                     success: function(data) {
+                        //delete select2
+                        $('#kecamatan').select2('destroy');
                         for (let i = 0; i < data.length; i++) {
                             const kecamatan = data[i];
-                            $('#kecamatan').append(
-                                `<option value="${kecamatan.id}">${kecamatan.name}</option>`);
+                            $('#kecamatan').append(`<option value="${kecamatan.id}">${kecamatan.name}</option>`);
                         }
+                        //select2 multiple
+                        $('#kecamatan').select2();
                     }
                 });
             });

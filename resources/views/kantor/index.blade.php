@@ -39,6 +39,7 @@
                             <tr>
                                 <th class="text-center">Kode</th>
                                 <th>Kantor BPP</th>
+                                <th>Alamat</th>
                                 <th>Kecamatan</th>
                                 <th>Kab/Kota</th>
                                 <th class="text-center">Aksi</th>
@@ -49,7 +50,8 @@
                                 <tr>
                                     <td class="text-center">{{ $kantor->code }}</td>
                                     <td>{{ $kantor->name }}</td>
-                                    <td>{{ $kantor->kecamatan->name }}</td>
+                                    <td>{{ $kantor->alamat }}</td>
+                                    <td>{{ implode(",",$kantor->kecamatans->pluck('name')->toArray()) }}</td>
                                     <td>{{ $kantor->kabkota->name }}</td>
                                     <td width="15%" class="text-center">
                                         <form action="{{ route('kantor.delete', $kantor->code) }}" method="POST">

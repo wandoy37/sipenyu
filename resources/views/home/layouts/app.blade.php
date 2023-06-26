@@ -27,6 +27,8 @@
             height: 500px;
         }
     </style>
+
+    @stack('styles')
 </head>
 
 <body>

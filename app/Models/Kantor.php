@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Kantor extends Model
 {
@@ -12,9 +13,9 @@ class Kantor extends Model
 
     protected $guarded = [];
 
-    public function kecamatan(): BelongsTo
+    public function kecamatans(): BelongsToMany
     {
-        return $this->belongsTo(Kecamatan::class, 'kecamatan_id', 'id');
+        return $this->belongsToMany(Kecamatan::class, 'kantor_kecamatans', 'kantor_id', 'kecamatan_id');
     }
 
     public function KabKota(): BelongsTo

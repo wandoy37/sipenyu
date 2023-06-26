@@ -49,7 +49,7 @@ class KantorController extends Controller
             $request->all(),
             [
                 'kabkota_id' => 'required',
-                'kecamatan_id' => 'required',
+                'kecamatan_id.*' => 'required',
                 'name' => 'required',
                 'alamat' => 'required',
             ],
@@ -73,16 +73,17 @@ class KantorController extends Controller
             $lastKantor = Kantor::all()->count();
             $lastKantor++;
 
-            Kantor::create([
+            $kantor = Kantor::create([
                 'code' => str_pad($lastKantor, 5, '0', STR_PAD_LEFT),
                 'name' => $request->name,
                 'alamat' => $request->alamat,
                 'kabkota_id' => $request->kabkota_id,
-                'kecamatan_id' => $request->kecamatan_id,
+                // 'kecamatan_id' => $request->kecamatan_id,
                 // 'marker' => $request->marker,
                 // 'polygon' => $request->polygon,
 
             ]);
+            $kantor->kecamatans()->attach($request->kecamatan_id);
 
             return redirect()->route('kantor.index')->with('success', $request->name . ' telah di tambahkan.');
         } catch (\Throwable $th) {
@@ -131,7 +132,7 @@ class KantorController extends Controller
             $request->all(),
             [
                 'kabkota_id' => 'required',
-                'kecamatan_id' => 'required',
+                'kecamatan_id.*' => 'required',
                 'name' => 'required',
                 'alamat' => 'required',
             ],
@@ -159,6 +160,7 @@ class KantorController extends Controller
                 'kecamatan_id' => $request->kecamatan_id,
 
             ]);
+            $kantor->kecamatans()->sync($request->kecamatan_id);
 
             return redirect()->route('kantor.index')->with('success', 'berhasil update kantor ' . $request->name);
         } catch (\Throwable $th) {
@@ -180,6 +182,8 @@ class KantorController extends Controller
         $kantor = Kantor::where('code', $code)->first();
         DB::beginTransaction();
         try {
+            $kantor->kecamatans()->detach();
+            $kantor->pegawais()->delete();
             $kantor->delete($kantor);
             return redirect()->route('kantor.index')->with('warning', 'Berhasil menghapus kantor ' . $kantor->name);
         } catch (\Throwable $th) {

@@ -18,6 +18,6 @@ class Kecamatan extends Model
     }
 
     function kantors() {
-        return $this->hasMany(Kantor::class);
+        return $this->belongsToMany(Kantor::class,'kantor_kecamatans','kecamatan_id','kantor_id');
     }
 }
