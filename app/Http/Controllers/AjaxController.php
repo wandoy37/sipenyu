@@ -16,7 +16,7 @@ class AjaxController extends Controller
     }
 
     function kantorByKecamatan($kode_kab_kota,$kode_kecamatan) {
-        $kantors = Kantor::whereHas('kecamatans',function($w)use($kode_kecamatan){
+        $kantors = Kantor::with('pegawais:id,code,name,type,kantor_id','kecamatans')->whereHas('kecamatans',function($w)use($kode_kecamatan){
             $w->where('code',$kode_kecamatan);
         })->get();
         return response()->json($kantors);

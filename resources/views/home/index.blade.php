@@ -75,13 +75,45 @@
                 </div>
             </div>
         </div>
+        <div class="row my-2" id="detail-data" style="display: none;">
+            <div class="col-lg-4">
+                <h4>Detail Kantor:</h4>
+                <ul id="detail-kantor">
+                    <li></li>
+                </ul>
+            </div>
+            <div class="col-lg-8" >
+                <h4>Daftar Pegawai Kantor:</h4>
+                <table class="table" >
+                    <thead>
+                        <tr>
+                            <th>
+                                No
+                            </th>
+                            <th>
+                                Nama
+                            </th>
+                            <th>
+                                Jenis
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="detail-pegawai">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     @push('scripts')
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"
             integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
         <script>
+            let kantors = [];
             var map = L.map('map').setView([-0.416893, 117.178523], 7);
+            var markers = new L.LayerGroup([])
+            markers.addTo(map);
             // var marker = L.marker([-0.416893, 117.178523]).addTo(map);
 
             var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -97,26 +129,39 @@
             };
             // method that we will use to update the control based on feature properties passed
             info.update = function(props) {
+               
+                var msg = '<h4>Informasi</h4>';
                 if (props != 'undefined' && props != undefined && props != null) {
-                    this._div.innerHTML = '<h4>Informasi</h4>' +
-                        '<b>Jumlah Kantor : ' + props.Jumlah_Kantor + '</b>' +
-                        '<br/><b>Jumlah Pegawai : ' + props.Jumlah_Pegawai + '</b>';
+                    msg += '<p><b>Nama Daerah : ' + props.Name + '</b></p>';
+                    if(props.Jumlah_Kecamatan != undefined){
+                        msg += '<p><b>Jumlah Kecamatan : ' + props.Jumlah_Kecamatan + '</b></p>';
+                    }
+                    if(props.Jumlah_Kantor != undefined){
+                        msg += '<p><b>Jumlah Kantor : ' + props.Jumlah_Kantor + '</b></p>';
+                    }
+                    if(props.Jumlah_Pegawai != undefined){
+                        msg += '<p><b>Jumlah Pegawai : ' + props.Jumlah_Pegawai + '</b></p>';
+                    }
+                    
                 }
+                this._div.innerHTML = msg;
 
             };
             info.addTo(map);
 
             function highlightFeature(e) {
                 var layer = e.target;
-                layer.setStyle({
-                    weight: 5,
-                    color: '#666',
-                    dashArray: '',
-                    fillOpacity: 0.7
-                });
-                if (layer.feature.properties != undefined) {
-
+                //console.log(layer);
+                if (layer.feature != undefined && layer.feature.properties != undefined) {
+                    layer.setStyle({
+                        weight: 5,
+                        color: '#666',
+                        dashArray: '',
+                        fillOpacity: 0.7
+                    });
                     info.update(layer.feature.properties);
+                } else if(layer.properties != undefined) {
+                    info.update(layer.properties);
                 }
 
             }
@@ -127,7 +172,13 @@
             }
 
             function zoomToFeature(e) {
-                map.fitBounds(e.target.getBounds());
+                //check if can getbounds
+                if (e.target.getBounds != undefined) {
+                    map.fitBounds(e.target.getBounds());
+                } else if(e.target.properties != undefined ){
+                    map.flyTo([e.target.properties.latitude, e.target.properties.longitude], 15);
+                }
+               
             }
 
             
@@ -163,6 +214,7 @@
             }
 
             $("#kecamatan").on("change", function() {
+                loadGeojson('{{ url("geojson/feature-kecamatan") }}/' + $("#kabkota").val()+"/"+ $("#kecamatan").val());
                 getKantor($("#kabkota").val(), $(this).val());
             });
 
@@ -179,9 +231,29 @@
                     type: "GET",
                     dataType: "JSON",
                     success: function(data) {
+                        markers.clearLayers();
+                        pegawais = []
                         var html = '<option value="">-semua kantor-</option>';
                         $.each(data, function(key, value) {
-                            html += '<option value="' + value.code + '">' + value.name + '</option>';
+                            //add new value to kantors with code as key
+                            kantors[value.code] = value;
+                            var marker = L.marker([value.latitude, value.longitude]);
+                            marker.properties = {
+                                Name:value.name,
+                                Jumlah_Pegawai:value.pegawais.length,
+                                latitude:value.latitude,
+                                longitude:value.longitude
+                            }
+                            
+                            marker.on({
+                                mouseover: highlightFeature,
+                                mouseout: resetHighlight,
+                                click: zoomToFeature
+                            });
+
+                            markers.addLayer(marker);
+
+                            html += '<option data-latitude="'+value.latitude+'" data-longitude="'+value.longitude+'" value="' + value.code + '">' + value.name + '</option>';
                         });
                         $("#kantor").html(html);
                     },
@@ -192,6 +264,7 @@
             }
 
             function loadGeojson(url) {
+                $("#detail-data").hide();
                 $("#kabkota").prop("disabled", true);
                 map.spin(true);
                 if (geojsonLayer == null) {
@@ -222,6 +295,46 @@
 
             }
             loadGeojson('{{ url('geojson/feature-kabkota') }}');
+
+            $("#kantor").change(function(){
+                if($(this).val()!=''){
+                    const kantor = kantors[$(this).val()];
+                    $("#detail-data").show();
+                    var kecamatansText = "";
+                    for (let i = 0; i < kantor.kecamatans.length; i++) {
+                        const kecamatan = kantor.kecamatans[i];
+                        kecamatansText += kecamatan.name+", ";
+                    }
+                    $("#detail-kantor").html(`
+                        <li>Nama : ${kantor.name}</li>
+                        <li>Alamat : ${kantor.alamat}</li>
+                        <li>Jumlah Pegawai : ${kantor.pegawais.length}</li>
+                        <li>Kecamatan : ${kecamatansText}</li>
+                    `);
+
+                    var tbody = $("#detail-pegawai");
+                    tbody.html('');
+                    for (let i = 0; i < kantor.pegawais.length; i++) {
+                        const pegawai = kantor.pegawais[i];
+                        tbody.append(`
+                            <tr>
+                                <td>${i+1}</td>
+                                <td>${pegawai.name}</td>
+                                <td>${pegawai.type}</td>
+                            </tr>
+                        `);
+                        
+                    }
+                    //scroll to bottom
+                    $('html, body').animate({
+                        scrollTop: $("#detail-data").offset().top
+                    }, 1000);
+                }
+                
+                var latitude = $(this).find(":selected").data("latitude");
+                var longitude = $(this).find(":selected").data("longitude");
+                map.flyTo([latitude, longitude], 15);
+            });
         </script>
     @endpush
 @endsection

@@ -27,6 +27,8 @@ class GeojsonController extends Controller
                     return $kantor->pegawais->count();
                 });
             });
+            //jumlah kecamatan
+            $feature->properties->Jumlah_Kecamatan = $kabkota->kecamatans->count();
             $features[] = $feature;
         }
         $format = [
@@ -95,7 +97,14 @@ class GeojsonController extends Controller
 
         $getData = file_get_contents(public_path("indonesia-postal-and-area/data/geojson/62/64/" . $kecamatan->kabkota->code . "/" . $kecamatan->code . "/" . $kecamatan->code . ".json"));
         $json = json_decode($getData);
-        $features[] = $json->features[0];
+        $feature = $json->features[0];
+        //jumlah kantor di kecamatan
+        $feature->properties->Jumlah_Kantor = $kecamatan->kantors->count();
+        //jumlah pegawai di kantor
+        $feature->properties->Jumlah_Pegawai = $kecamatan->kantors->sum(function ($kantor) {
+            return $kantor->pegawais->count();
+        });
+        $features[] = $feature;
         $format = [
             "type" => "FeatureCollection",
             "features" => $features

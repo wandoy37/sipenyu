@@ -31,29 +31,30 @@ use Illuminate\Support\Facades\URL;
 //     return view('welcome');
 // });
 
-function convertToDecimalDegrees($coordinate,$minus = 1) {
-    if (str_contains($coordinate,"-")) {
+function convertToDecimalDegrees($coordinate, $minus = 1)
+{
+    if (str_contains($coordinate, "-")) {
         $parts = explode('-', $coordinate);
-    } else if (str_contains($coordinate,"'")) {
+    } else if (str_contains($coordinate, "'")) {
         $parts = explode("'", $coordinate);
-    } else if(str_contains($coordinate,".")) {
+    } else if (str_contains($coordinate, ".")) {
         $parts = explode('.', $coordinate);
     } else {
-        return str_replace(",","",$coordinate);
+        return str_replace(",", "", $coordinate);
     }
 
-    if(count($parts) < 3){
-        
-        return str_replace(",","",$coordinate);
+    if (count($parts) < 3) {
+
+        return str_replace(",", "", $coordinate);
     }
-    
+
     $degrees = floatval($parts[0]);
     $minutes = floatval($parts[1]);
     $seconds = floatval($parts[2]);
-    
+
     //$decimalDegrees = $degrees + ($minutes / 60) + ($seconds / 3600);
-    return ($degrees+((($minutes*60)+($seconds))/3600))*$minus;
-    
+    return ($degrees + ((($minutes * 60) + ($seconds)) / 3600)) * $minus;
+
     //return $decimalDegrees;
 }
 
@@ -62,24 +63,24 @@ Route::get('/polygon', function () {
     return response()->json($indonesia);
 });
 
-Route::get('scrape-kantor',function(){
+Route::get('scrape-kantor', function () {
     $kabkotas = KabKota::with('kecamatans')->get();
     $result = [];
     foreach ($kabkotas as $key => $kabkota) {
         DB::beginTransaction();
-        
+
         try {
             // Set the URL of the website we want to scrape.
-            $url = 'https://app2.pertanian.go.id/simluh2014/viewreport/rekapKec_lembaga.php?kode_prop=6400&kode_kab='.$kabkota->code;
+            $url = 'https://app2.pertanian.go.id/simluh2014/viewreport/rekapKec_lembaga.php?kode_prop=6400&kode_kab=' . $kabkota->code;
 
             // Set the cookie we want to set.
             $cookie = 'PHPSESSID=qgtu1lslhlh1r4f9fullhh2914';
 
             $httpClient = new \GuzzleHttp\Client();
-            
-            
+
+
             $cookieJar = CookieJar::fromArray([
-                'PHPSESSID' => 'qgtu1lslhlh1r4f9fullhh2914'
+                'PHPSESSID' => '0kpcda6fi5j6t6c9igr3dddvm1'
             ], 'app2.pertanian.go.id');
             $response = $httpClient->request('GET', $url, ['cookies' => $cookieJar]);
             $htmlString = (string) $response->getBody();
@@ -92,61 +93,59 @@ Route::get('scrape-kantor',function(){
             // dd($response);
             // remove \r\n
             $htmlString = str_replace(array("\r", "\n"), '', $htmlString);
-            
             $dom = new DOMDocument();
             libxml_use_internal_errors(true);
             $dom->loadHTML($htmlString);
             $xpath = new DOMXPath($dom);
             //find table with class display
             $rows = $xpath->query("//table[@class='display']//tr");
-  
+
             foreach ($rows as $row) {
                 $data = [
-                    'url'=>$url,
-                    'kabkota'=>$kabkota->name,
-                    'nama_kantor'=>'',
-                    'alamat_kantor'=>'',
-                    'longitude'=>null,
-                    'latitude'=>null,
-                    'link_map'=>null,
-                    "koordinat"=>null,
-                    'kecamatans'=>[]
-                    
+                    'url' => $url,
+                    'kabkota' => $kabkota->name,
+                    'nama_kantor' => '',
+                    'alamat_kantor' => '',
+                    'longitude' => null,
+                    'latitude' => null,
+                    'link_map' => null,
+                    "koordinat" => null,
+                    'kecamatans' => []
+
                 ];
                 $cols = $row->getElementsByTagName('td');
-                
-                if($cols->length == 8 && $cols[0]->nodeValue != "No" && $cols[1]->nodeValue != "Nama BP3K"){
+
+                if ($cols->length == 8 && $cols[0]->nodeValue != "No" && $cols[1]->nodeValue != "Nama BP3K") {
                     $data['nama_kantor'] = trim($cols[1]->nodeValue);
                     $data['alamat_kantor'] = trim($cols[4]->nodeValue);
-                    $col6 = explode("</br>",$cols[6]->C14N());
+                    $col6 = explode("</br>", $cols[6]->C14N());
                     $data["koordinat"] = strip_tags($cols[6]->nodeValue);
                     $data['latitude'] = trim(strip_tags($col6[0]));
-                    if(str_contains($data['latitude'],"LS")){
-                        $data['latitude'] = convertToDecimalDegrees(str_replace("LS","",$data['latitude']),-1);
-                    } else if(str_contains($data['latitude'],"LU")) {
-                        $data['latitude'] = convertToDecimalDegrees(str_replace("LU","",$data['latitude']));
+                    if (str_contains($data['latitude'], "LS")) {
+                        $data['latitude'] = convertToDecimalDegrees(str_replace("LS", "", $data['latitude']), -1);
+                    } else if (str_contains($data['latitude'], "LU")) {
+                        $data['latitude'] = convertToDecimalDegrees(str_replace("LU", "", $data['latitude']));
                     } else {
                         //remove all non numeric but keep . and ,
                         $data['latitude'] = convertToDecimalDegrees(preg_replace("/[^0-9,.]/", "", $data['latitude']));
                     }
-                    
-                    $data['longitude'] = trim(str_replace("BT","",strip_tags($col6[1])));
+
+                    $data['longitude'] = trim(str_replace("BT", "", strip_tags($col6[1])));
                     $data['longitude'] = convertToDecimalDegrees($data['longitude']);
-                    $data['link_map'] = "https://www.google.com/maps/search/".$data['latitude']."+".$data['longitude']."?entry=tts";
-                    $col3 = explode("-",strip_tags($cols[3]->nodeValue));
+                    $data['link_map'] = "https://www.google.com/maps/search/" . $data['latitude'] . "+" . $data['longitude'] . "?entry=tts";
+                    $col3 = explode("-", strip_tags($cols[3]->nodeValue));
                     $kecamatans = [];
                     foreach ($col3 as $key => $value) {
-                        $kecamatan = Kecamatan::where('name',trim($value))->first();
-                        if($kecamatan){
+                        $kecamatan = Kecamatan::where('name', trim($value))->first();
+                        if ($kecamatan) {
                             $kecamatans[] = $kecamatan->id;
                         }
                     }
                     $data['kecamatans'] = $kecamatans;
-
-                    if($data['nama_kantor'] != "" && $data['alamat_kantor'] != ""){
+                    if ($data['nama_kantor'] != "" && $data['alamat_kantor'] != "") {
                         $result[] = $data;
-                        $kantor = Kantor::where('name',$data['nama_kantor'])->first();
-                        if($kantor){
+                        $kantor = Kantor::where('name', $data['nama_kantor'])->first();
+                        if ($kantor) {
                             $kantor->alamat = $data['alamat_kantor'];
                             $kantor->latitude = $data['latitude'];
                             $kantor->longitude = $data['longitude'];
@@ -155,49 +154,49 @@ Route::get('scrape-kantor',function(){
                             $kantor->kecamatans()->sync($data['kecamatans']);
                         }
                     }
-                    
-                    
+
+
                 }
             }
-        
+
             DB::commit();
         } catch (\Throwable $th) {
             //throw $th;
             DB::rollBack();
             dd($th);
         }
-        
+
     }
-    
+
     return $result;
 
 });
 
-Route::get('scrape-penyuluh',function(){
+Route::get('scrape-penyuluh', function () {
     $result = [];
     $kecamatans = Kecamatan::with('kabkota')->get();
     $lastKantor = Kantor::all()->count();
     $lastPegawai = Pegawai::all()->count();
     $types = [
-        "Penyuluh Pertanian PNS (Aktif)"=>"penyuluh pns",
-        "Penyuluh Pertanian PPPK"=>"penyuluh pppk",
-        "Penyuluh THL-TBPP APBN"=>"thl-tbpp apbn",
-        "Penyuluh THL-TBPP APBD"=>"thl-tbpp apbd",
-        "Penyuluh Swadaya"=>"penyuluh swadaya",
+        "Penyuluh Pertanian PNS (Aktif)" => "penyuluh pns",
+        "Penyuluh Pertanian PPPK" => "penyuluh pppk",
+        "Penyuluh THL-TBPP APBN" => "thl-tbpp apbn",
+        "Penyuluh THL-TBPP APBD" => "thl-tbpp apbd",
+        "Penyuluh Swadaya" => "penyuluh swadaya",
     ];
-    
+
     foreach ($kecamatans as $key => $kecamatan) {
         DB::beginTransaction();
         try {
             // Set the URL of the website we want to scrape.
-            $url = 'https://app2.pertanian.go.id/simluh2014/viewreport/daftPenyuluh.php?id_prop=6400&kode_kab='.$kecamatan->kabkota->code.'&tempat_tugas='.$kecamatan->code;
+            $url = 'https://app2.pertanian.go.id/simluh2014/viewreport/daftPenyuluh.php?id_prop=6400&kode_kab=' . $kecamatan->kabkota->code . '&tempat_tugas=' . $kecamatan->code;
 
             // Set the cookie we want to set.
             $cookie = 'PHPSESSID=qgtu1lslhlh1r4f9fullhh2914';
 
             $httpClient = new \GuzzleHttp\Client();
-            
-            
+
+
             $cookieJar = CookieJar::fromArray([
                 'PHPSESSID' => 'qgtu1lslhlh1r4f9fullhh2914'
             ], 'app2.pertanian.go.id');
@@ -212,7 +211,7 @@ Route::get('scrape-penyuluh',function(){
             // dd($response);
             // remove \r\n
             $htmlString = str_replace(array("\r", "\n"), '', $htmlString);
-            
+
             $dom = new DOMDocument();
             libxml_use_internal_errors(true);
             $dom->loadHTML($htmlString);
@@ -220,41 +219,41 @@ Route::get('scrape-penyuluh',function(){
             //find table with class display
             $rows = $xpath->query("//table[@style='border-collapse: collapse']//tr");
             $data = [
-                'url'=>$url,
-                'kabkota'=>$kecamatan->kabkota->name,
-                'kecamatan'=>$kecamatan->name,
-                'nama_kantor'=>'',
-                'alamat_kantor'=>'',
-                'pegawai'=>[]
-                
+                'url' => $url,
+                'kabkota' => $kecamatan->kabkota->name,
+                'kecamatan' => $kecamatan->name,
+                'nama_kantor' => '',
+                'alamat_kantor' => '',
+                'pegawai' => []
+
             ];
             $jenis_penyuluh = '';
             $kantor = null;
             foreach ($rows as $row) {
-                
+
                 $cols = $row->getElementsByTagName('td');
                 $pegawai = [
-                    "name"=>'',
-                    "no_telp"=>null,
-                    "email"=>null,
-                    "type"=>@$types[$jenis_penyuluh],
+                    "name" => '',
+                    "no_telp" => null,
+                    "email" => null,
+                    "type" => @$types[$jenis_penyuluh],
                 ];
-                if($cols->length == 6 && ($cols[0]->nodeValue != "No" || $cols[1]->nodeValue != "Nama Penyuluh")){
+                if ($cols->length == 6 && ($cols[0]->nodeValue != "No" || $cols[1]->nodeValue != "Nama Penyuluh")) {
                     $pegawai['name'] = trim($cols[1]->nodeValue);
-                    $pegawai['no_telp'] = trim(str_replace(" ","",$cols[3]->nodeValue));
-                    $pegawai['email'] = trim(str_replace(" ","",$cols[4]->nodeValue));
-                
-                    
-                } else if($cols->length == 1 && trim($cols[0]->nodeValue) != ""){
+                    $pegawai['no_telp'] = trim(str_replace(" ", "", $cols[3]->nodeValue));
+                    $pegawai['email'] = trim(str_replace(" ", "", $cols[4]->nodeValue));
+
+
+                } else if ($cols->length == 1 && trim($cols[0]->nodeValue) != "") {
                     $C14N = $cols[0]->C14N();
                     $brs = explode("</br>", $C14N);
-                    if(count($brs) > 4){
-                        $data['nama_kantor'] = trim(str_replace(["BP3K (",")","<br>"],"",$brs[3]));
+                    if (count($brs) > 4) {
+                        $data['nama_kantor'] = trim(str_replace(["BP3K (", ")", "<br>"], "", $brs[3]));
                         $lastKantor++;
-                        
-                        if($data["nama_kantor"] != ""){
-                            $cek = Kantor::where('name',$data['nama_kantor'])->first();
-                            if($cek){
+
+                        if ($data["nama_kantor"] != "") {
+                            $cek = Kantor::where('name', $data['nama_kantor'])->first();
+                            if ($cek) {
                                 $kantor = $cek;
                             } else {
                                 $kantor = Kantor::firstOrCreate([
@@ -263,29 +262,29 @@ Route::get('scrape-penyuluh',function(){
                                     'alamat' => '-',
                                     'kabkota_id' => $kecamatan->kabkota_id,
                                 ]);
-                                
+
                             }
                             $kantor->kecamatans()->attach([$kecamatan->id]);
-                            
+
                         }
-                    } else if(count($brs) > 1) {
-                        if(str_contains($brs[0], "<font")){
+                    } else if (count($brs) > 1) {
+                        if (str_contains($brs[0], "<font")) {
                             $jenis_penyuluh = strip_tags($brs[2]);
-                           
+
                         }
                     }
                 }
-                if($pegawai["name"] != ""){
+                if ($pegawai["name"] != "") {
                     $data['pegawai'][] = $pegawai;
-                    if($kantor != null){
+                    if ($kantor != null) {
                         $lastPegawai++;
                         $pegawai['code'] = str_pad($lastPegawai, 5, '0', STR_PAD_LEFT);
                         $kantor->pegawais()->firstOrCreate($pegawai);
-                        
+
                     }
                 }
             }
-            if($data['nama_kantor'] != "" && $data['nama_kantor'] != "BP3K ()"){
+            if ($data['nama_kantor'] != "" && $data['nama_kantor'] != "BP3K ()") {
                 $result[] = $data;
             }
             DB::commit();
@@ -294,10 +293,36 @@ Route::get('scrape-penyuluh',function(){
             DB::rollBack();
             dd($th);
         }
+
+    }
+
+    return $result;
+});
+
+Route::get('update-koordinat-kantor', function () {
+    $url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=formatted_address%2Cname%2Copening_hours%2Cgeometry&inputtype=textquery&key=AIzaSyClAOB7wPIdwBku-nhNPFBHh49nNrT8yHc&input=";
+    $kantors = Kantor::with('kabkota')->get();
+    foreach ($kantors as $kantor) {
+        $name = $kantor->name;
+        if(!str_contains($name, "Bpp") && !str_contains($name, "BPP") && !str_contains($name, "bpp")){
+            $name = "Bpp " . $name;
+        }
+        $newUrl = URL($url . "Kantor Pemerintahan," . $name . "," . $kantor->kabkota->name);
+        $httpClient = new \GuzzleHttp\Client();
+        $response = $httpClient->request('GET', $newUrl);
+        $json = json_decode($response->getBody());
+        if(count($json->candidates) > 0){
+            if($json->candidates[0]->geometry && $json->candidates[0]->geometry->location){
+                $kantor->update([
+                    'name'=>$name,
+                    'latitude' => $json->candidates[0]->geometry->location->lat,
+                    'longitude' => $json->candidates[0]->geometry->location->lng,
+                ]);
+            }
+        }
         
     }
-    
-    return $result;
+    return "ok";
 });
 
 // ======================================================================================================================== //
@@ -347,18 +372,18 @@ Route::middleware('auth')->group(function () {
     Route::delete('/tenaga-kerja/{code}/delete', [PegawaiController::class, 'destroy'])->name('pegawai.delete');
 
 
-    
+
 });
 
 Route::group(['prefix' => 'geojson'], function () {
-    Route::get('feature-kabkota', [GeojsonController::class,'featureKabKota'])->name('geojson.feature-kabkota');
-    Route::get('feature-kecamatan', [GeojsonController::class,'featureKecamatan'])->name('geojson.feature-kecamatan');
-    Route::get('feature-kecamatan/{kode_kab_kota}', [GeojsonController::class,'featureKecamatanByKabKota'])->name('geojson.feature-kecamatan-by-kab-kota');
-    Route::get('feature-kecamatan/{kode_kab_kota}/{kode_kecamatan}', [GeojsonController::class,'featureKecamatanSingle'])->name('geojson.feature-kecamatan-single');
+    Route::get('feature-kabkota', [GeojsonController::class, 'featureKabKota'])->name('geojson.feature-kabkota');
+    Route::get('feature-kecamatan', [GeojsonController::class, 'featureKecamatan'])->name('geojson.feature-kecamatan');
+    Route::get('feature-kecamatan/{kode_kab_kota}', [GeojsonController::class, 'featureKecamatanByKabKota'])->name('geojson.feature-kecamatan-by-kab-kota');
+    Route::get('feature-kecamatan/{kode_kab_kota}/{kode_kecamatan}', [GeojsonController::class, 'featureKecamatanSingle'])->name('geojson.feature-kecamatan-single');
 });
 
 Route::group(['prefix' => 'ajax'], function () {
-    Route::get('kecamatan/{kode_kab_kota}', [AjaxController::class,'kecamatanByKabKota'])->name('ajax.feature-kabkota');
+    Route::get('kecamatan/{kode_kab_kota}', [AjaxController::class, 'kecamatanByKabKota'])->name('ajax.feature-kabkota');
     // Route::get('kantor/{kode_kab_kota}', [AjaxController::class,'kantor'])->name('ajax.feature-kabkota');
-    Route::get('kantor/{kode_kab_kota}/{kode_kecamatan}', [AjaxController::class,'kantorByKecamatan'])->name('ajax.feature-kabkota');
+    Route::get('kantor/{kode_kab_kota}/{kode_kecamatan}', [AjaxController::class, 'kantorByKecamatan'])->name('ajax.feature-kabkota');
 });
