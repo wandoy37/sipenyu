@@ -192,6 +192,8 @@
                     $("#pilih-kecamatan").show();
                 } else {
                     $("#pilih-kecamatan").hide();
+                    loadGeojson('{{ url('geojson/feature-kabkota') }}');
+                    $("#pilih-kantor").hide();
                     return;
                 }
                 $("#kecamatan").html("");
@@ -215,16 +217,18 @@
             }
 
             $("#kecamatan").on("change", function() {
-                if($(this).val() != ""){
+                if($(this).val() != "" && $(this).val() != null){
                     loadGeojson('{{ url("geojson/feature-kecamatan") }}/' + $("#kabkota").val()+"/"+ $("#kecamatan").val());
                 } else {
-                    loadGeojson('{{ url('geojson/feature-kecamatan') }}/' + kode_kab_kota);
+                    $("#pilih-kantor").hide();
+                    loadGeojson('{{ url("geojson/feature-kecamatan") }}/' + $("#kabkota").val());
                 }
                 getKantor($("#kabkota").val(), $(this).val());
             });
 
             //request ajax
             function getKantor(kode_kab_kota, kode_kecamatan) {
+                markers.clearLayers();
                 if (kode_kecamatan != "" && kode_kecamatan != null) {
                     $("#pilih-kantor").show();
                 } else {
@@ -237,7 +241,7 @@
                     type: "GET",
                     dataType: "JSON",
                     success: function(data) {
-                        markers.clearLayers();
+                        
                         pegawais = []
                         var html = '<option value="">-semua kantor-</option>';
                         $.each(data, function(key, value) {
