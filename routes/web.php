@@ -300,7 +300,7 @@ Route::get('scrape-penyuluh', function () {
 });
 
 Route::get('update-koordinat-kantor', function () {
-    $url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=formatted_address%2Cname%2Copening_hours%2Cgeometry&inputtype=textquery&key=AIzaSyClAOB7wPIdwBku-nhNPFBHh49nNrT8yHc&input=";
+    $url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=formatted_address%2Cname%2Copening_hours%2Cgeometry&inputtype=textquery&key=".env("GOOGLE_MAP_API_KEY")."&input=";
     $kantors = Kantor::with('kabkota')->get();
     foreach ($kantors as $kantor) {
         $name = $kantor->name;
