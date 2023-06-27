@@ -73,14 +73,13 @@ Route::get('scrape-kantor', function () {
             // Set the URL of the website we want to scrape.
             $url = 'https://app2.pertanian.go.id/simluh2014/viewreport/rekapKec_lembaga.php?kode_prop=6400&kode_kab=' . $kabkota->code;
 
-            // Set the cookie we want to set.
-            $cookie = 'PHPSESSID=qgtu1lslhlh1r4f9fullhh2914';
+         
 
             $httpClient = new \GuzzleHttp\Client();
 
 
             $cookieJar = CookieJar::fromArray([
-                'PHPSESSID' => '0kpcda6fi5j6t6c9igr3dddvm1'
+                'PHPSESSID' => env('PHPSESSID')
             ], 'app2.pertanian.go.id');
             $response = $httpClient->request('GET', $url, ['cookies' => $cookieJar]);
             $htmlString = (string) $response->getBody();
@@ -190,15 +189,9 @@ Route::get('scrape-penyuluh', function () {
         try {
             // Set the URL of the website we want to scrape.
             $url = 'https://app2.pertanian.go.id/simluh2014/viewreport/daftPenyuluh.php?id_prop=6400&kode_kab=' . $kecamatan->kabkota->code . '&tempat_tugas=' . $kecamatan->code;
-
-            // Set the cookie we want to set.
-            $cookie = 'PHPSESSID=qgtu1lslhlh1r4f9fullhh2914';
-
             $httpClient = new \GuzzleHttp\Client();
-
-
             $cookieJar = CookieJar::fromArray([
-                'PHPSESSID' => 'qgtu1lslhlh1r4f9fullhh2914'
+                'PHPSESSID' => env("PHPSESSID")
             ], 'app2.pertanian.go.id');
             $response = $httpClient->request('GET', $url, ['cookies' => $cookieJar]);
             $htmlString = (string) $response->getBody();
