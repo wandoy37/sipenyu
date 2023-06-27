@@ -83,7 +83,7 @@
                 </ul>
             </div>
             <div class="col-lg-8" >
-                <h4>Daftar Pegawai Kantor:</h4>
+                <h4>Daftar Penyuluh:</h4>
                 <table class="table" >
                     <thead>
                         <tr>
@@ -140,7 +140,7 @@
                         msg += '<p><b>Jumlah Kantor : ' + props.Jumlah_Kantor + '</b></p>';
                     }
                     if(props.Jumlah_Pegawai != undefined){
-                        msg += '<p><b>Jumlah Pegawai : ' + props.Jumlah_Pegawai + '</b></p>';
+                        msg += '<p><b>Jumlah Penyuluh : ' + props.Jumlah_Pegawai + '</b></p>';
                     }
                     
                 }
