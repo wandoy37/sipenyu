@@ -194,6 +194,7 @@
                     $("#pilih-kecamatan").hide();
                     return;
                 }
+                $("#kecamatan").html("");
                 $.ajax({
                     url: "{{ url('ajax/kecamatan') }}/" + kode_kab_kota,
                     type: "GET",
@@ -214,18 +215,23 @@
             }
 
             $("#kecamatan").on("change", function() {
-                loadGeojson('{{ url("geojson/feature-kecamatan") }}/' + $("#kabkota").val()+"/"+ $("#kecamatan").val());
+                if($(this).val() != ""){
+                    loadGeojson('{{ url("geojson/feature-kecamatan") }}/' + $("#kabkota").val()+"/"+ $("#kecamatan").val());
+                } else {
+                    loadGeojson('{{ url('geojson/feature-kecamatan') }}/' + kode_kab_kota);
+                }
                 getKantor($("#kabkota").val(), $(this).val());
             });
 
             //request ajax
             function getKantor(kode_kab_kota, kode_kecamatan) {
-                if (kode_kecamatan != "") {
+                if (kode_kecamatan != "" && kode_kecamatan != null) {
                     $("#pilih-kantor").show();
                 } else {
                     $("#pilih-kantor").hide();
                     return;
                 }
+                $("#kantor").html("");
                 $.ajax({
                     url: "{{ url('ajax/kantor') }}/" + kode_kab_kota + "/" + kode_kecamatan,
                     type: "GET",
@@ -303,7 +309,7 @@
                     var kecamatansText = "";
                     for (let i = 0; i < kantor.kecamatans.length; i++) {
                         const kecamatan = kantor.kecamatans[i];
-                        kecamatansText += kecamatan.name+", ";
+                        kecamatansText += '<span class="badge bg-primary mr-1">'+kecamatan.name+"</span> ";
                     }
                     $("#detail-kantor").html(`
                         <li>Nama : ${kantor.name}</li>
