@@ -14,7 +14,7 @@ class GeojsonController extends Controller
         $kabkotas = KabKota::all();
 
         foreach ($kabkotas as $kabkota) {
-            $getData = file_get_contents(public_path("indonesia-postal-and-area/data/geojson/62/64/" . $kabkota->code . "/" . $kabkota->code . ".json"));
+            $getData = file_get_contents(public_path("data-wilayah/data/geojson/62/64/" . $kabkota->code . "/" . $kabkota->code . ".json"));
             $json = json_decode($getData);
             $feature = $json->features[0];
             //jumlah kantor di kecamatan
@@ -43,7 +43,7 @@ class GeojsonController extends Controller
         $kecamatans = Kecamatan::all();
 
         foreach ($kecamatans as $kecamatan) {
-            $getData = file_get_contents(public_path("indonesia-postal-and-area/data/geojson/62/64/" . $kecamatan->kabkota->code . "/" . $kecamatan->code . "/" . $kecamatan->code . ".json"));
+            $getData = file_get_contents(public_path("data-wilayah/data/geojson/62/64/" . $kecamatan->kabkota->code . "/" . $kecamatan->code . "/" . $kecamatan->code . ".json"));
             $json = json_decode($getData);
             $feature = $json->features[0];
             //jumlah kantor di kecamatan
@@ -69,7 +69,7 @@ class GeojsonController extends Controller
         })->get();
 
         foreach ($kecamatans as $kecamatan) {
-            $getData = file_get_contents(public_path("indonesia-postal-and-area/data/geojson/62/64/" . $kecamatan->kabkota->code . "/" . $kecamatan->code . "/" . $kecamatan->code . ".json"));
+            $getData = file_get_contents(public_path("data-wilayah/data/geojson/62/64/" . $kecamatan->kabkota->code . "/" . $kecamatan->code . "/" . $kecamatan->code . ".json"));
             $json = json_decode($getData);
             // $features[] = $json->features[0];
             $feature = $json->features[0];
@@ -95,7 +95,7 @@ class GeojsonController extends Controller
             $w->where('code', $kode_kab_kota);
         })->where('code',$kode_kecamatan)->first();
 
-        $getData = file_get_contents(public_path("indonesia-postal-and-area/data/geojson/62/64/" . $kecamatan->kabkota->code . "/" . $kecamatan->code . "/" . $kecamatan->code . ".json"));
+        $getData = file_get_contents(public_path("data-wilayah/data/geojson/62/64/" . $kecamatan->kabkota->code . "/" . $kecamatan->code . "/" . $kecamatan->code . ".json"));
         $json = json_decode($getData);
         $feature = $json->features[0];
         //jumlah kantor di kecamatan
