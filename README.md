@@ -1,7 +1,19 @@
 ## Geojson
 - data geojson dari : https://github.com/ArrayAccess/Indonesia-Postal-And-Area/
 
+## Instalasi
+- clone repo
+- `composer install`
+- copy `.env.example` ke `.env`
+- isi detail database di `.env`
+- `php artisan key:generate`
+- `php artisan migrate`
+- `php artisan db:seed`
+
+
 ## Data Kantor dan Pegawai
+> **Warning**
+> Jika ingin melakukan scraping manual
 - data dari : https://app2.pertanian.go.id/simluh2014
 - login terlebih dahulu dan copy session `PHPSESSID` dari cookie dan pastekan ke .env PHPSESSID=xxxxx
 - alur scraping :
