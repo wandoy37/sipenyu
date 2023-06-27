@@ -314,7 +314,7 @@
                     $("#detail-kantor").html(`
                         <li>Nama : ${kantor.name}</li>
                         <li>Alamat : ${kantor.alamat}</li>
-                        <li>Jumlah Pegawai : ${kantor.pegawais.length}</li>
+                        <li>Jumlah Penyuluh : ${kantor.pegawais.length}</li>
                         <li>Kecamatan : ${kecamatansText}</li>
                     `);
 
