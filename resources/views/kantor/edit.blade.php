@@ -38,6 +38,9 @@
                         @csrf
                         @method('PATCH')
                         <div class="mb-3">
+                            <label for="kabkota">
+                                Pilih Kabupaten/Kota
+                            </label>
                             <select class="form-control" id="kabkota" name="kabkota_id">
                                 <option value="">-pilih kabupaten-</option>
                                 @foreach ($kabkotas as $kabkota)
@@ -49,8 +52,15 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="mb-3">
+                        {{-- <div class="mb-3">
                             <select class="form-control" id="kecamatan" name="kecamatan_id">
+                            </select>
+                        </div> --}}
+                        <div class="mb-3">
+                            <label for="kecamatan">
+                                Pilih Kecamatan
+                            </label>
+                            <select class="form-control" id="kecamatan" name="kecamatan_id[]" multiple>
                             </select>
                         </div>
                         <div class="mb-3">
@@ -90,24 +100,28 @@
     @push('scripts')
         <script>
             var kode = document.getElementById('kabkota').value;
-            var oldKecamatan = {{ $kantor->kecamatan_id }};
+            var oldKecamatans = {!! json_encode($kantor->kecamatans()->pluck('kecamatans.id')->toArray()) !!};
             // Show -select kecamatan-
+            
             $('#kecamatan').empty();
+            $('#kecamatan').select2();
             $('#kecamatan').append('<option>-pilih kecamatan-</option>');
             $.ajax({
                 url: "{{ URL::to('/get-kecamatan') }}" + "/" + kode,
                 method: "GET",
                 dataType: 'json',
                 success: function(data) {
+                    $('#kecamatan').select2('destroy');
                     for (let i = 0; i < data.length; i++) {
                         const kecamatan = data[i];
-                        if (kecamatan.id == oldKecamatan) {
+                        if (oldKecamatans.includes(kecamatan.id)) {
                             $('#kecamatan').append(
                                 `<option value="${kecamatan.id}" selected >${kecamatan.name}</option>`);
                         } else {
                             $('#kecamatan').append(`<option value="${kecamatan.id}">${kecamatan.name}</option>`);
                         }
                     }
+                    $('#kecamatan').select2();
                 }
             });
 
@@ -121,14 +135,17 @@
                     method: "GET",
                     dataType: 'json',
                     success: function(data) {
+                        $('#kecamatan').select2('destroy');
                         for (let i = 0; i < data.length; i++) {
                             const kecamatan = data[i];
                             $('#kecamatan').append(
                                 `<option value="${kecamatan.id}">${kecamatan.name}</option>`);
                         }
+                        $('#kecamatan').select2();
                     }
                 });
             });
+            
         </script>
     @endpush
 
