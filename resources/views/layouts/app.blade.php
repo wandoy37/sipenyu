@@ -54,6 +54,8 @@
             max-height: 100%;
         }
     </style>
+
+    @stack('styles')
 </head>
 
 <body>

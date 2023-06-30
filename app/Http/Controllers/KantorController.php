@@ -81,6 +81,8 @@ class KantorController extends Controller
                 // 'kecamatan_id' => $request->kecamatan_id,
                 // 'marker' => $request->marker,
                 // 'polygon' => $request->polygon,
+                'latitude' => $request->latitude,
+                'longitude' => $request->longitude,
 
             ]);
             $kantor->kecamatans()->attach($request->kecamatan_id);
@@ -88,7 +90,7 @@ class KantorController extends Controller
             return redirect()->route('kantor.index')->with('success', $request->name . ' telah di tambahkan.');
         } catch (\Throwable $th) {
             DB::rollBack();
-            return redirect()->route('kantor.index')->with('fails', $request->name . ' gagal di tambahkan.');
+            return redirect()->back()->with('error', 'gagal update kantor ' . $request->name)->withInput($request->all());
         } finally {
             DB::commit();
         }
@@ -157,7 +159,9 @@ class KantorController extends Controller
                 'name' => $request->name,
                 'alamat' => $request->alamat,
                 'kabkota_id' => $request->kabkota_id,
-                'kecamatan_id' => $request->kecamatan_id,
+                // 'kecamatan_id' => $request->kecamatan_id,
+                'latitude' => $request->latitude,
+                'longitude' => $request->longitude,
 
             ]);
             $kantor->kecamatans()->sync($request->kecamatan_id);
@@ -165,7 +169,7 @@ class KantorController extends Controller
             return redirect()->route('kantor.index')->with('success', 'berhasil update kantor ' . $request->name);
         } catch (\Throwable $th) {
             DB::rollBack();
-            return redirect()->route('kantor.index')->with('error', 'gagal update kantor ' . $request->name);
+            return redirect()->back()->with('error', 'gagal update kantor ' . $request->name)->withInput($request->all());
         } finally {
             DB::commit();
         }
