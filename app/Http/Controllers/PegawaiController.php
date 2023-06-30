@@ -13,10 +13,12 @@ class PegawaiController extends Controller
     private function roles()
     {
         return [
-            'penyuluh pns' => 'penyuluh pns',
-            'penyuluh swadaya' => 'penyuluh swadaya',
-            'penyuluh swasta' => 'penyuluh swasta',
-            'thl-tbpp' => 'thl-tbpp',
+            'penyuluh pns' => 'Penyuluh Pertanian PNS (Aktif)',
+            'penyuluh pppk' => 'Penyuluh Pertanian PPPK',
+            'thl-tbpp apbn' => 'Penyuluh THL-TBPP APBN',
+            'thl-tbpp apbd' => 'Penyuluh THL-TBPP APBD',
+            'penyuluh swadaya'=>'Penyuluh Swadaya',
+            'penyuluh swasta'=> 'Penyuluh Swasta',
         ];
     }
     /**
@@ -56,13 +58,13 @@ class PegawaiController extends Controller
             [
                 'code' => 'unique:pegawais',
                 'name' => 'required',
-                'role' => 'required',
+                'type' => 'required',
                 'kantor' => 'required',
             ],
             [
                 'code' => 'kode tenaga kerja sudah digunakan!',
                 'name' => 'nama wajib diisi',
-                'role' => 'role wajib diisi',
+                'type' => 'jenis wajib diisi',
                 'kantor' => 'kantor wajib diisi',
             ],
         );
@@ -81,14 +83,16 @@ class PegawaiController extends Controller
             Pegawai::create([
                 'code' => str_pad($lastPegawai, 5, '0', STR_PAD_LEFT),
                 'name' => $request->name,
-                'role' => $request->role,
+                'type' => $request->type,
                 'kantor_id' => $request->kantor,
+                'no_telp' => $request->no_telp,
+                'email' => $request->email,
             ]);
 
             return redirect()->route('pegawai.index')->with('success', $request->name . ' telah di tambahkan.');
         } catch (\Throwable $th) {
             DB::rollBack();
-            return redirect()->route('pegawai.index')->with('fails', $request->name . ' gagal di tambahkan.');
+            return redirect()->back()->with('error', $request->name . ' gagal di tambahkan.')->withInput($request->all());
         } finally {
             DB::commit();
         }
@@ -133,12 +137,12 @@ class PegawaiController extends Controller
             $request->all(),
             [
                 'name' => 'required',
-                'role' => 'required',
+                'type' => 'required',
                 'kantor' => 'required',
             ],
             [
                 'name' => 'nama wajib diisi',
-                'role' => 'role wajib diisi',
+                'type' => 'jenis wajib diisi',
                 'kantor' => 'kantor wajib diisi',
             ],
         );
@@ -155,14 +159,16 @@ class PegawaiController extends Controller
 
             $pegawai->update([
                 'name' => $request->name,
-                'role' => $request->role,
+                'type' => $request->type,
                 'kantor_id' => $request->kantor,
+                'no_telp' => $request->no_telp,
+                'email' => $request->email,
             ]);
 
             return redirect()->route('pegawai.index')->with('success', $pegawai->name . ' telah di update.');
         } catch (\Throwable $th) {
             DB::rollBack();
-            return redirect()->route('pegawai.index')->with('fails', $pegawai->name . ' gagal di update.');
+            return redirect()->back()->with('error', $pegawai->name . ' gagal di update.')->withInput($request->all());
         } finally {
             DB::commit();
         }
