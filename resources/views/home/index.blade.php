@@ -156,19 +156,12 @@
         <div class="row my-2">
             <div class="col-md-12">
                 <div class="container  mb-5 komentar-saran">
-
                     <div class="row  d-flex justify-content-center">
-
                         <div class="col-md-8">
-
                             <div class="headings d-flex justify-content-between align-items-center mb-3">
                                 <h5>Komentar & Saran (<span id="jumlah-komentar">{{ count($saranMasukans) }}</span>)</h5>
-
-
                             </div>
-
                             <div class="card p-3 mb-2">
-
                                 <form action="{{ route('ajax.saran-masukan') }}" class="form" id="saran-form"
                                     method="POST">
                                     @csrf
@@ -186,10 +179,8 @@
                                         <button type="submit" class="btn btn-primary">Kirim</button>
                                     </div>
                                 </form>
-
                             </div>
-
-                            <div id="saran-list" style="max-height: 1024px;overflow-y: auto;">
+                            <div id="saran-list" style="max-height: 200px;overflow-x: auto;">
                                 @foreach ($saranMasukans as $saranMasukan)
                                     <div class="card p-3 mt-2">
                                         <div class="d-flex justify-content-between align-items-center">
@@ -205,15 +196,8 @@
                                     </div>
                                 @endforeach
                             </div>
-
-
-
-
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -487,6 +471,8 @@
                             <tr>
                                 <td>${i+1}</td>
                                 <td>${pegawai.name}</td>
+                                <td>${pegawai.nip ?? '-'}</td>
+                                <td>${pegawai.nik ?? '-'}</td>
                                 <td>${pegawai.type}</td>
                             </tr>
                         `);
