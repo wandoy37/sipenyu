@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('code')->unique();
             $table->string('name');
-            $table->enum('role', ['penyuluh pns', 'thl-tbpp pppk','thl-tbpp apbn', 'penyuluh swadaya', 'penyuluh swasta']);
+            $table->enum('role', ['penyuluh pns', 'thl-tbpp pppk','thl-tbpp apbn', 'penyuluh swadaya', 'penyuluh swasta','petugas popt','petugas pbt']);
             $table->unsignedBigInteger('kantor_id');
             $table->timestamps();
 

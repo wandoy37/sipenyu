@@ -39,8 +39,10 @@
                             <tr>
                                 <th class="text-center">Kode Pegawai</th>
                                 <th>Nama Pegawai</th>
+                                <th>NIP / NIK</th>
                                 <th>Jenis</th>
                                 <th>WKPP</th>
+                                <th>No Telp / Email</th>
                                 <th>Kab/Kota</th>
                                 <th>Kecamatan</th>
                                 <th class="text-center">Aksi</th>
@@ -51,8 +53,10 @@
                                 <tr>
                                     <td class="text-center">{{ $pagawai->code }}</td>
                                     <td>{{ $pagawai->name }}</td>
+                                    <td>{{ $pagawai->nip ?? "-" }}<br>{{ $pagawai->nik ?? "-" }}</td>
                                     <td>{{ $pagawai->type }}</td>
                                     <td>{{ $pagawai->kantor->name }}</td>
+                                    <td>{{ $pagawai->no_telp ?? "-" }}<br>{{ $pagawai->email ?? "-" }}</td>
                                     <td>{{ $pagawai->kantor->kabkota->name }}</td>
                                     <td>{{ implode(",",$pagawai->kantor->kecamatans->pluck('name')->toArray()) }}</td>
                                     <td width="15%" class="text-center">

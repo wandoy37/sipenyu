@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\KabKota;
+use App\Models\SaranMasukan;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -10,6 +11,7 @@ class HomeController extends Controller
     public function index()
     {
         $kabkotas = KabKota::latest()->get();
-        return view('home.index', compact('kabkotas'));
+        $saranMasukans = SaranMasukan::latest()->get();
+        return view('home.index', compact('kabkotas','saranMasukans'));
     }
 }

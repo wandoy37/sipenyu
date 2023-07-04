@@ -8,6 +8,7 @@ use App\Http\Controllers\KabKotaController;
 use App\Http\Controllers\KantorController;
 use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\SaranMasukanController;
 use App\Models\KabKota;
 use App\Models\Kantor;
 use App\Models\Kecamatan;
@@ -61,6 +62,125 @@ function convertToDecimalDegrees($coordinate, $minus = 1)
 Route::get('/polygon', function () {
     $indonesia = URL('https://raw.githubusercontent.com/superpikar/indonesia-geojson/master/indonesia-province.json');
     return response()->json($indonesia);
+});
+
+Route::get('lengkapi-penyuluh', function () {
+    $typeUrl = [
+        "pns"=>"https://app2.pertanian.go.id/simluh2014/viewreport/viewLuhPnsKabAktif.php?pr=64&satm=",
+        "swadaya"=>"https://app2.pertanian.go.id/simluh2014/viewreport/viewLuhSwadaya.php?pr=64&satm=",
+        "apbd"=>"https://app2.pertanian.go.id/simluh2014/viewreport/viewLuhThlApbd.php?pr=64&satm=",
+        "apbn"=>"https://app2.pertanian.go.id/simluh2014/viewreport/viewLuhThlApbn.php?pr=64&satm=",
+    ];
+    $kabkotas = KabKota::with('kecamatans')->get();
+    $result = [];
+    foreach ($kabkotas as $key => $kabkota) {
+        DB::beginTransaction();
+
+        try {
+            // Set the URL of the website we want to scrape.
+            $url = (@$typeUrl[request()->type]??'https://app2.pertanian.go.id/simluh2014/viewreport/viewLuhPnsKabAktif.php?pr=64&satm=') . $kabkota->code;
+           
+
+            $httpClient = new \GuzzleHttp\Client();
+
+
+            $cookieJar = CookieJar::fromArray([
+                'PHPSESSID' => env('PHPSESSID')
+            ], 'app2.pertanian.go.id');
+            $response = $httpClient->request('GET', $url, ['cookies' => $cookieJar]);
+            $htmlString = (string) $response->getBody();
+            // Send a GET request to the website and set the cookie.
+            // $ch = curl_init($url);
+            // curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+            // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            // $response = curl_exec($ch);
+            // curl_close($ch);
+            // dd($response);
+            // remove \r\n
+            $htmlString = str_replace(array("\r", "\n"), '', $htmlString);
+            $dom = new DOMDocument();
+            libxml_use_internal_errors(true);
+            $dom->loadHTML($htmlString);
+            $xpath = new DOMXPath($dom);
+            //find table with class display
+            $rows = $xpath->query("//table[@id='datatables']//tr");
+           
+            foreach ($rows as $row) {
+                $data = [
+                    'name'=>null,
+                    'nik'=>null,
+                    'nip'=>null,
+                    'no_telp'=>null
+
+                ];
+                $cols = $row->getElementsByTagName('td');
+                if($cols->length > 0){
+                    $nama = null;
+                    $nip = null;
+                    $nik = null;
+                    if ($cols[0]->nodeValue != "No") {
+                        if($cols->length == 9){
+                            $ex = explode("<br></br>", $cols[1]->C14N());
+                            if(count($ex)>0){
+                                $nama = trim(strip_tags($ex[0]));
+                            }
+                            if(count($ex)>1){
+                                $nip = trim(strip_tags($ex[1]));
+                            }
+                        } else if($cols->length == 12) {
+                            $ex = explode("<br></br>", $cols[2]->C14N());
+                            
+                            if(count($ex)>0){
+                                $nama = trim(strip_tags($ex[0]));
+                            }
+                            $ex1 = explode("<br></br>", $cols[3]->C14N());
+                            if(count($ex1)>0){
+                                $nik = trim(strip_tags($ex1[0]));
+                            }
+                        } else {
+                            dd($cols[0]->nodeValue);
+                        }
+                        $ex3 = explode("<br></br>", $cols[$cols->length-1]->C14N());
+                        $no_telp = null;
+                        if(count($ex3)>0){
+                            $no_telp = trim(strip_tags($ex3[0]));
+                        }
+                        $data['name'] = $nama;
+                        $data['nip'] = $nip;
+                        $data['nik'] = $nik;
+                        $data['no_telp'] = $no_telp;
+                        $data['kabkota'] = $kabkota->name;
+                       
+    
+                        if($data['name']!=null){
+                            $penyuluh = Pegawai::where('name', $data['name'])->first();
+                            $updateColumn = [
+                                "nip"=>$data['nip'],
+                                "nik"=>$data['nik'],
+                            ];
+                            if($data['no_telp'] != null && $data['no_telp'] != ""){
+                                $updateColumn['no_telp'] = $data['no_telp'];
+                            }
+                            if($penyuluh){
+                                $penyuluh->update($updateColumn);
+                            }
+                            $result[] = $data;
+                        }
+                    }
+                }
+                
+            }
+
+            DB::commit();
+        } catch (\Throwable $th) {
+            //throw $th;
+            DB::rollBack();
+            dd($th);
+        }
+
+    }
+
+    return $result;
 });
 
 Route::get('scrape-kantor', function () {
@@ -379,4 +499,5 @@ Route::group(['prefix' => 'ajax'], function () {
     Route::get('kecamatan/{kode_kab_kota}', [AjaxController::class, 'kecamatanByKabKota'])->name('ajax.feature-kabkota');
     // Route::get('kantor/{kode_kab_kota}', [AjaxController::class,'kantor'])->name('ajax.feature-kabkota');
     Route::get('kantor/{kode_kab_kota}/{kode_kecamatan}', [AjaxController::class, 'kantorByKecamatan'])->name('ajax.feature-kabkota');
+    Route::post('saran-masukan',[SaranMasukanController::class,'store'])->name('ajax.saran-masukan');
 });

@@ -22,6 +22,8 @@ class PegawaisTableSeeder extends Seeder
             0 => 
             array (
                 'id' => 1,
+                'nik' => NULL,
+                'nip' => '198109142017061002',
                 'code' => '00001',
                 'name' => 'Hairudin SP',
                 'no_telp' => '08125499351',
@@ -29,23 +31,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 1,
                 'created_at' => '2023-06-26 14:12:34',
-                'updated_at' => '2023-06-26 14:12:34',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             1 => 
             array (
                 'id' => 2,
+                'nik' => NULL,
+                'nip' => '197507272006041027',
                 'code' => '00002',
                 'name' => 'Jadi',
-                'no_telp' => '081346356400',
+                'no_telp' => '0813 4635 6400',
                 'email' => '',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 1,
                 'created_at' => '2023-06-26 14:12:34',
-                'updated_at' => '2023-06-26 14:12:34',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             2 => 
             array (
                 'id' => 3,
+                'nik' => NULL,
+                'nip' => '198304122017061002',
                 'code' => '00003',
                 'name' => 'Rifai',
                 'no_telp' => '085346976864',
@@ -53,11 +59,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 1,
                 'created_at' => '2023-06-26 14:12:34',
-                'updated_at' => '2023-06-26 14:12:34',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             3 => 
             array (
                 'id' => 4,
+                'nik' => NULL,
+                'nip' => '197109132006041008',
                 'code' => '00004',
                 'name' => 'Sukarman SP',
                 'no_telp' => '',
@@ -65,11 +73,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 1,
                 'created_at' => '2023-06-26 14:12:34',
-                'updated_at' => '2023-06-26 14:12:34',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             4 => 
             array (
                 'id' => 5,
+                'nik' => NULL,
+                'nip' => '197911242009011001',
                 'code' => '00005',
                 'name' => 'Sukarmin SP',
                 'no_telp' => '',
@@ -77,11 +87,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 1,
                 'created_at' => '2023-06-26 14:12:34',
-                'updated_at' => '2023-06-26 14:12:34',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             5 => 
             array (
                 'id' => 6,
+                'nik' => '1808042507950002',
+                'nip' => NULL,
                 'code' => '00006',
                 'name' => 'Nurrachman',
                 'no_telp' => '082269222208',
@@ -89,11 +101,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 1,
                 'created_at' => '2023-06-26 14:12:34',
-                'updated_at' => '2023-06-26 14:12:34',
+                'updated_at' => '2023-07-04 07:15:22',
             ),
             6 => 
             array (
                 'id' => 7,
+                'nik' => '6401010705700002',
+                'nip' => NULL,
                 'code' => '00007',
                 'name' => 'Dakun Setiawan',
                 'no_telp' => '081257604094',
@@ -101,11 +115,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 1,
                 'created_at' => '2023-06-26 14:12:34',
-                'updated_at' => '2023-06-26 14:12:34',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             7 => 
             array (
                 'id' => 8,
+                'nik' => '123456789',
+                'nip' => NULL,
                 'code' => '00008',
                 'name' => 'Samsulianto',
                 'no_telp' => '',
@@ -113,11 +129,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 1,
                 'created_at' => '2023-06-26 14:12:34',
-                'updated_at' => '2023-06-26 14:12:34',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             8 => 
             array (
                 'id' => 9,
+                'nik' => NULL,
+                'nip' => '198010292007011004',
                 'code' => '00009',
                 'name' => 'Abd. Rahman',
                 'no_telp' => '082259053653',
@@ -125,11 +143,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             9 => 
             array (
                 'id' => 10,
+                'nik' => NULL,
+                'nip' => '198302012007011002',
                 'code' => '00010',
                 'name' => 'Edi Harianto SP.',
                 'no_telp' => '',
@@ -137,11 +157,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             10 => 
             array (
                 'id' => 11,
+                'nik' => NULL,
+                'nip' => '197812052010011008',
                 'code' => '00011',
                 'name' => 'Fahrizal Noor S.ST',
                 'no_telp' => '',
@@ -149,11 +171,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             11 => 
             array (
                 'id' => 12,
+                'nik' => NULL,
+                'nip' => '198402092017061001',
                 'code' => '00012',
                 'name' => 'Nur Syaifudin',
                 'no_telp' => '082150532969',
@@ -161,11 +185,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             12 => 
             array (
                 'id' => 13,
+                'nik' => NULL,
+                'nip' => '196703272006041008',
                 'code' => '00013',
                 'name' => 'Riduansyah',
                 'no_telp' => '',
@@ -173,11 +199,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             13 => 
             array (
                 'id' => 14,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00014',
                 'name' => 'Darman Kusumah SP.',
                 'no_telp' => '081346296055',
@@ -190,6 +218,8 @@ class PegawaisTableSeeder extends Seeder
             14 => 
             array (
                 'id' => 15,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00015',
                 'name' => 'Agus Fitriatiningsih',
                 'no_telp' => '081253715718',
@@ -202,6 +232,8 @@ class PegawaisTableSeeder extends Seeder
             15 => 
             array (
                 'id' => 16,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00016',
                 'name' => 'Hairul Zain',
                 'no_telp' => '08125591138',
@@ -214,6 +246,8 @@ class PegawaisTableSeeder extends Seeder
             16 => 
             array (
                 'id' => 17,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00017',
                 'name' => 'M. Hafiz Hilmi',
                 'no_telp' => '081350553556',
@@ -226,6 +260,8 @@ class PegawaisTableSeeder extends Seeder
             17 => 
             array (
                 'id' => 18,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00018',
                 'name' => 'Muhammad Yuda',
                 'no_telp' => '085388239441',
@@ -238,6 +274,8 @@ class PegawaisTableSeeder extends Seeder
             18 => 
             array (
                 'id' => 19,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00019',
                 'name' => 'Subhan Zainuri',
                 'no_telp' => '08115491899',
@@ -250,18 +288,22 @@ class PegawaisTableSeeder extends Seeder
             19 => 
             array (
                 'id' => 20,
+                'nik' => '6403090708720001',
+                'nip' => NULL,
                 'code' => '00020',
                 'name' => 'Darmaji',
-                'no_telp' => '08525112232',
+                'no_telp' => '85246926655',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             20 => 
             array (
                 'id' => 21,
+                'nik' => '6401090106770001',
+                'nip' => NULL,
                 'code' => '00021',
                 'name' => 'Dasiman',
                 'no_telp' => '08125594886',
@@ -269,11 +311,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             21 => 
             array (
                 'id' => 22,
+                'nik' => '3305003030388004',
+                'nip' => NULL,
                 'code' => '00022',
                 'name' => 'Hasan Basri',
                 'no_telp' => '082357508884',
@@ -281,11 +325,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             22 => 
             array (
                 'id' => 23,
+                'nik' => '6401091706670002',
+                'nip' => NULL,
                 'code' => '00023',
                 'name' => 'Indrat Budiyono',
                 'no_telp' => '081283767645',
@@ -293,11 +339,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             23 => 
             array (
                 'id' => 24,
+                'nik' => '6401090507770000',
+                'nip' => NULL,
                 'code' => '00024',
                 'name' => 'Jumarang',
                 'no_telp' => '081347805404',
@@ -305,11 +353,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             24 => 
             array (
                 'id' => 25,
+                'nik' => '6401092707690002',
+                'nip' => NULL,
                 'code' => '00025',
                 'name' => 'M. Shawani Kamasan',
                 'no_telp' => '085750816792',
@@ -317,11 +367,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             25 => 
             array (
                 'id' => 26,
+                'nik' => '6401092103870002',
+                'nip' => NULL,
                 'code' => '00026',
                 'name' => 'Wahyudi',
                 'no_telp' => '085754393936',
@@ -329,11 +381,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 2,
                 'created_at' => '2023-06-26 14:12:36',
-                'updated_at' => '2023-06-26 14:12:36',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             26 => 
             array (
                 'id' => 27,
+                'nik' => NULL,
+                'nip' => '198806042017061001',
                 'code' => '00027',
                 'name' => 'Ahmad Effendi',
                 'no_telp' => '085391246868',
@@ -341,11 +395,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             27 => 
             array (
                 'id' => 28,
+                'nik' => NULL,
+                'nip' => '197106092005021003',
                 'code' => '00028',
                 'name' => 'Budi Santoso SP.',
                 'no_telp' => '',
@@ -353,11 +409,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             28 => 
             array (
                 'id' => 29,
+                'nik' => NULL,
+                'nip' => '198303012010012026',
                 'code' => '00029',
                 'name' => 'Indah Retno Wulan S.Pt.',
                 'no_telp' => '081251144884',
@@ -365,11 +423,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             29 => 
             array (
                 'id' => 30,
+                'nik' => NULL,
+                'nip' => '197805112007011010',
                 'code' => '00030',
                 'name' => 'Maulana Muhammad Iqbal SP',
                 'no_telp' => '085246398823',
@@ -377,23 +437,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             30 => 
             array (
                 'id' => 31,
+                'nik' => NULL,
+                'nip' => '196812312005021001',
                 'code' => '00031',
                 'name' => 'Mujo Widodo',
-                'no_telp' => '081350222726',
+                'no_telp' => '0813 5022 2726',
                 'email' => '',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             31 => 
             array (
                 'id' => 32,
+                'nik' => NULL,
+                'nip' => '198709062017062001',
                 'code' => '00032',
                 'name' => 'Nor Hasanah',
                 'no_telp' => '085247363466',
@@ -401,11 +465,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             32 => 
             array (
                 'id' => 33,
+                'nik' => NULL,
+                'nip' => '197203252009032001',
                 'code' => '00033',
                 'name' => 'Saprina Ismita SP.',
                 'no_telp' => '085348410454',
@@ -413,11 +479,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             33 => 
             array (
                 'id' => 34,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00034',
                 'name' => 'Asroful Anam SP.',
                 'no_telp' => '081253420006',
@@ -430,6 +498,8 @@ class PegawaisTableSeeder extends Seeder
             34 => 
             array (
                 'id' => 35,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00035',
                 'name' => 'Eva Masnawati Purba Drh.',
                 'no_telp' => '081396601984',
@@ -442,6 +512,8 @@ class PegawaisTableSeeder extends Seeder
             35 => 
             array (
                 'id' => 36,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00036',
                 'name' => 'Kun Rawan Sari SP., MP.',
                 'no_telp' => '082156617777',
@@ -454,18 +526,22 @@ class PegawaisTableSeeder extends Seeder
             36 => 
             array (
                 'id' => 37,
+                'nik' => '6409030808750008',
+                'nip' => NULL,
                 'code' => '00037',
                 'name' => 'Agus Salim',
-                'no_telp' => '081347905157',
+                'no_telp' => '085845122458',
                 'email' => 'agusalim221217@gmail.com',
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             37 => 
             array (
                 'id' => 38,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00038',
                 'name' => 'Melan Supriadiansyah',
                 'no_telp' => '081350969804',
@@ -478,6 +554,8 @@ class PegawaisTableSeeder extends Seeder
             38 => 
             array (
                 'id' => 39,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00039',
                 'name' => 'Muhammad Haidir',
                 'no_telp' => '085246602076',
@@ -490,6 +568,8 @@ class PegawaisTableSeeder extends Seeder
             39 => 
             array (
                 'id' => 40,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00040',
                 'name' => 'Nurul Wahyuni',
                 'no_telp' => '08125814494',
@@ -502,6 +582,8 @@ class PegawaisTableSeeder extends Seeder
             40 => 
             array (
                 'id' => 41,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00041',
                 'name' => 'Rahmawati',
                 'no_telp' => '081350839999',
@@ -514,6 +596,8 @@ class PegawaisTableSeeder extends Seeder
             41 => 
             array (
                 'id' => 42,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00042',
                 'name' => 'St Maisarah',
                 'no_telp' => '08125592812',
@@ -526,6 +610,8 @@ class PegawaisTableSeeder extends Seeder
             42 => 
             array (
                 'id' => 43,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00043',
                 'name' => 'Tri Candra Priyantoro',
                 'no_telp' => '082251951079',
@@ -538,6 +624,8 @@ class PegawaisTableSeeder extends Seeder
             43 => 
             array (
                 'id' => 44,
+                'nik' => '6401031101660001',
+                'nip' => NULL,
                 'code' => '00044',
                 'name' => 'Bustani',
                 'no_telp' => '085751208385',
@@ -545,11 +633,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             44 => 
             array (
                 'id' => 45,
+                'nik' => '6401031801680001',
+                'nip' => NULL,
                 'code' => '00045',
                 'name' => 'Nardi',
                 'no_telp' => '085393477210',
@@ -557,11 +647,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             45 => 
             array (
                 'id' => 46,
+                'nik' => '6401035508620001',
+                'nip' => NULL,
                 'code' => '00046',
                 'name' => 'Nurhayati',
                 'no_telp' => '081347657105',
@@ -569,11 +661,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             46 => 
             array (
                 'id' => 47,
+                'nik' => '6401030508790003',
+                'nip' => NULL,
                 'code' => '00047',
                 'name' => 'Samin',
                 'no_telp' => '085247328093',
@@ -581,23 +675,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             47 => 
             array (
                 'id' => 48,
+                'nik' => NULL,
+                'nip' => '196608151999031007',
                 'code' => '00048',
                 'name' => 'Suyono',
-                'no_telp' => '081255237800',
+                'no_telp' => '081295374880',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 3,
                 'created_at' => '2023-06-26 14:12:38',
-                'updated_at' => '2023-06-26 14:12:38',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             48 => 
             array (
                 'id' => 49,
+                'nik' => NULL,
+                'nip' => '196311171987091003',
                 'code' => '00049',
                 'name' => 'Abdul Rasyid SP',
                 'no_telp' => '082252003376',
@@ -605,11 +703,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             49 => 
             array (
                 'id' => 50,
+                'nik' => NULL,
+                'nip' => '197110011994032005',
                 'code' => '00050',
                 'name' => 'Heni Sakti Rahayu S.ST',
                 'no_telp' => '',
@@ -617,23 +717,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             50 => 
             array (
                 'id' => 51,
+                'nik' => NULL,
+                'nip' => '196802221999032003',
                 'code' => '00051',
                 'name' => 'Ida Royanik SP.',
-                'no_telp' => '085250503490',
+                'no_telp' => '0852 5050 3490',
                 'email' => 'Idaroyanik@yahoo.com',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             51 => 
             array (
                 'id' => 52,
+                'nik' => NULL,
+                'nip' => '197704122007011011',
                 'code' => '00052',
                 'name' => 'Idham Al Aswad SP',
                 'no_telp' => '08125875201',
@@ -641,11 +745,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             52 => 
             array (
                 'id' => 53,
+                'nik' => NULL,
+                'nip' => '197501202010011012',
                 'code' => '00053',
                 'name' => 'Jakaria S.ST',
                 'no_telp' => '085247656789',
@@ -653,11 +759,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             53 => 
             array (
                 'id' => 54,
+                'nik' => NULL,
+                'nip' => '199707262020122029',
                 'code' => '00054',
                 'name' => 'Nur Widyaningsih',
                 'no_telp' => '082151510310',
@@ -665,11 +773,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             54 => 
             array (
                 'id' => 55,
+                'nik' => NULL,
+                'nip' => '199004162020121010',
                 'code' => '00055',
                 'name' => 'Roman Hidayat SP',
                 'no_telp' => '085247430616',
@@ -677,35 +787,41 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             55 => 
             array (
                 'id' => 56,
+                'nik' => NULL,
+                'nip' => '198210012010011023',
                 'code' => '00056',
                 'name' => 'Rudy Hartono SP.',
-                'no_telp' => '081254482303',
+                'no_telp' => '0812 5448 2303',
                 'email' => 'rudy.hr82@yahoo.co.id',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             56 => 
             array (
                 'id' => 57,
+                'nik' => NULL,
+                'nip' => '196603251994032012',
                 'code' => '00057',
                 'name' => 'Hj. Ruhayati SP.',
-                'no_telp' => '08125896095',
+                'no_telp' => '0812 5896 095',
                 'email' => 'ruhayati03@yahoo.com',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             57 => 
             array (
                 'id' => 58,
+                'nik' => NULL,
+                'nip' => '196307021987092001',
                 'code' => '00058',
                 'name' => 'Sardjuwati SP.',
                 'no_telp' => '081253585093',
@@ -713,11 +829,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             58 => 
             array (
                 'id' => 59,
+                'nik' => NULL,
+                'nip' => '197510312009032003',
                 'code' => '00059',
                 'name' => 'Widiastutie SP.',
                 'no_telp' => '082357181994',
@@ -725,11 +843,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             59 => 
             array (
                 'id' => 60,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00060',
                 'name' => 'Hilda Riva SP.',
                 'no_telp' => '081347834806',
@@ -742,6 +862,8 @@ class PegawaisTableSeeder extends Seeder
             60 => 
             array (
                 'id' => 61,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00061',
                 'name' => 'Endang Prihatin',
                 'no_telp' => '081347023686',
@@ -754,6 +876,8 @@ class PegawaisTableSeeder extends Seeder
             61 => 
             array (
                 'id' => 62,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00062',
                 'name' => 'Hariyani',
                 'no_telp' => '08115373338',
@@ -766,6 +890,8 @@ class PegawaisTableSeeder extends Seeder
             62 => 
             array (
                 'id' => 63,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00063',
                 'name' => 'Setiawan',
                 'no_telp' => '081335092124',
@@ -778,6 +904,8 @@ class PegawaisTableSeeder extends Seeder
             63 => 
             array (
                 'id' => 64,
+                'nik' => '6401040812780001',
+                'nip' => NULL,
                 'code' => '00064',
                 'name' => 'Trianto',
                 'no_telp' => '081258133156',
@@ -785,11 +913,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:15:22',
             ),
             64 => 
             array (
                 'id' => 65,
+                'nik' => '6401040110680002',
+                'nip' => NULL,
                 'code' => '00065',
                 'name' => 'Amiruddin',
                 'no_telp' => '',
@@ -797,11 +927,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             65 => 
             array (
                 'id' => 66,
+                'nik' => '6401041510750002',
+                'nip' => NULL,
                 'code' => '00066',
                 'name' => 'Basrani',
                 'no_telp' => '085386665900',
@@ -809,11 +941,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             66 => 
             array (
                 'id' => 67,
+                'nik' => '6401042404700004',
+                'nip' => NULL,
                 'code' => '00067',
                 'name' => 'Bastiah',
                 'no_telp' => '081350484446',
@@ -821,11 +955,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             67 => 
             array (
                 'id' => 68,
+                'nik' => '6401041410780001',
+                'nip' => NULL,
                 'code' => '00068',
                 'name' => 'Jumransyah',
                 'no_telp' => '',
@@ -833,11 +969,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             68 => 
             array (
                 'id' => 69,
+                'nik' => '64000000000000',
+                'nip' => NULL,
                 'code' => '00069',
                 'name' => 'Kinang',
                 'no_telp' => '',
@@ -845,11 +983,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             69 => 
             array (
                 'id' => 70,
+                'nik' => '640100000000',
+                'nip' => NULL,
                 'code' => '00070',
                 'name' => 'Muhamad Ilias',
                 'no_telp' => '',
@@ -857,11 +997,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             70 => 
             array (
                 'id' => 71,
+                'nik' => '6401042703870001',
+                'nip' => NULL,
                 'code' => '00071',
                 'name' => 'Muhammad Supardi',
                 'no_telp' => '081545311287',
@@ -869,11 +1011,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             71 => 
             array (
                 'id' => 72,
+                'nik' => '6401041008630003',
+                'nip' => NULL,
                 'code' => '00072',
                 'name' => 'Mukminan',
                 'no_telp' => '0812534097',
@@ -881,11 +1025,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             72 => 
             array (
                 'id' => 73,
+                'nik' => '6401040204800001',
+                'nip' => NULL,
                 'code' => '00073',
                 'name' => 'POPON SUPANJI',
                 'no_telp' => '08',
@@ -893,11 +1039,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             73 => 
             array (
                 'id' => 74,
+                'nik' => '',
+                'nip' => NULL,
                 'code' => '00074',
                 'name' => 'Rachmat',
                 'no_telp' => '',
@@ -905,11 +1053,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 4,
                 'created_at' => '2023-06-26 14:12:39',
-                'updated_at' => '2023-06-26 14:12:39',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             74 => 
             array (
                 'id' => 75,
+                'nik' => NULL,
+                'nip' => '198005132010011016',
                 'code' => '00075',
                 'name' => 'Aril SP.',
                 'no_telp' => '081250138686',
@@ -917,35 +1067,41 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             75 => 
             array (
                 'id' => 76,
+                'nik' => NULL,
+                'nip' => '196606072000031008',
                 'code' => '00076',
                 'name' => 'Mikan',
-                'no_telp' => '08125300150',
+                'no_telp' => '0812 5300 150',
                 'email' => 'mikanpenyuluh2025@gmail.com',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             76 => 
             array (
                 'id' => 77,
+                'nik' => NULL,
+                'nip' => '197306202006041012',
                 'code' => '00077',
                 'name' => 'Muhamad Taher',
-                'no_telp' => '085247165069',
+                'no_telp' => '0852 4716 5069',
                 'email' => 'MUHAMADTAHIR2015@gmail.com',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             77 => 
             array (
                 'id' => 78,
+                'nik' => NULL,
+                'nip' => '198209092007012003',
                 'code' => '00078',
                 'name' => 'Mujiyanti Rahayu SP',
                 'no_telp' => '08115444074',
@@ -953,11 +1109,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             78 => 
             array (
                 'id' => 79,
+                'nik' => NULL,
+                'nip' => '197912232008041001',
                 'code' => '00079',
                 'name' => 'Tonidi S.ST',
                 'no_telp' => '085250333955',
@@ -965,11 +1123,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             79 => 
             array (
                 'id' => 80,
+                'nik' => NULL,
+                'nip' => '197701302006042014',
                 'code' => '00080',
                 'name' => 'Wasni S.P',
                 'no_telp' => '08115930177',
@@ -977,11 +1137,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             80 => 
             array (
                 'id' => 81,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00081',
                 'name' => 'Jimmi Suhatta SP.',
                 'no_telp' => '085845745006',
@@ -994,6 +1156,8 @@ class PegawaisTableSeeder extends Seeder
             81 => 
             array (
                 'id' => 82,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00082',
                 'name' => 'Achmad Hasanul',
                 'no_telp' => '08125561798',
@@ -1006,6 +1170,8 @@ class PegawaisTableSeeder extends Seeder
             82 => 
             array (
                 'id' => 83,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00083',
                 'name' => 'Firman Kridayanto',
                 'no_telp' => '081257641911',
@@ -1018,6 +1184,8 @@ class PegawaisTableSeeder extends Seeder
             83 => 
             array (
                 'id' => 84,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00084',
                 'name' => 'Triani Ridha Hayati',
                 'no_telp' => '081254508900',
@@ -1030,6 +1198,8 @@ class PegawaisTableSeeder extends Seeder
             84 => 
             array (
                 'id' => 85,
+                'nik' => '123456789',
+                'nip' => NULL,
                 'code' => '00085',
                 'name' => 'Amirul Hasan',
                 'no_telp' => '',
@@ -1037,11 +1207,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             85 => 
             array (
                 'id' => 86,
+                'nik' => '6401042306790002',
+                'nip' => NULL,
                 'code' => '00086',
                 'name' => 'Anfal Najib',
                 'no_telp' => '085247785019',
@@ -1049,11 +1221,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             86 => 
             array (
                 'id' => 87,
+                'nik' => '6401030604710001',
+                'nip' => NULL,
                 'code' => '00087',
                 'name' => 'Catur Haryanto',
                 'no_telp' => '085247733472',
@@ -1061,11 +1235,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             87 => 
             array (
                 'id' => 88,
+                'nik' => '6401052812820002',
+                'nip' => NULL,
                 'code' => '00088',
                 'name' => 'Dowik Suprawiana, S.Pt',
                 'no_telp' => '081254152190',
@@ -1073,11 +1249,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             88 => 
             array (
                 'id' => 89,
+                'nik' => '6401040102820004',
+                'nip' => NULL,
                 'code' => '00089',
                 'name' => 'Marlansyah',
                 'no_telp' => '085386421111',
@@ -1085,11 +1263,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             89 => 
             array (
                 'id' => 90,
+                'nik' => '6401051605770001',
+                'nip' => NULL,
                 'code' => '00090',
                 'name' => 'Muhammad Ramli',
                 'no_telp' => '081250490131',
@@ -1097,11 +1277,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             90 => 
             array (
                 'id' => 91,
+                'nik' => '',
+                'nip' => NULL,
                 'code' => '00091',
                 'name' => 'Nasrudin',
                 'no_telp' => '',
@@ -1109,11 +1291,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             91 => 
             array (
                 'id' => 92,
+                'nik' => '',
+                'nip' => NULL,
                 'code' => '00092',
                 'name' => 'Pacinong',
                 'no_telp' => '',
@@ -1121,11 +1305,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             92 => 
             array (
                 'id' => 93,
+                'nik' => '6401042505610001',
+                'nip' => NULL,
                 'code' => '00093',
                 'name' => 'Rochmat',
                 'no_telp' => '085247108930',
@@ -1133,11 +1319,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             93 => 
             array (
                 'id' => 94,
+                'nik' => '6401051010570002',
+                'nip' => NULL,
                 'code' => '00094',
                 'name' => 'Saliman',
                 'no_telp' => '082152900299',
@@ -1145,11 +1333,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             94 => 
             array (
                 'id' => 95,
+                'nik' => '642181011540001',
+                'nip' => NULL,
                 'code' => '00095',
                 'name' => 'Slamet',
                 'no_telp' => '081345555425',
@@ -1157,11 +1347,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             95 => 
             array (
                 'id' => 96,
+                'nik' => '6401051204620001',
+                'nip' => NULL,
                 'code' => '00096',
                 'name' => 'Suhadi',
                 'no_telp' => '081346470451',
@@ -1169,11 +1361,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 5,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             96 => 
             array (
                 'id' => 97,
+                'nik' => NULL,
+                'nip' => '198206242017061003',
                 'code' => '00097',
                 'name' => 'Agus Arianto',
                 'no_telp' => '081294821268',
@@ -1181,11 +1375,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             97 => 
             array (
                 'id' => 98,
+                'nik' => NULL,
+                'nip' => '198509122017061001',
                 'code' => '00098',
                 'name' => 'Ali Yusran',
                 'no_telp' => '085247456089',
@@ -1193,23 +1389,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             98 => 
             array (
                 'id' => 99,
+                'nik' => NULL,
+                'nip' => '196912081998032005',
                 'code' => '00099',
                 'name' => 'Arita Sari SP',
-                'no_telp' => '081346272631',
+                'no_telp' => '0813 4627 2631',
                 'email' => '',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             99 => 
             array (
                 'id' => 100,
+                'nik' => NULL,
+                'nip' => '198601012017062001',
                 'code' => '00100',
                 'name' => 'Dahriah',
                 'no_telp' => '085250043834',
@@ -1217,11 +1417,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             100 => 
             array (
                 'id' => 101,
+                'nik' => NULL,
+                'nip' => '198109182017061002',
                 'code' => '00101',
                 'name' => 'Daiman',
                 'no_telp' => '085246249781',
@@ -1229,11 +1431,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             101 => 
             array (
                 'id' => 102,
+                'nik' => NULL,
+                'nip' => '198505122017061001',
                 'code' => '00102',
                 'name' => 'Jumri',
                 'no_telp' => '085251519087',
@@ -1241,11 +1445,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             102 => 
             array (
                 'id' => 103,
+                'nik' => NULL,
+                'nip' => '198204242017061002',
                 'code' => '00103',
                 'name' => 'Mujiono',
                 'no_telp' => '082350675190',
@@ -1253,23 +1459,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             103 => 
             array (
                 'id' => 104,
+                'nik' => NULL,
+                'nip' => '197105182006041012',
                 'code' => '00104',
                 'name' => 'Sudi Sumarsono',
-                'no_telp' => '081346442470',
+                'no_telp' => '0813 4644 2470',
                 'email' => '',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             104 => 
             array (
                 'id' => 105,
+                'nik' => NULL,
+                'nip' => '198301232017061001',
                 'code' => '00105',
                 'name' => 'Winanto',
                 'no_telp' => '081251167435',
@@ -1277,11 +1487,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             105 => 
             array (
                 'id' => 106,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00106',
                 'name' => 'Hendri Suwanda',
                 'no_telp' => '082251427369',
@@ -1294,6 +1506,8 @@ class PegawaisTableSeeder extends Seeder
             106 => 
             array (
                 'id' => 107,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00107',
                 'name' => 'Karhadi SP.',
                 'no_telp' => '081346469870',
@@ -1306,6 +1520,8 @@ class PegawaisTableSeeder extends Seeder
             107 => 
             array (
                 'id' => 108,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00108',
                 'name' => 'Lalu Muhammad Darwin',
                 'no_telp' => '082340499730',
@@ -1318,6 +1534,8 @@ class PegawaisTableSeeder extends Seeder
             108 => 
             array (
                 'id' => 109,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00109',
                 'name' => 'M. Rizali Hanzah',
                 'no_telp' => '081351251604',
@@ -1330,6 +1548,8 @@ class PegawaisTableSeeder extends Seeder
             109 => 
             array (
                 'id' => 110,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00110',
                 'name' => 'Sholikhin SP.',
                 'no_telp' => '081346330480',
@@ -1342,18 +1562,22 @@ class PegawaisTableSeeder extends Seeder
             110 => 
             array (
                 'id' => 111,
+                'nik' => NULL,
+                'nip' => '198904112017061001',
                 'code' => '00111',
                 'name' => 'Mulyadi',
-                'no_telp' => '082244468153',
+                'no_telp' => '081253781178',
                 'email' => 'mulyadimulyadi.ppl@gmail.com',
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             111 => 
             array (
                 'id' => 112,
+                'nik' => '6401062912850002',
+                'nip' => NULL,
                 'code' => '00112',
                 'name' => 'AHMAD JUNAIDI',
                 'no_telp' => '',
@@ -1361,11 +1585,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             112 => 
             array (
                 'id' => 113,
+                'nik' => '6401062905970001',
+                'nip' => NULL,
                 'code' => '00113',
                 'name' => 'Alimran',
                 'no_telp' => '082250314420',
@@ -1373,11 +1599,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             113 => 
             array (
                 'id' => 114,
+                'nik' => '6401062512730001',
+                'nip' => NULL,
                 'code' => '00114',
                 'name' => 'ATIAN',
                 'no_telp' => '',
@@ -1385,11 +1613,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             114 => 
             array (
                 'id' => 115,
+                'nik' => '',
+                'nip' => NULL,
                 'code' => '00115',
                 'name' => 'Damianus Patut',
                 'no_telp' => '',
@@ -1397,11 +1627,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             115 => 
             array (
                 'id' => 116,
+                'nik' => '6401062212890001',
+                'nip' => NULL,
                 'code' => '00116',
                 'name' => 'GUNTUR SUTRIWANGGONO',
                 'no_telp' => '085705706180',
@@ -1409,11 +1641,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             116 => 
             array (
                 'id' => 117,
+                'nik' => '6401062104620002',
+                'nip' => NULL,
                 'code' => '00117',
                 'name' => 'Hariyanto',
                 'no_telp' => '082353088260',
@@ -1421,11 +1655,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             117 => 
             array (
                 'id' => 118,
+                'nik' => '6401060901770003',
+                'nip' => NULL,
                 'code' => '00118',
                 'name' => 'Heppy Iswandi',
                 'no_telp' => '081251820379',
@@ -1433,11 +1669,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             118 => 
             array (
                 'id' => 119,
+                'nik' => '6401062712580001',
+                'nip' => NULL,
                 'code' => '00119',
                 'name' => 'Hilarius Pape',
                 'no_telp' => '081347567928',
@@ -1445,11 +1683,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             119 => 
             array (
                 'id' => 120,
+                'nik' => '6401062512810001',
+                'nip' => NULL,
                 'code' => '00120',
                 'name' => 'Liansyah',
                 'no_telp' => '085248431235',
@@ -1457,11 +1697,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             120 => 
             array (
                 'id' => 121,
+                'nik' => '6401060503710001',
+                'nip' => NULL,
                 'code' => '00121',
                 'name' => 'Ngadiono',
                 'no_telp' => '085246031823',
@@ -1469,11 +1711,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             121 => 
             array (
                 'id' => 122,
+                'nik' => '6401061610580002',
+                'nip' => NULL,
                 'code' => '00122',
                 'name' => 'Saude',
                 'no_telp' => '081347371065',
@@ -1481,11 +1725,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             122 => 
             array (
                 'id' => 123,
+                'nik' => '6401062507840001',
+                'nip' => NULL,
                 'code' => '00123',
                 'name' => 'Sholikin',
                 'no_telp' => '081256312779',
@@ -1493,11 +1739,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             123 => 
             array (
                 'id' => 124,
+                'nik' => '6401061401810003',
+                'nip' => NULL,
                 'code' => '00124',
                 'name' => 'Sriyanto',
                 'no_telp' => '085246283916',
@@ -1505,11 +1753,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             124 => 
             array (
                 'id' => 125,
+                'nik' => '6401060209670001',
+                'nip' => NULL,
                 'code' => '00125',
                 'name' => 'Sumanto',
                 'no_telp' => '081351886063',
@@ -1517,11 +1767,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             125 => 
             array (
                 'id' => 126,
+                'nik' => '6401060208710001',
+                'nip' => NULL,
                 'code' => '00126',
                 'name' => 'Sumardi',
                 'no_telp' => '085348816053',
@@ -1529,23 +1781,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             126 => 
             array (
                 'id' => 127,
+                'nik' => '6402080109560001',
+                'nip' => NULL,
                 'code' => '00127',
                 'name' => 'Sunardi',
-                'no_telp' => '085878442025',
+                'no_telp' => '085250068585479',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             127 => 
             array (
                 'id' => 128,
+                'nik' => '6400000000000',
+                'nip' => NULL,
                 'code' => '00128',
                 'name' => 'Sutardi',
                 'no_telp' => '',
@@ -1553,11 +1809,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             128 => 
             array (
                 'id' => 129,
+                'nik' => '6401062611830001',
+                'nip' => NULL,
                 'code' => '00129',
                 'name' => 'Sutarto',
                 'no_telp' => '081347055515',
@@ -1565,11 +1823,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             129 => 
             array (
                 'id' => 130,
+                'nik' => '6401061911850001',
+                'nip' => NULL,
                 'code' => '00130',
                 'name' => 'Wiryo Dirgo',
                 'no_telp' => '085247590402',
@@ -1577,11 +1837,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             130 => 
             array (
                 'id' => 131,
+                'nik' => '123456789',
+                'nip' => NULL,
                 'code' => '00131',
                 'name' => 'Yanto',
                 'no_telp' => '085247030582',
@@ -1589,11 +1851,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             131 => 
             array (
                 'id' => 132,
+                'nik' => '6401062001670001',
+                'nip' => NULL,
                 'code' => '00132',
                 'name' => 'Yohanes',
                 'no_telp' => '085245060492',
@@ -1601,11 +1865,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             132 => 
             array (
                 'id' => 133,
+                'nik' => '6401061310780002',
+                'nip' => NULL,
                 'code' => '00133',
                 'name' => 'Yono',
                 'no_telp' => '085247541198',
@@ -1613,11 +1879,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 6,
                 'created_at' => '2023-06-26 14:12:40',
-                'updated_at' => '2023-06-26 14:12:40',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             133 => 
             array (
                 'id' => 134,
+                'nik' => NULL,
+                'nip' => '198403172017061002',
                 'code' => '00134',
                 'name' => 'Ahmad Taufiq',
                 'no_telp' => '081254200919',
@@ -1625,11 +1893,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             134 => 
             array (
                 'id' => 135,
+                'nik' => NULL,
+                'nip' => '197504142006042027',
                 'code' => '00135',
                 'name' => 'Mahrita',
                 'no_telp' => '',
@@ -1637,11 +1907,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             135 => 
             array (
                 'id' => 136,
+                'nik' => NULL,
+                'nip' => '198302122017061001',
                 'code' => '00136',
                 'name' => 'Mamik Yunanto',
                 'no_telp' => '085246993238',
@@ -1649,11 +1921,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             136 => 
             array (
                 'id' => 137,
+                'nik' => NULL,
+                'nip' => '198304022009031011',
                 'code' => '00137',
                 'name' => 'Marwan Fauzi SP.',
                 'no_telp' => '-',
@@ -1661,11 +1935,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             137 => 
             array (
                 'id' => 138,
+                'nik' => NULL,
+                'nip' => '198208182017061004',
                 'code' => '00138',
                 'name' => 'Muhamad Ahya Rosidi',
                 'no_telp' => '081255726867',
@@ -1673,11 +1949,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             138 => 
             array (
                 'id' => 139,
+                'nik' => NULL,
+                'nip' => '198704292020121003',
                 'code' => '00139',
                 'name' => 'Robby Sanjaya A.Md',
                 'no_telp' => '085220299169',
@@ -1685,35 +1963,41 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             139 => 
             array (
                 'id' => 140,
+                'nik' => NULL,
+                'nip' => '196903132006041006',
                 'code' => '00140',
                 'name' => 'Sipil Setiawan',
-                'no_telp' => '085246350455',
+                'no_telp' => '0852 4635 0455',
                 'email' => '',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             140 => 
             array (
                 'id' => 141,
+                'nik' => NULL,
+                'nip' => '197306062007011027',
                 'code' => '00141',
                 'name' => 'Suliadi',
-                'no_telp' => '085246472662',
+                'no_telp' => '0852 4647 2662',
                 'email' => '',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             141 => 
             array (
                 'id' => 142,
+                'nik' => NULL,
+                'nip' => '198411032017061001',
                 'code' => '00142',
                 'name' => 'Triono SP',
                 'no_telp' => '085247180385',
@@ -1721,11 +2005,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:14:58',
             ),
             142 => 
             array (
                 'id' => 143,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00143',
                 'name' => 'Pajriansyah SP.',
                 'no_telp' => '',
@@ -1738,6 +2024,8 @@ class PegawaisTableSeeder extends Seeder
             143 => 
             array (
                 'id' => 144,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00144',
                 'name' => 'Suari Pahmi A.Md',
                 'no_telp' => '082154113384',
@@ -1750,6 +2038,8 @@ class PegawaisTableSeeder extends Seeder
             144 => 
             array (
                 'id' => 145,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00145',
                 'name' => 'Susiyono',
                 'no_telp' => '085245454217',
@@ -1762,6 +2052,8 @@ class PegawaisTableSeeder extends Seeder
             145 => 
             array (
                 'id' => 146,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00146',
                 'name' => 'Zainal Arifin SP.',
                 'no_telp' => '081334888367',
@@ -1774,18 +2066,22 @@ class PegawaisTableSeeder extends Seeder
             146 => 
             array (
                 'id' => 147,
+                'nik' => '6401080203940003',
+                'nip' => NULL,
                 'code' => '00147',
                 'name' => 'Abdul Muis, SP',
-                'no_telp' => '081347284471',
+                'no_telp' => '0813 4728 4471',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             147 => 
             array (
                 'id' => 148,
+                'nik' => '6401084510730002',
+                'nip' => NULL,
                 'code' => '00148',
                 'name' => 'Armawati',
                 'no_telp' => '081253582345',
@@ -1793,71 +2089,83 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             148 => 
             array (
                 'id' => 149,
+                'nik' => '6401081802760001',
+                'nip' => NULL,
                 'code' => '00149',
                 'name' => 'Edi Santoso',
-                'no_telp' => '082159424343',
+                'no_telp' => '0821 5942 4343',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             149 => 
             array (
                 'id' => 150,
+                'nik' => '6401081510880001',
+                'nip' => NULL,
                 'code' => '00150',
                 'name' => 'Firdaus',
-                'no_telp' => '082158201546',
+                'no_telp' => '0821 5820 1546',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             150 => 
             array (
                 'id' => 151,
+                'nik' => '6401080508800004',
+                'nip' => NULL,
                 'code' => '00151',
                 'name' => 'Kemiliansyah',
-                'no_telp' => '081254477939',
+                'no_telp' => '0812 5447 7939',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             151 => 
             array (
                 'id' => 152,
+                'nik' => '6401082212760001',
+                'nip' => NULL,
                 'code' => '00152',
                 'name' => 'Lukman',
-                'no_telp' => '081347022352',
+                'no_telp' => '0813 4702 2352',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             152 => 
             array (
                 'id' => 153,
+                'nik' => '6401080204610001',
+                'nip' => NULL,
                 'code' => '00153',
                 'name' => 'M. Amir',
-                'no_telp' => '085246203379',
+                'no_telp' => '0852 4620 3379',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             153 => 
             array (
                 'id' => 154,
+                'nik' => '6401080712700002',
+                'nip' => NULL,
                 'code' => '00154',
                 'name' => 'Ngatno, SP',
                 'no_telp' => '081347109664',
@@ -1865,35 +2173,41 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             154 => 
             array (
                 'id' => 155,
+                'nik' => '6401080502770001',
+                'nip' => NULL,
                 'code' => '00155',
                 'name' => 'Nuryadi',
-                'no_telp' => '081347730529',
+                'no_telp' => '0813 4773 0529',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             155 => 
             array (
                 'id' => 156,
+                'nik' => '6401081501780002',
+                'nip' => NULL,
                 'code' => '00156',
                 'name' => 'Nyamin',
-                'no_telp' => '082334421830',
+                'no_telp' => '0823 3442 1830',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             156 => 
             array (
                 'id' => 157,
+                'nik' => '6401082703800004',
+                'nip' => NULL,
                 'code' => '00157',
                 'name' => 'Rusli',
                 'no_telp' => '',
@@ -1901,35 +2215,41 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             157 => 
             array (
                 'id' => 158,
+                'nik' => '6401082201830001',
+                'nip' => NULL,
                 'code' => '00158',
                 'name' => 'Sabrin',
-                'no_telp' => '082158721210',
+                'no_telp' => '0821 5872 1210',
                 'email' => 'abdulrangga7@gmail.com',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             158 => 
             array (
                 'id' => 159,
+                'nik' => '6401081407660001',
+                'nip' => NULL,
                 'code' => '00159',
                 'name' => 'Sulemansyah',
-                'no_telp' => '081253010633',
+                'no_telp' => '0812 5301 0633',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             159 => 
             array (
                 'id' => 160,
+                'nik' => '6401080206760002',
+                'nip' => NULL,
                 'code' => '00160',
                 'name' => 'Suparno',
                 'no_telp' => '082158105554',
@@ -1937,59 +2257,69 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             160 => 
             array (
                 'id' => 161,
+                'nik' => '6472050101610004',
+                'nip' => NULL,
                 'code' => '00161',
                 'name' => 'Sutrisno',
-                'no_telp' => '081347292105',
+                'no_telp' => '081347146080',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             161 => 
             array (
                 'id' => 162,
+                'nik' => '000000000000',
+                'nip' => NULL,
                 'code' => '00162',
                 'name' => 'Suwandi',
-                'no_telp' => '081253511000',
+                'no_telp' => '081350654407',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             162 => 
             array (
                 'id' => 163,
+                'nik' => '6401081005690002',
+                'nip' => NULL,
                 'code' => '00163',
                 'name' => 'Tugino',
-                'no_telp' => '082327851506',
+                'no_telp' => '0823 2785 1506',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             163 => 
             array (
                 'id' => 164,
+                'nik' => '6401081201730001',
+                'nip' => NULL,
                 'code' => '00164',
                 'name' => 'Zainal',
-                'no_telp' => '085348492289',
+                'no_telp' => '0853 4849 2289',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 7,
                 'created_at' => '2023-06-26 14:12:41',
-                'updated_at' => '2023-06-26 14:12:41',
+                'updated_at' => '2023-07-04 07:12:34',
             ),
             164 => 
             array (
                 'id' => 165,
+                'nik' => NULL,
+                'nip' => '198705082014032008',
                 'code' => '00165',
                 'name' => 'Maria Lita S.Pt',
                 'no_telp' => '085250153642',
@@ -1997,11 +2327,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 8,
                 'created_at' => '2023-06-26 14:12:42',
-                'updated_at' => '2023-06-26 14:12:42',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             165 => 
             array (
                 'id' => 166,
+                'nik' => NULL,
+                'nip' => '197903012008011012',
                 'code' => '00166',
                 'name' => 'Maryanto SP',
                 'no_telp' => '081350432959',
@@ -2009,11 +2341,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 8,
                 'created_at' => '2023-06-26 14:12:42',
-                'updated_at' => '2023-06-26 14:12:42',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             166 => 
             array (
                 'id' => 167,
+                'nik' => NULL,
+                'nip' => '198312112008011005',
                 'code' => '00167',
                 'name' => 'Masran SP',
                 'no_telp' => '082353953289',
@@ -2021,11 +2355,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 8,
                 'created_at' => '2023-06-26 14:12:42',
-                'updated_at' => '2023-06-26 14:12:42',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             167 => 
             array (
                 'id' => 168,
+                'nik' => NULL,
+                'nip' => '197909232008011012',
                 'code' => '00168',
                 'name' => 'Muhammad Faisal SP',
                 'no_telp' => '081350888460',
@@ -2033,11 +2369,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 8,
                 'created_at' => '2023-06-26 14:12:42',
-                'updated_at' => '2023-06-26 14:12:42',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             168 => 
             array (
                 'id' => 169,
+                'nik' => NULL,
+                'nip' => '196709132007011014',
                 'code' => '00169',
                 'name' => 'Ramdhani SP',
                 'no_telp' => '081346321314',
@@ -2045,11 +2383,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 8,
                 'created_at' => '2023-06-26 14:12:42',
-                'updated_at' => '2023-06-26 14:12:42',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             169 => 
             array (
                 'id' => 170,
+                'nik' => NULL,
+                'nip' => '198403292008011004',
                 'code' => '00170',
                 'name' => 'Sarwani SP',
                 'no_telp' => '081254621318',
@@ -2057,11 +2397,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 8,
                 'created_at' => '2023-06-26 14:12:42',
-                'updated_at' => '2023-06-26 14:12:42',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             170 => 
             array (
                 'id' => 171,
+                'nik' => NULL,
+                'nip' => '196705012007011028',
                 'code' => '00171',
                 'name' => 'Soimin SP',
                 'no_telp' => '081347369761',
@@ -2069,11 +2411,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 8,
                 'created_at' => '2023-06-26 14:12:42',
-                'updated_at' => '2023-06-26 14:12:42',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             171 => 
             array (
                 'id' => 172,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00172',
                 'name' => 'Fatnurrahman Fitrah Anuar',
                 'no_telp' => '085350000802',
@@ -2086,6 +2430,8 @@ class PegawaisTableSeeder extends Seeder
             172 => 
             array (
                 'id' => 173,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00173',
                 'name' => 'Fauzan',
                 'no_telp' => '085233591110',
@@ -2098,6 +2444,8 @@ class PegawaisTableSeeder extends Seeder
             173 => 
             array (
                 'id' => 174,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00174',
                 'name' => 'Hendra',
                 'no_telp' => '081347273203',
@@ -2110,6 +2458,8 @@ class PegawaisTableSeeder extends Seeder
             174 => 
             array (
                 'id' => 175,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00175',
                 'name' => 'Hendra',
                 'no_telp' => '081351510692',
@@ -2122,6 +2472,8 @@ class PegawaisTableSeeder extends Seeder
             175 => 
             array (
                 'id' => 176,
+                'nik' => '6407122507990001',
+                'nip' => NULL,
                 'code' => '00176',
                 'name' => 'Siswanto',
                 'no_telp' => '082264382187',
@@ -2129,11 +2481,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 8,
                 'created_at' => '2023-06-26 14:12:42',
-                'updated_at' => '2023-06-26 14:12:42',
+                'updated_at' => '2023-07-04 07:15:23',
             ),
             176 => 
             array (
                 'id' => 177,
+                'nik' => NULL,
+                'nip' => '198405022009021002',
                 'code' => '00177',
                 'name' => 'Casto Mauludin SP., MP.',
                 'no_telp' => '081246382038',
@@ -2141,11 +2495,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 9,
                 'created_at' => '2023-06-26 14:12:43',
-                'updated_at' => '2023-06-26 14:12:43',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             177 => 
             array (
                 'id' => 178,
+                'nik' => NULL,
+                'nip' => '197512242015051001',
                 'code' => '00178',
                 'name' => 'Jentua Situmorang',
                 'no_telp' => '081346674798',
@@ -2153,11 +2509,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 9,
                 'created_at' => '2023-06-26 14:12:43',
-                'updated_at' => '2023-06-26 14:12:43',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             178 => 
             array (
                 'id' => 179,
+                'nik' => NULL,
+                'nip' => '198109042015052001',
                 'code' => '00179',
                 'name' => 'Regina Salma',
                 'no_telp' => '081347254169',
@@ -2165,11 +2523,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 9,
                 'created_at' => '2023-06-26 14:12:43',
-                'updated_at' => '2023-06-26 14:12:43',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             179 => 
             array (
                 'id' => 180,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00180',
                 'name' => 'ALPIAN TANJUNG',
                 'no_telp' => '085250220702',
@@ -2182,6 +2542,8 @@ class PegawaisTableSeeder extends Seeder
             180 => 
             array (
                 'id' => 181,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00181',
                 'name' => 'EMIRTA UHAN',
                 'no_telp' => '082158145750',
@@ -2194,6 +2556,8 @@ class PegawaisTableSeeder extends Seeder
             181 => 
             array (
                 'id' => 182,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00182',
                 'name' => 'Heriyadi',
                 'no_telp' => '081347261552',
@@ -2206,6 +2570,8 @@ class PegawaisTableSeeder extends Seeder
             182 => 
             array (
                 'id' => 183,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00183',
                 'name' => 'PRANCISKUS JO',
                 'no_telp' => '085349495164',
@@ -2218,6 +2584,8 @@ class PegawaisTableSeeder extends Seeder
             183 => 
             array (
                 'id' => 184,
+                'nik' => NULL,
+                'nip' => '198109082014031002',
                 'code' => '00184',
                 'name' => 'Abd. Azis S.Pi',
                 'no_telp' => '085250402332',
@@ -2225,11 +2593,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 10,
                 'created_at' => '2023-06-26 14:12:43',
-                'updated_at' => '2023-06-26 14:12:43',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             184 => 
             array (
                 'id' => 185,
+                'nik' => NULL,
+                'nip' => '198111042008011014',
                 'code' => '00185',
                 'name' => 'Andi Arhap',
                 'no_telp' => '081258020205',
@@ -2237,11 +2607,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 10,
                 'created_at' => '2023-06-26 14:12:43',
-                'updated_at' => '2023-06-26 14:12:43',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             185 => 
             array (
                 'id' => 186,
+                'nik' => NULL,
+                'nip' => '198001192005021003',
                 'code' => '00186',
                 'name' => 'Eliansyah A.Md',
                 'no_telp' => '081347576800',
@@ -2249,11 +2621,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 10,
                 'created_at' => '2023-06-26 14:12:43',
-                'updated_at' => '2023-06-26 14:12:43',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             186 => 
             array (
                 'id' => 187,
+                'nik' => '6402021507760004',
+                'nip' => NULL,
                 'code' => '00187',
                 'name' => 'Muhammad Sazli Rais',
                 'no_telp' => '082281129390',
@@ -2261,11 +2635,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbn',
                 'kantor_id' => 10,
                 'created_at' => '2023-06-26 14:12:43',
-                'updated_at' => '2023-06-26 14:12:43',
+                'updated_at' => '2023-07-04 07:15:12',
             ),
             187 => 
             array (
                 'id' => 188,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00188',
                 'name' => 'HEPI',
                 'no_telp' => '082235788292',
@@ -2278,6 +2654,8 @@ class PegawaisTableSeeder extends Seeder
             188 => 
             array (
                 'id' => 189,
+                'nik' => NULL,
+                'nip' => '198511292017061001',
                 'code' => '00189',
                 'name' => 'Aryanto',
                 'no_telp' => '085228621222',
@@ -2285,11 +2663,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 11,
                 'created_at' => '2023-06-26 14:12:44',
-                'updated_at' => '2023-06-26 14:12:44',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             189 => 
             array (
                 'id' => 190,
+                'nik' => NULL,
+                'nip' => '198604042017061002',
                 'code' => '00190',
                 'name' => 'Heriyono',
                 'no_telp' => '081350393844',
@@ -2297,11 +2677,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 11,
                 'created_at' => '2023-06-26 14:12:44',
-                'updated_at' => '2023-06-26 14:12:44',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             190 => 
             array (
                 'id' => 191,
+                'nik' => NULL,
+                'nip' => '198003232007011008',
                 'code' => '00191',
                 'name' => 'Herry Harianto SP',
                 'no_telp' => '081347193738',
@@ -2309,11 +2691,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 11,
                 'created_at' => '2023-06-26 14:12:44',
-                'updated_at' => '2023-06-26 14:12:44',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             191 => 
             array (
                 'id' => 192,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00192',
                 'name' => 'Adriani',
                 'no_telp' => '085250710123',
@@ -2326,6 +2710,8 @@ class PegawaisTableSeeder extends Seeder
             192 => 
             array (
                 'id' => 193,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00193',
                 'name' => 'Denri Safitriyadi',
                 'no_telp' => '082144169414',
@@ -2338,6 +2724,8 @@ class PegawaisTableSeeder extends Seeder
             193 => 
             array (
                 'id' => 194,
+                'nik' => '6407101008890001',
+                'nip' => NULL,
                 'code' => '00194',
                 'name' => 'M. Ansyari',
                 'no_telp' => '085246761930',
@@ -2345,11 +2733,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 11,
                 'created_at' => '2023-06-26 14:12:44',
-                'updated_at' => '2023-06-26 14:12:44',
+                'updated_at' => '2023-07-04 07:15:23',
             ),
             194 => 
             array (
                 'id' => 195,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00195',
                 'name' => 'Nur hidayat',
                 'no_telp' => '08115577321',
@@ -2362,6 +2752,8 @@ class PegawaisTableSeeder extends Seeder
             195 => 
             array (
                 'id' => 196,
+                'nik' => '6407070403880001',
+                'nip' => NULL,
                 'code' => '00196',
                 'name' => 'Sam ani',
                 'no_telp' => '085247001908',
@@ -2369,11 +2761,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 11,
                 'created_at' => '2023-06-26 14:12:44',
-                'updated_at' => '2023-06-26 14:12:44',
+                'updated_at' => '2023-07-04 07:15:23',
             ),
             196 => 
             array (
                 'id' => 197,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00197',
                 'name' => 'Sartono',
                 'no_telp' => '082154819700',
@@ -2386,6 +2780,8 @@ class PegawaisTableSeeder extends Seeder
             197 => 
             array (
                 'id' => 198,
+                'nik' => NULL,
+                'nip' => '198305052008011015',
                 'code' => '00198',
                 'name' => 'Marhannudin SP',
                 'no_telp' => '085250133882',
@@ -2393,11 +2789,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 12,
                 'created_at' => '2023-06-26 14:12:44',
-                'updated_at' => '2023-06-26 14:12:44',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             198 => 
             array (
                 'id' => 199,
+                'nik' => NULL,
+                'nip' => '198404022008011008',
                 'code' => '00199',
                 'name' => 'Maulana',
                 'no_telp' => '081350085091',
@@ -2405,11 +2803,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 12,
                 'created_at' => '2023-06-26 14:12:44',
-                'updated_at' => '2023-06-26 14:12:44',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             199 => 
             array (
                 'id' => 200,
+                'nik' => NULL,
+                'nip' => '198105242008011008',
                 'code' => '00200',
                 'name' => 'Pardani S.St',
                 'no_telp' => '081219342150',
@@ -2417,11 +2817,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 12,
                 'created_at' => '2023-06-26 14:12:44',
-                'updated_at' => '2023-06-26 14:12:44',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             200 => 
             array (
                 'id' => 201,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00201',
                 'name' => 'Desep Husaha Harianto',
                 'no_telp' => '081215548881',
@@ -2434,6 +2836,8 @@ class PegawaisTableSeeder extends Seeder
             201 => 
             array (
                 'id' => 202,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00202',
                 'name' => 'Lenky',
                 'no_telp' => '081351604563',
@@ -2446,6 +2850,8 @@ class PegawaisTableSeeder extends Seeder
             202 => 
             array (
                 'id' => 203,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00203',
                 'name' => 'Lepi',
                 'no_telp' => '082159810303',
@@ -2458,6 +2864,8 @@ class PegawaisTableSeeder extends Seeder
             203 => 
             array (
                 'id' => 204,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00204',
                 'name' => 'Nasriansyah',
                 'no_telp' => '085250724958',
@@ -2470,6 +2878,8 @@ class PegawaisTableSeeder extends Seeder
             204 => 
             array (
                 'id' => 205,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00205',
                 'name' => 'Sullasikin',
                 'no_telp' => '082154543644',
@@ -2482,6 +2892,8 @@ class PegawaisTableSeeder extends Seeder
             205 => 
             array (
                 'id' => 206,
+                'nik' => NULL,
+                'nip' => '197405142007011018',
                 'code' => '00206',
                 'name' => 'Kanis',
                 'no_telp' => '081253223180/0857536',
@@ -2489,11 +2901,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 13,
                 'created_at' => '2023-06-26 14:12:45',
-                'updated_at' => '2023-06-26 14:12:45',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             206 => 
             array (
                 'id' => 207,
+                'nik' => NULL,
+                'nip' => '197908202008012030',
                 'code' => '00207',
                 'name' => 'Norsehan',
                 'no_telp' => '085245370929',
@@ -2501,11 +2915,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 13,
                 'created_at' => '2023-06-26 14:12:45',
-                'updated_at' => '2023-06-26 14:12:45',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             207 => 
             array (
                 'id' => 208,
+                'nik' => NULL,
+                'nip' => '197610132007011010',
                 'code' => '00208',
                 'name' => 'Suntoro',
                 'no_telp' => '085346708765',
@@ -2513,11 +2929,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 13,
                 'created_at' => '2023-06-26 14:12:45',
-                'updated_at' => '2023-06-26 14:12:45',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             208 => 
             array (
                 'id' => 209,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00209',
                 'name' => 'agustalin Jalaq',
                 'no_telp' => '081349511588',
@@ -2530,6 +2948,8 @@ class PegawaisTableSeeder extends Seeder
             209 => 
             array (
                 'id' => 210,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00210',
                 'name' => 'Bastianus Zaevie',
                 'no_telp' => '082254868182',
@@ -2542,6 +2962,8 @@ class PegawaisTableSeeder extends Seeder
             210 => 
             array (
                 'id' => 211,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00211',
                 'name' => 'M.Yamin',
                 'no_telp' => '082158202499',
@@ -2554,6 +2976,8 @@ class PegawaisTableSeeder extends Seeder
             211 => 
             array (
                 'id' => 212,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00212',
                 'name' => 'Masliyani',
                 'no_telp' => '082353331623',
@@ -2566,6 +2990,8 @@ class PegawaisTableSeeder extends Seeder
             212 => 
             array (
                 'id' => 213,
+                'nik' => NULL,
+                'nip' => '197109102015052001',
                 'code' => '00213',
                 'name' => 'Jumiyati Muyo SP',
                 'no_telp' => '081254179671',
@@ -2573,11 +2999,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 14,
                 'created_at' => '2023-06-26 14:12:45',
-                'updated_at' => '2023-06-26 14:12:45',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             213 => 
             array (
                 'id' => 214,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00214',
                 'name' => 'Maria Presentasia Uran',
                 'no_telp' => '081250806112',
@@ -2590,6 +3018,8 @@ class PegawaisTableSeeder extends Seeder
             214 => 
             array (
                 'id' => 215,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00215',
                 'name' => 'Tomi Sumadi',
                 'no_telp' => '082155420705',
@@ -2602,6 +3032,8 @@ class PegawaisTableSeeder extends Seeder
             215 => 
             array (
                 'id' => 216,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00216',
                 'name' => 'Hasiholang',
                 'no_telp' => '082153932563',
@@ -2614,6 +3046,8 @@ class PegawaisTableSeeder extends Seeder
             216 => 
             array (
                 'id' => 217,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00217',
                 'name' => 'RICO ASTADI ARITONANG',
                 'no_telp' => '08125513564',
@@ -2626,6 +3060,8 @@ class PegawaisTableSeeder extends Seeder
             217 => 
             array (
                 'id' => 218,
+                'nik' => NULL,
+                'nip' => '198301142010012010',
                 'code' => '00218',
                 'name' => 'Sulistiyowati S.Pt',
                 'no_telp' => '085350228242',
@@ -2633,11 +3069,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 15,
                 'created_at' => '2023-06-26 14:12:45',
-                'updated_at' => '2023-06-26 14:12:45',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             218 => 
             array (
                 'id' => 219,
+                'nik' => NULL,
+                'nip' => '197011052008011016',
                 'code' => '00219',
                 'name' => 'Syahran',
                 'no_telp' => '081349673597',
@@ -2645,11 +3083,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 15,
                 'created_at' => '2023-06-26 14:12:45',
-                'updated_at' => '2023-06-26 14:12:45',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             219 => 
             array (
                 'id' => 220,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00220',
                 'name' => 'Andayani',
                 'no_telp' => '085250403620',
@@ -2662,6 +3102,8 @@ class PegawaisTableSeeder extends Seeder
             220 => 
             array (
                 'id' => 221,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00221',
                 'name' => 'Arip Budiman',
                 'no_telp' => '085388797799',
@@ -2674,6 +3116,8 @@ class PegawaisTableSeeder extends Seeder
             221 => 
             array (
                 'id' => 222,
+                'nik' => '6407070812950001',
+                'nip' => NULL,
                 'code' => '00222',
                 'name' => 'Diki Andrian',
                 'no_telp' => '085252542332',
@@ -2681,11 +3125,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 15,
                 'created_at' => '2023-06-26 14:12:45',
-                'updated_at' => '2023-06-26 14:12:45',
+                'updated_at' => '2023-07-04 07:15:23',
             ),
             222 => 
             array (
                 'id' => 223,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00223',
                 'name' => 'FERNANDUS KORESI YOSHI HARA',
                 'no_telp' => '082155375729',
@@ -2698,6 +3144,8 @@ class PegawaisTableSeeder extends Seeder
             223 => 
             array (
                 'id' => 224,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00224',
                 'name' => 'Lia Kristiwahyuni',
                 'no_telp' => '085348911425',
@@ -2710,6 +3158,8 @@ class PegawaisTableSeeder extends Seeder
             224 => 
             array (
                 'id' => 225,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00225',
                 'name' => 'Malsius Miden',
                 'no_telp' => '085247470717',
@@ -2722,6 +3172,8 @@ class PegawaisTableSeeder extends Seeder
             225 => 
             array (
                 'id' => 226,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00226',
                 'name' => 'Maria Maksima',
                 'no_telp' => '082254335428',
@@ -2734,6 +3186,8 @@ class PegawaisTableSeeder extends Seeder
             226 => 
             array (
                 'id' => 227,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00227',
                 'name' => 'Martha Bokko',
                 'no_telp' => '081242492071',
@@ -2746,6 +3200,8 @@ class PegawaisTableSeeder extends Seeder
             227 => 
             array (
                 'id' => 228,
+                'nik' => '6407154704920001',
+                'nip' => NULL,
                 'code' => '00228',
                 'name' => 'Maya selfia jainita',
                 'no_telp' => '82252550221',
@@ -2753,11 +3209,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 15,
                 'created_at' => '2023-06-26 14:12:45',
-                'updated_at' => '2023-06-26 14:12:45',
+                'updated_at' => '2023-07-04 07:15:23',
             ),
             228 => 
             array (
                 'id' => 229,
+                'nik' => '6407086608790001',
+                'nip' => NULL,
                 'code' => '00229',
                 'name' => 'Titin Nora',
                 'no_telp' => '082252136348',
@@ -2765,11 +3223,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 15,
                 'created_at' => '2023-06-26 14:12:45',
-                'updated_at' => '2023-06-26 14:12:45',
+                'updated_at' => '2023-07-04 07:15:23',
             ),
             229 => 
             array (
                 'id' => 230,
+                'nik' => NULL,
+                'nip' => '197603222007011009',
                 'code' => '00230',
                 'name' => 'Hariyanto SP',
                 'no_telp' => '082149166611',
@@ -2777,11 +3237,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 16,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             230 => 
             array (
                 'id' => 231,
+                'nik' => NULL,
+                'nip' => '198304022017061003',
                 'code' => '00231',
                 'name' => 'Sumadi',
                 'no_telp' => '085246714977',
@@ -2789,11 +3251,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 16,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             231 => 
             array (
                 'id' => 232,
+                'nik' => NULL,
+                'nip' => '198307312008011004',
                 'code' => '00232',
                 'name' => 'Wiwit Hariyanto',
                 'no_telp' => '081253334347',
@@ -2801,11 +3265,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 16,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             232 => 
             array (
                 'id' => 233,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00233',
                 'name' => 'Alexander Silgar',
                 'no_telp' => '081350970583',
@@ -2818,6 +3284,8 @@ class PegawaisTableSeeder extends Seeder
             233 => 
             array (
                 'id' => 234,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00234',
                 'name' => 'Erdiansyah',
                 'no_telp' => '081310487647',
@@ -2830,6 +3298,8 @@ class PegawaisTableSeeder extends Seeder
             234 => 
             array (
                 'id' => 235,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00235',
                 'name' => 'Melani Febriantini',
                 'no_telp' => '082213446766',
@@ -2842,6 +3312,8 @@ class PegawaisTableSeeder extends Seeder
             235 => 
             array (
                 'id' => 236,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00236',
                 'name' => 'Perianto Yoel Prasetia',
                 'no_telp' => '085393302100',
@@ -2854,6 +3326,8 @@ class PegawaisTableSeeder extends Seeder
             236 => 
             array (
                 'id' => 237,
+                'nik' => '6407164702970001',
+                'nip' => NULL,
                 'code' => '00237',
                 'name' => 'Priskila Ebi Yulianti',
                 'no_telp' => '082251570905',
@@ -2861,11 +3335,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 16,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:15:23',
             ),
             237 => 
             array (
                 'id' => 238,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00238',
                 'name' => 'Wahyu Sandus',
                 'no_telp' => '082254165755',
@@ -2878,6 +3354,8 @@ class PegawaisTableSeeder extends Seeder
             238 => 
             array (
                 'id' => 239,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00239',
                 'name' => 'Wike Setiani',
                 'no_telp' => '082252937036',
@@ -2890,6 +3368,8 @@ class PegawaisTableSeeder extends Seeder
             239 => 
             array (
                 'id' => 240,
+                'nik' => NULL,
+                'nip' => '198205222017061001',
                 'code' => '00240',
                 'name' => 'Ardiansyah A.Md',
                 'no_telp' => '085250711883',
@@ -2897,11 +3377,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 17,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             240 => 
             array (
                 'id' => 241,
+                'nik' => NULL,
+                'nip' => '198112212008011008',
                 'code' => '00241',
                 'name' => 'Hengki Manalu',
                 'no_telp' => '085246850977',
@@ -2909,11 +3391,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 17,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             241 => 
             array (
                 'id' => 242,
+                'nik' => NULL,
+                'nip' => '199602072022032016',
                 'code' => '00242',
                 'name' => 'KRISTYANTI BANAYA S.P',
                 'no_telp' => '082293277623',
@@ -2921,11 +3405,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 17,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             242 => 
             array (
                 'id' => 243,
+                'nik' => NULL,
+                'nip' => '198510252008012004',
                 'code' => '00243',
                 'name' => 'Maria Eka Prasetiya S SP',
                 'no_telp' => '082351868901',
@@ -2933,11 +3419,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 17,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             243 => 
             array (
                 'id' => 244,
+                'nik' => NULL,
+                'nip' => '197902122014031001',
                 'code' => '00244',
                 'name' => 'Paulus Heriponsius SP',
                 'no_telp' => '085246257049',
@@ -2945,11 +3433,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 17,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             244 => 
             array (
                 'id' => 245,
+                'nik' => NULL,
+                'nip' => '198201092010012006',
                 'code' => '00245',
                 'name' => 'Yudia SP',
                 'no_telp' => '081257590145',
@@ -2957,11 +3447,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 17,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             245 => 
             array (
                 'id' => 246,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00246',
                 'name' => 'Jukran Edy',
                 'no_telp' => '082350913625',
@@ -2974,6 +3466,8 @@ class PegawaisTableSeeder extends Seeder
             246 => 
             array (
                 'id' => 247,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00247',
                 'name' => 'Sri Wahyuni',
                 'no_telp' => '081347127412',
@@ -2986,6 +3480,8 @@ class PegawaisTableSeeder extends Seeder
             247 => 
             array (
                 'id' => 248,
+                'nik' => '6407071203790001',
+                'nip' => NULL,
                 'code' => '00248',
                 'name' => 'Tukiman',
                 'no_telp' => '082158448110',
@@ -2993,11 +3489,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbn',
                 'kantor_id' => 17,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:15:12',
             ),
             248 => 
             array (
                 'id' => 249,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00249',
                 'name' => 'doni suriyanto',
                 'no_telp' => '081253141815',
@@ -3010,6 +3508,8 @@ class PegawaisTableSeeder extends Seeder
             249 => 
             array (
                 'id' => 250,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00250',
                 'name' => 'Erna Fresia',
                 'no_telp' => '081215540631',
@@ -3022,6 +3522,8 @@ class PegawaisTableSeeder extends Seeder
             250 => 
             array (
                 'id' => 251,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00251',
                 'name' => 'Isnaini Dwi Saputra',
                 'no_telp' => '082251706699',
@@ -3034,6 +3536,8 @@ class PegawaisTableSeeder extends Seeder
             251 => 
             array (
                 'id' => 252,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00252',
                 'name' => 'Julianti',
                 'no_telp' => '082158065181',
@@ -3046,6 +3550,8 @@ class PegawaisTableSeeder extends Seeder
             252 => 
             array (
                 'id' => 253,
+                'nik' => '6407200702830001',
+                'nip' => NULL,
                 'code' => '00253',
                 'name' => 'Paulus Miki',
                 'no_telp' => '082251466649',
@@ -3053,11 +3559,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 17,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:15:23',
             ),
             253 => 
             array (
                 'id' => 254,
+                'nik' => '6407074307840003',
+                'nip' => NULL,
                 'code' => '00254',
                 'name' => 'Sabah',
                 'no_telp' => '082251309710',
@@ -3065,11 +3573,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 17,
                 'created_at' => '2023-06-26 14:12:46',
-                'updated_at' => '2023-06-26 14:12:46',
+                'updated_at' => '2023-07-04 07:15:23',
             ),
             254 => 
             array (
                 'id' => 255,
+                'nik' => NULL,
+                'nip' => '198512202008012007',
                 'code' => '00255',
                 'name' => 'Elisabet',
                 'no_telp' => '081346371868',
@@ -3077,11 +3587,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 18,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             255 => 
             array (
                 'id' => 256,
+                'nik' => NULL,
+                'nip' => '197801282001122001',
                 'code' => '00256',
                 'name' => 'Inalpi',
                 'no_telp' => '081350446789',
@@ -3089,11 +3601,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 18,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             256 => 
             array (
                 'id' => 257,
+                'nik' => NULL,
+                'nip' => '197206142001121003',
                 'code' => '00257',
                 'name' => 'Jemiran SP',
                 'no_telp' => '085246281080',
@@ -3101,11 +3615,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 18,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             257 => 
             array (
                 'id' => 258,
+                'nik' => NULL,
+                'nip' => '198512172010011005',
                 'code' => '00258',
                 'name' => 'Kusanto SP.MP',
                 'no_telp' => '082159810924',
@@ -3113,11 +3629,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 18,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             258 => 
             array (
                 'id' => 259,
+                'nik' => NULL,
+                'nip' => '198304152010011009',
                 'code' => '00259',
                 'name' => 'ROMELIS S.Pi',
                 'no_telp' => '081347504635',
@@ -3125,11 +3643,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 18,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             259 => 
             array (
                 'id' => 260,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00260',
                 'name' => 'Lusiana Ekasari',
                 'no_telp' => '081253999927',
@@ -3142,6 +3662,8 @@ class PegawaisTableSeeder extends Seeder
             260 => 
             array (
                 'id' => 261,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00261',
                 'name' => 'Fariz Maulana Nur Fadly',
                 'no_telp' => '081219449128',
@@ -3154,6 +3676,8 @@ class PegawaisTableSeeder extends Seeder
             261 => 
             array (
                 'id' => 262,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00262',
                 'name' => 'Hartatik',
                 'no_telp' => '82253342422',
@@ -3166,6 +3690,8 @@ class PegawaisTableSeeder extends Seeder
             262 => 
             array (
                 'id' => 263,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00263',
                 'name' => 'Sevensi Susanti',
                 'no_telp' => '082255275236',
@@ -3178,6 +3704,8 @@ class PegawaisTableSeeder extends Seeder
             263 => 
             array (
                 'id' => 264,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00264',
                 'name' => 'Theresa Saskia Long',
                 'no_telp' => '082158213290',
@@ -3190,6 +3718,8 @@ class PegawaisTableSeeder extends Seeder
             264 => 
             array (
                 'id' => 265,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00265',
                 'name' => 'Zainal Abidin',
                 'no_telp' => '085350507192',
@@ -3202,6 +3732,8 @@ class PegawaisTableSeeder extends Seeder
             265 => 
             array (
                 'id' => 266,
+                'nik' => NULL,
+                'nip' => '197412182007012007',
                 'code' => '00266',
                 'name' => 'Helilinawati',
                 'no_telp' => '085246151995',
@@ -3209,11 +3741,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 19,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             266 => 
             array (
                 'id' => 267,
+                'nik' => NULL,
+                'nip' => '198003122009022001',
                 'code' => '00267',
                 'name' => 'Maisarah S.Pi',
                 'no_telp' => '081253231954',
@@ -3221,11 +3755,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 19,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             267 => 
             array (
                 'id' => 268,
+                'nik' => NULL,
+                'nip' => '198111112010012025',
                 'code' => '00268',
                 'name' => 'Rahayu S.Pi',
                 'no_telp' => '08115306607',
@@ -3233,11 +3769,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 19,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             268 => 
             array (
                 'id' => 269,
+                'nik' => NULL,
+                'nip' => '197910032010012019',
                 'code' => '00269',
                 'name' => 'Sunari S.Pt',
                 'no_telp' => '081254545830',
@@ -3245,11 +3783,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 19,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             269 => 
             array (
                 'id' => 270,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00270',
                 'name' => 'Yenice Noherita Bias',
                 'no_telp' => '08113915504',
@@ -3262,6 +3802,8 @@ class PegawaisTableSeeder extends Seeder
             270 => 
             array (
                 'id' => 271,
+                'nik' => NULL,
+                'nip' => '197511302010012004',
                 'code' => '00271',
                 'name' => 'Fidely Labiran S.Pt',
                 'no_telp' => '081346527721',
@@ -3269,11 +3811,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 20,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             271 => 
             array (
                 'id' => 272,
+                'nik' => NULL,
+                'nip' => '198202062005022002',
                 'code' => '00272',
                 'name' => 'Hamidah Cahyandari A.Md',
                 'no_telp' => '085250520829',
@@ -3281,11 +3825,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 20,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             272 => 
             array (
                 'id' => 273,
+                'nik' => NULL,
+                'nip' => '197004112005021001',
                 'code' => '00273',
                 'name' => 'Rudy Apriyanto A. Md',
                 'no_telp' => '085249714497',
@@ -3293,11 +3839,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 20,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             273 => 
             array (
                 'id' => 274,
+                'nik' => NULL,
+                'nip' => '196604162007011029',
                 'code' => '00274',
                 'name' => 'Suratno SP',
                 'no_telp' => '081346281634',
@@ -3305,11 +3853,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 20,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             274 => 
             array (
                 'id' => 275,
+                'nik' => NULL,
+                'nip' => '198112232008012014',
                 'code' => '00275',
                 'name' => 'Tabita',
                 'no_telp' => '085250582916',
@@ -3317,11 +3867,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 20,
                 'created_at' => '2023-06-26 14:12:47',
-                'updated_at' => '2023-06-26 14:12:47',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             275 => 
             array (
                 'id' => 276,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00276',
                 'name' => 'Agus Selwina',
                 'no_telp' => '08125346500',
@@ -3334,6 +3886,8 @@ class PegawaisTableSeeder extends Seeder
             276 => 
             array (
                 'id' => 277,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00277',
                 'name' => 'Sulastri',
                 'no_telp' => '081350740527',
@@ -3346,6 +3900,8 @@ class PegawaisTableSeeder extends Seeder
             277 => 
             array (
                 'id' => 278,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00278',
                 'name' => 'Tiarma Natalia Hutauruk',
                 'no_telp' => '08125389574',
@@ -3358,6 +3914,8 @@ class PegawaisTableSeeder extends Seeder
             278 => 
             array (
                 'id' => 279,
+                'nik' => NULL,
+                'nip' => '199708292022032011',
                 'code' => '00279',
                 'name' => 'Berliana Naipospos SP',
                 'no_telp' => '081363672581',
@@ -3365,11 +3923,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 21,
                 'created_at' => '2023-06-26 14:12:48',
-                'updated_at' => '2023-06-26 14:12:48',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             279 => 
             array (
                 'id' => 280,
+                'nik' => NULL,
+                'nip' => '196808172007011045',
                 'code' => '00280',
                 'name' => 'Karsono',
                 'no_telp' => '085345501239',
@@ -3377,11 +3937,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 21,
                 'created_at' => '2023-06-26 14:12:48',
-                'updated_at' => '2023-06-26 14:12:48',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             280 => 
             array (
                 'id' => 281,
+                'nik' => NULL,
+                'nip' => '198308042017061003',
                 'code' => '00281',
                 'name' => 'Rianto',
                 'no_telp' => '085393976634',
@@ -3389,11 +3951,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 21,
                 'created_at' => '2023-06-26 14:12:48',
-                'updated_at' => '2023-06-26 14:12:48',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             281 => 
             array (
                 'id' => 282,
+                'nik' => NULL,
+                'nip' => '197008122008012025',
                 'code' => '00282',
                 'name' => 'Salasiah',
                 'no_telp' => '082152280590',
@@ -3401,11 +3965,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 21,
                 'created_at' => '2023-06-26 14:12:48',
-                'updated_at' => '2023-06-26 14:12:48',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             282 => 
             array (
                 'id' => 283,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00283',
                 'name' => 'Nason',
                 'no_telp' => '082293583797',
@@ -3418,6 +3984,8 @@ class PegawaisTableSeeder extends Seeder
             283 => 
             array (
                 'id' => 284,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00284',
                 'name' => 'Slamet Riadi',
                 'no_telp' => '085250987005',
@@ -3430,6 +3998,8 @@ class PegawaisTableSeeder extends Seeder
             284 => 
             array (
                 'id' => 285,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00285',
                 'name' => 'Eddy Sutomo',
                 'no_telp' => '082157427703',
@@ -3442,6 +4012,8 @@ class PegawaisTableSeeder extends Seeder
             285 => 
             array (
                 'id' => 286,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00286',
                 'name' => 'Junisa',
                 'no_telp' => '082154548113',
@@ -3454,6 +4026,8 @@ class PegawaisTableSeeder extends Seeder
             286 => 
             array (
                 'id' => 287,
+                'nik' => '6407181102830001',
+                'nip' => NULL,
                 'code' => '00287',
                 'name' => 'Kristiantonius',
                 'no_telp' => '085387576468',
@@ -3461,11 +4035,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 21,
                 'created_at' => '2023-06-26 14:12:48',
-                'updated_at' => '2023-06-26 14:12:48',
+                'updated_at' => '2023-07-04 07:15:23',
             ),
             287 => 
             array (
                 'id' => 288,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00288',
                 'name' => 'M.Ishak',
                 'no_telp' => '082350493648',
@@ -3478,6 +4054,8 @@ class PegawaisTableSeeder extends Seeder
             288 => 
             array (
                 'id' => 289,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00289',
                 'name' => 'M.Pajeri',
                 'no_telp' => '082158635033',
@@ -3490,6 +4068,8 @@ class PegawaisTableSeeder extends Seeder
             289 => 
             array (
                 'id' => 290,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00290',
                 'name' => 'Maulana Muslim',
                 'no_telp' => '082155677282',
@@ -3502,6 +4082,8 @@ class PegawaisTableSeeder extends Seeder
             290 => 
             array (
                 'id' => 291,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00291',
                 'name' => 'Nunik.W.',
                 'no_telp' => '081244718058',
@@ -3514,6 +4096,8 @@ class PegawaisTableSeeder extends Seeder
             291 => 
             array (
                 'id' => 292,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00292',
                 'name' => 'Rinaldo.T.',
                 'no_telp' => '081250011772',
@@ -3526,6 +4110,8 @@ class PegawaisTableSeeder extends Seeder
             292 => 
             array (
                 'id' => 293,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00293',
                 'name' => 'Sariyati',
                 'no_telp' => '08124553379',
@@ -3538,6 +4124,8 @@ class PegawaisTableSeeder extends Seeder
             293 => 
             array (
                 'id' => 294,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00294',
                 'name' => 'Yosia Yesi',
                 'no_telp' => '085349189780',
@@ -3550,6 +4138,8 @@ class PegawaisTableSeeder extends Seeder
             294 => 
             array (
                 'id' => 295,
+                'nik' => NULL,
+                'nip' => '198105052008011024',
                 'code' => '00295',
                 'name' => 'Ari Saputra SP',
                 'no_telp' => '085246776781',
@@ -3557,11 +4147,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 22,
                 'created_at' => '2023-06-26 14:12:48',
-                'updated_at' => '2023-06-26 14:12:48',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             295 => 
             array (
                 'id' => 296,
+                'nik' => NULL,
+                'nip' => '198105292008011018',
                 'code' => '00296',
                 'name' => 'Arif Rachman SST',
                 'no_telp' => '085348901532',
@@ -3569,11 +4161,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 22,
                 'created_at' => '2023-06-26 14:12:48',
-                'updated_at' => '2023-06-26 14:12:48',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             296 => 
             array (
                 'id' => 297,
+                'nik' => NULL,
+                'nip' => '198112262010011009',
                 'code' => '00297',
                 'name' => 'Deki Natalian SP',
                 'no_telp' => '085250767101',
@@ -3581,11 +4175,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 22,
                 'created_at' => '2023-06-26 14:12:48',
-                'updated_at' => '2023-06-26 14:12:48',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             297 => 
             array (
                 'id' => 298,
+                'nik' => NULL,
+                'nip' => '197101112007012021',
                 'code' => '00298',
                 'name' => 'Elismiati SP',
                 'no_telp' => '081347688202',
@@ -3593,11 +4189,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 22,
                 'created_at' => '2023-06-26 14:12:48',
-                'updated_at' => '2023-06-26 14:12:48',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             298 => 
             array (
                 'id' => 299,
+                'nik' => NULL,
+                'nip' => '198811252017062001',
                 'code' => '00299',
                 'name' => 'Leni Widyawati',
                 'no_telp' => '082353960330',
@@ -3605,11 +4203,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 22,
                 'created_at' => '2023-06-26 14:12:48',
-                'updated_at' => '2023-06-26 14:12:48',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             299 => 
             array (
                 'id' => 300,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00300',
                 'name' => 'Hermanus Hului',
                 'no_telp' => '082159018401',
@@ -3622,6 +4222,8 @@ class PegawaisTableSeeder extends Seeder
             300 => 
             array (
                 'id' => 301,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00301',
                 'name' => 'Kusnandi',
                 'no_telp' => '085250746818',
@@ -3634,6 +4236,8 @@ class PegawaisTableSeeder extends Seeder
             301 => 
             array (
                 'id' => 302,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00302',
                 'name' => 'MELANIA BUAQ',
                 'no_telp' => '081348940596',
@@ -3646,6 +4250,8 @@ class PegawaisTableSeeder extends Seeder
             302 => 
             array (
                 'id' => 303,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00303',
                 'name' => 'Neliana Theresia Tukau',
                 'no_telp' => '082254876011',
@@ -3658,6 +4264,8 @@ class PegawaisTableSeeder extends Seeder
             303 => 
             array (
                 'id' => 304,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00304',
                 'name' => 'Novia Hendrila',
                 'no_telp' => '082255138424',
@@ -3670,6 +4278,8 @@ class PegawaisTableSeeder extends Seeder
             304 => 
             array (
                 'id' => 305,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00305',
                 'name' => 'Patrisia Silau Rina',
                 'no_telp' => '082251760143',
@@ -3682,6 +4292,8 @@ class PegawaisTableSeeder extends Seeder
             305 => 
             array (
                 'id' => 306,
+                'nik' => NULL,
+                'nip' => '198012062008011018',
                 'code' => '00306',
                 'name' => 'Fredrikus Jiw Ding',
                 'no_telp' => '081350049998',
@@ -3689,11 +4301,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 23,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             306 => 
             array (
                 'id' => 307,
+                'nik' => NULL,
+                'nip' => '197904142010011008',
                 'code' => '00307',
                 'name' => 'Imam Hidayat S.Pi',
                 'no_telp' => '085245000910',
@@ -3701,11 +4315,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 23,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             307 => 
             array (
                 'id' => 308,
+                'nik' => NULL,
+                'nip' => '198310072008012008',
                 'code' => '00308',
                 'name' => 'Nani Sugiarti',
                 'no_telp' => '081218045958',
@@ -3713,11 +4329,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 23,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             308 => 
             array (
                 'id' => 309,
+                'nik' => NULL,
+                'nip' => '197008082008011023',
                 'code' => '00309',
                 'name' => 'Sugianto SP',
                 'no_telp' => '081347349447',
@@ -3725,11 +4343,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 23,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             309 => 
             array (
                 'id' => 310,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00310',
                 'name' => 'Agnesia Lela',
                 'no_telp' => '085284126060',
@@ -3742,6 +4362,8 @@ class PegawaisTableSeeder extends Seeder
             310 => 
             array (
                 'id' => 311,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00311',
                 'name' => 'Agustinus Novianto Balan',
                 'no_telp' => '085345027334',
@@ -3754,6 +4376,8 @@ class PegawaisTableSeeder extends Seeder
             311 => 
             array (
                 'id' => 312,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00312',
                 'name' => 'August Robinus',
                 'no_telp' => '081254545899',
@@ -3766,6 +4390,8 @@ class PegawaisTableSeeder extends Seeder
             312 => 
             array (
                 'id' => 313,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00313',
                 'name' => 'Fransiskus Yosep suprapto',
                 'no_telp' => '081213340012',
@@ -3778,6 +4404,8 @@ class PegawaisTableSeeder extends Seeder
             313 => 
             array (
                 'id' => 314,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00314',
                 'name' => 'Norisa Husaini',
                 'no_telp' => '081257698947',
@@ -3790,6 +4418,8 @@ class PegawaisTableSeeder extends Seeder
             314 => 
             array (
                 'id' => 315,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00315',
                 'name' => 'Suryani',
                 'no_telp' => '082126586097',
@@ -3802,6 +4432,8 @@ class PegawaisTableSeeder extends Seeder
             315 => 
             array (
                 'id' => 316,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00316',
                 'name' => 'Syahri ramadhan',
                 'no_telp' => '082153473612',
@@ -3814,6 +4446,8 @@ class PegawaisTableSeeder extends Seeder
             316 => 
             array (
                 'id' => 317,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00317',
                 'name' => 'Wilson Markoni',
                 'no_telp' => '081348813186',
@@ -3826,6 +4460,8 @@ class PegawaisTableSeeder extends Seeder
             317 => 
             array (
                 'id' => 318,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00318',
                 'name' => 'Yahuda Keristian',
                 'no_telp' => '085346727841',
@@ -3838,6 +4474,8 @@ class PegawaisTableSeeder extends Seeder
             318 => 
             array (
                 'id' => 319,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00319',
                 'name' => 'Yasser Algiffari',
                 'no_telp' => '082345756732',
@@ -3850,6 +4488,8 @@ class PegawaisTableSeeder extends Seeder
             319 => 
             array (
                 'id' => 320,
+                'nik' => NULL,
+                'nip' => '196903211998031004',
                 'code' => '00320',
                 'name' => 'A.M.Djunaidi.A SST',
                 'no_telp' => '082154861100',
@@ -3857,11 +4497,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 24,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             320 => 
             array (
                 'id' => 321,
+                'nik' => NULL,
+                'nip' => '196309101991031010',
                 'code' => '00321',
                 'name' => 'Eswanta S.PKP',
                 'no_telp' => '085247239866',
@@ -3869,11 +4511,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 24,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             321 => 
             array (
                 'id' => 322,
+                'nik' => NULL,
+                'nip' => '196512212000032003',
                 'code' => '00322',
                 'name' => 'Lasinah SP',
                 'no_telp' => '081347367484',
@@ -3881,11 +4525,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 24,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             322 => 
             array (
                 'id' => 323,
+                'nik' => NULL,
+                'nip' => '197407082006041007',
                 'code' => '00323',
                 'name' => 'Sugeng Utomo S.PKP',
                 'no_telp' => '085247832852',
@@ -3893,11 +4539,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 24,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             323 => 
             array (
                 'id' => 324,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00324',
                 'name' => 'AHMAD GUNAWAN. S.PKP',
                 'no_telp' => '081253279544',
@@ -3910,6 +4558,8 @@ class PegawaisTableSeeder extends Seeder
             324 => 
             array (
                 'id' => 325,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00325',
                 'name' => 'IHWANUDDIN SP',
                 'no_telp' => '08125596511',
@@ -3922,6 +4572,8 @@ class PegawaisTableSeeder extends Seeder
             325 => 
             array (
                 'id' => 326,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00326',
                 'name' => 'SUGIYONO S.PKP',
                 'no_telp' => '081254140624',
@@ -3934,6 +4586,8 @@ class PegawaisTableSeeder extends Seeder
             326 => 
             array (
                 'id' => 327,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00327',
                 'name' => 'SUNARKO S.PKP',
                 'no_telp' => '082140048913',
@@ -3946,6 +4600,8 @@ class PegawaisTableSeeder extends Seeder
             327 => 
             array (
                 'id' => 328,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00328',
                 'name' => 'UJANG WAHYUDIN S.PKP',
                 'no_telp' => '081347138515',
@@ -3958,6 +4614,8 @@ class PegawaisTableSeeder extends Seeder
             328 => 
             array (
                 'id' => 329,
+                'nik' => '6402130206790001',
+                'nip' => NULL,
                 'code' => '00329',
                 'name' => 'Eddy Sutoyo',
                 'no_telp' => '085247304444',
@@ -3965,11 +4623,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 24,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             329 => 
             array (
                 'id' => 330,
+                'nik' => '6402132007750004',
+                'nip' => NULL,
                 'code' => '00330',
                 'name' => 'Muhammad Ardiansyah',
                 'no_telp' => '',
@@ -3977,11 +4637,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 24,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             330 => 
             array (
                 'id' => 331,
+                'nik' => '6402113040388800',
+                'nip' => NULL,
                 'code' => '00331',
                 'name' => 'MUHAMMAD HAIRUL HUDA',
                 'no_telp' => '082158136847',
@@ -3989,11 +4651,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 24,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             331 => 
             array (
                 'id' => 332,
+                'nik' => '6402135007700003',
+                'nip' => NULL,
                 'code' => '00332',
                 'name' => 'SITI MARYAM',
                 'no_telp' => '082153491674',
@@ -4001,11 +4665,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 24,
                 'created_at' => '2023-06-26 14:12:49',
-                'updated_at' => '2023-06-26 14:12:49',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             332 => 
             array (
                 'id' => 333,
+                'nik' => NULL,
+                'nip' => '197610292011011001',
                 'code' => '00333',
                 'name' => 'Dadang Kusnadi SP',
                 'no_telp' => '085246814217',
@@ -4013,11 +4679,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             333 => 
             array (
                 'id' => 334,
+                'nik' => NULL,
+                'nip' => '197411022005021001',
                 'code' => '00334',
                 'name' => 'Herman Trisulo S.PKP',
                 'no_telp' => '085247080076/0813463',
@@ -4025,11 +4693,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             334 => 
             array (
                 'id' => 335,
+                'nik' => NULL,
+                'nip' => '196702121987111001',
                 'code' => '00335',
                 'name' => 'H Margono SP',
                 'no_telp' => '08125357957',
@@ -4037,11 +4707,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             335 => 
             array (
                 'id' => 336,
+                'nik' => NULL,
+                'nip' => '197603102008011016',
                 'code' => '00336',
                 'name' => 'Rismulyana / Disbun SP',
                 'no_telp' => '081347791931',
@@ -4049,23 +4721,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             336 => 
             array (
                 'id' => 337,
+                'nik' => NULL,
+                'nip' => '196607061987091003',
                 'code' => '00337',
                 'name' => 'Suriansyah',
-                'no_telp' => '',
+                'no_telp' => '081545114115',
                 'email' => '',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             337 => 
             array (
                 'id' => 338,
+                'nik' => '6402140207010005',
+                'nip' => NULL,
                 'code' => '00338',
                 'name' => 'ABDUL ROHMAN',
                 'no_telp' => '',
@@ -4073,11 +4749,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             338 => 
             array (
                 'id' => 339,
+                'nik' => '6402140309950001',
+                'nip' => NULL,
                 'code' => '00339',
                 'name' => 'HAMZAH AL FAUJI',
                 'no_telp' => '081253230362',
@@ -4085,11 +4763,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             339 => 
             array (
                 'id' => 340,
+                'nik' => '00000000000000000000',
+                'nip' => NULL,
                 'code' => '00340',
                 'name' => 'M. Sabiq',
                 'no_telp' => '',
@@ -4097,11 +4777,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             340 => 
             array (
                 'id' => 341,
+                'nik' => '0000000000000000',
+                'nip' => NULL,
                 'code' => '00341',
                 'name' => 'M. Toyib',
                 'no_telp' => '',
@@ -4109,11 +4791,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             341 => 
             array (
                 'id' => 342,
+                'nik' => '00000000000000000000',
+                'nip' => NULL,
                 'code' => '00342',
                 'name' => 'M.Kosasi, SPi',
                 'no_telp' => '',
@@ -4121,23 +4805,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             342 => 
             array (
                 'id' => 343,
+                'nik' => '6409040307720002',
+                'nip' => NULL,
                 'code' => '00343',
                 'name' => 'Masud',
-                'no_telp' => '',
+                'no_telp' => '081350569312',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             343 => 
             array (
                 'id' => 344,
+                'nik' => '6402141901990001',
+                'nip' => NULL,
                 'code' => '00344',
                 'name' => 'MOHAMMAD FITRI AL - IHSAN',
                 'no_telp' => '085155118669',
@@ -4145,11 +4833,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             344 => 
             array (
                 'id' => 345,
+                'nik' => '3505021708850006',
+                'nip' => NULL,
                 'code' => '00345',
                 'name' => 'MUHAMMAD IMAM FURQON',
                 'no_telp' => '',
@@ -4157,11 +4847,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             345 => 
             array (
                 'id' => 346,
+                'nik' => '000000000000000000000',
+                'nip' => NULL,
                 'code' => '00346',
                 'name' => 'PUJIATI',
                 'no_telp' => '',
@@ -4169,11 +4861,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             346 => 
             array (
                 'id' => 347,
+                'nik' => '00000000000000000000',
+                'nip' => NULL,
                 'code' => '00347',
                 'name' => 'SONY',
                 'no_telp' => '',
@@ -4181,23 +4875,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             347 => 
             array (
                 'id' => 348,
+                'nik' => NULL,
+                'nip' => '196701152005011001',
                 'code' => '00348',
                 'name' => 'TUKIRAN',
-                'no_telp' => '',
+                'no_telp' => '081253783864',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 25,
                 'created_at' => '2023-06-26 14:12:50',
-                'updated_at' => '2023-06-26 14:12:50',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             348 => 
             array (
                 'id' => 349,
+                'nik' => NULL,
+                'nip' => '196703301988031009',
                 'code' => '00349',
                 'name' => 'Ipik Topani',
                 'no_telp' => '085246363637',
@@ -4205,11 +4903,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 26,
                 'created_at' => '2023-06-26 14:12:51',
-                'updated_at' => '2023-06-26 14:12:51',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             349 => 
             array (
                 'id' => 350,
+                'nik' => NULL,
+                'nip' => '196402021987101002',
                 'code' => '00350',
                 'name' => 'Jajuli S.PKP',
                 'no_telp' => '',
@@ -4217,11 +4917,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 26,
                 'created_at' => '2023-06-26 14:12:51',
-                'updated_at' => '2023-06-26 14:12:51',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             350 => 
             array (
                 'id' => 351,
+                'nik' => NULL,
+                'nip' => '196307261987031006',
                 'code' => '00351',
                 'name' => 'Masrani S.PKP',
                 'no_telp' => '085248791226',
@@ -4229,11 +4931,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 26,
                 'created_at' => '2023-06-26 14:12:51',
-                'updated_at' => '2023-06-26 14:12:51',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             351 => 
             array (
                 'id' => 352,
+                'nik' => NULL,
+                'nip' => '198208012010011005',
                 'code' => '00352',
                 'name' => 'Rully Mulyadi SP',
                 'no_telp' => '081253658412',
@@ -4241,11 +4945,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 26,
                 'created_at' => '2023-06-26 14:12:51',
-                'updated_at' => '2023-06-26 14:12:51',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             352 => 
             array (
                 'id' => 353,
+                'nik' => NULL,
+                'nip' => '197712052005022003',
                 'code' => '00353',
                 'name' => 'Wahyuningsih A.Md',
                 'no_telp' => '081347523234',
@@ -4253,11 +4959,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 26,
                 'created_at' => '2023-06-26 14:12:51',
-                'updated_at' => '2023-06-26 14:12:51',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             353 => 
             array (
                 'id' => 354,
+                'nik' => '6402153112820001',
+                'nip' => NULL,
                 'code' => '00354',
                 'name' => 'Muhammad Zainuri',
                 'no_telp' => '',
@@ -4265,11 +4973,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 26,
                 'created_at' => '2023-06-26 14:12:51',
-                'updated_at' => '2023-06-26 14:12:51',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             354 => 
             array (
                 'id' => 355,
+                'nik' => '6402151808720001',
+                'nip' => NULL,
                 'code' => '00355',
                 'name' => 'Sunyoto',
                 'no_telp' => '',
@@ -4277,11 +4987,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 26,
                 'created_at' => '2023-06-26 14:12:51',
-                'updated_at' => '2023-06-26 14:12:51',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             355 => 
             array (
                 'id' => 356,
+                'nik' => NULL,
+                'nip' => '197505192001121004',
                 'code' => '00356',
                 'name' => 'Dudi Wahyudi SP',
                 'no_telp' => '085250927286',
@@ -4289,11 +5001,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             356 => 
             array (
                 'id' => 357,
+                'nik' => NULL,
+                'nip' => '198107032011012002',
                 'code' => '00357',
                 'name' => 'Eni Suryani SP',
                 'no_telp' => '0811412772',
@@ -4301,23 +5015,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             357 => 
             array (
                 'id' => 358,
+                'nik' => NULL,
+                'nip' => '198303072017062001',
                 'code' => '00358',
                 'name' => 'Ernawati A.Md',
-                'no_telp' => '082149259737',
+                'no_telp' => '0821 4925 9737',
                 'email' => 'zalfaerna10@gmail.com',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             358 => 
             array (
                 'id' => 359,
+                'nik' => NULL,
+                'nip' => '196805012000032004',
                 'code' => '00359',
                 'name' => 'Hasja S.PKP',
                 'no_telp' => '081347233529',
@@ -4325,11 +5043,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             359 => 
             array (
                 'id' => 360,
+                'nik' => NULL,
+                'nip' => '196603021988021001',
                 'code' => '00360',
                 'name' => 'Jasmingan S.PKP',
                 'no_telp' => '08125807203',
@@ -4337,11 +5057,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             360 => 
             array (
                 'id' => 361,
+                'nik' => NULL,
+                'nip' => '196912312008011154',
                 'code' => '00361',
                 'name' => 'Kasmir S.PKP',
                 'no_telp' => '',
@@ -4349,11 +5071,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             361 => 
             array (
                 'id' => 362,
+                'nik' => NULL,
+                'nip' => '197011032008011008',
                 'code' => '00362',
                 'name' => 'Rodiyani S.PKP',
                 'no_telp' => '081347297915',
@@ -4361,11 +5085,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             362 => 
             array (
                 'id' => 363,
+                'nik' => NULL,
+                'nip' => '196605111988031014',
                 'code' => '00363',
                 'name' => 'Sudiq SP',
                 'no_telp' => '085250907925',
@@ -4373,11 +5099,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             363 => 
             array (
                 'id' => 364,
+                'nik' => '6402030909750003',
+                'nip' => NULL,
                 'code' => '00364',
                 'name' => 'ADI SUCIPTO',
                 'no_telp' => '082251810909',
@@ -4385,11 +5113,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             364 => 
             array (
                 'id' => 365,
+                'nik' => '6402030609611100',
+                'nip' => NULL,
                 'code' => '00365',
                 'name' => 'BANGUN RIAYATMOJO',
                 'no_telp' => '081350378983',
@@ -4397,11 +5127,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             365 => 
             array (
                 'id' => 366,
+                'nik' => '6402030808680003',
+                'nip' => NULL,
                 'code' => '00366',
                 'name' => 'EDY ROSMAN',
                 'no_telp' => '',
@@ -4409,11 +5141,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             366 => 
             array (
                 'id' => 367,
+                'nik' => '6402031704680002',
+                'nip' => NULL,
                 'code' => '00367',
                 'name' => 'JUMIAN',
                 'no_telp' => '',
@@ -4421,11 +5155,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             367 => 
             array (
                 'id' => 368,
+                'nik' => '6402030510700002',
+                'nip' => NULL,
                 'code' => '00368',
                 'name' => 'KATENO',
                 'no_telp' => '',
@@ -4433,11 +5169,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             368 => 
             array (
                 'id' => 369,
+                'nik' => '6402031807710001',
+                'nip' => NULL,
                 'code' => '00369',
                 'name' => 'PURWADI',
                 'no_telp' => '082158214731',
@@ -4445,11 +5183,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             369 => 
             array (
                 'id' => 370,
+                'nik' => '6402035610830003',
+                'nip' => NULL,
                 'code' => '00370',
                 'name' => 'RILI',
                 'no_telp' => '081331469916',
@@ -4457,11 +5197,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             370 => 
             array (
                 'id' => 371,
+                'nik' => '6402035406760001',
+                'nip' => NULL,
                 'code' => '00371',
                 'name' => 'SUPIYAH',
                 'no_telp' => '',
@@ -4469,11 +5211,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 27,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             371 => 
             array (
                 'id' => 372,
+                'nik' => NULL,
+                'nip' => '196503171987091002',
                 'code' => '00372',
                 'name' => 'Akhmad Yani S.P',
                 'no_telp' => '08125337514',
@@ -4481,11 +5225,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             372 => 
             array (
                 'id' => 373,
+                'nik' => NULL,
+                'nip' => '197504212008012019',
                 'code' => '00373',
                 'name' => 'Anastasia Kartina SP',
                 'no_telp' => '081231364641',
@@ -4493,11 +5239,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             373 => 
             array (
                 'id' => 374,
+                'nik' => NULL,
+                'nip' => '197511082010012012',
                 'code' => '00374',
                 'name' => 'Darlin SP',
                 'no_telp' => '085246263899',
@@ -4505,11 +5253,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             374 => 
             array (
                 'id' => 375,
+                'nik' => NULL,
+                'nip' => '196404031988031020',
                 'code' => '00375',
                 'name' => 'Gunawan Setyobudi S.P.KP',
                 'no_telp' => '085389573170',
@@ -4517,11 +5267,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             375 => 
             array (
                 'id' => 376,
+                'nik' => NULL,
+                'nip' => '197809062007011021',
                 'code' => '00376',
                 'name' => 'Haidil Anwar SP',
                 'no_telp' => '082255100705',
@@ -4529,11 +5281,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             376 => 
             array (
                 'id' => 377,
+                'nik' => NULL,
+                'nip' => '196708172008011018',
                 'code' => '00377',
                 'name' => 'Jumadi S.PKP',
                 'no_telp' => '081350851669',
@@ -4541,11 +5295,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             377 => 
             array (
                 'id' => 378,
+                'nik' => NULL,
+                'nip' => '196401211987091002',
                 'code' => '00378',
                 'name' => 'Junaidy S.PKP',
                 'no_telp' => '081251493299',
@@ -4553,11 +5309,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             378 => 
             array (
                 'id' => 379,
+                'nik' => NULL,
+                'nip' => '197202152007011026',
                 'code' => '00379',
                 'name' => 'Juwarni',
                 'no_telp' => '085291821333',
@@ -4565,11 +5323,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             379 => 
             array (
                 'id' => 380,
+                'nik' => NULL,
+                'nip' => '198205302010012001',
                 'code' => '00380',
                 'name' => 'Maidina Fasa SP',
                 'no_telp' => '082150940962',
@@ -4577,11 +5337,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             380 => 
             array (
                 'id' => 381,
+                'nik' => NULL,
+                'nip' => '196812162008011014',
                 'code' => '00381',
                 'name' => 'MOHAMAD BAHASOAN SP',
                 'no_telp' => '081253915539',
@@ -4589,11 +5351,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             381 => 
             array (
                 'id' => 382,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00382',
                 'name' => 'Mulyadi S.P.KP',
                 'no_telp' => '081253630818',
@@ -4606,6 +5370,8 @@ class PegawaisTableSeeder extends Seeder
             382 => 
             array (
                 'id' => 383,
+                'nik' => NULL,
+                'nip' => '197403112008011020',
                 'code' => '00383',
                 'name' => 'MULYADI S.PKP',
                 'no_telp' => '',
@@ -4613,11 +5379,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             383 => 
             array (
                 'id' => 384,
+                'nik' => NULL,
+                'nip' => '196706142007011054',
                 'code' => '00384',
                 'name' => 'Mustadil Wajid S.PKP',
                 'no_telp' => '082149121750',
@@ -4625,11 +5393,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             384 => 
             array (
                 'id' => 385,
+                'nik' => NULL,
+                'nip' => '198008232007012015',
                 'code' => '00385',
                 'name' => 'Neneng  Wahyuni',
                 'no_telp' => '085389573078',
@@ -4637,11 +5407,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             385 => 
             array (
                 'id' => 386,
+                'nik' => NULL,
+                'nip' => '198512012017061001',
                 'code' => '00386',
                 'name' => 'Rendi Irawan',
                 'no_telp' => '081256788238',
@@ -4649,11 +5421,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             386 => 
             array (
                 'id' => 387,
+                'nik' => NULL,
+                'nip' => '198109282010012018',
                 'code' => '00387',
                 'name' => 'Saripah Aini SP',
                 'no_telp' => '081253915520',
@@ -4661,11 +5435,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             387 => 
             array (
                 'id' => 388,
+                'nik' => NULL,
+                'nip' => '196309041988032010',
                 'code' => '00388',
                 'name' => 'Sunyiani S.PKP',
                 'no_telp' => '085389573083',
@@ -4673,11 +5449,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             388 => 
             array (
                 'id' => 389,
+                'nik' => NULL,
+                'nip' => '197801252008012013',
                 'code' => '00389',
                 'name' => 'Suwantika SP',
                 'no_telp' => '081253249027',
@@ -4685,11 +5463,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             389 => 
             array (
                 'id' => 390,
+                'nik' => NULL,
+                'nip' => '196604061988031019',
                 'code' => '00390',
                 'name' => 'Teguh Joko Prihatno S.PKP',
                 'no_telp' => '081351604362',
@@ -4697,11 +5477,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             390 => 
             array (
                 'id' => 391,
+                'nik' => NULL,
+                'nip' => '196512251987102002',
                 'code' => '00391',
                 'name' => 'Tri Budiarsih A.Md',
                 'no_telp' => '081256565510',
@@ -4709,11 +5491,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             391 => 
             array (
                 'id' => 392,
+                'nik' => '6402020809720003',
+                'nip' => NULL,
                 'code' => '00392',
                 'name' => 'ARIS MUNANDAR',
                 'no_telp' => '081254243849',
@@ -4721,11 +5505,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             392 => 
             array (
                 'id' => 393,
+                'nik' => '6402025304760001',
+                'nip' => NULL,
                 'code' => '00393',
                 'name' => 'HJ.SITI RAHMAH',
                 'no_telp' => '',
@@ -4733,11 +5519,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             393 => 
             array (
                 'id' => 394,
+                'nik' => '6402021003770001',
+                'nip' => NULL,
                 'code' => '00394',
                 'name' => 'IMAM MAKSUM',
                 'no_telp' => '',
@@ -4745,11 +5533,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             394 => 
             array (
                 'id' => 395,
+                'nik' => '6402022701770002',
+                'nip' => NULL,
                 'code' => '00395',
                 'name' => 'JUANDA,S.HUT',
                 'no_telp' => '081350505717',
@@ -4757,11 +5547,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             395 => 
             array (
                 'id' => 396,
+                'nik' => '6402021203650006',
+                'nip' => NULL,
                 'code' => '00396',
                 'name' => 'JUMIRIN',
                 'no_telp' => '085248875433',
@@ -4769,11 +5561,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             396 => 
             array (
                 'id' => 397,
+                'nik' => '6402025410990001',
+                'nip' => NULL,
                 'code' => '00397',
                 'name' => 'MILIYANA',
                 'no_telp' => '085821553646',
@@ -4781,11 +5575,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             397 => 
             array (
                 'id' => 398,
+                'nik' => '6402020311780002',
+                'nip' => NULL,
                 'code' => '00398',
                 'name' => 'MISJIANTO',
                 'no_telp' => '081347998395',
@@ -4793,11 +5589,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             398 => 
             array (
                 'id' => 399,
+                'nik' => '6402020205630001',
+                'nip' => NULL,
                 'code' => '00399',
                 'name' => 'RAKIMIN',
                 'no_telp' => '085348868871',
@@ -4805,11 +5603,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             399 => 
             array (
                 'id' => 400,
+                'nik' => '6402022508730005',
+                'nip' => NULL,
                 'code' => '00400',
                 'name' => 'RONIANSYAH',
                 'no_telp' => '082351308755',
@@ -4817,11 +5617,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             400 => 
             array (
                 'id' => 401,
+                'nik' => '6402020706780001',
+                'nip' => NULL,
                 'code' => '00401',
                 'name' => 'SLAMET SUPRIHATIN',
                 'no_telp' => '081254812474',
@@ -4829,11 +5631,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             401 => 
             array (
                 'id' => 402,
+                'nik' => '6402020706540002',
+                'nip' => NULL,
                 'code' => '00402',
                 'name' => 'SOPIAN NOR',
                 'no_telp' => '',
@@ -4841,11 +5645,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             402 => 
             array (
                 'id' => 403,
+                'nik' => '6402020202580002',
+                'nip' => NULL,
                 'code' => '00403',
                 'name' => 'SUKIDI',
                 'no_telp' => '081253842575',
@@ -4853,11 +5659,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             403 => 
             array (
                 'id' => 404,
+                'nik' => '6402020307720001',
+                'nip' => NULL,
                 'code' => '00404',
                 'name' => 'SUTARNO',
                 'no_telp' => '081347529854',
@@ -4865,11 +5673,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 28,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             404 => 
             array (
                 'id' => 405,
+                'nik' => NULL,
+                'nip' => '197803182009021001',
                 'code' => '00405',
                 'name' => 'Eri Baiturrahman S.PKP',
                 'no_telp' => '082254587258',
@@ -4877,11 +5687,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 29,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             405 => 
             array (
                 'id' => 406,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00406',
                 'name' => 'Ruslan Asna S.PKP',
                 'no_telp' => '082155692757',
@@ -4894,6 +5706,8 @@ class PegawaisTableSeeder extends Seeder
             406 => 
             array (
                 'id' => 407,
+                'nik' => NULL,
+                'nip' => '198910032017061001',
                 'code' => '00407',
                 'name' => 'Saparudin',
                 'no_telp' => '082149592131',
@@ -4901,11 +5715,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 29,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             407 => 
             array (
                 'id' => 408,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00408',
                 'name' => 'Syahran',
                 'no_telp' => '081251656279',
@@ -4918,6 +5734,8 @@ class PegawaisTableSeeder extends Seeder
             408 => 
             array (
                 'id' => 409,
+                'nik' => NULL,
+                'nip' => '197205142007011024',
                 'code' => '00409',
                 'name' => 'Tantoto Nurwidiyanto / Disbun',
                 'no_telp' => '081254152966',
@@ -4925,11 +5743,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 29,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             409 => 
             array (
                 'id' => 410,
+                'nik' => NULL,
+                'nip' => '196707161993032006',
                 'code' => '00410',
                 'name' => 'Wagirah S.PKP',
                 'no_telp' => '0855523020',
@@ -4937,11 +5757,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 29,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             410 => 
             array (
                 'id' => 411,
+                'nik' => '6402014610800001',
+                'nip' => NULL,
                 'code' => '00411',
                 'name' => 'HUSSORINI',
                 'no_telp' => '085391417070',
@@ -4949,11 +5771,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 29,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             411 => 
             array (
                 'id' => 412,
+                'nik' => '6402010608930001',
+                'nip' => NULL,
                 'code' => '00412',
                 'name' => 'MOHAMMAD YUSUF',
                 'no_telp' => '082357455001',
@@ -4961,11 +5785,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 29,
                 'created_at' => '2023-06-26 14:12:52',
-                'updated_at' => '2023-06-26 14:12:52',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             412 => 
             array (
                 'id' => 413,
+                'nik' => NULL,
+                'nip' => '197102032007011029',
                 'code' => '00413',
                 'name' => 'Suharno SP',
                 'no_telp' => '082149908784',
@@ -4973,11 +5799,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 30,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             413 => 
             array (
                 'id' => 414,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00414',
                 'name' => 'AKHMAD SUMANTRI S.PKP',
                 'no_telp' => '085250115806',
@@ -4990,6 +5818,8 @@ class PegawaisTableSeeder extends Seeder
             414 => 
             array (
                 'id' => 415,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00415',
                 'name' => 'GAPUR HARIYANTO',
                 'no_telp' => 'HP.081346309729',
@@ -5002,6 +5832,8 @@ class PegawaisTableSeeder extends Seeder
             415 => 
             array (
                 'id' => 416,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00416',
                 'name' => 'HELIYANA  SP',
                 'no_telp' => '081350043426',
@@ -5014,6 +5846,8 @@ class PegawaisTableSeeder extends Seeder
             416 => 
             array (
                 'id' => 417,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00417',
                 'name' => 'JOKO ROHAYADI SP',
                 'no_telp' => '081254451978',
@@ -5026,6 +5860,8 @@ class PegawaisTableSeeder extends Seeder
             417 => 
             array (
                 'id' => 418,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00418',
                 'name' => 'KORNELIUS KALALEMBANG SP',
                 'no_telp' => '082151318308',
@@ -5038,6 +5874,8 @@ class PegawaisTableSeeder extends Seeder
             418 => 
             array (
                 'id' => 419,
+                'nik' => '6402180605960001',
+                'nip' => NULL,
                 'code' => '00419',
                 'name' => 'ALAMIN',
                 'no_telp' => '081256719854',
@@ -5045,11 +5883,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 30,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             419 => 
             array (
                 'id' => 420,
+                'nik' => '64021184303720002',
+                'nip' => NULL,
                 'code' => '00420',
                 'name' => 'Asniah',
                 'no_telp' => '',
@@ -5057,11 +5897,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 30,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             420 => 
             array (
                 'id' => 421,
+                'nik' => '6402160303730001',
+                'nip' => NULL,
                 'code' => '00421',
                 'name' => 'Hasan D',
                 'no_telp' => '',
@@ -5069,11 +5911,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 30,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             421 => 
             array (
                 'id' => 422,
+                'nik' => '6402185808920001',
+                'nip' => NULL,
                 'code' => '00422',
                 'name' => 'IMMA',
                 'no_telp' => '082251989967',
@@ -5081,11 +5925,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 30,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             422 => 
             array (
                 'id' => 423,
+                'nik' => '6402180502940000',
+                'nip' => NULL,
                 'code' => '00423',
                 'name' => 'JOSIA FAHLEVI,S.P',
                 'no_telp' => '085250178325',
@@ -5093,11 +5939,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 30,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             423 => 
             array (
                 'id' => 424,
+                'nik' => '6402180507690001',
+                'nip' => NULL,
                 'code' => '00424',
                 'name' => 'Julpan',
                 'no_telp' => '085246716140',
@@ -5105,11 +5953,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 30,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             424 => 
             array (
                 'id' => 425,
+                'nik' => '6402180104940001',
+                'nip' => NULL,
                 'code' => '00425',
                 'name' => 'MOH.FAHRIZAL',
                 'no_telp' => '0852353148161',
@@ -5117,11 +5967,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 30,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             425 => 
             array (
                 'id' => 426,
+                'nik' => '6402185007800001',
+                'nip' => NULL,
                 'code' => '00426',
                 'name' => 'NOR ASIAH JAMIL',
                 'no_telp' => '08582329485',
@@ -5129,11 +5981,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 30,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             426 => 
             array (
                 'id' => 427,
+                'nik' => '6402185006750001',
+                'nip' => NULL,
                 'code' => '00427',
                 'name' => 'Normiati',
                 'no_telp' => '',
@@ -5141,11 +5995,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 30,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             427 => 
             array (
                 'id' => 428,
+                'nik' => '6402182706680001',
+                'nip' => NULL,
                 'code' => '00428',
                 'name' => 'Rodi Iskandar',
                 'no_telp' => '',
@@ -5153,11 +6009,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 30,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             428 => 
             array (
                 'id' => 429,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00429',
                 'name' => 'Slamet',
                 'no_telp' => '',
@@ -5170,6 +6028,8 @@ class PegawaisTableSeeder extends Seeder
             429 => 
             array (
                 'id' => 430,
+                'nik' => NULL,
+                'nip' => '198404262017061001',
                 'code' => '00430',
                 'name' => 'Antok Sugianto',
                 'no_telp' => '082157052081',
@@ -5177,11 +6037,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             430 => 
             array (
                 'id' => 431,
+                'nik' => NULL,
+                'nip' => '198209082009021002',
                 'code' => '00431',
                 'name' => 'Dhadia Putera SP',
                 'no_telp' => '085246999166',
@@ -5189,11 +6051,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             431 => 
             array (
                 'id' => 432,
+                'nik' => NULL,
+                'nip' => '196310181987092001',
                 'code' => '00432',
                 'name' => 'Ernaningsih SP',
                 'no_telp' => '085346117098',
@@ -5201,11 +6065,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             432 => 
             array (
                 'id' => 433,
+                'nik' => NULL,
+                'nip' => '198104082008011015',
                 'code' => '00433',
                 'name' => 'Hairin / Disbun',
                 'no_telp' => '085250343938',
@@ -5213,11 +6079,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             433 => 
             array (
                 'id' => 434,
+                'nik' => NULL,
+                'nip' => '198410112017062001',
                 'code' => '00434',
                 'name' => 'Halhamisyah Alpiah',
                 'no_telp' => '081348673777',
@@ -5225,11 +6093,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             434 => 
             array (
                 'id' => 435,
+                'nik' => NULL,
+                'nip' => '198609182017062001',
                 'code' => '00435',
                 'name' => 'Ida Irawati',
                 'no_telp' => '085350012807',
@@ -5237,11 +6107,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             435 => 
             array (
                 'id' => 436,
+                'nik' => NULL,
+                'nip' => '198205302008011011',
                 'code' => '00436',
                 'name' => 'Ifan Manosa S.PKP',
                 'no_telp' => '085250933311',
@@ -5249,11 +6121,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             436 => 
             array (
                 'id' => 437,
+                'nik' => NULL,
+                'nip' => '198201052007011010',
                 'code' => '00437',
                 'name' => 'Muhammad Andri Muadin SP',
                 'no_telp' => '081347224724',
@@ -5261,11 +6135,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             437 => 
             array (
                 'id' => 438,
+                'nik' => NULL,
+                'nip' => '198103082008011013',
                 'code' => '00438',
                 'name' => 'Muhammad Rafii / Disbun',
                 'no_telp' => '085251541000',
@@ -5273,11 +6149,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             438 => 
             array (
                 'id' => 439,
+                'nik' => NULL,
+                'nip' => '196307101987011004',
                 'code' => '00439',
                 'name' => 'Sofyan Edi Mulia SP',
                 'no_telp' => '081350948258',
@@ -5285,11 +6163,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             439 => 
             array (
                 'id' => 440,
+                'nik' => NULL,
+                'nip' => '196510261987101001',
                 'code' => '00440',
                 'name' => 'Subakir S.PKP',
                 'no_telp' => '081347961135',
@@ -5297,11 +6177,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             440 => 
             array (
                 'id' => 441,
+                'nik' => NULL,
+                'nip' => '196811052008012018',
                 'code' => '00441',
                 'name' => 'Sudahnan',
                 'no_telp' => '081350215292',
@@ -5309,11 +6191,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             441 => 
             array (
                 'id' => 442,
+                'nik' => NULL,
+                'nip' => '196408161999031006',
                 'code' => '00442',
                 'name' => 'Supriyadi S.St.',
                 'no_telp' => '081346325542',
@@ -5321,11 +6205,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             442 => 
             array (
                 'id' => 443,
+                'nik' => NULL,
+                'nip' => '198801182017061001',
                 'code' => '00443',
                 'name' => 'Zuliyanto',
                 'no_telp' => '081253148138',
@@ -5333,11 +6219,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             443 => 
             array (
                 'id' => 444,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00444',
                 'name' => 'MULHANSYAH',
                 'no_telp' => '082255586616',
@@ -5350,6 +6238,8 @@ class PegawaisTableSeeder extends Seeder
             444 => 
             array (
                 'id' => 445,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00445',
                 'name' => 'NUKTAH AL RASID',
                 'no_telp' => '085250461021',
@@ -5362,6 +6252,8 @@ class PegawaisTableSeeder extends Seeder
             445 => 
             array (
                 'id' => 446,
+                'nik' => '6402082207580000',
+                'nip' => NULL,
                 'code' => '00446',
                 'name' => 'BADRIANSYAH',
                 'no_telp' => '0812546331501',
@@ -5369,11 +6261,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             446 => 
             array (
                 'id' => 447,
+                'nik' => '6402082112730001',
+                'nip' => NULL,
                 'code' => '00447',
                 'name' => 'Karnawi',
                 'no_telp' => '',
@@ -5381,11 +6275,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             447 => 
             array (
                 'id' => 448,
+                'nik' => '6402082112730001',
+                'nip' => NULL,
                 'code' => '00448',
                 'name' => 'KARTAWI',
                 'no_telp' => '',
@@ -5393,11 +6289,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             448 => 
             array (
                 'id' => 449,
+                'nik' => '6402081911980002',
+                'nip' => NULL,
                 'code' => '00449',
                 'name' => 'NOVA ANDREANTO PUTRO',
                 'no_telp' => '092132501100',
@@ -5405,11 +6303,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             449 => 
             array (
                 'id' => 450,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00450',
                 'name' => 'SUNARDI',
                 'no_telp' => '085250068585479',
@@ -5422,6 +6322,8 @@ class PegawaisTableSeeder extends Seeder
             450 => 
             array (
                 'id' => 451,
+                'nik' => '6402080107770032',
+                'nip' => NULL,
                 'code' => '00451',
                 'name' => 'SUTIRNO',
                 'no_telp' => '081314001133',
@@ -5429,11 +6331,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 31,
                 'created_at' => '2023-06-26 14:12:53',
-                'updated_at' => '2023-06-26 14:12:53',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             451 => 
             array (
                 'id' => 452,
+                'nik' => NULL,
+                'nip' => '197107122000122003',
                 'code' => '00452',
                 'name' => 'Darmi / Disbun M.P',
                 'no_telp' => '08125861335',
@@ -5441,11 +6345,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             452 => 
             array (
                 'id' => 453,
+                'nik' => NULL,
+                'nip' => '197909052007011007',
                 'code' => '00453',
                 'name' => 'Hendra Cipta, S S.PKP',
                 'no_telp' => '085751811378',
@@ -5453,11 +6359,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             453 => 
             array (
                 'id' => 454,
+                'nik' => NULL,
+                'nip' => '197603212007012015',
                 'code' => '00454',
                 'name' => 'Mariati SP',
                 'no_telp' => '085332434529',
@@ -5465,11 +6373,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             454 => 
             array (
                 'id' => 455,
+                'nik' => NULL,
+                'nip' => '196312121988032020',
                 'code' => '00455',
                 'name' => 'Mulin S.PKP',
                 'no_telp' => '081347707091',
@@ -5477,11 +6387,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             455 => 
             array (
                 'id' => 456,
+                'nik' => NULL,
+                'nip' => '197112231994032003',
                 'code' => '00456',
                 'name' => 'Nurtin SP',
                 'no_telp' => '082351652265',
@@ -5489,11 +6401,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             456 => 
             array (
                 'id' => 457,
+                'nik' => NULL,
+                'nip' => '197812292007012015',
                 'code' => '00457',
                 'name' => 'Rosita, SP',
                 'no_telp' => '082148998654',
@@ -5501,11 +6415,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             457 => 
             array (
                 'id' => 458,
+                'nik' => NULL,
+                'nip' => '197510152007011025',
                 'code' => '00458',
                 'name' => 'Sofian Hadi S.PKP',
                 'no_telp' => '082357395979',
@@ -5513,11 +6429,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             458 => 
             array (
                 'id' => 459,
+                'nik' => NULL,
+                'nip' => '196902132001121003',
                 'code' => '00459',
                 'name' => 'Tumaji S.PKP',
                 'no_telp' => '082157061936',
@@ -5525,11 +6443,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             459 => 
             array (
                 'id' => 460,
+                'nik' => NULL,
+                'nip' => '198101132000031001',
                 'code' => '00460',
                 'name' => '- WINARTO SP',
                 'no_telp' => '085247085485',
@@ -5537,11 +6457,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             460 => 
             array (
                 'id' => 461,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00461',
                 'name' => 'AGUSTINS LEMBANG SP',
                 'no_telp' => '081347019649',
@@ -5554,6 +6476,8 @@ class PegawaisTableSeeder extends Seeder
             461 => 
             array (
                 'id' => 462,
+                'nik' => '6402066806760001',
+                'nip' => NULL,
                 'code' => '00462',
                 'name' => 'ATIH HAYATI,AP',
                 'no_telp' => '081269949901',
@@ -5561,11 +6485,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             462 => 
             array (
                 'id' => 463,
+                'nik' => '6402060908890001',
+                'nip' => NULL,
                 'code' => '00463',
                 'name' => 'DIDIK SANTOSO',
                 'no_telp' => '085751118309',
@@ -5573,11 +6499,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             463 => 
             array (
                 'id' => 464,
+                'nik' => '6402061206730006',
+                'nip' => NULL,
                 'code' => '00464',
                 'name' => 'LAKIR PRAWOTO',
                 'no_telp' => '085246844644',
@@ -5585,11 +6513,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             464 => 
             array (
                 'id' => 465,
+                'nik' => '6402064202780002',
+                'nip' => NULL,
                 'code' => '00465',
                 'name' => 'LILIS SUMIATI',
                 'no_telp' => '085654742248',
@@ -5597,11 +6527,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             465 => 
             array (
                 'id' => 466,
+                'nik' => '6402062010760001',
+                'nip' => NULL,
                 'code' => '00466',
                 'name' => 'OKTAVIANUS KARAENG LOLO',
                 'no_telp' => '',
@@ -5609,11 +6541,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             466 => 
             array (
                 'id' => 467,
+                'nik' => '6402060302830005',
+                'nip' => NULL,
                 'code' => '00467',
                 'name' => 'SUHARMISIN',
                 'no_telp' => '082229991119',
@@ -5621,11 +6555,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             467 => 
             array (
                 'id' => 468,
+                'nik' => '6402065908770002',
+                'nip' => NULL,
                 'code' => '00468',
                 'name' => 'SUHARNISYAH',
                 'no_telp' => '085246950354',
@@ -5633,11 +6569,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             468 => 
             array (
                 'id' => 469,
+                'nik' => '6402061702540002',
+                'nip' => NULL,
                 'code' => '00469',
                 'name' => 'SUWARMAN,S.P',
                 'no_telp' => '08125867499',
@@ -5645,11 +6583,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             469 => 
             array (
                 'id' => 470,
+                'nik' => '6402061704560001',
+                'nip' => NULL,
                 'code' => '00470',
                 'name' => 'THOAT MAD KHAIRUDIN',
                 'no_telp' => '08125250941',
@@ -5657,11 +6597,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             470 => 
             array (
                 'id' => 471,
+                'nik' => '6402061308760003',
+                'nip' => NULL,
                 'code' => '00471',
                 'name' => 'Ustuhri, A.Md',
                 'no_telp' => '085246893341',
@@ -5669,11 +6611,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             471 => 
             array (
                 'id' => 472,
+                'nik' => '6402010907610001',
+                'nip' => NULL,
                 'code' => '00472',
                 'name' => 'YULI SUSTIYONO,S.P',
                 'no_telp' => '082323555511',
@@ -5681,11 +6625,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 32,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             472 => 
             array (
                 'id' => 473,
+                'nik' => NULL,
+                'nip' => '198310062008011007',
                 'code' => '00473',
                 'name' => 'Fredy Andhika SP',
                 'no_telp' => '085246486706',
@@ -5693,11 +6639,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             473 => 
             array (
                 'id' => 474,
+                'nik' => NULL,
+                'nip' => '197901302008011006',
                 'code' => '00474',
                 'name' => 'Hari Budiyanto SP',
                 'no_telp' => '08125339294',
@@ -5705,11 +6653,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             474 => 
             array (
                 'id' => 475,
+                'nik' => NULL,
+                'nip' => '196812132006041007',
                 'code' => '00475',
                 'name' => 'Haryo / Disbun',
                 'no_telp' => '085754037693',
@@ -5717,11 +6667,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             475 => 
             array (
                 'id' => 476,
+                'nik' => NULL,
+                'nip' => '196509019990310021',
                 'code' => '00476',
                 'name' => 'I Nengah Diksa SP',
                 'no_telp' => '081347962441',
@@ -5729,11 +6681,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             476 => 
             array (
                 'id' => 477,
+                'nik' => NULL,
+                'nip' => '197807142006041006',
                 'code' => '00477',
                 'name' => 'Iwan Setyawan SP',
                 'no_telp' => '08125497111',
@@ -5741,11 +6695,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             477 => 
             array (
                 'id' => 478,
+                'nik' => NULL,
+                'nip' => '197205162008011014',
                 'code' => '00478',
                 'name' => 'Loddy Yusfianta Wong SP',
                 'no_telp' => '081347887123',
@@ -5753,11 +6709,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             478 => 
             array (
                 'id' => 479,
+                'nik' => NULL,
+                'nip' => '198111172011012002',
                 'code' => '00479',
                 'name' => 'Nora Hariani SP',
                 'no_telp' => '081346294914',
@@ -5765,11 +6723,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             479 => 
             array (
                 'id' => 480,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00480',
                 'name' => 'ROHANA SP',
                 'no_telp' => '081346397306',
@@ -5782,6 +6742,8 @@ class PegawaisTableSeeder extends Seeder
             480 => 
             array (
                 'id' => 481,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00481',
                 'name' => 'SITI MURIYATI S.PKP',
                 'no_telp' => '082214526562',
@@ -5794,6 +6756,8 @@ class PegawaisTableSeeder extends Seeder
             481 => 
             array (
                 'id' => 482,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00482',
                 'name' => 'TRI MULYANINGSIH SP',
                 'no_telp' => '082251285124',
@@ -5806,6 +6770,8 @@ class PegawaisTableSeeder extends Seeder
             482 => 
             array (
                 'id' => 483,
+                'nik' => '6402072102650001',
+                'nip' => NULL,
                 'code' => '00483',
                 'name' => 'ASFAR',
                 'no_telp' => '082288568371',
@@ -5813,11 +6779,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             483 => 
             array (
                 'id' => 484,
+                'nik' => '6402071708660002',
+                'nip' => NULL,
                 'code' => '00484',
                 'name' => 'ISBAT',
                 'no_telp' => '082150106338',
@@ -5825,11 +6793,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             484 => 
             array (
                 'id' => 485,
+                'nik' => '6402075106690001',
+                'nip' => NULL,
                 'code' => '00485',
                 'name' => 'SALBIAH',
                 'no_telp' => '085250650427',
@@ -5837,11 +6807,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             485 => 
             array (
                 'id' => 486,
+                'nik' => '6402070504820001',
+                'nip' => NULL,
                 'code' => '00486',
                 'name' => 'SUJOKO',
                 'no_telp' => '081253704605',
@@ -5849,23 +6821,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             486 => 
             array (
                 'id' => 487,
+                'nik' => '6471016808820003',
+                'nip' => NULL,
                 'code' => '00487',
                 'name' => 'WINARTI',
-                'no_telp' => '081251729230',
+                'no_telp' => '082158000939',
                 'email' => 'nartw211@gmail.com',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 33,
                 'created_at' => '2023-06-26 14:12:54',
-                'updated_at' => '2023-06-26 14:12:54',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             487 => 
             array (
                 'id' => 488,
+                'nik' => NULL,
+                'nip' => '197511082008011012',
                 'code' => '00488',
                 'name' => 'Awal Didik Sucahyo SP',
                 'no_telp' => '081347232023',
@@ -5873,11 +6849,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             488 => 
             array (
                 'id' => 489,
+                'nik' => NULL,
+                'nip' => '196912302008011016',
                 'code' => '00489',
                 'name' => 'Desember Tambuku SP',
                 'no_telp' => '085247060744',
@@ -5885,11 +6863,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             489 => 
             array (
                 'id' => 490,
+                'nik' => NULL,
+                'nip' => '198002082008011021',
                 'code' => '00490',
                 'name' => 'Eko Subari SP',
                 'no_telp' => '085251777432',
@@ -5897,11 +6877,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             490 => 
             array (
                 'id' => 491,
+                'nik' => NULL,
+                'nip' => '198206062017062001',
                 'code' => '00491',
                 'name' => 'FAHRIANI SP',
                 'no_telp' => '085250381735',
@@ -5909,11 +6891,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             491 => 
             array (
                 'id' => 492,
+                'nik' => NULL,
+                'nip' => '197712252007011021',
                 'code' => '00492',
                 'name' => 'Hartoyo S.PKP',
                 'no_telp' => '085754037693',
@@ -5921,11 +6905,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             492 => 
             array (
                 'id' => 493,
+                'nik' => NULL,
+                'nip' => '197206122008011024',
                 'code' => '00493',
                 'name' => 'Imbang Sutrisno / Disbun SP',
                 'no_telp' => '085388541972',
@@ -5933,11 +6919,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             493 => 
             array (
                 'id' => 494,
+                'nik' => NULL,
+                'nip' => '197808052007012014',
                 'code' => '00494',
                 'name' => 'Jainawati SP',
                 'no_telp' => '081347233479',
@@ -5945,11 +6933,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             494 => 
             array (
                 'id' => 495,
+                'nik' => NULL,
+                'nip' => '198407052017061002',
                 'code' => '00495',
                 'name' => 'Juliansyah',
                 'no_telp' => '085250509583',
@@ -5957,11 +6947,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             495 => 
             array (
                 'id' => 496,
+                'nik' => NULL,
+                'nip' => '196307091986031020',
                 'code' => '00496',
                 'name' => 'Mok Timbul SP',
                 'no_telp' => '08125559215',
@@ -5969,11 +6961,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             496 => 
             array (
                 'id' => 497,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00497',
                 'name' => 'Nuni Andayani S.Pt.',
                 'no_telp' => '085346777101',
@@ -5986,6 +6980,8 @@ class PegawaisTableSeeder extends Seeder
             497 => 
             array (
                 'id' => 498,
+                'nik' => NULL,
+                'nip' => '197712182011012001',
                 'code' => '00498',
                 'name' => 'Nuni Andayani S.Pt',
                 'no_telp' => '081253945101',
@@ -5993,23 +6989,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             498 => 
             array (
                 'id' => 499,
+                'nik' => NULL,
+                'nip' => '197007132007012024',
                 'code' => '00499',
                 'name' => 'Ria Malianti',
-                'no_telp' => '085250639499',
+                'no_telp' => '081258425059',
                 'email' => 'ria.malianti@gmail.com',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             499 => 
             array (
                 'id' => 500,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00500',
                 'name' => 'RIA MALIANTI',
                 'no_telp' => '081258425059',
@@ -6024,6 +7024,8 @@ class PegawaisTableSeeder extends Seeder
             0 => 
             array (
                 'id' => 501,
+                'nik' => NULL,
+                'nip' => '196408151987091001',
                 'code' => '00501',
                 'name' => 'Sadi S.PKP',
                 'no_telp' => '085362780488',
@@ -6031,11 +7033,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             1 => 
             array (
                 'id' => 502,
+                'nik' => NULL,
+                'nip' => '196601051987092002',
                 'code' => '00502',
                 'name' => 'Treisjane Leleng SP',
                 'no_telp' => '081253245016',
@@ -6043,11 +7047,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             2 => 
             array (
                 'id' => 503,
+                'nik' => NULL,
+                'nip' => '198009162008012020',
                 'code' => '00503',
                 'name' => 'Tutut Prasetya Wati SP',
                 'no_telp' => '081347906363',
@@ -6055,11 +7061,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             3 => 
             array (
                 'id' => 504,
+                'nik' => NULL,
+                'nip' => '196608011994031008',
                 'code' => '00504',
                 'name' => 'Wiji Purwanto SP',
                 'no_telp' => '082153434776',
@@ -6067,11 +7075,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             4 => 
             array (
                 'id' => 505,
+                'nik' => NULL,
+                'nip' => '197910072011012001',
                 'code' => '00505',
                 'name' => 'Zainatuddiniyah SP',
                 'no_telp' => '082148887250',
@@ -6079,11 +7089,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             5 => 
             array (
                 'id' => 506,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00506',
                 'name' => 'HADI PURWANTO SP',
                 'no_telp' => '081350360107',
@@ -6096,6 +7108,8 @@ class PegawaisTableSeeder extends Seeder
             6 => 
             array (
                 'id' => 507,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00507',
                 'name' => 'KADANG  S.TP',
                 'no_telp' => '081347495503',
@@ -6108,6 +7122,8 @@ class PegawaisTableSeeder extends Seeder
             7 => 
             array (
                 'id' => 508,
+                'nik' => '6402160606510001',
+                'nip' => NULL,
                 'code' => '00508',
                 'name' => 'Asabur',
                 'no_telp' => '',
@@ -6115,11 +7131,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             8 => 
             array (
                 'id' => 509,
+                'nik' => '6402160307720002',
+                'nip' => NULL,
                 'code' => '00509',
                 'name' => 'BAMBANG SUYITNO',
                 'no_telp' => '',
@@ -6127,11 +7145,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             9 => 
             array (
                 'id' => 510,
+                'nik' => '64021618087000002',
+                'nip' => NULL,
                 'code' => '00510',
                 'name' => 'DEDI SURIANSYAH',
                 'no_telp' => '',
@@ -6139,11 +7159,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             10 => 
             array (
                 'id' => 511,
+                'nik' => '6402161610800001',
+                'nip' => NULL,
                 'code' => '00511',
                 'name' => 'EEN WAHYUDI',
                 'no_telp' => '',
@@ -6151,11 +7173,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             11 => 
             array (
                 'id' => 512,
+                'nik' => '6402160708670005',
+                'nip' => NULL,
                 'code' => '00512',
                 'name' => 'HARIANTO',
                 'no_telp' => '082352296331',
@@ -6163,11 +7187,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             12 => 
             array (
                 'id' => 513,
+                'nik' => '6402061901580001',
+                'nip' => NULL,
                 'code' => '00513',
                 'name' => 'Harnan Belia HS',
                 'no_telp' => '',
@@ -6175,11 +7201,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             13 => 
             array (
                 'id' => 514,
+                'nik' => '6402161608830001',
+                'nip' => NULL,
                 'code' => '00514',
                 'name' => 'I MADE SUSANA',
                 'no_telp' => '081253722242',
@@ -6187,11 +7215,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             14 => 
             array (
                 'id' => 515,
+                'nik' => '6402161904730002',
+                'nip' => NULL,
                 'code' => '00515',
                 'name' => 'IRIANTO',
                 'no_telp' => '',
@@ -6199,11 +7229,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             15 => 
             array (
                 'id' => 516,
+                'nik' => '6402160211620001',
+                'nip' => NULL,
                 'code' => '00516',
                 'name' => 'JAMASRI',
                 'no_telp' => '081253286649',
@@ -6211,11 +7243,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             16 => 
             array (
                 'id' => 517,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00517',
                 'name' => 'JULIANSYAH',
                 'no_telp' => '',
@@ -6228,6 +7262,8 @@ class PegawaisTableSeeder extends Seeder
             17 => 
             array (
                 'id' => 518,
+                'nik' => '6402160506620002',
+                'nip' => NULL,
                 'code' => '00518',
                 'name' => 'KADIRUN',
                 'no_telp' => '',
@@ -6235,11 +7271,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             18 => 
             array (
                 'id' => 519,
+                'nik' => '6402160708620001',
+                'nip' => NULL,
                 'code' => '00519',
                 'name' => 'Mery Abdul Sanie',
                 'no_telp' => '',
@@ -6247,11 +7285,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             19 => 
             array (
                 'id' => 520,
+                'nik' => '6402160504710001',
+                'nip' => NULL,
                 'code' => '00520',
                 'name' => 'SANTUSI',
                 'no_telp' => '085393330107',
@@ -6259,11 +7299,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             20 => 
             array (
                 'id' => 521,
+                'nik' => '6402160409550001',
+                'nip' => NULL,
                 'code' => '00521',
                 'name' => 'Selamat Setu',
                 'no_telp' => '081348099017',
@@ -6271,35 +7313,41 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             21 => 
             array (
                 'id' => 522,
+                'nik' => NULL,
+                'nip' => '196703282007011014',
                 'code' => '00522',
                 'name' => 'Sukamto',
-                'no_telp' => '',
+                'no_telp' => '082124346878',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             22 => 
             array (
                 'id' => 523,
+                'nik' => '6042160610500001',
+                'nip' => NULL,
                 'code' => '00523',
                 'name' => 'SUKARDI',
-                'no_telp' => '',
+                'no_telp' => '085845750523',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             23 => 
             array (
                 'id' => 524,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00524',
                 'name' => 'SUKARDI',
                 'no_telp' => '085845750523',
@@ -6312,6 +7360,8 @@ class PegawaisTableSeeder extends Seeder
             24 => 
             array (
                 'id' => 525,
+                'nik' => '6402165505570001',
+                'nip' => NULL,
                 'code' => '00525',
                 'name' => 'SUMARIYAH,S.P',
                 'no_telp' => '08125343050',
@@ -6319,11 +7369,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             25 => 
             array (
                 'id' => 526,
+                'nik' => '0000000000000000',
+                'nip' => NULL,
                 'code' => '00526',
                 'name' => 'Supranto',
                 'no_telp' => '',
@@ -6331,11 +7383,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             26 => 
             array (
                 'id' => 527,
+                'nik' => '6402160305670002',
+                'nip' => NULL,
                 'code' => '00527',
                 'name' => 'WAGIMAN',
                 'no_telp' => '',
@@ -6343,11 +7397,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             27 => 
             array (
                 'id' => 528,
+                'nik' => '6402160305670002',
+                'nip' => NULL,
                 'code' => '00528',
                 'name' => 'Wagisan',
                 'no_telp' => '',
@@ -6355,11 +7411,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             28 => 
             array (
                 'id' => 529,
+                'nik' => '6402160107610002',
+                'nip' => NULL,
                 'code' => '00529',
                 'name' => 'WASJO',
                 'no_telp' => '',
@@ -6367,11 +7425,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 34,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             29 => 
             array (
                 'id' => 530,
+                'nik' => NULL,
+                'nip' => '198209202011011001',
                 'code' => '00530',
                 'name' => 'Abdul Jahid Husain SP',
                 'no_telp' => '08125881404',
@@ -6379,11 +7439,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             30 => 
             array (
                 'id' => 531,
+                'nik' => NULL,
+                'nip' => '198201272008011009',
                 'code' => '00531',
                 'name' => 'Ardani / Disbun SP',
                 'no_telp' => '081346302813',
@@ -6391,11 +7453,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             31 => 
             array (
                 'id' => 532,
+                'nik' => NULL,
+                'nip' => '196403151987091001',
                 'code' => '00532',
                 'name' => 'Suhardiman S.PKP',
                 'no_telp' => '082150820632',
@@ -6403,11 +7467,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             32 => 
             array (
                 'id' => 533,
+                'nik' => NULL,
+                'nip' => '196508101999032005',
                 'code' => '00533',
                 'name' => 'Winarni SP',
                 'no_telp' => '081346215758',
@@ -6415,11 +7481,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             33 => 
             array (
                 'id' => 534,
+                'nik' => '6402044202700006',
+                'nip' => NULL,
                 'code' => '00534',
                 'name' => 'HASMI',
                 'no_telp' => '085259259626',
@@ -6427,11 +7495,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             34 => 
             array (
                 'id' => 535,
+                'nik' => '6402403066700003',
+                'nip' => NULL,
                 'code' => '00535',
                 'name' => 'LASMAN',
                 'no_telp' => '081350612774',
@@ -6439,11 +7509,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             35 => 
             array (
                 'id' => 536,
+                'nik' => '6402404119600001',
+                'nip' => NULL,
                 'code' => '00536',
                 'name' => 'MUHAMMAD AMIN RAIS',
                 'no_telp' => '',
@@ -6451,11 +7523,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             36 => 
             array (
                 'id' => 537,
+                'nik' => '6402040307740003',
+                'nip' => NULL,
                 'code' => '00537',
                 'name' => 'Paiman',
                 'no_telp' => '083140415097',
@@ -6463,11 +7537,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             37 => 
             array (
                 'id' => 538,
+                'nik' => '6402042807660001',
+                'nip' => NULL,
                 'code' => '00538',
                 'name' => 'Rahmat Amin',
                 'no_telp' => '085250271938',
@@ -6475,11 +7551,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             38 => 
             array (
                 'id' => 539,
+                'nik' => '6402040805690001',
+                'nip' => NULL,
                 'code' => '00539',
                 'name' => 'RUSDIANSYAH',
                 'no_telp' => '08125590684',
@@ -6487,11 +7565,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             39 => 
             array (
                 'id' => 540,
+                'nik' => '6402044610590001',
+                'nip' => NULL,
                 'code' => '00540',
                 'name' => 'SAMAI IN FADLILAH',
                 'no_telp' => '',
@@ -6499,11 +7579,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             40 => 
             array (
                 'id' => 541,
+                'nik' => '6402044610590001',
+                'nip' => NULL,
                 'code' => '00541',
                 'name' => 'SAMIIN FADILLAH',
                 'no_telp' => '081253402249',
@@ -6511,23 +7593,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             41 => 
             array (
                 'id' => 542,
+                'nik' => '6403032107870001',
+                'nip' => NULL,
                 'code' => '00542',
                 'name' => 'Solihin',
-                'no_telp' => '085345599167',
+                'no_telp' => '085652135461',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             42 => 
             array (
                 'id' => 543,
+                'nik' => '6402040608720003',
+                'nip' => NULL,
                 'code' => '00543',
                 'name' => 'Yaya',
                 'no_telp' => '082250055814',
@@ -6535,11 +7621,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 35,
                 'created_at' => '2023-06-26 14:12:55',
-                'updated_at' => '2023-06-26 14:12:55',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             43 => 
             array (
                 'id' => 544,
+                'nik' => NULL,
+                'nip' => '197606192007011027',
                 'code' => '00544',
                 'name' => 'Abdul Kasim / Disbun',
                 'no_telp' => '082256195908',
@@ -6547,11 +7635,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             44 => 
             array (
                 'id' => 545,
+                'nik' => NULL,
+                'nip' => '197604102007011027',
                 'code' => '00545',
                 'name' => 'Ahmad Hidayat',
                 'no_telp' => '081345074777',
@@ -6559,11 +7649,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             45 => 
             array (
                 'id' => 546,
+                'nik' => NULL,
+                'nip' => '198508072017062001',
                 'code' => '00546',
                 'name' => 'Lilik Dewi Kumala, S.ST S.ST',
                 'no_telp' => '085250735615',
@@ -6571,11 +7663,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             46 => 
             array (
                 'id' => 547,
+                'nik' => NULL,
+                'nip' => '196408181987101001',
                 'code' => '00547',
                 'name' => 'SUHARI, SP.,M.Si',
                 'no_telp' => '082149027754',
@@ -6583,11 +7677,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             47 => 
             array (
                 'id' => 548,
+                'nik' => NULL,
+                'nip' => '197607312008011012',
                 'code' => '00548',
                 'name' => 'Sukatno',
                 'no_telp' => '081355896018',
@@ -6595,11 +7691,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             48 => 
             array (
                 'id' => 549,
+                'nik' => NULL,
+                'nip' => '198406162017062001',
                 'code' => '00549',
                 'name' => 'Yenni Mariana',
                 'no_telp' => '082152522748',
@@ -6607,11 +7705,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             49 => 
             array (
                 'id' => 550,
+                'nik' => '6402051308770002',
+                'nip' => NULL,
                 'code' => '00550',
                 'name' => 'ABDUL JALIL',
                 'no_telp' => '',
@@ -6619,11 +7719,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             50 => 
             array (
                 'id' => 551,
+                'nik' => '003',
+                'nip' => NULL,
                 'code' => '00551',
                 'name' => 'ASDAR',
                 'no_telp' => '',
@@ -6631,11 +7733,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             51 => 
             array (
                 'id' => 552,
+                'nik' => '6402050508660002',
+                'nip' => NULL,
                 'code' => '00552',
                 'name' => 'Drs. HASANUDDIN SUPU',
                 'no_telp' => '082353351634',
@@ -6643,11 +7747,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             52 => 
             array (
                 'id' => 553,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00553',
                 'name' => 'H. ANWAR. S.IP',
                 'no_telp' => '082255141225',
@@ -6660,6 +7766,8 @@ class PegawaisTableSeeder extends Seeder
             53 => 
             array (
                 'id' => 554,
+                'nik' => '6402052908700002',
+                'nip' => NULL,
                 'code' => '00554',
                 'name' => 'H.ANWAR',
                 'no_telp' => '082255141225',
@@ -6667,11 +7775,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             54 => 
             array (
                 'id' => 555,
+                'nik' => '6402050307720003',
+                'nip' => NULL,
                 'code' => '00555',
                 'name' => 'Ir. HARIONO',
                 'no_telp' => '082157120033',
@@ -6679,11 +7789,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             55 => 
             array (
                 'id' => 556,
+                'nik' => '0012',
+                'nip' => NULL,
                 'code' => '00556',
                 'name' => 'JUSMAN',
                 'no_telp' => '',
@@ -6691,11 +7803,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             56 => 
             array (
                 'id' => 557,
+                'nik' => '6402052402860001',
+                'nip' => NULL,
                 'code' => '00557',
                 'name' => 'MUHAMMAD ARSYAD',
                 'no_telp' => '085810252744',
@@ -6703,11 +7817,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             57 => 
             array (
                 'id' => 558,
+                'nik' => '002',
+                'nip' => NULL,
                 'code' => '00558',
                 'name' => 'NURDIN',
                 'no_telp' => '',
@@ -6715,11 +7831,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             58 => 
             array (
                 'id' => 559,
+                'nik' => '6402051206830003',
+                'nip' => NULL,
                 'code' => '00559',
                 'name' => 'RAMLAN',
                 'no_telp' => '085245868777',
@@ -6727,11 +7845,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             59 => 
             array (
                 'id' => 560,
+                'nik' => '007',
+                'nip' => NULL,
                 'code' => '00560',
                 'name' => 'SAMSUL BAHRI',
                 'no_telp' => '',
@@ -6739,11 +7859,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             60 => 
             array (
                 'id' => 561,
+                'nik' => '0011',
+                'nip' => NULL,
                 'code' => '00561',
                 'name' => 'SHOHIBAN',
                 'no_telp' => '0811585466',
@@ -6751,11 +7873,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             61 => 
             array (
                 'id' => 562,
+                'nik' => '009',
+                'nip' => NULL,
                 'code' => '00562',
                 'name' => 'SINARIYAH',
                 'no_telp' => '',
@@ -6763,11 +7887,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             62 => 
             array (
                 'id' => 563,
+                'nik' => '0000000000000000',
+                'nip' => NULL,
                 'code' => '00563',
                 'name' => 'SOPHIA SCHU',
                 'no_telp' => '',
@@ -6775,23 +7901,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             63 => 
             array (
                 'id' => 564,
+                'nik' => '6403130109680001',
+                'nip' => NULL,
                 'code' => '00564',
                 'name' => 'SUPARMAN',
-                'no_telp' => '085787220003',
+                'no_telp' => '81253265481',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 36,
                 'created_at' => '2023-06-26 14:12:56',
-                'updated_at' => '2023-06-26 14:12:56',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             64 => 
             array (
                 'id' => 565,
+                'nik' => NULL,
+                'nip' => '196606061987101001',
                 'code' => '00565',
                 'name' => 'Sukarno P. Rugian A.Md',
                 'no_telp' => '081347460913',
@@ -6799,11 +7929,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 37,
                 'created_at' => '2023-06-26 14:12:59',
-                'updated_at' => '2023-06-26 14:12:59',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             65 => 
             array (
                 'id' => 566,
+                'nik' => NULL,
+                'nip' => '197502162007011017',
                 'code' => '00566',
                 'name' => 'Suparjana / Disbun',
                 'no_telp' => '085247070790',
@@ -6811,11 +7943,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 37,
                 'created_at' => '2023-06-26 14:12:59',
-                'updated_at' => '2023-06-26 14:12:59',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             66 => 
             array (
                 'id' => 567,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00567',
                 'name' => 'BUDI CAHYANTO SP',
                 'no_telp' => '085250655501',
@@ -6828,6 +7962,8 @@ class PegawaisTableSeeder extends Seeder
             67 => 
             array (
                 'id' => 568,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00568',
                 'name' => 'GAZALI RAHMAN SP',
                 'no_telp' => '085250444499',
@@ -6840,6 +7976,8 @@ class PegawaisTableSeeder extends Seeder
             68 => 
             array (
                 'id' => 569,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00569',
                 'name' => 'NORHAYATI SP',
                 'no_telp' => '082120030040',
@@ -6852,6 +7990,8 @@ class PegawaisTableSeeder extends Seeder
             69 => 
             array (
                 'id' => 570,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00570',
                 'name' => 'RAMAYANTI MIAR SP',
                 'no_telp' => '082157355678',
@@ -6864,6 +8004,8 @@ class PegawaisTableSeeder extends Seeder
             70 => 
             array (
                 'id' => 571,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00571',
                 'name' => 'SUDARMAN A.Md',
                 'no_telp' => '082226013222',
@@ -6876,6 +8018,8 @@ class PegawaisTableSeeder extends Seeder
             71 => 
             array (
                 'id' => 572,
+                'nik' => '6472035511830003',
+                'nip' => NULL,
                 'code' => '00572',
                 'name' => 'DEWI MURNI',
                 'no_telp' => '085246946688',
@@ -6883,11 +8027,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 37,
                 'created_at' => '2023-06-26 14:12:59',
-                'updated_at' => '2023-06-26 14:12:59',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             72 => 
             array (
                 'id' => 573,
+                'nik' => '6402017180760001',
+                'nip' => NULL,
                 'code' => '00573',
                 'name' => 'KAHARUDDIN',
                 'no_telp' => '82351929397',
@@ -6895,11 +8041,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 37,
                 'created_at' => '2023-06-26 14:12:59',
-                'updated_at' => '2023-06-26 14:12:59',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             73 => 
             array (
                 'id' => 574,
+                'nik' => '6402176801820001',
+                'nip' => NULL,
                 'code' => '00574',
                 'name' => 'NENENG MUNAWAROH',
                 'no_telp' => '085754555233',
@@ -6907,11 +8055,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 37,
                 'created_at' => '2023-06-26 14:12:59',
-                'updated_at' => '2023-06-26 14:12:59',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             74 => 
             array (
                 'id' => 575,
+                'nik' => '6402170207790004',
+                'nip' => NULL,
                 'code' => '00575',
                 'name' => 'SUGIYANTO',
                 'no_telp' => '985248194145',
@@ -6919,11 +8069,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 37,
                 'created_at' => '2023-06-26 14:12:59',
-                'updated_at' => '2023-06-26 14:12:59',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             75 => 
             array (
                 'id' => 576,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00576',
                 'name' => 'SUKARDI',
                 'no_telp' => '',
@@ -6936,6 +8088,8 @@ class PegawaisTableSeeder extends Seeder
             76 => 
             array (
                 'id' => 577,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00577',
                 'name' => 'Alice Sunandar S.P',
                 'no_telp' => '08115820645',
@@ -6948,6 +8102,8 @@ class PegawaisTableSeeder extends Seeder
             77 => 
             array (
                 'id' => 578,
+                'nik' => NULL,
+                'nip' => '197804212008011020',
                 'code' => '00578',
                 'name' => 'Alice Sunandar SP',
                 'no_telp' => '08115820645',
@@ -6955,11 +8111,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             78 => 
             array (
                 'id' => 579,
+                'nik' => NULL,
+                'nip' => '197808242008011014',
                 'code' => '00579',
                 'name' => 'Ikhsanuddin SP',
                 'no_telp' => '08125538549',
@@ -6967,11 +8125,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             79 => 
             array (
                 'id' => 580,
+                'nik' => NULL,
+                'nip' => '198310112008011012',
                 'code' => '00580',
                 'name' => 'Jamli S.PKP',
                 'no_telp' => '081347738825',
@@ -6979,11 +8139,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             80 => 
             array (
                 'id' => 581,
+                'nik' => NULL,
+                'nip' => '196702241987101001',
                 'code' => '00581',
                 'name' => 'H Martadinata S.PKP',
                 'no_telp' => '081347103111',
@@ -6991,11 +8153,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             81 => 
             array (
                 'id' => 582,
+                'nik' => NULL,
+                'nip' => '197708232007011015',
                 'code' => '00582',
                 'name' => 'Muhammad Syahruddin / Disbun',
                 'no_telp' => '082350971960',
@@ -7003,11 +8167,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             82 => 
             array (
                 'id' => 583,
+                'nik' => NULL,
+                'nip' => '198405062008011008',
                 'code' => '00583',
                 'name' => 'Muhammad Yani',
                 'no_telp' => '085751811025',
@@ -7015,11 +8181,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             83 => 
             array (
                 'id' => 584,
+                'nik' => NULL,
+                'nip' => '198712272017062001',
                 'code' => '00584',
                 'name' => '- Nani Erawati -',
                 'no_telp' => '085251083717',
@@ -7027,11 +8195,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             84 => 
             array (
                 'id' => 585,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00585',
                 'name' => 'Norkolis SP',
                 'no_telp' => '085705015191',
@@ -7044,6 +8214,8 @@ class PegawaisTableSeeder extends Seeder
             85 => 
             array (
                 'id' => 586,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00586',
                 'name' => 'TEGUH RIYANTO',
                 'no_telp' => '082157555586',
@@ -7056,6 +8228,8 @@ class PegawaisTableSeeder extends Seeder
             86 => 
             array (
                 'id' => 587,
+                'nik' => '6402116005720003',
+                'nip' => NULL,
                 'code' => '00587',
                 'name' => 'ANESIH',
                 'no_telp' => '085250016379',
@@ -7063,11 +8237,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             87 => 
             array (
                 'id' => 588,
+                'nik' => '6402114402740001',
+                'nip' => NULL,
                 'code' => '00588',
                 'name' => 'DIANA ROWA',
                 'no_telp' => '085250425736',
@@ -7075,11 +8251,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             88 => 
             array (
                 'id' => 589,
+                'nik' => '0000000000000000',
+                'nip' => NULL,
                 'code' => '00589',
                 'name' => 'Rimbayanto',
                 'no_telp' => '',
@@ -7087,23 +8265,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             89 => 
             array (
                 'id' => 590,
+                'nik' => '6402122511640001',
+                'nip' => NULL,
                 'code' => '00590',
                 'name' => 'Suharno',
-                'no_telp' => '',
+                'no_telp' => '085387334668',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             90 => 
             array (
                 'id' => 591,
+                'nik' => '0000000000000000',
+                'nip' => NULL,
                 'code' => '00591',
                 'name' => 'Sujarwo',
                 'no_telp' => '',
@@ -7111,11 +8293,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             91 => 
             array (
                 'id' => 592,
+                'nik' => '6402110107770033',
+                'nip' => NULL,
                 'code' => '00592',
                 'name' => 'WITOMO',
                 'no_telp' => '085386829950',
@@ -7123,11 +8307,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 38,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             92 => 
             array (
                 'id' => 593,
+                'nik' => NULL,
+                'nip' => '198507152017061001',
                 'code' => '00593',
                 'name' => 'Muhamad Masfut',
                 'no_telp' => '',
@@ -7135,11 +8321,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 39,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             93 => 
             array (
                 'id' => 594,
+                'nik' => NULL,
+                'nip' => '196901082007011031',
                 'code' => '00594',
                 'name' => 'Rafiani S.PKP',
                 'no_telp' => '085391572383',
@@ -7147,11 +8335,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 39,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             94 => 
             array (
                 'id' => 595,
+                'nik' => NULL,
+                'nip' => '198109082017062001',
                 'code' => '00595',
                 'name' => 'Rusmiati',
                 'no_telp' => '085246738220',
@@ -7159,11 +8349,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 39,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             95 => 
             array (
                 'id' => 596,
+                'nik' => NULL,
+                'nip' => '197002022008011022',
                 'code' => '00596',
                 'name' => 'Supardi / Disbun',
                 'no_telp' => '081350832182',
@@ -7171,11 +8363,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 39,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             96 => 
             array (
                 'id' => 597,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00597',
                 'name' => 'HARIYANTO',
                 'no_telp' => '082217484323',
@@ -7188,6 +8382,8 @@ class PegawaisTableSeeder extends Seeder
             97 => 
             array (
                 'id' => 598,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00598',
                 'name' => 'HENDRO SAPUTRO',
                 'no_telp' => '082158501957',
@@ -7200,6 +8396,8 @@ class PegawaisTableSeeder extends Seeder
             98 => 
             array (
                 'id' => 599,
+                'nik' => '6402095508830001',
+                'nip' => NULL,
                 'code' => '00599',
                 'name' => 'NAPSIAH',
                 'no_telp' => '081350941292',
@@ -7207,11 +8405,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 39,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             99 => 
             array (
                 'id' => 600,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00600',
                 'name' => 'SYAHRAN',
                 'no_telp' => '',
@@ -7224,6 +8424,8 @@ class PegawaisTableSeeder extends Seeder
             100 => 
             array (
                 'id' => 601,
+                'nik' => NULL,
+                'nip' => '197404152008011023',
                 'code' => '00601',
                 'name' => 'Darli',
                 'no_telp' => '082243265922',
@@ -7231,11 +8433,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 40,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             101 => 
             array (
                 'id' => 602,
+                'nik' => NULL,
+                'nip' => '198605062008011004',
                 'code' => '00602',
                 'name' => 'Lukmanul Hakim / Disbun',
                 'no_telp' => '085250647801',
@@ -7243,11 +8447,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 40,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             102 => 
             array (
                 'id' => 603,
+                'nik' => NULL,
+                'nip' => '198209082008012018',
                 'code' => '00603',
                 'name' => 'Ma sum',
                 'no_telp' => '082157831475',
@@ -7255,11 +8461,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 40,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             103 => 
             array (
                 'id' => 604,
+                'nik' => NULL,
+                'nip' => '197311052008011015',
                 'code' => '00604',
                 'name' => 'Syahran / Disbun',
                 'no_telp' => '081350284532',
@@ -7267,11 +8475,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 40,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             104 => 
             array (
                 'id' => 605,
+                'nik' => '6402103112780803',
+                'nip' => NULL,
                 'code' => '00605',
                 'name' => 'ARIPIN',
                 'no_telp' => '085347548057',
@@ -7279,11 +8489,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 40,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             105 => 
             array (
                 'id' => 606,
+                'nik' => '6402100810730001',
+                'nip' => NULL,
                 'code' => '00606',
                 'name' => 'Muhamad',
                 'no_telp' => '085345237611',
@@ -7291,11 +8503,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 40,
                 'created_at' => '2023-06-26 14:13:00',
-                'updated_at' => '2023-06-26 14:13:00',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             106 => 
             array (
                 'id' => 607,
+                'nik' => NULL,
+                'nip' => '197512252010011012',
                 'code' => '00607',
                 'name' => 'Junaidi  / Disbun S.PKP',
                 'no_telp' => '081254672036',
@@ -7303,11 +8517,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 41,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:14:59',
             ),
             107 => 
             array (
                 'id' => 608,
+                'nik' => NULL,
+                'nip' => '198204062017061001',
                 'code' => '00608',
                 'name' => 'Rahmayudi Rusdian A.MD',
                 'no_telp' => '',
@@ -7315,11 +8531,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 41,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             108 => 
             array (
                 'id' => 609,
+                'nik' => NULL,
+                'nip' => '196808292007011010',
                 'code' => '00609',
                 'name' => 'Ir Ricky Bara',
                 'no_telp' => '081350033886',
@@ -7327,11 +8545,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 41,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             109 => 
             array (
                 'id' => 610,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00610',
                 'name' => 'SIDARTA HENDRA Y, SP',
                 'no_telp' => '081350066641',
@@ -7344,6 +8564,8 @@ class PegawaisTableSeeder extends Seeder
             110 => 
             array (
                 'id' => 611,
+                'nik' => '6407044207890002',
+                'nip' => NULL,
                 'code' => '00611',
                 'name' => 'Betty danel',
                 'no_telp' => '081225270863',
@@ -7351,11 +8573,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 41,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:12:36',
             ),
             111 => 
             array (
                 'id' => 612,
+                'nik' => '6402120507750002',
+                'nip' => NULL,
                 'code' => '00612',
                 'name' => 'Santo gilen',
                 'no_telp' => '082149483323',
@@ -7363,11 +8587,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 41,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             112 => 
             array (
                 'id' => 613,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00613',
                 'name' => 'Suharno',
                 'no_telp' => '085387334668',
@@ -7380,6 +8606,8 @@ class PegawaisTableSeeder extends Seeder
             113 => 
             array (
                 'id' => 614,
+                'nik' => NULL,
+                'nip' => '197201172007011010',
                 'code' => '00614',
                 'name' => 'ALPIANSYAH',
                 'no_telp' => '082157195742',
@@ -7387,11 +8615,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 42,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             114 => 
             array (
                 'id' => 615,
+                'nik' => NULL,
+                'nip' => '198105202008011015',
                 'code' => '00615',
                 'name' => 'HIDAYATULLAH SP',
                 'no_telp' => '081253056825',
@@ -7399,11 +8629,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 42,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             115 => 
             array (
                 'id' => 616,
+                'nik' => NULL,
+                'nip' => '196509132008011005',
                 'code' => '00616',
                 'name' => 'JAMALUDIN',
                 'no_telp' => '081347272752',
@@ -7411,11 +8643,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 42,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             116 => 
             array (
                 'id' => 617,
+                'nik' => NULL,
+                'nip' => '196712312008011159',
                 'code' => '00617',
                 'name' => 'SUARDI S',
                 'no_telp' => '081347593111',
@@ -7423,11 +8657,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 42,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             117 => 
             array (
                 'id' => 618,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00618',
                 'name' => 'Masniah S.P',
                 'no_telp' => '081248735268',
@@ -7440,6 +8676,8 @@ class PegawaisTableSeeder extends Seeder
             118 => 
             array (
                 'id' => 619,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00619',
                 'name' => 'Nursia SP',
                 'no_telp' => '081257062900',
@@ -7452,6 +8690,8 @@ class PegawaisTableSeeder extends Seeder
             119 => 
             array (
                 'id' => 620,
+                'nik' => '6408012811870001',
+                'nip' => NULL,
                 'code' => '00620',
                 'name' => 'Abdul Ganis',
                 'no_telp' => '081257769714',
@@ -7459,11 +8699,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 42,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             120 => 
             array (
                 'id' => 621,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00621',
                 'name' => 'Akhmad Asari',
                 'no_telp' => '085250400066',
@@ -7476,6 +8718,8 @@ class PegawaisTableSeeder extends Seeder
             121 => 
             array (
                 'id' => 622,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00622',
                 'name' => 'Ema Susanti',
                 'no_telp' => '085248201528',
@@ -7488,6 +8732,8 @@ class PegawaisTableSeeder extends Seeder
             122 => 
             array (
                 'id' => 623,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00623',
                 'name' => 'Hadiawati',
                 'no_telp' => '081347997067',
@@ -7500,6 +8746,8 @@ class PegawaisTableSeeder extends Seeder
             123 => 
             array (
                 'id' => 624,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00624',
                 'name' => 'Hendra Cipta',
                 'no_telp' => '085332027474',
@@ -7512,6 +8760,8 @@ class PegawaisTableSeeder extends Seeder
             124 => 
             array (
                 'id' => 625,
+                'nik' => '6408012710840001',
+                'nip' => NULL,
                 'code' => '00625',
                 'name' => 'Heriansyah',
                 'no_telp' => '085754630498',
@@ -7519,11 +8769,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 42,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             125 => 
             array (
                 'id' => 626,
+                'nik' => '6408032012800002',
+                'nip' => NULL,
                 'code' => '00626',
                 'name' => 'M.Solihin',
                 'no_telp' => '082352065017',
@@ -7531,11 +8783,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 42,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             126 => 
             array (
                 'id' => 627,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00627',
                 'name' => 'Mohammad Sofian',
                 'no_telp' => '082153166167',
@@ -7548,6 +8802,8 @@ class PegawaisTableSeeder extends Seeder
             127 => 
             array (
                 'id' => 628,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00628',
                 'name' => 'Multazam',
                 'no_telp' => '085252552449',
@@ -7560,6 +8816,8 @@ class PegawaisTableSeeder extends Seeder
             128 => 
             array (
                 'id' => 629,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00629',
                 'name' => 'Mustajeli',
                 'no_telp' => '085391888866',
@@ -7572,6 +8830,8 @@ class PegawaisTableSeeder extends Seeder
             129 => 
             array (
                 'id' => 630,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00630',
                 'name' => 'Reni Susanti',
                 'no_telp' => '085250284622',
@@ -7584,6 +8844,8 @@ class PegawaisTableSeeder extends Seeder
             130 => 
             array (
                 'id' => 631,
+                'nik' => '6408011403740002',
+                'nip' => NULL,
                 'code' => '00631',
                 'name' => 'Rudi Mulyono',
                 'no_telp' => '081254236693',
@@ -7591,23 +8853,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 42,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:15:27',
             ),
             131 => 
             array (
                 'id' => 632,
+                'nik' => '6472101312770001',
+                'nip' => NULL,
                 'code' => '00632',
                 'name' => 'Samsuni',
-                'no_telp' => '082251812957',
+                'no_telp' => '085250958812',
                 'email' => 'samsunisam14@gmail.com',
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 42,
                 'created_at' => '2023-06-26 14:13:01',
-                'updated_at' => '2023-06-26 14:13:01',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             132 => 
             array (
                 'id' => 633,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00633',
                 'name' => 'Sri Widari',
                 'no_telp' => '082255383271',
@@ -7620,6 +8886,8 @@ class PegawaisTableSeeder extends Seeder
             133 => 
             array (
                 'id' => 634,
+                'nik' => NULL,
+                'nip' => '197303062007011028',
                 'code' => '00634',
                 'name' => 'DERISEN S.ST',
                 'no_telp' => '081325133437',
@@ -7627,11 +8895,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 43,
                 'created_at' => '2023-06-26 14:13:02',
-                'updated_at' => '2023-06-26 14:13:02',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             134 => 
             array (
                 'id' => 635,
+                'nik' => NULL,
+                'nip' => '198303052008011018',
                 'code' => '00635',
                 'name' => 'SUPARJAN',
                 'no_telp' => '081347733032',
@@ -7639,11 +8909,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 43,
                 'created_at' => '2023-06-26 14:13:02',
-                'updated_at' => '2023-06-26 14:13:02',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             135 => 
             array (
                 'id' => 636,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00636',
                 'name' => 'Heldi Sri Wahyuni SP',
                 'no_telp' => '081348302923',
@@ -7656,18 +8928,22 @@ class PegawaisTableSeeder extends Seeder
             136 => 
             array (
                 'id' => 637,
+                'nik' => '6407031405830001',
+                'nip' => NULL,
                 'code' => '00637',
                 'name' => 'Ibau',
-                'no_telp' => '',
+                'no_telp' => '082350013790',
                 'email' => '',
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 43,
                 'created_at' => '2023-06-26 14:13:02',
-                'updated_at' => '2023-06-26 14:13:02',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             137 => 
             array (
                 'id' => 638,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00638',
                 'name' => 'Meiden',
                 'no_telp' => '',
@@ -7680,6 +8956,8 @@ class PegawaisTableSeeder extends Seeder
             138 => 
             array (
                 'id' => 639,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00639',
                 'name' => 'Rusmini',
                 'no_telp' => '',
@@ -7692,6 +8970,8 @@ class PegawaisTableSeeder extends Seeder
             139 => 
             array (
                 'id' => 640,
+                'nik' => NULL,
+                'nip' => '197704122008011020',
                 'code' => '00640',
                 'name' => 'SOPIAN EDI S.PKP',
                 'no_telp' => '081250162631',
@@ -7699,11 +8979,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 44,
                 'created_at' => '2023-06-26 14:13:03',
-                'updated_at' => '2023-06-26 14:13:03',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             140 => 
             array (
                 'id' => 641,
+                'nik' => NULL,
+                'nip' => '196512032007011012',
                 'code' => '00641',
                 'name' => 'SUPRIYADI S.P',
                 'no_telp' => '081346642048',
@@ -7711,11 +8993,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 44,
                 'created_at' => '2023-06-26 14:13:03',
-                'updated_at' => '2023-06-26 14:13:03',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             141 => 
             array (
                 'id' => 642,
+                'nik' => NULL,
+                'nip' => '197012262005011001',
                 'code' => '00642',
                 'name' => 'WAWAN HIDAYAD S.PKP',
                 'no_telp' => '081350659428',
@@ -7723,11 +9007,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 44,
                 'created_at' => '2023-06-26 14:13:03',
-                'updated_at' => '2023-06-26 14:13:03',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             142 => 
             array (
                 'id' => 643,
+                'nik' => NULL,
+                'nip' => '197906172014032001',
                 'code' => '00643',
                 'name' => 'YUYUN YUNITA SP',
                 'no_telp' => '082148187545',
@@ -7735,11 +9021,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 44,
                 'created_at' => '2023-06-26 14:13:03',
-                'updated_at' => '2023-06-26 14:13:03',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             143 => 
             array (
                 'id' => 644,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00644',
                 'name' => 'Dodi Januar A.Md',
                 'no_telp' => '082250169133',
@@ -7752,6 +9040,8 @@ class PegawaisTableSeeder extends Seeder
             144 => 
             array (
                 'id' => 645,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00645',
                 'name' => 'Eko Jarkoni',
                 'no_telp' => '',
@@ -7764,6 +9054,8 @@ class PegawaisTableSeeder extends Seeder
             145 => 
             array (
                 'id' => 646,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00646',
                 'name' => 'Hasudungan Manurung',
                 'no_telp' => '',
@@ -7776,6 +9068,8 @@ class PegawaisTableSeeder extends Seeder
             146 => 
             array (
                 'id' => 647,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00647',
                 'name' => 'Ismail',
                 'no_telp' => '085252444495',
@@ -7788,6 +9082,8 @@ class PegawaisTableSeeder extends Seeder
             147 => 
             array (
                 'id' => 648,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00648',
                 'name' => 'Jepi',
                 'no_telp' => '',
@@ -7800,6 +9096,8 @@ class PegawaisTableSeeder extends Seeder
             148 => 
             array (
                 'id' => 649,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00649',
                 'name' => 'Nia Kurniawati',
                 'no_telp' => '',
@@ -7812,6 +9110,8 @@ class PegawaisTableSeeder extends Seeder
             149 => 
             array (
                 'id' => 650,
+                'nik' => '6408180102950002',
+                'nip' => NULL,
                 'code' => '00650',
                 'name' => 'Ramadhani Arif Mahmudi',
                 'no_telp' => '',
@@ -7819,11 +9119,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 44,
                 'created_at' => '2023-06-26 14:13:03',
-                'updated_at' => '2023-06-26 14:13:03',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             150 => 
             array (
                 'id' => 651,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00651',
                 'name' => 'Suwito',
                 'no_telp' => '',
@@ -7836,6 +9138,8 @@ class PegawaisTableSeeder extends Seeder
             151 => 
             array (
                 'id' => 652,
+                'nik' => NULL,
+                'nip' => '198202102006041018',
                 'code' => '00652',
                 'name' => 'DARWIN SP',
                 'no_telp' => '082149594823',
@@ -7843,11 +9147,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             152 => 
             array (
                 'id' => 653,
+                'nik' => NULL,
+                'nip' => '198305192008012010',
                 'code' => '00653',
                 'name' => 'MUNTIYAH S.ST',
                 'no_telp' => '082138555768',
@@ -7855,11 +9161,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             153 => 
             array (
                 'id' => 654,
+                'nik' => NULL,
+                'nip' => '198107192008011009',
                 'code' => '00654',
                 'name' => 'PADLI YADI',
                 'no_telp' => '085248743496',
@@ -7867,11 +9175,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             154 => 
             array (
                 'id' => 655,
+                'nik' => NULL,
+                'nip' => '197406292012121001',
                 'code' => '00655',
                 'name' => 'SAUT JUNIAR OPUSUNGGU SP',
                 'no_telp' => '081350131164',
@@ -7879,11 +9189,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             155 => 
             array (
                 'id' => 656,
+                'nik' => NULL,
+                'nip' => '198207042017061002',
                 'code' => '00656',
                 'name' => 'SUDIRMAN SP',
                 'no_telp' => '081347632868',
@@ -7891,11 +9203,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             156 => 
             array (
                 'id' => 657,
+                'nik' => NULL,
+                'nip' => '198205042017061001',
                 'code' => '00657',
                 'name' => 'SULISTIONO SP',
                 'no_telp' => '081347583427',
@@ -7903,11 +9217,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             157 => 
             array (
                 'id' => 658,
+                'nik' => NULL,
+                'nip' => '197203022012121001',
                 'code' => '00658',
                 'name' => 'SUPRIANTO SP',
                 'no_telp' => '085246807443',
@@ -7915,11 +9231,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             158 => 
             array (
                 'id' => 659,
+                'nik' => NULL,
+                'nip' => '198007182008012027',
                 'code' => '00659',
                 'name' => 'SUPRIYAWATY S.PKP',
                 'no_telp' => '081253802629',
@@ -7927,11 +9245,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             159 => 
             array (
                 'id' => 660,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00660',
                 'name' => 'Dwi Erlinawati',
                 'no_telp' => '',
@@ -7944,6 +9264,8 @@ class PegawaisTableSeeder extends Seeder
             160 => 
             array (
                 'id' => 661,
+                'nik' => '3208125409920005',
+                'nip' => NULL,
                 'code' => '00661',
                 'name' => 'Imas Mentari',
                 'no_telp' => '',
@@ -7951,11 +9273,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             161 => 
             array (
                 'id' => 662,
+                'nik' => '6408042101790004',
+                'nip' => NULL,
                 'code' => '00662',
                 'name' => 'Lukas Tandi Liling',
                 'no_telp' => '',
@@ -7963,11 +9287,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             162 => 
             array (
                 'id' => 663,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00663',
                 'name' => 'Lukman',
                 'no_telp' => '',
@@ -7980,6 +9306,8 @@ class PegawaisTableSeeder extends Seeder
             163 => 
             array (
                 'id' => 664,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00664',
                 'name' => 'Lusiani',
                 'no_telp' => '',
@@ -7992,6 +9320,8 @@ class PegawaisTableSeeder extends Seeder
             164 => 
             array (
                 'id' => 665,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00665',
                 'name' => 'Nur Azizah',
                 'no_telp' => '',
@@ -8004,6 +9334,8 @@ class PegawaisTableSeeder extends Seeder
             165 => 
             array (
                 'id' => 666,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00666',
                 'name' => 'Ribut Wahyudi',
                 'no_telp' => '',
@@ -8016,6 +9348,8 @@ class PegawaisTableSeeder extends Seeder
             166 => 
             array (
                 'id' => 667,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00667',
                 'name' => 'Samson',
                 'no_telp' => '',
@@ -8028,6 +9362,8 @@ class PegawaisTableSeeder extends Seeder
             167 => 
             array (
                 'id' => 668,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00668',
                 'name' => 'Samson Rahakim',
                 'no_telp' => '',
@@ -8040,6 +9376,8 @@ class PegawaisTableSeeder extends Seeder
             168 => 
             array (
                 'id' => 669,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00669',
                 'name' => 'Solo Mantana',
                 'no_telp' => '',
@@ -8052,6 +9390,8 @@ class PegawaisTableSeeder extends Seeder
             169 => 
             array (
                 'id' => 670,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00670',
                 'name' => 'Susan Gusweni',
                 'no_telp' => '',
@@ -8064,6 +9404,8 @@ class PegawaisTableSeeder extends Seeder
             170 => 
             array (
                 'id' => 671,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00671',
                 'name' => 'Wahyudi',
                 'no_telp' => '',
@@ -8076,6 +9418,8 @@ class PegawaisTableSeeder extends Seeder
             171 => 
             array (
                 'id' => 672,
+                'nik' => '6408022812910001',
+                'nip' => NULL,
                 'code' => '00672',
                 'name' => 'Yossy Aris Styawan',
                 'no_telp' => '',
@@ -8083,11 +9427,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:15:27',
             ),
             172 => 
             array (
                 'id' => 673,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00673',
                 'name' => 'Yulianti Banne',
                 'no_telp' => '',
@@ -8100,6 +9446,8 @@ class PegawaisTableSeeder extends Seeder
             173 => 
             array (
                 'id' => 674,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00674',
                 'name' => 'Yullie Diah Ardiana',
                 'no_telp' => '',
@@ -8112,6 +9460,8 @@ class PegawaisTableSeeder extends Seeder
             174 => 
             array (
                 'id' => 675,
+                'nik' => '6408020203530001',
+                'nip' => NULL,
                 'code' => '00675',
                 'name' => 'KUSWARA',
                 'no_telp' => '082116001157',
@@ -8119,11 +9469,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             175 => 
             array (
                 'id' => 676,
+                'nik' => '6408080601710001',
+                'nip' => NULL,
                 'code' => '00676',
                 'name' => 'ROCHMAT SUTARNO',
                 'no_telp' => '082149575817',
@@ -8131,11 +9483,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 45,
                 'created_at' => '2023-06-26 14:13:04',
-                'updated_at' => '2023-06-26 14:13:04',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             176 => 
             array (
                 'id' => 677,
+                'nik' => NULL,
+                'nip' => '198104092008011014',
                 'code' => '00677',
                 'name' => 'AGUS SATIAWAN',
                 'no_telp' => '081254569766',
@@ -8143,11 +9497,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 46,
                 'created_at' => '2023-06-26 14:13:05',
-                'updated_at' => '2023-06-26 14:13:05',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             177 => 
             array (
                 'id' => 678,
+                'nik' => NULL,
+                'nip' => '198611162015032003',
                 'code' => '00678',
                 'name' => 'DIAN KOMALASARI SP',
                 'no_telp' => '',
@@ -8155,11 +9511,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 46,
                 'created_at' => '2023-06-26 14:13:05',
-                'updated_at' => '2023-06-26 14:13:05',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             178 => 
             array (
                 'id' => 679,
+                'nik' => NULL,
+                'nip' => '197204092002121006',
                 'code' => '00679',
                 'name' => 'KUSWORO S.ST',
                 'no_telp' => '081253076426',
@@ -8167,11 +9525,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 46,
                 'created_at' => '2023-06-26 14:13:05',
-                'updated_at' => '2023-06-26 14:13:05',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             179 => 
             array (
                 'id' => 680,
+                'nik' => NULL,
+                'nip' => '197811242008011018',
                 'code' => '00680',
                 'name' => 'MARKUS',
                 'no_telp' => '082352605558',
@@ -8179,11 +9539,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 46,
                 'created_at' => '2023-06-26 14:13:05',
-                'updated_at' => '2023-06-26 14:13:05',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             180 => 
             array (
                 'id' => 681,
+                'nik' => NULL,
+                'nip' => '198203102008011015',
                 'code' => '00681',
                 'name' => 'SALFARI S.ST',
                 'no_telp' => '081253744718',
@@ -8191,11 +9553,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 46,
                 'created_at' => '2023-06-26 14:13:05',
-                'updated_at' => '2023-06-26 14:13:05',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             181 => 
             array (
                 'id' => 682,
+                'nik' => '6408072906700001',
+                'nip' => NULL,
                 'code' => '00682',
                 'name' => 'M. KURNAIN NUR',
                 'no_telp' => '',
@@ -8203,11 +9567,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbn',
                 'kantor_id' => 46,
                 'created_at' => '2023-06-26 14:13:05',
-                'updated_at' => '2023-06-26 14:13:05',
+                'updated_at' => '2023-07-04 07:15:13',
             ),
             182 => 
             array (
                 'id' => 683,
+                'nik' => '6408071004830003',
+                'nip' => NULL,
                 'code' => '00683',
                 'name' => 'Adi Mulyadi',
                 'no_telp' => '',
@@ -8215,11 +9581,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 46,
                 'created_at' => '2023-06-26 14:13:05',
-                'updated_at' => '2023-06-26 14:13:05',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             183 => 
             array (
                 'id' => 684,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00684',
                 'name' => 'Lahmudin',
                 'no_telp' => '',
@@ -8232,6 +9600,8 @@ class PegawaisTableSeeder extends Seeder
             184 => 
             array (
                 'id' => 685,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00685',
                 'name' => 'Markus Ebenhenser Reda',
                 'no_telp' => '',
@@ -8244,6 +9614,8 @@ class PegawaisTableSeeder extends Seeder
             185 => 
             array (
                 'id' => 686,
+                'nik' => '6408074505930001',
+                'nip' => NULL,
                 'code' => '00686',
                 'name' => 'Melisa Wandira sari',
                 'no_telp' => '',
@@ -8251,11 +9623,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 46,
                 'created_at' => '2023-06-26 14:13:05',
-                'updated_at' => '2023-06-26 14:13:05',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             186 => 
             array (
                 'id' => 687,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00687',
                 'name' => 'Ning Rahayu',
                 'no_telp' => '',
@@ -8268,6 +9642,8 @@ class PegawaisTableSeeder extends Seeder
             187 => 
             array (
                 'id' => 688,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00688',
                 'name' => 'Nur Adsyahadah',
                 'no_telp' => '',
@@ -8280,6 +9656,8 @@ class PegawaisTableSeeder extends Seeder
             188 => 
             array (
                 'id' => 689,
+                'nik' => '6408030212970002',
+                'nip' => NULL,
                 'code' => '00689',
                 'name' => 'Sandi Saputra',
                 'no_telp' => '',
@@ -8287,11 +9665,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 46,
                 'created_at' => '2023-06-26 14:13:05',
-                'updated_at' => '2023-06-26 14:13:05',
+                'updated_at' => '2023-07-04 07:15:27',
             ),
             189 => 
             array (
                 'id' => 690,
+                'nik' => '6408074705950001',
+                'nip' => NULL,
                 'code' => '00690',
                 'name' => 'Sulistina',
                 'no_telp' => '',
@@ -8299,11 +9679,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 46,
                 'created_at' => '2023-06-26 14:13:05',
-                'updated_at' => '2023-06-26 14:13:05',
+                'updated_at' => '2023-07-04 07:15:27',
             ),
             190 => 
             array (
                 'id' => 691,
+                'nik' => NULL,
+                'nip' => '196803232007011021',
                 'code' => '00691',
                 'name' => 'AGUS TAMAN',
                 'no_telp' => '085246920868',
@@ -8311,11 +9693,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 47,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             191 => 
             array (
                 'id' => 692,
+                'nik' => NULL,
+                'nip' => '198111052007011007',
                 'code' => '00692',
                 'name' => 'IRIANTO PRAYOGO S.ST',
                 'no_telp' => '081350444035',
@@ -8323,11 +9707,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 47,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             192 => 
             array (
                 'id' => 693,
+                'nik' => NULL,
+                'nip' => '197905292008011009',
                 'code' => '00693',
                 'name' => 'MAHBUB JUNAIDI SP',
                 'no_telp' => '082155538234',
@@ -8335,11 +9721,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 47,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             193 => 
             array (
                 'id' => 694,
+                'nik' => NULL,
+                'nip' => '197712282006041013',
                 'code' => '00694',
                 'name' => 'MUHDIN EDIY S.PKP',
                 'no_telp' => '081254261078',
@@ -8347,11 +9735,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 47,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             194 => 
             array (
                 'id' => 695,
+                'nik' => NULL,
+                'nip' => '196607272008012004',
                 'code' => '00695',
                 'name' => 'NANIK SRI REJEKI S.PKP',
                 'no_telp' => '081291961328',
@@ -8359,11 +9749,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 47,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             195 => 
             array (
                 'id' => 696,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00696',
                 'name' => 'SUKAMTO',
                 'no_telp' => '082124346878',
@@ -8376,6 +9768,8 @@ class PegawaisTableSeeder extends Seeder
             196 => 
             array (
                 'id' => 697,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00697',
                 'name' => 'SUYONO',
                 'no_telp' => '081295374880',
@@ -8388,6 +9782,8 @@ class PegawaisTableSeeder extends Seeder
             197 => 
             array (
                 'id' => 698,
+                'nik' => NULL,
+                'nip' => '199103022020122005',
                 'code' => '00698',
                 'name' => 'VELA RESITA A.Md',
                 'no_telp' => '081351407395',
@@ -8395,11 +9791,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 47,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             198 => 
             array (
                 'id' => 699,
+                'nik' => NULL,
+                'nip' => '197308222012121001',
                 'code' => '00699',
                 'name' => 'YAVET GIRIK SP',
                 'no_telp' => '082110024883',
@@ -8407,11 +9805,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 47,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             199 => 
             array (
                 'id' => 700,
+                'nik' => NULL,
+                'nip' => '198411292014031005',
                 'code' => '00700',
                 'name' => 'YOGA ADI NUGRAHA',
                 'no_telp' => '085345116098',
@@ -8419,11 +9819,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 47,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             200 => 
             array (
                 'id' => 701,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00701',
                 'name' => 'Miken Kartika Wulandari SP',
                 'no_telp' => '082253017695',
@@ -8436,6 +9838,8 @@ class PegawaisTableSeeder extends Seeder
             201 => 
             array (
                 'id' => 702,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00702',
                 'name' => 'Nur Hayati SP',
                 'no_telp' => '085330432374',
@@ -8448,6 +9852,8 @@ class PegawaisTableSeeder extends Seeder
             202 => 
             array (
                 'id' => 703,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00703',
                 'name' => 'Wina Astuti SP',
                 'no_telp' => '085332661760',
@@ -8460,6 +9866,8 @@ class PegawaisTableSeeder extends Seeder
             203 => 
             array (
                 'id' => 704,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00704',
                 'name' => 'Arbiansyah',
                 'no_telp' => '082254038191',
@@ -8472,6 +9880,8 @@ class PegawaisTableSeeder extends Seeder
             204 => 
             array (
                 'id' => 705,
+                'nik' => '6408021711920001',
+                'nip' => NULL,
                 'code' => '00705',
                 'name' => 'Didy Try Utomo',
                 'no_telp' => '082254184546',
@@ -8479,11 +9889,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 47,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             205 => 
             array (
                 'id' => 706,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00706',
                 'name' => 'Hasnah',
                 'no_telp' => '082155539020',
@@ -8496,6 +9908,8 @@ class PegawaisTableSeeder extends Seeder
             206 => 
             array (
                 'id' => 707,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00707',
                 'name' => 'Muammar Qaddafi',
                 'no_telp' => '082251829318',
@@ -8508,6 +9922,8 @@ class PegawaisTableSeeder extends Seeder
             207 => 
             array (
                 'id' => 708,
+                'nik' => '6408085411860002',
+                'nip' => NULL,
                 'code' => '00708',
                 'name' => 'Sufi Yanti',
                 'no_telp' => '081244459088',
@@ -8515,11 +9931,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 47,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:27',
             ),
             208 => 
             array (
                 'id' => 709,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00709',
                 'name' => 'Tingang Bit',
                 'no_telp' => '081255085335',
@@ -8532,6 +9950,8 @@ class PegawaisTableSeeder extends Seeder
             209 => 
             array (
                 'id' => 710,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00710',
                 'name' => 'Tryono Djating',
                 'no_telp' => '085246785590',
@@ -8544,6 +9964,8 @@ class PegawaisTableSeeder extends Seeder
             210 => 
             array (
                 'id' => 711,
+                'nik' => '',
+                'nip' => NULL,
                 'code' => '00711',
                 'name' => 'Itit Ajang',
                 'no_telp' => '',
@@ -8551,11 +9973,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 47,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             211 => 
             array (
                 'id' => 712,
+                'nik' => NULL,
+                'nip' => '197809102007012016',
                 'code' => '00712',
                 'name' => 'ETNAWATI S.P',
                 'no_telp' => '081250868577',
@@ -8563,11 +9987,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 48,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             212 => 
             array (
                 'id' => 713,
+                'nik' => NULL,
+                'nip' => '198502232008011004',
                 'code' => '00713',
                 'name' => 'FUAD FAHRUDIN S.PKP',
                 'no_telp' => '085250649999',
@@ -8575,11 +10001,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 48,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             213 => 
             array (
                 'id' => 714,
+                'nik' => NULL,
+                'nip' => '196705082007011042',
                 'code' => '00714',
                 'name' => 'HAMIDIN',
                 'no_telp' => '082154223281',
@@ -8587,11 +10015,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 48,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             214 => 
             array (
                 'id' => 715,
+                'nik' => NULL,
+                'nip' => '198209092008011017',
                 'code' => '00715',
                 'name' => 'IBRAHIM',
                 'no_telp' => '082255612179',
@@ -8599,11 +10029,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 48,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             215 => 
             array (
                 'id' => 716,
+                'nik' => NULL,
+                'nip' => '198811102017062001',
                 'code' => '00716',
                 'name' => 'JAINAH D',
                 'no_telp' => '085250047499',
@@ -8611,11 +10043,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 48,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             216 => 
             array (
                 'id' => 717,
+                'nik' => NULL,
+                'nip' => '198609082017061001',
                 'code' => '00717',
                 'name' => 'RINTO',
                 'no_telp' => '081290203089',
@@ -8623,11 +10057,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 48,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             217 => 
             array (
                 'id' => 718,
+                'nik' => NULL,
+                'nip' => '198912122017061001',
                 'code' => '00718',
                 'name' => 'ROBI HADINATA',
                 'no_telp' => '085250674757',
@@ -8635,11 +10071,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 48,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             218 => 
             array (
                 'id' => 719,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00719',
                 'name' => 'Doni Widodo SP',
                 'no_telp' => '085250266994',
@@ -8652,6 +10090,8 @@ class PegawaisTableSeeder extends Seeder
             219 => 
             array (
                 'id' => 720,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00720',
                 'name' => 'Harmiaty SP',
                 'no_telp' => '085387177480',
@@ -8664,6 +10104,8 @@ class PegawaisTableSeeder extends Seeder
             220 => 
             array (
                 'id' => 721,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00721',
                 'name' => 'Abdul Muthalif',
                 'no_telp' => '085350486312',
@@ -8676,6 +10118,8 @@ class PegawaisTableSeeder extends Seeder
             221 => 
             array (
                 'id' => 722,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00722',
                 'name' => 'Abdul Rahman',
                 'no_telp' => '081257559786',
@@ -8688,6 +10132,8 @@ class PegawaisTableSeeder extends Seeder
             222 => 
             array (
                 'id' => 723,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00723',
                 'name' => 'Adi Saputra',
                 'no_telp' => '85348101373',
@@ -8700,6 +10146,8 @@ class PegawaisTableSeeder extends Seeder
             223 => 
             array (
                 'id' => 724,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00724',
                 'name' => 'Adi Sopian',
                 'no_telp' => '081254584175',
@@ -8712,6 +10160,8 @@ class PegawaisTableSeeder extends Seeder
             224 => 
             array (
                 'id' => 725,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00725',
                 'name' => 'Angga Saputra Pratama',
                 'no_telp' => '085252170245',
@@ -8724,6 +10174,8 @@ class PegawaisTableSeeder extends Seeder
             225 => 
             array (
                 'id' => 726,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00726',
                 'name' => 'Dedi Supriyadi',
                 'no_telp' => '085250053389',
@@ -8736,6 +10188,8 @@ class PegawaisTableSeeder extends Seeder
             226 => 
             array (
                 'id' => 727,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00727',
                 'name' => 'Dewa Ayu Putu Aprianingsih',
                 'no_telp' => '081254702382',
@@ -8748,6 +10202,8 @@ class PegawaisTableSeeder extends Seeder
             227 => 
             array (
                 'id' => 728,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00728',
                 'name' => 'Fathul Yulianti',
                 'no_telp' => '082149094571',
@@ -8760,6 +10216,8 @@ class PegawaisTableSeeder extends Seeder
             228 => 
             array (
                 'id' => 729,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00729',
                 'name' => 'Kamariah',
                 'no_telp' => '082255143419',
@@ -8772,6 +10230,8 @@ class PegawaisTableSeeder extends Seeder
             229 => 
             array (
                 'id' => 730,
+                'nik' => '6408036303890002',
+                'nip' => NULL,
                 'code' => '00730',
                 'name' => 'Mariyamah',
                 'no_telp' => '085393690000',
@@ -8779,11 +10239,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 48,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             230 => 
             array (
                 'id' => 731,
+                'nik' => '6408011807940002',
+                'nip' => NULL,
                 'code' => '00731',
                 'name' => 'Muhammad Irfan',
                 'no_telp' => '082251597212',
@@ -8791,11 +10253,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 48,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             231 => 
             array (
                 'id' => 732,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00732',
                 'name' => 'Radiatul Adawiyah',
                 'no_telp' => '081346668584',
@@ -8808,6 +10272,8 @@ class PegawaisTableSeeder extends Seeder
             232 => 
             array (
                 'id' => 733,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00733',
                 'name' => 'Rahman Hakim',
                 'no_telp' => '082157102894',
@@ -8820,6 +10286,8 @@ class PegawaisTableSeeder extends Seeder
             233 => 
             array (
                 'id' => 734,
+                'nik' => '6408035104880001',
+                'nip' => NULL,
                 'code' => '00734',
                 'name' => 'Rusianti',
                 'no_telp' => '81344838844',
@@ -8827,11 +10295,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 48,
                 'created_at' => '2023-06-26 14:13:06',
-                'updated_at' => '2023-06-26 14:13:06',
+                'updated_at' => '2023-07-04 07:15:27',
             ),
             234 => 
             array (
                 'id' => 735,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00735',
                 'name' => 'Supianto',
                 'no_telp' => '082317870222',
@@ -8844,6 +10314,8 @@ class PegawaisTableSeeder extends Seeder
             235 => 
             array (
                 'id' => 736,
+                'nik' => NULL,
+                'nip' => '196611122008011010',
                 'code' => '00736',
                 'name' => 'KHOIRUL AMIN SP',
                 'no_telp' => '081284504644',
@@ -8851,11 +10323,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 49,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             236 => 
             array (
                 'id' => 737,
+                'nik' => NULL,
+                'nip' => '198501142008011003',
                 'code' => '00737',
                 'name' => 'SAIFUL ANWAR',
                 'no_telp' => '',
@@ -8863,11 +10337,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 49,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             237 => 
             array (
                 'id' => 738,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00738',
                 'name' => 'Wendy Haryadi SP',
                 'no_telp' => '082292233793',
@@ -8880,6 +10356,8 @@ class PegawaisTableSeeder extends Seeder
             238 => 
             array (
                 'id' => 739,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00739',
                 'name' => 'Yartono SP',
                 'no_telp' => '082214674216',
@@ -8892,6 +10370,8 @@ class PegawaisTableSeeder extends Seeder
             239 => 
             array (
                 'id' => 740,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00740',
                 'name' => 'Irawan Pratama',
                 'no_telp' => '085787500916',
@@ -8904,6 +10384,8 @@ class PegawaisTableSeeder extends Seeder
             240 => 
             array (
                 'id' => 741,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00741',
                 'name' => 'Nono Hairu Sumarno',
                 'no_telp' => '081380083432',
@@ -8916,6 +10398,8 @@ class PegawaisTableSeeder extends Seeder
             241 => 
             array (
                 'id' => 742,
+                'nik' => '6408071506860001',
+                'nip' => NULL,
                 'code' => '00742',
                 'name' => 'Samsudin Sandi',
                 'no_telp' => '',
@@ -8923,11 +10407,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 49,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:27',
             ),
             242 => 
             array (
                 'id' => 743,
+                'nik' => '6408030906840001',
+                'nip' => NULL,
                 'code' => '00743',
                 'name' => 'Sapril',
                 'no_telp' => '',
@@ -8935,11 +10421,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 49,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:27',
             ),
             243 => 
             array (
                 'id' => 744,
+                'nik' => NULL,
+                'nip' => '196906052007011048',
                 'code' => '00744',
                 'name' => 'BAHRUNSAH SP',
                 'no_telp' => '08125838019',
@@ -8947,11 +10435,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             244 => 
             array (
                 'id' => 745,
+                'nik' => NULL,
+                'nip' => '198804162014031002',
                 'code' => '00745',
                 'name' => 'BUDIANTO S.P., M.P',
                 'no_telp' => '085350190334',
@@ -8959,11 +10449,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             245 => 
             array (
                 'id' => 746,
+                'nik' => NULL,
+                'nip' => '196906302007011017',
                 'code' => '00746',
                 'name' => 'DANIEL TATO BANDHASO S.P.',
                 'no_telp' => '081250423387',
@@ -8971,11 +10463,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             246 => 
             array (
                 'id' => 747,
+                'nik' => NULL,
+                'nip' => '198011042008011013',
                 'code' => '00747',
                 'name' => 'IMAN',
                 'no_telp' => '081262964327',
@@ -8983,11 +10477,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             247 => 
             array (
                 'id' => 748,
+                'nik' => NULL,
+                'nip' => '196809202007011022',
                 'code' => '00748',
                 'name' => 'ISMAIL SP',
                 'no_telp' => '081347389135',
@@ -8995,11 +10491,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             248 => 
             array (
                 'id' => 749,
+                'nik' => NULL,
+                'nip' => '197506082001122004',
                 'code' => '00749',
                 'name' => 'JOHARIYAH SP',
                 'no_telp' => '08125838684',
@@ -9007,11 +10505,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             249 => 
             array (
                 'id' => 750,
+                'nik' => NULL,
+                'nip' => '197901052008011019',
                 'code' => '00750',
                 'name' => 'JOKO WALUYO S.Pt., MP',
                 'no_telp' => '081230346656',
@@ -9019,11 +10519,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             250 => 
             array (
                 'id' => 751,
+                'nik' => NULL,
+                'nip' => '198403102008012008',
                 'code' => '00751',
                 'name' => 'KUSMAWATI',
                 'no_telp' => '081348570229',
@@ -9031,11 +10533,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             251 => 
             array (
                 'id' => 752,
+                'nik' => NULL,
+                'nip' => '198205312015032001',
                 'code' => '00752',
                 'name' => 'MARIA ULFAH S.TP',
                 'no_telp' => '081254620563',
@@ -9043,11 +10547,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             252 => 
             array (
                 'id' => 753,
+                'nik' => NULL,
+                'nip' => '198105052007012019',
                 'code' => '00753',
                 'name' => 'RUDIANA JAYA S.P',
                 'no_telp' => '085389754433',
@@ -9055,11 +10561,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             253 => 
             array (
                 'id' => 754,
+                'nik' => NULL,
+                'nip' => '197112011992031003',
                 'code' => '00754',
                 'name' => 'SYAHRIANSYAH S.Hut.,MM',
                 'no_telp' => '081346452456',
@@ -9067,11 +10575,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             254 => 
             array (
                 'id' => 755,
+                'nik' => NULL,
+                'nip' => '197908122014032003',
                 'code' => '00755',
                 'name' => 'YUSITA KRISNING SUMARTINI SP',
                 'no_telp' => '081282050106',
@@ -9079,11 +10589,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             255 => 
             array (
                 'id' => 756,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00756',
                 'name' => 'Rohani S.P',
                 'no_telp' => '081346205608',
@@ -9096,6 +10608,8 @@ class PegawaisTableSeeder extends Seeder
             256 => 
             array (
                 'id' => 757,
+                'nik' => '6408045209760002',
+                'nip' => NULL,
                 'code' => '00757',
                 'name' => 'MARTINA RURU',
                 'no_telp' => '082153930607',
@@ -9103,11 +10617,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbn',
                 'kantor_id' => 50,
                 'created_at' => '2023-06-26 14:13:08',
-                'updated_at' => '2023-06-26 14:13:08',
+                'updated_at' => '2023-07-04 07:15:13',
             ),
             257 => 
             array (
                 'id' => 758,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00758',
                 'name' => 'Aspariandi',
                 'no_telp' => '085246888682',
@@ -9120,6 +10636,8 @@ class PegawaisTableSeeder extends Seeder
             258 => 
             array (
                 'id' => 759,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00759',
                 'name' => 'Jumriana Djamruddin',
                 'no_telp' => '081350301556',
@@ -9132,6 +10650,8 @@ class PegawaisTableSeeder extends Seeder
             259 => 
             array (
                 'id' => 760,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00760',
                 'name' => 'Krisnawanti Pattang',
                 'no_telp' => '',
@@ -9144,6 +10664,8 @@ class PegawaisTableSeeder extends Seeder
             260 => 
             array (
                 'id' => 761,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00761',
                 'name' => 'Maryam Mukhtar',
                 'no_telp' => '',
@@ -9156,6 +10678,8 @@ class PegawaisTableSeeder extends Seeder
             261 => 
             array (
                 'id' => 762,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00762',
                 'name' => 'Nasruddin',
                 'no_telp' => '085248209870',
@@ -9168,6 +10692,8 @@ class PegawaisTableSeeder extends Seeder
             262 => 
             array (
                 'id' => 763,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00763',
                 'name' => 'Rahim Usman',
                 'no_telp' => '',
@@ -9180,6 +10706,8 @@ class PegawaisTableSeeder extends Seeder
             263 => 
             array (
                 'id' => 764,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00764',
                 'name' => 'Ria Komalasari',
                 'no_telp' => '085349599101',
@@ -9192,6 +10720,8 @@ class PegawaisTableSeeder extends Seeder
             264 => 
             array (
                 'id' => 765,
+                'nik' => NULL,
+                'nip' => '198008172008011023',
                 'code' => '00765',
                 'name' => 'ANDI WAHYUDIN SP',
                 'no_telp' => '08115819893',
@@ -9199,11 +10729,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 51,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             265 => 
             array (
                 'id' => 766,
+                'nik' => NULL,
+                'nip' => '197507102006041022',
                 'code' => '00766',
                 'name' => 'ARDIANSYAH',
                 'no_telp' => '081350519667',
@@ -9211,11 +10743,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 51,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             266 => 
             array (
                 'id' => 767,
+                'nik' => NULL,
+                'nip' => '196905092012121001',
                 'code' => '00767',
                 'name' => 'MISRAN',
                 'no_telp' => '085389240834',
@@ -9223,11 +10757,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 51,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             267 => 
             array (
                 'id' => 768,
+                'nik' => NULL,
+                'nip' => '198110162017062001',
                 'code' => '00768',
                 'name' => 'OKTASARI ARDIYANTI S.P',
                 'no_telp' => '081219657877',
@@ -9235,11 +10771,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 51,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             268 => 
             array (
                 'id' => 769,
+                'nik' => NULL,
+                'nip' => '196707172008011021',
                 'code' => '00769',
                 'name' => 'SAMADIN LATUPONO SP',
                 'no_telp' => '082292285257',
@@ -9247,11 +10785,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 51,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             269 => 
             array (
                 'id' => 770,
+                'nik' => NULL,
+                'nip' => '197904222007012007',
                 'code' => '00770',
                 'name' => 'SRI ASTUTI S.ST',
                 'no_telp' => '081347392025',
@@ -9259,11 +10799,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 51,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             270 => 
             array (
                 'id' => 771,
+                'nik' => NULL,
+                'nip' => '197306172012121001',
                 'code' => '00771',
                 'name' => 'YUSUF RANDANAN SP',
                 'no_telp' => '085256352673',
@@ -9271,11 +10813,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 51,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             271 => 
             array (
                 'id' => 772,
+                'nik' => NULL,
+                'nip' => '197712242007011011',
                 'code' => '00772',
                 'name' => 'ZONI FARMASI S.ST',
                 'no_telp' => '081347392025',
@@ -9283,11 +10827,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 51,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             272 => 
             array (
                 'id' => 773,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00773',
                 'name' => 'Siti Khotiah SP',
                 'no_telp' => '082251744470',
@@ -9300,6 +10846,8 @@ class PegawaisTableSeeder extends Seeder
             273 => 
             array (
                 'id' => 774,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00774',
                 'name' => 'Hermin Sampe',
                 'no_telp' => '082148111998',
@@ -9312,6 +10860,8 @@ class PegawaisTableSeeder extends Seeder
             274 => 
             array (
                 'id' => 775,
+                'nik' => '6408092309020002',
+                'nip' => NULL,
                 'code' => '00775',
                 'name' => 'Muh Iqbal Nurakmar',
                 'no_telp' => '082254100647',
@@ -9319,11 +10869,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 51,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             275 => 
             array (
                 'id' => 776,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00776',
                 'name' => 'Nur Alam',
                 'no_telp' => '081350824372',
@@ -9336,6 +10888,8 @@ class PegawaisTableSeeder extends Seeder
             276 => 
             array (
                 'id' => 777,
+                'nik' => '6408096602940004',
+                'nip' => NULL,
                 'code' => '00777',
                 'name' => 'Nursiah Purwaningsih',
                 'no_telp' => '082255936046',
@@ -9343,11 +10897,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 51,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             277 => 
             array (
                 'id' => 778,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00778',
                 'name' => 'Riza Nur Anand',
                 'no_telp' => '082158306984',
@@ -9360,6 +10916,8 @@ class PegawaisTableSeeder extends Seeder
             278 => 
             array (
                 'id' => 779,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00779',
                 'name' => 'Sri Supatmi Ningrum',
                 'no_telp' => '085332749678',
@@ -9372,6 +10930,8 @@ class PegawaisTableSeeder extends Seeder
             279 => 
             array (
                 'id' => 780,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00780',
                 'name' => 'Susiandi',
                 'no_telp' => '085387398522',
@@ -9384,6 +10944,8 @@ class PegawaisTableSeeder extends Seeder
             280 => 
             array (
                 'id' => 781,
+                'nik' => '6408090508690006',
+                'nip' => NULL,
                 'code' => '00781',
                 'name' => 'Patemo',
                 'no_telp' => '081250705600',
@@ -9391,11 +10953,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 51,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             281 => 
             array (
                 'id' => 782,
+                'nik' => NULL,
+                'nip' => '197204242012122001',
                 'code' => '00782',
                 'name' => 'DECORINA LUMINTANG SP',
                 'no_telp' => '08125349305',
@@ -9403,11 +10967,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 52,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             282 => 
             array (
                 'id' => 783,
+                'nik' => NULL,
+                'nip' => '198403102014032002',
                 'code' => '00783',
                 'name' => 'DEWI S.ST',
                 'no_telp' => '085247882352',
@@ -9415,11 +10981,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 52,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             283 => 
             array (
                 'id' => 784,
+                'nik' => NULL,
+                'nip' => '199412212022032002',
                 'code' => '00784',
                 'name' => 'Hera Livia Damara S.P',
                 'no_telp' => '091234517532',
@@ -9427,11 +10995,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 52,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             284 => 
             array (
                 'id' => 785,
+                'nik' => NULL,
+                'nip' => '198504052008012016',
                 'code' => '00785',
                 'name' => 'NELI MARIANI S.ST',
                 'no_telp' => '081253226122',
@@ -9439,11 +11009,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 52,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             285 => 
             array (
                 'id' => 786,
+                'nik' => NULL,
+                'nip' => '197001062008011023',
                 'code' => '00786',
                 'name' => 'PONO SP',
                 'no_telp' => '085349613247',
@@ -9451,11 +11023,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 52,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             286 => 
             array (
                 'id' => 787,
+                'nik' => NULL,
+                'nip' => '197503142008012020',
                 'code' => '00787',
                 'name' => 'PUJIATI SP',
                 'no_telp' => '081258378299',
@@ -9463,11 +11037,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 52,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             287 => 
             array (
                 'id' => 788,
+                'nik' => NULL,
+                'nip' => '199003232019032010',
                 'code' => '00788',
                 'name' => 'PUTRI KUSUMANINGATI SP',
                 'no_telp' => '',
@@ -9475,11 +11051,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 52,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             288 => 
             array (
                 'id' => 789,
+                'nik' => NULL,
+                'nip' => '197502122009011005',
                 'code' => '00789',
                 'name' => 'RIFANDI',
                 'no_telp' => '082357395567',
@@ -9487,11 +11065,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 52,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             289 => 
             array (
                 'id' => 790,
+                'nik' => NULL,
+                'nip' => '198101012008012060',
                 'code' => '00790',
                 'name' => 'RUSDIANA S.ST',
                 'no_telp' => '082152340359',
@@ -9499,11 +11079,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 52,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             290 => 
             array (
                 'id' => 791,
+                'nik' => NULL,
+                'nip' => '198109232006041015',
                 'code' => '00791',
                 'name' => 'SANUR SP',
                 'no_telp' => '081347482732',
@@ -9511,11 +11093,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 52,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             291 => 
             array (
                 'id' => 792,
+                'nik' => NULL,
+                'nip' => '199701042022032005',
                 'code' => '00792',
                 'name' => 'Talitha Shabrina Riyadi S.P',
                 'no_telp' => '085828163396',
@@ -9523,11 +11107,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 52,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             292 => 
             array (
                 'id' => 793,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00793',
                 'name' => 'Abdul Rakhman SP',
                 'no_telp' => '',
@@ -9540,6 +11126,8 @@ class PegawaisTableSeeder extends Seeder
             293 => 
             array (
                 'id' => 794,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00794',
                 'name' => 'Irwan SP',
                 'no_telp' => '085250900203',
@@ -9552,6 +11140,8 @@ class PegawaisTableSeeder extends Seeder
             294 => 
             array (
                 'id' => 795,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00795',
                 'name' => 'JOHANSYAH',
                 'no_telp' => '',
@@ -9564,6 +11154,8 @@ class PegawaisTableSeeder extends Seeder
             295 => 
             array (
                 'id' => 796,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00796',
                 'name' => 'Jumnaedi',
                 'no_telp' => '',
@@ -9576,6 +11168,8 @@ class PegawaisTableSeeder extends Seeder
             296 => 
             array (
                 'id' => 797,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00797',
                 'name' => 'Syaharuddin',
                 'no_telp' => '',
@@ -9588,6 +11182,8 @@ class PegawaisTableSeeder extends Seeder
             297 => 
             array (
                 'id' => 798,
+                'nik' => NULL,
+                'nip' => '199708172022032010',
                 'code' => '00798',
                 'name' => 'Alta Ayuri S.P',
                 'no_telp' => '081253342062',
@@ -9595,11 +11191,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             298 => 
             array (
                 'id' => 799,
+                'nik' => NULL,
+                'nip' => '197602152006041018',
                 'code' => '00799',
                 'name' => 'ASMADI',
                 'no_telp' => '081347998922',
@@ -9607,11 +11205,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             299 => 
             array (
                 'id' => 800,
+                'nik' => NULL,
+                'nip' => '200009092020122001',
                 'code' => '00800',
                 'name' => 'AYU MEGA RAHAYU',
                 'no_telp' => '085845757407',
@@ -9619,11 +11219,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             300 => 
             array (
                 'id' => 801,
+                'nik' => NULL,
+                'nip' => '198705202017061001',
                 'code' => '00801',
                 'name' => 'BUDI SETIAWAN S.P',
                 'no_telp' => '081254543895',
@@ -9631,11 +11233,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             301 => 
             array (
                 'id' => 802,
+                'nik' => NULL,
+                'nip' => '198602092019032008',
                 'code' => '00802',
                 'name' => 'ESSY LISIANA SP.,MP',
                 'no_telp' => '085250901607',
@@ -9643,11 +11247,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             302 => 
             array (
                 'id' => 803,
+                'nik' => NULL,
+                'nip' => '197309192007011016',
                 'code' => '00803',
                 'name' => 'FIDDI WAHIDI SP',
                 'no_telp' => '081350011292',
@@ -9655,11 +11261,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             303 => 
             array (
                 'id' => 804,
+                'nik' => NULL,
+                'nip' => '198204202008011019',
                 'code' => '00804',
                 'name' => 'KHOIRUL ANAM S.ST',
                 'no_telp' => '082136547321',
@@ -9667,11 +11275,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             304 => 
             array (
                 'id' => 805,
+                'nik' => NULL,
+                'nip' => '196603272012121001',
                 'code' => '00805',
                 'name' => 'MARTINUS BONGI',
                 'no_telp' => '081253057385',
@@ -9679,11 +11289,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             305 => 
             array (
                 'id' => 806,
+                'nik' => NULL,
+                'nip' => '199607252022032005',
                 'code' => '00806',
                 'name' => 'Miftahul Jannah Bachnan S.P',
                 'no_telp' => '082251723839',
@@ -9691,11 +11303,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             306 => 
             array (
                 'id' => 807,
+                'nik' => NULL,
+                'nip' => '199807272022032008',
                 'code' => '00807',
                 'name' => 'Ninda Nur Alifa A.Md.P',
                 'no_telp' => '085210596927',
@@ -9703,11 +11317,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             307 => 
             array (
                 'id' => 808,
+                'nik' => NULL,
+                'nip' => '198107230150320001',
                 'code' => '00808',
                 'name' => 'PIPIT NURSIAMUR ROIDAH S.TP., MP',
                 'no_telp' => '081325545920',
@@ -9715,11 +11331,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             308 => 
             array (
                 'id' => 809,
+                'nik' => NULL,
+                'nip' => '196611222008011005',
                 'code' => '00809',
                 'name' => 'SAMLI',
                 'no_telp' => '081348910476',
@@ -9727,11 +11345,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             309 => 
             array (
                 'id' => 810,
+                'nik' => NULL,
+                'nip' => '196710032007012016',
                 'code' => '00810',
                 'name' => 'SYAMSINAR SP',
                 'no_telp' => '082149277749',
@@ -9739,11 +11359,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             310 => 
             array (
                 'id' => 811,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00811',
                 'name' => 'Marniyati SP',
                 'no_telp' => '082131934759',
@@ -9756,6 +11378,8 @@ class PegawaisTableSeeder extends Seeder
             311 => 
             array (
                 'id' => 812,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00812',
                 'name' => 'WAWAN JUNAIDI',
                 'no_telp' => '',
@@ -9768,6 +11392,8 @@ class PegawaisTableSeeder extends Seeder
             312 => 
             array (
                 'id' => 813,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00813',
                 'name' => 'Erna Wati',
                 'no_telp' => '',
@@ -9780,6 +11406,8 @@ class PegawaisTableSeeder extends Seeder
             313 => 
             array (
                 'id' => 814,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00814',
                 'name' => 'Evi Nurhayati',
                 'no_telp' => '085250211000',
@@ -9792,6 +11420,8 @@ class PegawaisTableSeeder extends Seeder
             314 => 
             array (
                 'id' => 815,
+                'nik' => '6408124308690001',
+                'nip' => NULL,
                 'code' => '00815',
                 'name' => 'JUMIATIN',
                 'no_telp' => '08233413326',
@@ -9799,11 +11429,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 53,
                 'created_at' => '2023-06-26 14:13:09',
-                'updated_at' => '2023-06-26 14:13:09',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             315 => 
             array (
                 'id' => 816,
+                'nik' => NULL,
+                'nip' => '198912062015032006',
                 'code' => '00816',
                 'name' => 'CITRA DEWI S.P',
                 'no_telp' => '085392031005',
@@ -9811,11 +11443,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 54,
                 'created_at' => '2023-06-26 14:13:10',
-                'updated_at' => '2023-06-26 14:13:10',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             316 => 
             array (
                 'id' => 817,
+                'nik' => NULL,
+                'nip' => '198512232019032005',
                 'code' => '00817',
                 'name' => 'DEWI SUPRAYITNO S.TP',
                 'no_telp' => '085390667449',
@@ -9823,11 +11457,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 54,
                 'created_at' => '2023-06-26 14:13:10',
-                'updated_at' => '2023-06-26 14:13:10',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             317 => 
             array (
                 'id' => 818,
+                'nik' => NULL,
+                'nip' => '198002262014031001',
                 'code' => '00818',
                 'name' => 'M. HERRY SP',
                 'no_telp' => '085250082626',
@@ -9835,11 +11471,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 54,
                 'created_at' => '2023-06-26 14:13:10',
-                'updated_at' => '2023-06-26 14:13:10',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             318 => 
             array (
                 'id' => 819,
+                'nik' => NULL,
+                'nip' => '197905202014031001',
                 'code' => '00819',
                 'name' => 'MAYZAR AVIV HARTONO A.Md',
                 'no_telp' => '085712807574',
@@ -9847,11 +11485,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 54,
                 'created_at' => '2023-06-26 14:13:10',
-                'updated_at' => '2023-06-26 14:13:10',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             319 => 
             array (
                 'id' => 820,
+                'nik' => NULL,
+                'nip' => '197708022008011016',
                 'code' => '00820',
                 'name' => 'NAJIB S.PKP',
                 'no_telp' => '081350352044',
@@ -9859,11 +11499,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 54,
                 'created_at' => '2023-06-26 14:13:10',
-                'updated_at' => '2023-06-26 14:13:10',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             320 => 
             array (
                 'id' => 821,
+                'nik' => NULL,
+                'nip' => '196510052014062002',
                 'code' => '00821',
                 'name' => 'SUMUNARINGTIAS PERATIWI SP',
                 'no_telp' => '081347819012',
@@ -9871,11 +11513,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 54,
                 'created_at' => '2023-06-26 14:13:10',
-                'updated_at' => '2023-06-26 14:13:10',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             321 => 
             array (
                 'id' => 822,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00822',
                 'name' => 'AGUSTINAH',
                 'no_telp' => '085246287529',
@@ -9888,6 +11532,8 @@ class PegawaisTableSeeder extends Seeder
             322 => 
             array (
                 'id' => 823,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00823',
                 'name' => 'Agustin',
                 'no_telp' => '082149449424',
@@ -9900,6 +11546,8 @@ class PegawaisTableSeeder extends Seeder
             323 => 
             array (
                 'id' => 824,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00824',
                 'name' => 'Nurillah',
                 'no_telp' => '081346683338',
@@ -9912,6 +11560,8 @@ class PegawaisTableSeeder extends Seeder
             324 => 
             array (
                 'id' => 825,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00825',
                 'name' => 'Romanus Tangke',
                 'no_telp' => '082253666655',
@@ -9924,6 +11574,8 @@ class PegawaisTableSeeder extends Seeder
             325 => 
             array (
                 'id' => 826,
+                'nik' => NULL,
+                'nip' => '197606202012122001',
                 'code' => '00826',
                 'name' => 'DWI VERA YUNITA S.Pt',
                 'no_telp' => '08115808442',
@@ -9931,11 +11583,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 55,
                 'created_at' => '2023-06-26 14:13:11',
-                'updated_at' => '2023-06-26 14:13:11',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             326 => 
             array (
                 'id' => 827,
+                'nik' => NULL,
+                'nip' => '198707092015031005',
                 'code' => '00827',
                 'name' => 'HERMAN A.Md.P',
                 'no_telp' => '085398490591',
@@ -9943,11 +11597,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 55,
                 'created_at' => '2023-06-26 14:13:11',
-                'updated_at' => '2023-06-26 14:13:11',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             327 => 
             array (
                 'id' => 828,
+                'nik' => NULL,
+                'nip' => '198902242022031001',
                 'code' => '00828',
                 'name' => 'Irwan Budiana S.P',
                 'no_telp' => '082148401733',
@@ -9955,11 +11611,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 55,
                 'created_at' => '2023-06-26 14:13:11',
-                'updated_at' => '2023-06-26 14:13:11',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             328 => 
             array (
                 'id' => 829,
+                'nik' => NULL,
+                'nip' => '197712022007011012',
                 'code' => '00829',
                 'name' => 'JAMALUDDIN MARDIAH',
                 'no_telp' => '082155508141',
@@ -9967,11 +11625,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 55,
                 'created_at' => '2023-06-26 14:13:11',
-                'updated_at' => '2023-06-26 14:13:11',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             329 => 
             array (
                 'id' => 830,
+                'nik' => NULL,
+                'nip' => '199007052015031004',
                 'code' => '00830',
                 'name' => 'SOFIYANTO S.TP',
                 'no_telp' => '085348872292',
@@ -9979,11 +11639,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 55,
                 'created_at' => '2023-06-26 14:13:11',
-                'updated_at' => '2023-06-26 14:13:11',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             330 => 
             array (
                 'id' => 831,
+                'nik' => NULL,
+                'nip' => '198201272017061001',
                 'code' => '00831',
                 'name' => 'WAHYUDI SULISTYANTO S.P',
                 'no_telp' => '085228999366',
@@ -9991,11 +11653,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 55,
                 'created_at' => '2023-06-26 14:13:11',
-                'updated_at' => '2023-06-26 14:13:11',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             331 => 
             array (
                 'id' => 832,
+                'nik' => NULL,
+                'nip' => '198010122007011009',
                 'code' => '00832',
                 'name' => 'WARDANI KUSUMA S.PKP',
                 'no_telp' => '085246583308',
@@ -10003,11 +11667,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 55,
                 'created_at' => '2023-06-26 14:13:11',
-                'updated_at' => '2023-06-26 14:13:11',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             332 => 
             array (
                 'id' => 833,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00833',
                 'name' => 'Masruni SP',
                 'no_telp' => '081348656622',
@@ -10020,6 +11686,8 @@ class PegawaisTableSeeder extends Seeder
             333 => 
             array (
                 'id' => 834,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00834',
                 'name' => 'Muhammad Kaim S.P',
                 'no_telp' => '081256008428',
@@ -10032,6 +11700,8 @@ class PegawaisTableSeeder extends Seeder
             334 => 
             array (
                 'id' => 835,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00835',
                 'name' => 'Elisabet',
                 'no_telp' => '085350503056',
@@ -10044,6 +11714,8 @@ class PegawaisTableSeeder extends Seeder
             335 => 
             array (
                 'id' => 836,
+                'nik' => '6408052505810002',
+                'nip' => NULL,
                 'code' => '00836',
                 'name' => 'Fahrul Nur Rahman',
                 'no_telp' => '082298191014',
@@ -10051,11 +11723,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 55,
                 'created_at' => '2023-06-26 14:13:11',
-                'updated_at' => '2023-06-26 14:13:11',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             336 => 
             array (
                 'id' => 837,
+                'nik' => '6408051711740002',
+                'nip' => NULL,
                 'code' => '00837',
                 'name' => 'Muhammad Sabran',
                 'no_telp' => '085250887117',
@@ -10063,11 +11737,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 55,
                 'created_at' => '2023-06-26 14:13:11',
-                'updated_at' => '2023-06-26 14:13:11',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             337 => 
             array (
                 'id' => 838,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00838',
                 'name' => 'Sunarto',
                 'no_telp' => '082153812958',
@@ -10080,6 +11756,8 @@ class PegawaisTableSeeder extends Seeder
             338 => 
             array (
                 'id' => 839,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00839',
                 'name' => 'Zulhijjah',
                 'no_telp' => '081347084700',
@@ -10092,6 +11770,8 @@ class PegawaisTableSeeder extends Seeder
             339 => 
             array (
                 'id' => 840,
+                'nik' => NULL,
+                'nip' => '197106082012122001',
                 'code' => '00840',
                 'name' => 'AGUSTINA SP',
                 'no_telp' => '081350403373',
@@ -10099,11 +11779,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 56,
                 'created_at' => '2023-06-26 14:13:13',
-                'updated_at' => '2023-06-26 14:13:13',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             340 => 
             array (
                 'id' => 841,
+                'nik' => NULL,
+                'nip' => '198207242008011013',
                 'code' => '00841',
                 'name' => 'ANDIK YULIANTO SP',
                 'no_telp' => '082252019125',
@@ -10111,11 +11793,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 56,
                 'created_at' => '2023-06-26 14:13:13',
-                'updated_at' => '2023-06-26 14:13:13',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             341 => 
             array (
                 'id' => 842,
+                'nik' => NULL,
+                'nip' => '196806052007011044',
                 'code' => '00842',
                 'name' => 'DJOHANIS SALIANAN SP',
                 'no_telp' => '081350675508',
@@ -10123,11 +11807,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 56,
                 'created_at' => '2023-06-26 14:13:13',
-                'updated_at' => '2023-06-26 14:13:13',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             342 => 
             array (
                 'id' => 843,
+                'nik' => NULL,
+                'nip' => '196807012007011027',
                 'code' => '00843',
                 'name' => 'GAPPAR',
                 'no_telp' => '081350699145',
@@ -10135,11 +11821,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 56,
                 'created_at' => '2023-06-26 14:13:13',
-                'updated_at' => '2023-06-26 14:13:13',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             343 => 
             array (
                 'id' => 844,
+                'nik' => NULL,
+                'nip' => '198609112020122007',
                 'code' => '00844',
                 'name' => 'GIYANTI S.P',
                 'no_telp' => '',
@@ -10147,11 +11835,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 56,
                 'created_at' => '2023-06-26 14:13:13',
-                'updated_at' => '2023-06-26 14:13:13',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             344 => 
             array (
                 'id' => 845,
+                'nik' => NULL,
+                'nip' => '198808062017062001',
                 'code' => '00845',
                 'name' => 'JAHIRA S. SP',
                 'no_telp' => '082154849232',
@@ -10159,11 +11849,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 56,
                 'created_at' => '2023-06-26 14:13:13',
-                'updated_at' => '2023-06-26 14:13:13',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             345 => 
             array (
                 'id' => 846,
+                'nik' => NULL,
+                'nip' => '197010242007011008',
                 'code' => '00846',
                 'name' => 'LUKAS PAKOMBONG SP',
                 'no_telp' => '081350011292',
@@ -10171,11 +11863,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 56,
                 'created_at' => '2023-06-26 14:13:13',
-                'updated_at' => '2023-06-26 14:13:13',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             346 => 
             array (
                 'id' => 847,
+                'nik' => NULL,
+                'nip' => '197610042008011012',
                 'code' => '00847',
                 'name' => 'MACHMUD.A S.PKP',
                 'no_telp' => '081347284300',
@@ -10183,11 +11877,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 56,
                 'created_at' => '2023-06-26 14:13:13',
-                'updated_at' => '2023-06-26 14:13:13',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             347 => 
             array (
                 'id' => 848,
+                'nik' => NULL,
+                'nip' => '197412222008011015',
                 'code' => '00848',
                 'name' => 'ZULKIFLI',
                 'no_telp' => '085391057915',
@@ -10195,11 +11891,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 56,
                 'created_at' => '2023-06-26 14:13:13',
-                'updated_at' => '2023-06-26 14:13:13',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             348 => 
             array (
                 'id' => 849,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00849',
                 'name' => 'Abdul Rahman SP',
                 'no_telp' => '082352351602',
@@ -10212,6 +11910,8 @@ class PegawaisTableSeeder extends Seeder
             349 => 
             array (
                 'id' => 850,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00850',
                 'name' => 'I Wayan Murdana SP',
                 'no_telp' => '085250384322',
@@ -10224,6 +11924,8 @@ class PegawaisTableSeeder extends Seeder
             350 => 
             array (
                 'id' => 851,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00851',
                 'name' => 'Kadek Sriyasa SP',
                 'no_telp' => '085247733863',
@@ -10236,6 +11938,8 @@ class PegawaisTableSeeder extends Seeder
             351 => 
             array (
                 'id' => 852,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00852',
                 'name' => 'Jumahirah',
                 'no_telp' => '',
@@ -10248,6 +11952,8 @@ class PegawaisTableSeeder extends Seeder
             352 => 
             array (
                 'id' => 853,
+                'nik' => NULL,
+                'nip' => '197408072007011018',
                 'code' => '00853',
                 'name' => 'GREGORIUS GALU SP',
                 'no_telp' => '',
@@ -10255,11 +11961,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 57,
                 'created_at' => '2023-06-26 14:13:14',
-                'updated_at' => '2023-06-26 14:13:14',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             353 => 
             array (
                 'id' => 854,
+                'nik' => NULL,
+                'nip' => '197308262007012004',
                 'code' => '00854',
                 'name' => 'YETTY RACHMAWATI SP',
                 'no_telp' => '081253641890',
@@ -10267,11 +11975,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 57,
                 'created_at' => '2023-06-26 14:13:14',
-                'updated_at' => '2023-06-26 14:13:14',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             354 => 
             array (
                 'id' => 855,
+                'nik' => NULL,
+                'nip' => '196807302008011013',
                 'code' => '00855',
                 'name' => 'YULIANUS TIBE RAMA SP',
                 'no_telp' => '081350681458',
@@ -10279,11 +11989,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 57,
                 'created_at' => '2023-06-26 14:13:14',
-                'updated_at' => '2023-06-26 14:13:14',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             355 => 
             array (
                 'id' => 856,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00856',
                 'name' => 'Fitriana',
                 'no_telp' => '',
@@ -10296,6 +12008,8 @@ class PegawaisTableSeeder extends Seeder
             356 => 
             array (
                 'id' => 857,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00857',
                 'name' => 'Mohamad Yandi',
                 'no_telp' => '085250004738',
@@ -10308,6 +12022,8 @@ class PegawaisTableSeeder extends Seeder
             357 => 
             array (
                 'id' => 858,
+                'nik' => NULL,
+                'nip' => '197208032008011014',
                 'code' => '00858',
                 'name' => 'AGUS SOMANTRI  SP',
                 'no_telp' => '082254464072',
@@ -10315,11 +12031,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 58,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             358 => 
             array (
                 'id' => 859,
+                'nik' => NULL,
+                'nip' => '197504212008011019',
                 'code' => '00859',
                 'name' => 'ANTONIUS RINNA S.PKP',
                 'no_telp' => '081389608176',
@@ -10327,11 +12045,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 58,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             359 => 
             array (
                 'id' => 860,
+                'nik' => NULL,
+                'nip' => '197802232006041007',
                 'code' => '00860',
                 'name' => 'BENYAMIN REMBON',
                 'no_telp' => '081350717318',
@@ -10339,11 +12059,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 58,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             360 => 
             array (
                 'id' => 861,
+                'nik' => NULL,
+                'nip' => '197911222008012022',
                 'code' => '00861',
                 'name' => 'HADI NUR AMI S.PKP',
                 'no_telp' => '081253081071',
@@ -10351,11 +12073,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 58,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             361 => 
             array (
                 'id' => 862,
+                'nik' => NULL,
+                'nip' => '196609042007011011',
                 'code' => '00862',
                 'name' => 'HARTONO',
                 'no_telp' => '085652184920',
@@ -10363,11 +12087,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 58,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             362 => 
             array (
                 'id' => 863,
+                'nik' => NULL,
+                'nip' => '198208182014031001',
                 'code' => '00863',
                 'name' => 'KOMANG SINTA SP',
                 'no_telp' => '081347558876',
@@ -10375,11 +12101,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 58,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             363 => 
             array (
                 'id' => 864,
+                'nik' => NULL,
+                'nip' => '197711172006041008',
                 'code' => '00864',
                 'name' => 'RUSENO TRISNANTOYO S.ST',
                 'no_telp' => '081346202687',
@@ -10387,11 +12115,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 58,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             364 => 
             array (
                 'id' => 865,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00865',
                 'name' => 'Darmawan Abdi A.Md',
                 'no_telp' => '08125892976',
@@ -10404,6 +12134,8 @@ class PegawaisTableSeeder extends Seeder
             365 => 
             array (
                 'id' => 866,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00866',
                 'name' => 'I Gusti Kompyang Indrawan',
                 'no_telp' => '085386390408',
@@ -10416,6 +12148,8 @@ class PegawaisTableSeeder extends Seeder
             366 => 
             array (
                 'id' => 867,
+                'nik' => '6408150707860001',
+                'nip' => NULL,
                 'code' => '00867',
                 'name' => 'Komang Mudita',
                 'no_telp' => '085390683970',
@@ -10423,11 +12157,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 58,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             367 => 
             array (
                 'id' => 868,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00868',
                 'name' => 'Komang Sukreyase',
                 'no_telp' => '',
@@ -10440,6 +12176,8 @@ class PegawaisTableSeeder extends Seeder
             368 => 
             array (
                 'id' => 869,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00869',
                 'name' => 'Lilis Mandasari',
                 'no_telp' => '081296044263',
@@ -10452,6 +12190,8 @@ class PegawaisTableSeeder extends Seeder
             369 => 
             array (
                 'id' => 870,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00870',
                 'name' => 'Nur Srihadi',
                 'no_telp' => '081346633762',
@@ -10464,6 +12204,8 @@ class PegawaisTableSeeder extends Seeder
             370 => 
             array (
                 'id' => 871,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00871',
                 'name' => 'Ratmi Sari',
                 'no_telp' => '081258137081',
@@ -10476,6 +12218,8 @@ class PegawaisTableSeeder extends Seeder
             371 => 
             array (
                 'id' => 872,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00872',
                 'name' => 'Sahriati',
                 'no_telp' => '',
@@ -10488,6 +12232,8 @@ class PegawaisTableSeeder extends Seeder
             372 => 
             array (
                 'id' => 873,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00873',
                 'name' => 'Susanti',
                 'no_telp' => '',
@@ -10500,6 +12246,8 @@ class PegawaisTableSeeder extends Seeder
             373 => 
             array (
                 'id' => 874,
+                'nik' => '6408151603540001',
+                'nip' => NULL,
                 'code' => '00874',
                 'name' => 'SUTIKNO',
                 'no_telp' => '081347654666',
@@ -10507,11 +12255,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 58,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:12:37',
             ),
             374 => 
             array (
                 'id' => 875,
+                'nik' => NULL,
+                'nip' => '197402042006041012',
                 'code' => '00875',
                 'name' => 'ABDUL RAUF SP',
                 'no_telp' => '081348549111',
@@ -10519,11 +12269,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 59,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:00',
             ),
             375 => 
             array (
                 'id' => 876,
+                'nik' => NULL,
+                'nip' => '199204152015031001',
                 'code' => '00876',
                 'name' => 'SAFIATUR RAHMAN S. TP',
                 'no_telp' => '081349475312',
@@ -10531,11 +12283,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 59,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             376 => 
             array (
                 'id' => 877,
+                'nik' => NULL,
+                'nip' => '199512182022031005',
                 'code' => '00877',
                 'name' => 'Yusri Lolo Tangkelangi A.Md.P',
                 'no_telp' => '0822930222654',
@@ -10543,11 +12297,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 59,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             377 => 
             array (
                 'id' => 878,
+                'nik' => '6408161612910002',
+                'nip' => NULL,
                 'code' => '00878',
                 'name' => 'Mardani',
                 'no_telp' => '',
@@ -10555,11 +12311,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 59,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:26',
             ),
             378 => 
             array (
                 'id' => 879,
+                'nik' => '6408160901900003',
+                'nip' => NULL,
                 'code' => '00879',
                 'name' => 'Sahbana',
                 'no_telp' => '085246706626',
@@ -10567,11 +12325,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 59,
                 'created_at' => '2023-06-26 14:13:15',
-                'updated_at' => '2023-06-26 14:13:15',
+                'updated_at' => '2023-07-04 07:15:27',
             ),
             379 => 
             array (
                 'id' => 880,
+                'nik' => NULL,
+                'nip' => '198710112017061001',
                 'code' => '00880',
                 'name' => 'Fiktor',
                 'no_telp' => '081253569998',
@@ -10579,11 +12339,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 60,
                 'created_at' => '2023-06-26 14:13:16',
-                'updated_at' => '2023-06-26 14:13:16',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             380 => 
             array (
                 'id' => 881,
+                'nik' => NULL,
+                'nip' => '198203132017061002',
                 'code' => '00881',
                 'name' => 'Murdiansyah A. Md',
                 'no_telp' => '085390270242',
@@ -10591,11 +12353,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 60,
                 'created_at' => '2023-06-26 14:13:16',
-                'updated_at' => '2023-06-26 14:13:16',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             381 => 
             array (
                 'id' => 882,
+                'nik' => '6403012501830002',
+                'nip' => NULL,
                 'code' => '00882',
                 'name' => 'Stevanus Aktri Dwiono',
                 'no_telp' => '',
@@ -10603,11 +12367,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 60,
                 'created_at' => '2023-06-26 14:13:16',
-                'updated_at' => '2023-06-26 14:13:16',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             382 => 
             array (
                 'id' => 883,
+                'nik' => '6403011006740001',
+                'nip' => NULL,
                 'code' => '00883',
                 'name' => 'Wayan Mudari',
                 'no_telp' => '081254011199',
@@ -10615,11 +12381,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 60,
                 'created_at' => '2023-06-26 14:13:16',
-                'updated_at' => '2023-06-26 14:13:16',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             383 => 
             array (
                 'id' => 884,
+                'nik' => NULL,
+                'nip' => '199009212017061001',
                 'code' => '00884',
                 'name' => 'Eko Purwanto',
                 'no_telp' => '6285348989684',
@@ -10627,11 +12395,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             384 => 
             array (
                 'id' => 885,
+                'nik' => NULL,
+                'nip' => '196509062008011013',
                 'code' => '00885',
                 'name' => 'Miskam SPKP',
                 'no_telp' => '085387535777',
@@ -10639,11 +12409,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             385 => 
             array (
                 'id' => 886,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00886',
                 'name' => 'Erly Nur Diana SP',
                 'no_telp' => '081288808236',
@@ -10656,6 +12428,8 @@ class PegawaisTableSeeder extends Seeder
             386 => 
             array (
                 'id' => 887,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00887',
                 'name' => 'Heri Isbiyanto S. PKP',
                 'no_telp' => '081258482712',
@@ -10668,6 +12442,8 @@ class PegawaisTableSeeder extends Seeder
             387 => 
             array (
                 'id' => 888,
+                'nik' => '640309005760001',
+                'nip' => NULL,
                 'code' => '00888',
                 'name' => 'Aidil Akbar',
                 'no_telp' => '081250933300',
@@ -10675,11 +12451,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             388 => 
             array (
                 'id' => 889,
+                'nik' => '6403021607770001',
+                'nip' => NULL,
                 'code' => '00889',
                 'name' => 'Andrianang Kuswantoro',
                 'no_telp' => '081347394852',
@@ -10687,11 +12465,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             389 => 
             array (
                 'id' => 890,
+                'nik' => '640302270565000',
+                'nip' => NULL,
                 'code' => '00890',
                 'name' => 'Bambang Irawan',
                 'no_telp' => '085250720849',
@@ -10699,11 +12479,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             390 => 
             array (
                 'id' => 891,
+                'nik' => '64030208830001',
+                'nip' => NULL,
                 'code' => '00891',
                 'name' => 'Bambang Supriyadi',
                 'no_telp' => '082157624899',
@@ -10711,11 +12493,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             391 => 
             array (
                 'id' => 892,
+                'nik' => '6403022003610001',
+                'nip' => NULL,
                 'code' => '00892',
                 'name' => 'Dawud Trisunu',
                 'no_telp' => '081347971341',
@@ -10723,11 +12507,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             392 => 
             array (
                 'id' => 893,
+                'nik' => '6403021403700001',
+                'nip' => NULL,
                 'code' => '00893',
                 'name' => 'Itaji Suryana',
                 'no_telp' => '',
@@ -10735,11 +12521,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             393 => 
             array (
                 'id' => 894,
+                'nik' => '6403021010700002',
+                'nip' => NULL,
                 'code' => '00894',
                 'name' => 'Margono',
                 'no_telp' => '',
@@ -10747,11 +12535,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             394 => 
             array (
                 'id' => 895,
+                'nik' => '6403021909640001',
+                'nip' => NULL,
                 'code' => '00895',
                 'name' => 'Silfanudin',
                 'no_telp' => '082254947511',
@@ -10759,11 +12549,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             395 => 
             array (
                 'id' => 896,
+                'nik' => '6403020812630001',
+                'nip' => NULL,
                 'code' => '00896',
                 'name' => 'Suparmin',
                 'no_telp' => '081256577376',
@@ -10771,11 +12563,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             396 => 
             array (
                 'id' => 897,
+                'nik' => '6403030213111590001',
+                'nip' => NULL,
                 'code' => '00897',
                 'name' => 'Thomas Lejab',
                 'no_telp' => '',
@@ -10783,11 +12577,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 61,
                 'created_at' => '2023-06-26 14:13:18',
-                'updated_at' => '2023-06-26 14:13:18',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             397 => 
             array (
                 'id' => 898,
+                'nik' => NULL,
+                'nip' => '198007312010011010',
                 'code' => '00898',
                 'name' => 'Brian Fuad Prasetyo SP',
                 'no_telp' => '081255681415',
@@ -10795,11 +12591,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 62,
                 'created_at' => '2023-06-26 14:13:19',
-                'updated_at' => '2023-06-26 14:13:19',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             398 => 
             array (
                 'id' => 899,
+                'nik' => NULL,
+                'nip' => '198903302017061003',
                 'code' => '00899',
                 'name' => 'Hisbulloh Huda',
                 'no_telp' => '085350593912',
@@ -10807,11 +12605,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 62,
                 'created_at' => '2023-06-26 14:13:19',
-                'updated_at' => '2023-06-26 14:13:19',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             399 => 
             array (
                 'id' => 900,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00900',
                 'name' => 'Ayani Suhardi',
                 'no_telp' => '085246437979',
@@ -10824,6 +12624,8 @@ class PegawaisTableSeeder extends Seeder
             400 => 
             array (
                 'id' => 901,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00901',
                 'name' => 'Mohamad Rofiq SP',
                 'no_telp' => '081347310302',
@@ -10836,6 +12638,8 @@ class PegawaisTableSeeder extends Seeder
             401 => 
             array (
                 'id' => 902,
+                'nik' => '6403106111990002',
+                'nip' => NULL,
                 'code' => '00902',
                 'name' => 'Adelia novita kristanti',
                 'no_telp' => '082351906427',
@@ -10843,11 +12647,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 62,
                 'created_at' => '2023-06-26 14:13:19',
-                'updated_at' => '2023-06-26 14:13:19',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             402 => 
             array (
                 'id' => 903,
+                'nik' => '6408130101710006',
+                'nip' => NULL,
                 'code' => '00903',
                 'name' => 'Boton',
                 'no_telp' => '082156306776',
@@ -10855,11 +12661,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 62,
                 'created_at' => '2023-06-26 14:13:19',
-                'updated_at' => '2023-06-26 14:13:19',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             403 => 
             array (
                 'id' => 904,
+                'nik' => '6403101302760001',
+                'nip' => NULL,
                 'code' => '00904',
                 'name' => 'Firman',
                 'no_telp' => '085250504698',
@@ -10867,11 +12675,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 62,
                 'created_at' => '2023-06-26 14:13:19',
-                'updated_at' => '2023-06-26 14:13:19',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             404 => 
             array (
                 'id' => 905,
+                'nik' => '7405130303850001',
+                'nip' => NULL,
                 'code' => '00905',
                 'name' => 'Suardi',
                 'no_telp' => '',
@@ -10879,11 +12689,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 62,
                 'created_at' => '2023-06-26 14:13:19',
-                'updated_at' => '2023-06-26 14:13:19',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             405 => 
             array (
                 'id' => 906,
+                'nik' => NULL,
+                'nip' => '198302202017061003',
                 'code' => '00906',
                 'name' => 'Deddi SP',
                 'no_telp' => '081347561102',
@@ -10891,11 +12703,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 63,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             406 => 
             array (
                 'id' => 907,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00907',
                 'name' => 'Hendra SP',
                 'no_telp' => '082158833359',
@@ -10908,6 +12722,8 @@ class PegawaisTableSeeder extends Seeder
             407 => 
             array (
                 'id' => 908,
+                'nik' => '6403071003690003',
+                'nip' => NULL,
                 'code' => '00908',
                 'name' => 'Ahmad Syaifullah',
                 'no_telp' => '081286395992',
@@ -10915,11 +12731,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 63,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             408 => 
             array (
                 'id' => 909,
+                'nik' => '7604071603930002',
+                'nip' => NULL,
                 'code' => '00909',
                 'name' => 'Juandi',
                 'no_telp' => '082191230562',
@@ -10927,23 +12745,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 63,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             409 => 
             array (
                 'id' => 910,
+                'nik' => '6409040804760001',
+                'nip' => NULL,
                 'code' => '00910',
                 'name' => 'Marwan',
-                'no_telp' => '',
+                'no_telp' => '082157888041',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 63,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             410 => 
             array (
                 'id' => 911,
+                'nik' => NULL,
+                'nip' => '196402151987111003',
                 'code' => '00911',
                 'name' => 'Heri Harianto S.ST',
                 'no_telp' => '08124904811',
@@ -10951,11 +12773,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             411 => 
             array (
                 'id' => 912,
+                'nik' => NULL,
+                'nip' => '198408142017062002',
                 'code' => '00912',
                 'name' => 'Ida Nurningsih A. Md',
                 'no_telp' => '081349431334',
@@ -10963,11 +12787,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             412 => 
             array (
                 'id' => 913,
+                'nik' => NULL,
+                'nip' => '198605152017062002',
                 'code' => '00913',
                 'name' => 'Nonning Rabang Dian',
                 'no_telp' => '082352022294',
@@ -10975,11 +12801,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             413 => 
             array (
                 'id' => 914,
+                'nik' => NULL,
+                'nip' => '198111012017062001',
                 'code' => '00914',
                 'name' => 'Sri Norviyani SP',
                 'no_telp' => '082148223553',
@@ -10987,11 +12815,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             414 => 
             array (
                 'id' => 915,
+                'nik' => NULL,
+                'nip' => '196909282007012015',
                 'code' => '00915',
                 'name' => 'Yuliana Bunga Palalangan',
                 'no_telp' => '08125600058',
@@ -10999,11 +12829,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             415 => 
             array (
                 'id' => 916,
+                'nik' => NULL,
+                'nip' => '198606092017062001',
                 'code' => '00916',
                 'name' => 'Yunirda Anggia Fitriani A. Md',
                 'no_telp' => '082254410033',
@@ -11011,11 +12843,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             416 => 
             array (
                 'id' => 917,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00917',
                 'name' => 'Berty Tiku',
                 'no_telp' => '085249362157',
@@ -11028,6 +12862,8 @@ class PegawaisTableSeeder extends Seeder
             417 => 
             array (
                 'id' => 918,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00918',
                 'name' => 'Hardani A. Md',
                 'no_telp' => '081347321574',
@@ -11040,6 +12876,8 @@ class PegawaisTableSeeder extends Seeder
             418 => 
             array (
                 'id' => 919,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00919',
                 'name' => 'Mbaryati SP',
                 'no_telp' => '081347692379',
@@ -11052,6 +12890,8 @@ class PegawaisTableSeeder extends Seeder
             419 => 
             array (
                 'id' => 920,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00920',
                 'name' => 'Milka Lomba Sapang SP',
                 'no_telp' => '082252303878',
@@ -11064,6 +12904,8 @@ class PegawaisTableSeeder extends Seeder
             420 => 
             array (
                 'id' => 921,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00921',
                 'name' => 'Nani Indrawati SP',
                 'no_telp' => '081350293487',
@@ -11076,6 +12918,8 @@ class PegawaisTableSeeder extends Seeder
             421 => 
             array (
                 'id' => 922,
+                'nik' => '6403032003800003',
+                'nip' => NULL,
                 'code' => '00922',
                 'name' => 'Jumardin',
                 'no_telp' => '0823502122',
@@ -11083,11 +12927,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             422 => 
             array (
                 'id' => 923,
+                'nik' => '6403030511750002',
+                'nip' => NULL,
                 'code' => '00923',
                 'name' => 'Muhlis',
                 'no_telp' => '081349497447',
@@ -11095,11 +12941,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             423 => 
             array (
                 'id' => 924,
+                'nik' => '6403032707700001',
+                'nip' => NULL,
                 'code' => '00924',
                 'name' => 'Rohdi',
                 'no_telp' => '085247097179',
@@ -11107,11 +12955,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             424 => 
             array (
                 'id' => 925,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00925',
                 'name' => 'Solihin',
                 'no_telp' => '085652135461',
@@ -11124,6 +12974,8 @@ class PegawaisTableSeeder extends Seeder
             425 => 
             array (
                 'id' => 926,
+                'nik' => '6403051609720001',
+                'nip' => NULL,
                 'code' => '00926',
                 'name' => 'Suhud',
                 'no_telp' => '085247083557',
@@ -11131,11 +12983,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             426 => 
             array (
                 'id' => 927,
+                'nik' => '6403030408640001',
+                'nip' => NULL,
                 'code' => '00927',
                 'name' => 'Suratman',
                 'no_telp' => '081350773405',
@@ -11143,11 +12997,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             427 => 
             array (
                 'id' => 928,
+                'nik' => '6403032307580001',
+                'nip' => NULL,
                 'code' => '00928',
                 'name' => 'Suyanto. S',
                 'no_telp' => '081253784577',
@@ -11155,11 +13011,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             428 => 
             array (
                 'id' => 929,
+                'nik' => '6404050401690005',
+                'nip' => NULL,
                 'code' => '00929',
                 'name' => 'Syukur Edy',
                 'no_telp' => '082310720525',
@@ -11167,11 +13025,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 64,
                 'created_at' => '2023-06-26 14:13:20',
-                'updated_at' => '2023-06-26 14:13:20',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             429 => 
             array (
                 'id' => 930,
+                'nik' => NULL,
+                'nip' => '198408062017062001',
                 'code' => '00930',
                 'name' => 'Agus Hariyah SP',
                 'no_telp' => '08125389090',
@@ -11179,11 +13039,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             430 => 
             array (
                 'id' => 931,
+                'nik' => NULL,
+                'nip' => '198403062017061001',
                 'code' => '00931',
                 'name' => 'Andi Asmono A. Md',
                 'no_telp' => '08125337134',
@@ -11191,11 +13053,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             431 => 
             array (
                 'id' => 932,
+                'nik' => NULL,
+                'nip' => '198403052017061002',
                 'code' => '00932',
                 'name' => 'Hendro Wardoyo SP',
                 'no_telp' => '085247188554',
@@ -11203,11 +13067,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             432 => 
             array (
                 'id' => 933,
+                'nik' => NULL,
+                'nip' => '198309172017062001',
                 'code' => '00933',
                 'name' => 'Ika Setiyarini SP',
                 'no_telp' => '081253483760',
@@ -11215,11 +13081,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             433 => 
             array (
                 'id' => 934,
+                'nik' => NULL,
+                'nip' => '198805082017062001',
                 'code' => '00934',
                 'name' => 'Sulinah',
                 'no_telp' => '082255453846',
@@ -11227,11 +13095,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             434 => 
             array (
                 'id' => 935,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00935',
                 'name' => 'Hermi Ervina',
                 'no_telp' => '081350262745',
@@ -11244,6 +13114,8 @@ class PegawaisTableSeeder extends Seeder
             435 => 
             array (
                 'id' => 936,
+                'nik' => '6403060107790010',
+                'nip' => NULL,
                 'code' => '00936',
                 'name' => 'AMBO TOLA',
                 'no_telp' => '081346499689',
@@ -11251,11 +13123,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             436 => 
             array (
                 'id' => 937,
+                'nik' => '6403062307680001',
+                'nip' => NULL,
                 'code' => '00937',
                 'name' => 'BAHARUDDIN',
                 'no_telp' => '82329280697',
@@ -11263,11 +13137,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             437 => 
             array (
                 'id' => 938,
+                'nik' => '6403060108470001',
+                'nip' => NULL,
                 'code' => '00938',
                 'name' => 'Kasim. Y',
                 'no_telp' => '085247808905',
@@ -11275,11 +13151,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             438 => 
             array (
                 'id' => 939,
+                'nik' => '6403060201520001',
+                'nip' => NULL,
                 'code' => '00939',
                 'name' => 'Masyhur',
                 'no_telp' => '',
@@ -11287,11 +13165,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             439 => 
             array (
                 'id' => 940,
+                'nik' => '6403060909710002',
+                'nip' => NULL,
                 'code' => '00940',
                 'name' => 'Muhammad Yunus',
                 'no_telp' => '08125371638',
@@ -11299,11 +13179,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             440 => 
             array (
                 'id' => 941,
+                'nik' => '6403061912660002',
+                'nip' => NULL,
                 'code' => '00941',
                 'name' => 'Purnomo',
                 'no_telp' => '082230162322',
@@ -11311,11 +13193,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             441 => 
             array (
                 'id' => 942,
+                'nik' => '6403030103760002',
+                'nip' => NULL,
                 'code' => '00942',
                 'name' => 'Raden',
                 'no_telp' => '083250683096',
@@ -11323,11 +13207,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             442 => 
             array (
                 'id' => 943,
+                'nik' => '6403060209760001',
+                'nip' => NULL,
                 'code' => '00943',
                 'name' => 'Ramlie',
                 'no_telp' => '085246469108',
@@ -11335,11 +13221,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             443 => 
             array (
                 'id' => 944,
+                'nik' => '6403061109770001',
+                'nip' => NULL,
                 'code' => '00944',
                 'name' => 'RUSMAN',
                 'no_telp' => '081352678131',
@@ -11347,11 +13235,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             444 => 
             array (
                 'id' => 945,
+                'nik' => '6403060107800015',
+                'nip' => NULL,
                 'code' => '00945',
                 'name' => 'Rustam',
                 'no_telp' => '082155050223',
@@ -11359,11 +13249,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             445 => 
             array (
                 'id' => 946,
+                'nik' => '1602201405730005',
+                'nip' => NULL,
                 'code' => '00946',
                 'name' => 'Suyano',
                 'no_telp' => '82150383231',
@@ -11371,11 +13263,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             446 => 
             array (
                 'id' => 947,
+                'nik' => '7314071204860002',
+                'nip' => NULL,
                 'code' => '00947',
                 'name' => 'Yasmin',
                 'no_telp' => '085282423159',
@@ -11383,11 +13277,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 65,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             447 => 
             array (
                 'id' => 948,
+                'nik' => NULL,
+                'nip' => '198303142010011008',
                 'code' => '00948',
                 'name' => 'Budi Wahyono SP',
                 'no_telp' => '085250765431',
@@ -11395,11 +13291,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 66,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             448 => 
             array (
                 'id' => 949,
+                'nik' => NULL,
+                'nip' => '198311302017062001',
                 'code' => '00949',
                 'name' => 'Norra Rosiyanty S.ST',
                 'no_telp' => '082157448260',
@@ -11407,11 +13305,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 66,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             449 => 
             array (
                 'id' => 950,
+                'nik' => NULL,
+                'nip' => '198906092017061001',
                 'code' => '00950',
                 'name' => 'Roni Supriyadi',
                 'no_telp' => '085246728927',
@@ -11419,11 +13319,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 66,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             450 => 
             array (
                 'id' => 951,
+                'nik' => NULL,
+                'nip' => '197308082006042020',
                 'code' => '00951',
                 'name' => 'Warjinem',
                 'no_telp' => '081350875273',
@@ -11431,11 +13333,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 66,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             451 => 
             array (
                 'id' => 952,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00952',
                 'name' => 'Agustina Ramadhayanti Ardie SP',
                 'no_telp' => '081350852258',
@@ -11448,6 +13352,8 @@ class PegawaisTableSeeder extends Seeder
             452 => 
             array (
                 'id' => 953,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00953',
                 'name' => 'Ichwan Junaedi SP',
                 'no_telp' => '082157343132',
@@ -11460,6 +13366,8 @@ class PegawaisTableSeeder extends Seeder
             453 => 
             array (
                 'id' => 954,
+                'nik' => '6403041105790001',
+                'nip' => NULL,
                 'code' => '00954',
                 'name' => 'Kamaruddin',
                 'no_telp' => '081350604559',
@@ -11467,11 +13375,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 66,
                 'created_at' => '2023-06-26 14:13:21',
-                'updated_at' => '2023-06-26 14:13:21',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             454 => 
             array (
                 'id' => 955,
+                'nik' => NULL,
+                'nip' => '196402241987091001',
                 'code' => '00955',
                 'name' => 'Adi Saryono S.PKP',
                 'no_telp' => '082188190146',
@@ -11479,11 +13389,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 67,
                 'created_at' => '2023-06-26 14:13:22',
-                'updated_at' => '2023-06-26 14:13:22',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             455 => 
             array (
                 'id' => 956,
+                'nik' => NULL,
+                'nip' => '198811132017062001',
                 'code' => '00956',
                 'name' => 'Karmini',
                 'no_telp' => '085245802515',
@@ -11491,11 +13403,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 67,
                 'created_at' => '2023-06-26 14:13:22',
-                'updated_at' => '2023-06-26 14:13:22',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             456 => 
             array (
                 'id' => 957,
+                'nik' => NULL,
+                'nip' => '197602102010012006',
                 'code' => '00957',
                 'name' => 'Rusidah SP',
                 'no_telp' => '08115499250',
@@ -11503,11 +13417,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 67,
                 'created_at' => '2023-06-26 14:13:22',
-                'updated_at' => '2023-06-26 14:13:22',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             457 => 
             array (
                 'id' => 958,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00958',
                 'name' => 'Darmaji',
                 'no_telp' => '85246926655',
@@ -11520,6 +13436,8 @@ class PegawaisTableSeeder extends Seeder
             458 => 
             array (
                 'id' => 959,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00959',
                 'name' => 'Karsono',
                 'no_telp' => '082154927518',
@@ -11532,6 +13450,8 @@ class PegawaisTableSeeder extends Seeder
             459 => 
             array (
                 'id' => 960,
+                'nik' => '6403051509850001',
+                'nip' => NULL,
                 'code' => '00960',
                 'name' => 'Rachmad Hidayad',
                 'no_telp' => '',
@@ -11539,11 +13459,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 67,
                 'created_at' => '2023-06-26 14:13:22',
-                'updated_at' => '2023-06-26 14:13:22',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             460 => 
             array (
                 'id' => 961,
+                'nik' => '6403090107560022',
+                'nip' => NULL,
                 'code' => '00961',
                 'name' => 'Rifa\'ah',
                 'no_telp' => '081250196420',
@@ -11551,11 +13473,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 67,
                 'created_at' => '2023-06-26 14:13:22',
-                'updated_at' => '2023-06-26 14:13:22',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             461 => 
             array (
                 'id' => 962,
+                'nik' => NULL,
+                'nip' => '196905042006041025',
                 'code' => '00962',
                 'name' => 'MUSLIMIN',
                 'no_telp' => '081346697159',
@@ -11563,23 +13487,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 68,
                 'created_at' => '2023-06-26 14:13:22',
-                'updated_at' => '2023-06-26 14:13:22',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             462 => 
             array (
                 'id' => 963,
+                'nik' => NULL,
+                'nip' => '196511031988031011',
                 'code' => '00963',
                 'name' => 'Sukadi',
-                'no_telp' => '085350290132',
+                'no_telp' => '082157222046',
                 'email' => 'sukadi.sugiyem@gmail.com',
                 'type' => 'penyuluh pppk',
                 'kantor_id' => 68,
                 'created_at' => '2023-06-26 14:13:22',
-                'updated_at' => '2023-06-26 14:13:22',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             463 => 
             array (
                 'id' => 964,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00964',
                 'name' => 'Suma danu Wiharja S.Hut',
                 'no_telp' => '081244711530',
@@ -11592,6 +13520,8 @@ class PegawaisTableSeeder extends Seeder
             464 => 
             array (
                 'id' => 965,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00965',
                 'name' => 'Suparman',
                 'no_telp' => '81253265481',
@@ -11604,6 +13534,8 @@ class PegawaisTableSeeder extends Seeder
             465 => 
             array (
                 'id' => 966,
+                'nik' => '6403120501830001',
+                'nip' => NULL,
                 'code' => '00966',
                 'name' => 'Suryanto',
                 'no_telp' => '085252866958',
@@ -11611,11 +13543,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 68,
                 'created_at' => '2023-06-26 14:13:22',
-                'updated_at' => '2023-06-26 14:13:22',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             466 => 
             array (
                 'id' => 967,
+                'nik' => NULL,
+                'nip' => '196706022008011009',
                 'code' => '00967',
                 'name' => 'Apen Sopandi S. PKP',
                 'no_telp' => '085247298330',
@@ -11623,11 +13557,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 69,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             467 => 
             array (
                 'id' => 968,
+                'nik' => NULL,
+                'nip' => '198602232017061001',
                 'code' => '00968',
                 'name' => 'Wanda Hermansyah SP',
                 'no_telp' => '085247555255',
@@ -11635,11 +13571,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 69,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:01',
             ),
             468 => 
             array (
                 'id' => 969,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00969',
                 'name' => 'Syamsuri Abisu SP',
                 'no_telp' => '082353029689',
@@ -11652,6 +13590,8 @@ class PegawaisTableSeeder extends Seeder
             469 => 
             array (
                 'id' => 970,
+                'nik' => NULL,
+                'nip' => '196906072000031004',
                 'code' => '00970',
                 'name' => 'Abdul Basid SP',
                 'no_telp' => '081327873494',
@@ -11659,11 +13599,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             470 => 
             array (
                 'id' => 971,
+                'nik' => NULL,
+                'nip' => '198602282007012001',
                 'code' => '00971',
                 'name' => 'Indo Taqwa SP',
                 'no_telp' => '085338834177',
@@ -11671,11 +13613,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             471 => 
             array (
                 'id' => 972,
+                'nik' => NULL,
+                'nip' => '198305172017071001',
                 'code' => '00972',
                 'name' => 'Muhammad Bahrani',
                 'no_telp' => '085845111967',
@@ -11683,11 +13627,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             472 => 
             array (
                 'id' => 973,
+                'nik' => NULL,
+                'nip' => '198212212017071001',
                 'code' => '00973',
                 'name' => 'Muhammad Ilhami',
                 'no_telp' => '081521886296',
@@ -11695,11 +13641,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             473 => 
             array (
                 'id' => 974,
+                'nik' => NULL,
+                'nip' => '198111152017072001',
                 'code' => '00974',
                 'name' => 'Ngatinah',
                 'no_telp' => '085247149864',
@@ -11707,11 +13655,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             474 => 
             array (
                 'id' => 975,
+                'nik' => NULL,
+                'nip' => '198409252017072001',
                 'code' => '00975',
                 'name' => 'Ryo Ernawati SP',
                 'no_telp' => '082350667557',
@@ -11719,11 +13669,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             475 => 
             array (
                 'id' => 976,
+                'nik' => NULL,
+                'nip' => '198208192017072001',
                 'code' => '00976',
                 'name' => 'Sarmiyati',
                 'no_telp' => '081255197084',
@@ -11731,11 +13683,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             476 => 
             array (
                 'id' => 977,
+                'nik' => NULL,
+                'nip' => '196601072003121002',
                 'code' => '00977',
                 'name' => 'Supriyanto A.Md',
                 'no_telp' => '081346444323',
@@ -11743,11 +13697,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             477 => 
             array (
                 'id' => 978,
+                'nik' => NULL,
+                'nip' => '197402232005011002',
                 'code' => '00978',
                 'name' => 'Suyono SP',
                 'no_telp' => '08125559890',
@@ -11755,11 +13711,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             478 => 
             array (
                 'id' => 979,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00979',
                 'name' => 'Tukiran',
                 'no_telp' => '081253783864',
@@ -11772,6 +13730,8 @@ class PegawaisTableSeeder extends Seeder
             479 => 
             array (
                 'id' => 980,
+                'nik' => NULL,
+                'nip' => '197610192000122002',
                 'code' => '00980',
                 'name' => 'Wasini SP',
                 'no_telp' => '082148430050',
@@ -11779,11 +13739,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             480 => 
             array (
                 'id' => 981,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00981',
                 'name' => 'Jumadi',
                 'no_telp' => '085652048347',
@@ -11796,6 +13758,8 @@ class PegawaisTableSeeder extends Seeder
             481 => 
             array (
                 'id' => 982,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00982',
                 'name' => 'Rusmala Dewi',
                 'no_telp' => '081549113462',
@@ -11808,6 +13772,8 @@ class PegawaisTableSeeder extends Seeder
             482 => 
             array (
                 'id' => 983,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00983',
                 'name' => 'Sayid',
                 'no_telp' => '081549033100',
@@ -11820,6 +13786,8 @@ class PegawaisTableSeeder extends Seeder
             483 => 
             array (
                 'id' => 984,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00984',
                 'name' => 'Sugeng Riyanto SP',
                 'no_telp' => '085821793510',
@@ -11832,6 +13800,8 @@ class PegawaisTableSeeder extends Seeder
             484 => 
             array (
                 'id' => 985,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00985',
                 'name' => 'Syaiful Arjana',
                 'no_telp' => '085891456202',
@@ -11844,6 +13814,8 @@ class PegawaisTableSeeder extends Seeder
             485 => 
             array (
                 'id' => 986,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00986',
                 'name' => 'Toto Sunaryo SP',
                 'no_telp' => '081522724673',
@@ -11856,6 +13828,8 @@ class PegawaisTableSeeder extends Seeder
             486 => 
             array (
                 'id' => 987,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '00987',
                 'name' => 'Agus Salim',
                 'no_telp' => '085845122458',
@@ -11868,6 +13842,8 @@ class PegawaisTableSeeder extends Seeder
             487 => 
             array (
                 'id' => 988,
+                'nik' => '6409031201700003',
+                'nip' => NULL,
                 'code' => '00988',
                 'name' => 'H. Sulaiman',
                 'no_telp' => '081347090597',
@@ -11875,11 +13851,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             488 => 
             array (
                 'id' => 989,
+                'nik' => '6409031508650001',
+                'nip' => NULL,
                 'code' => '00989',
                 'name' => 'Haryono',
                 'no_telp' => '085247465031',
@@ -11887,11 +13865,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             489 => 
             array (
                 'id' => 990,
+                'nik' => '6409032907650001',
+                'nip' => NULL,
                 'code' => '00990',
                 'name' => 'Marlan Gusasi',
                 'no_telp' => '081528602766',
@@ -11899,11 +13879,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             490 => 
             array (
                 'id' => 991,
+                'nik' => '6409030405850004',
+                'nip' => NULL,
                 'code' => '00991',
                 'name' => 'Ngadino Ridwanto',
                 'no_telp' => '085246877060',
@@ -11911,11 +13893,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             491 => 
             array (
                 'id' => 992,
+                'nik' => '6409031005680005',
+                'nip' => NULL,
                 'code' => '00992',
                 'name' => 'Nohong',
                 'no_telp' => '',
@@ -11923,11 +13907,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             492 => 
             array (
                 'id' => 993,
+                'nik' => '6409031305650001',
+                'nip' => NULL,
                 'code' => '00993',
                 'name' => 'Sajiman',
                 'no_telp' => '081347971964',
@@ -11935,11 +13921,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             493 => 
             array (
                 'id' => 994,
+                'nik' => '6409031403720002',
+                'nip' => NULL,
                 'code' => '00994',
                 'name' => 'Sumarji',
                 'no_telp' => '081257768161',
@@ -11947,11 +13935,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             494 => 
             array (
                 'id' => 995,
+                'nik' => '6409031202740001',
+                'nip' => NULL,
                 'code' => '00995',
                 'name' => 'Suprihatin',
                 'no_telp' => '085349811089',
@@ -11959,11 +13949,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             495 => 
             array (
                 'id' => 996,
+                'nik' => '6409031703640001',
+                'nip' => NULL,
                 'code' => '00996',
                 'name' => 'Tasiman Muhadi',
                 'no_telp' => '085349525495',
@@ -11971,11 +13963,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             496 => 
             array (
                 'id' => 997,
+                'nik' => '6409030508640005',
+                'nip' => NULL,
                 'code' => '00997',
                 'name' => 'Teguh Suwarmin',
                 'no_telp' => '082156657803',
@@ -11983,11 +13977,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             497 => 
             array (
                 'id' => 998,
+                'nik' => '6471010106690002',
+                'nip' => NULL,
                 'code' => '00998',
                 'name' => 'Warsito',
                 'no_telp' => '',
@@ -11995,11 +13991,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 70,
                 'created_at' => '2023-06-26 14:13:23',
-                'updated_at' => '2023-06-26 14:13:23',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             498 => 
             array (
                 'id' => 999,
+                'nik' => NULL,
+                'nip' => '196903152005011003',
                 'code' => '00999',
                 'name' => 'Ilham SP',
                 'no_telp' => '08125379936',
@@ -12007,11 +14005,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             499 => 
             array (
                 'id' => 1000,
+                'nik' => NULL,
+                'nip' => '198410242014031003',
                 'code' => '01000',
                 'name' => 'Mardiawan  A.Md',
                 'no_telp' => '082255300540',
@@ -12019,13 +14019,15 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
         ));
         \DB::table('pegawais')->insert(array (
             0 => 
             array (
                 'id' => 1001,
+                'nik' => NULL,
+                'nip' => '198212162017072001',
                 'code' => '01001',
                 'name' => 'Nurbayah A.Md',
                 'no_telp' => '082158216574',
@@ -12033,11 +14035,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             1 => 
             array (
                 'id' => 1002,
+                'nik' => NULL,
+                'nip' => '198502272011011002',
                 'code' => '01002',
                 'name' => 'Panggih Tri Atmiko SP',
                 'no_telp' => '085849479625',
@@ -12045,11 +14049,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             2 => 
             array (
                 'id' => 1003,
+                'nik' => NULL,
+                'nip' => '198203062017072001',
                 'code' => '01003',
                 'name' => 'Puji Purwaningsih SP',
                 'no_telp' => '081253058563',
@@ -12057,11 +14063,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             3 => 
             array (
                 'id' => 1004,
+                'nik' => NULL,
+                'nip' => '198509232017072001',
                 'code' => '01004',
                 'name' => 'Riya Mariana SP',
                 'no_telp' => '081254731309',
@@ -12069,11 +14077,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             4 => 
             array (
                 'id' => 1005,
+                'nik' => NULL,
+                'nip' => '197006032006041007',
                 'code' => '01005',
                 'name' => 'Sholekhan SP',
                 'no_telp' => '081351925968',
@@ -12081,11 +14091,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             5 => 
             array (
                 'id' => 1006,
+                'nik' => NULL,
+                'nip' => '198210012009042003',
                 'code' => '01006',
                 'name' => 'Siti Arupah S.Pi',
                 'no_telp' => '081350246250',
@@ -12093,11 +14105,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             6 => 
             array (
                 'id' => 1007,
+                'nik' => NULL,
+                'nip' => '198303292007011003',
                 'code' => '01007',
                 'name' => 'Sujo Budiono',
                 'no_telp' => '085247022736',
@@ -12105,11 +14119,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             7 => 
             array (
                 'id' => 1008,
+                'nik' => NULL,
+                'nip' => '198010022011012003',
                 'code' => '01008',
                 'name' => 'Sulpah S.P',
                 'no_telp' => '085247805858',
@@ -12117,11 +14133,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             8 => 
             array (
                 'id' => 1009,
+                'nik' => NULL,
+                'nip' => '197709202007011014',
                 'code' => '01009',
                 'name' => 'Suprapto SP',
                 'no_telp' => '085346545881',
@@ -12129,11 +14147,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             9 => 
             array (
                 'id' => 1010,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01010',
                 'name' => 'Anita SP',
                 'no_telp' => '085348213688',
@@ -12146,6 +14166,8 @@ class PegawaisTableSeeder extends Seeder
             10 => 
             array (
                 'id' => 1011,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01011',
                 'name' => 'Nirwati Mansyur A.Md',
                 'no_telp' => '085247710300',
@@ -12158,6 +14180,8 @@ class PegawaisTableSeeder extends Seeder
             11 => 
             array (
                 'id' => 1012,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01012',
                 'name' => 'Nurul Fadhillah SP',
                 'no_telp' => '08125032578',
@@ -12170,6 +14194,8 @@ class PegawaisTableSeeder extends Seeder
             12 => 
             array (
                 'id' => 1013,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01013',
                 'name' => 'Sardawiyah SP',
                 'no_telp' => '081253083507',
@@ -12182,6 +14208,8 @@ class PegawaisTableSeeder extends Seeder
             13 => 
             array (
                 'id' => 1014,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01014',
                 'name' => 'Andi Lely  Sewayah',
                 'no_telp' => '085349401258',
@@ -12194,6 +14222,8 @@ class PegawaisTableSeeder extends Seeder
             14 => 
             array (
                 'id' => 1015,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01015',
                 'name' => 'Eni Radesta',
                 'no_telp' => '081253036367',
@@ -12206,6 +14236,8 @@ class PegawaisTableSeeder extends Seeder
             15 => 
             array (
                 'id' => 1016,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01016',
                 'name' => 'Muhammad Ainul Jihad',
                 'no_telp' => '085348358672',
@@ -12218,6 +14250,8 @@ class PegawaisTableSeeder extends Seeder
             16 => 
             array (
                 'id' => 1017,
+                'nik' => '6409011207780006',
+                'nip' => NULL,
                 'code' => '01017',
                 'name' => 'Paidah Riansyah',
                 'no_telp' => '082350011117',
@@ -12225,11 +14259,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             17 => 
             array (
                 'id' => 1018,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01018',
                 'name' => 'Sarinah',
                 'no_telp' => '081347371477',
@@ -12242,6 +14278,8 @@ class PegawaisTableSeeder extends Seeder
             18 => 
             array (
                 'id' => 1019,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01019',
                 'name' => 'Sarjiman',
                 'no_telp' => '085845481514',
@@ -12254,6 +14292,8 @@ class PegawaisTableSeeder extends Seeder
             19 => 
             array (
                 'id' => 1020,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01020',
                 'name' => 'ST. Hasniwati',
                 'no_telp' => '081283751570',
@@ -12266,6 +14306,8 @@ class PegawaisTableSeeder extends Seeder
             20 => 
             array (
                 'id' => 1021,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01021',
                 'name' => 'Sudimartopo',
                 'no_telp' => '085246577823',
@@ -12278,6 +14320,8 @@ class PegawaisTableSeeder extends Seeder
             21 => 
             array (
                 'id' => 1022,
+                'nik' => '6409013112690085',
+                'nip' => NULL,
                 'code' => '01022',
                 'name' => 'A Usman',
                 'no_telp' => '085247191877',
@@ -12285,11 +14329,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             22 => 
             array (
                 'id' => 1023,
+                'nik' => '6409010711610004',
+                'nip' => NULL,
                 'code' => '01023',
                 'name' => 'Abd Hamid',
                 'no_telp' => '082351080476',
@@ -12297,11 +14343,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             23 => 
             array (
                 'id' => 1024,
+                'nik' => '6409010101790021',
+                'nip' => NULL,
                 'code' => '01024',
                 'name' => 'Abd Salam',
                 'no_telp' => '082350393336',
@@ -12309,11 +14357,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             24 => 
             array (
                 'id' => 1025,
+                'nik' => '6409010107750050',
+                'nip' => NULL,
                 'code' => '01025',
                 'name' => 'Ambo Endre',
                 'no_telp' => '081350685617',
@@ -12321,11 +14371,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             25 => 
             array (
                 'id' => 1026,
+                'nik' => '6409012210770003',
+                'nip' => NULL,
                 'code' => '01026',
                 'name' => 'Andi Zainuddin',
                 'no_telp' => '081253365152',
@@ -12333,11 +14385,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             26 => 
             array (
                 'id' => 1027,
+                'nik' => '6409013112700080',
+                'nip' => NULL,
                 'code' => '01027',
                 'name' => 'Bana D',
                 'no_telp' => '081254583237',
@@ -12345,23 +14399,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             27 => 
             array (
                 'id' => 1028,
+                'nik' => '6409020509810001',
+                'nip' => NULL,
                 'code' => '01028',
                 'name' => 'Darwis',
-                'no_telp' => '082353994995dan081',
+                'no_telp' => '082353994995 dan 081',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             28 => 
             array (
                 'id' => 1029,
+                'nik' => '6409013112700135',
+                'nip' => NULL,
                 'code' => '01029',
                 'name' => 'Fadliansyah',
                 'no_telp' => '081330183355',
@@ -12369,11 +14427,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             29 => 
             array (
                 'id' => 1030,
+                'nik' => '6409010206780004',
+                'nip' => NULL,
                 'code' => '01030',
                 'name' => 'Helawanto',
                 'no_telp' => '085820022236',
@@ -12381,23 +14441,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             30 => 
             array (
                 'id' => 1031,
+                'nik' => '000000000000',
+                'nip' => NULL,
                 'code' => '01031',
                 'name' => 'Herman Bakri',
-                'no_telp' => '085247880425dan082',
+                'no_telp' => '085247880425 dan 082',
                 'email' => '',
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             31 => 
             array (
                 'id' => 1032,
+                'nik' => '6409012408830001',
+                'nip' => NULL,
                 'code' => '01032',
                 'name' => 'Janurii',
                 'no_telp' => '085705852619',
@@ -12405,11 +14469,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             32 => 
             array (
                 'id' => 1033,
+                'nik' => '6409012002760005',
+                'nip' => NULL,
                 'code' => '01033',
                 'name' => 'Karmuji',
                 'no_telp' => '082151977876',
@@ -12417,11 +14483,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             33 => 
             array (
                 'id' => 1034,
+                'nik' => '000000000000',
+                'nip' => NULL,
                 'code' => '01034',
                 'name' => 'Kasino',
                 'no_telp' => '085651117304',
@@ -12429,11 +14497,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             34 => 
             array (
                 'id' => 1035,
+                'nik' => '6409012408830001',
+                'nip' => NULL,
                 'code' => '01035',
                 'name' => 'Lahaluna',
                 'no_telp' => '081357007090',
@@ -12441,11 +14511,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             35 => 
             array (
                 'id' => 1036,
+                'nik' => '6409013112680061',
+                'nip' => NULL,
                 'code' => '01036',
                 'name' => 'Mahmud',
                 'no_telp' => '0812544362936',
@@ -12453,11 +14525,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             36 => 
             array (
                 'id' => 1037,
+                'nik' => '6409012307830004',
+                'nip' => NULL,
                 'code' => '01037',
                 'name' => 'Mulianto',
                 'no_telp' => '085248326006',
@@ -12465,11 +14539,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             37 => 
             array (
                 'id' => 1038,
+                'nik' => '6409013112800102',
+                'nip' => NULL,
                 'code' => '01038',
                 'name' => 'Mustaming',
                 'no_telp' => '08125522851',
@@ -12477,11 +14553,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             38 => 
             array (
                 'id' => 1039,
+                'nik' => '6409012011770001',
+                'nip' => NULL,
                 'code' => '01039',
                 'name' => 'Nurhadi',
                 'no_telp' => '081347486065',
@@ -12489,11 +14567,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             39 => 
             array (
                 'id' => 1040,
+                'nik' => '000000000000',
+                'nip' => NULL,
                 'code' => '01040',
                 'name' => 'Otniel',
                 'no_telp' => '',
@@ -12501,11 +14581,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             40 => 
             array (
                 'id' => 1041,
+                'nik' => '6409020506610002',
+                'nip' => NULL,
                 'code' => '01041',
                 'name' => 'Saparuddin',
                 'no_telp' => '082157298159',
@@ -12513,11 +14595,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             41 => 
             array (
                 'id' => 1042,
+                'nik' => '6409012504630072',
+                'nip' => NULL,
                 'code' => '01042',
                 'name' => 'Sise',
                 'no_telp' => '081256669862',
@@ -12525,11 +14609,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             42 => 
             array (
                 'id' => 1043,
+                'nik' => '6409010304860004',
+                'nip' => NULL,
                 'code' => '01043',
                 'name' => 'Sudirman',
                 'no_telp' => '085821886608',
@@ -12537,11 +14623,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             43 => 
             array (
                 'id' => 1044,
+                'nik' => '6409011405720004',
+                'nip' => NULL,
                 'code' => '01044',
                 'name' => 'Sukisno',
                 'no_telp' => '082156651739',
@@ -12549,11 +14637,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             44 => 
             array (
                 'id' => 1045,
+                'nik' => '6409011012640005',
+                'nip' => NULL,
                 'code' => '01045',
                 'name' => 'Sunaryo',
                 'no_telp' => '085246064898',
@@ -12561,11 +14651,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             45 => 
             array (
                 'id' => 1046,
+                'nik' => '73090233112860000',
+                'nip' => NULL,
                 'code' => '01046',
                 'name' => 'Suradi',
                 'no_telp' => '082252392366',
@@ -12573,11 +14665,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 71,
                 'created_at' => '2023-06-26 14:13:24',
-                'updated_at' => '2023-06-26 14:13:24',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             46 => 
             array (
                 'id' => 1047,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01047',
                 'name' => 'Suriansyah',
                 'no_telp' => '081545114115',
@@ -12590,6 +14684,8 @@ class PegawaisTableSeeder extends Seeder
             47 => 
             array (
                 'id' => 1048,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01048',
                 'name' => 'Suwandi',
                 'no_telp' => '081350654407',
@@ -12602,6 +14698,8 @@ class PegawaisTableSeeder extends Seeder
             48 => 
             array (
                 'id' => 1049,
+                'nik' => NULL,
+                'nip' => '198511032017071001',
                 'code' => '01049',
                 'name' => 'Abdul Ghafur S.ST',
                 'no_telp' => '08164582945',
@@ -12609,11 +14707,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             49 => 
             array (
                 'id' => 1050,
+                'nik' => NULL,
+                'nip' => '197702022006041022',
                 'code' => '01050',
                 'name' => 'Abdul Halid Asmin S.P',
                 'no_telp' => '085248860808',
@@ -12621,11 +14721,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             50 => 
             array (
                 'id' => 1051,
+                'nik' => NULL,
+                'nip' => '198307262017072001',
                 'code' => '01051',
                 'name' => 'Helida Dewi Nugroho SP',
                 'no_telp' => '081347486937',
@@ -12633,11 +14735,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             51 => 
             array (
                 'id' => 1052,
+                'nik' => NULL,
+                'nip' => '198208212017071001',
                 'code' => '01052',
                 'name' => 'Kardubi',
                 'no_telp' => '082253337717',
@@ -12645,11 +14749,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             52 => 
             array (
                 'id' => 1053,
+                'nik' => NULL,
+                'nip' => '198802082017071001',
                 'code' => '01053',
                 'name' => 'Muhammad Abror',
                 'no_telp' => '085247923521',
@@ -12657,11 +14763,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             53 => 
             array (
                 'id' => 1054,
+                'nik' => NULL,
+                'nip' => '198505242017071001',
                 'code' => '01054',
                 'name' => 'Pudjihono',
                 'no_telp' => '082251532526',
@@ -12669,11 +14777,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             54 => 
             array (
                 'id' => 1055,
+                'nik' => NULL,
+                'nip' => '197811112007011007',
                 'code' => '01055',
                 'name' => 'Puguh Wiyono SP',
                 'no_telp' => '081253276944',
@@ -12681,11 +14791,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             55 => 
             array (
                 'id' => 1056,
+                'nik' => NULL,
+                'nip' => '198509292014031001',
                 'code' => '01056',
                 'name' => 'Rachmad Fauzan S.TP',
                 'no_telp' => '082151570927',
@@ -12693,11 +14805,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             56 => 
             array (
                 'id' => 1057,
+                'nik' => NULL,
+                'nip' => '198901112017071001',
                 'code' => '01057',
                 'name' => 'Supriadi S.P',
                 'no_telp' => '082152065411',
@@ -12705,11 +14819,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             57 => 
             array (
                 'id' => 1058,
+                'nik' => NULL,
+                'nip' => '198411072017071001',
                 'code' => '01058',
                 'name' => 'Suwono',
                 'no_telp' => '082285358871',
@@ -12717,11 +14833,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             58 => 
             array (
                 'id' => 1059,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01059',
                 'name' => 'Aan Andriawan',
                 'no_telp' => '081381994861',
@@ -12734,6 +14852,8 @@ class PegawaisTableSeeder extends Seeder
             59 => 
             array (
                 'id' => 1060,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01060',
                 'name' => 'Anwar Sadat',
                 'no_telp' => '085751854979',
@@ -12746,6 +14866,8 @@ class PegawaisTableSeeder extends Seeder
             60 => 
             array (
                 'id' => 1061,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01061',
                 'name' => 'Bambang Sunaryo',
                 'no_telp' => '085345318890',
@@ -12758,6 +14880,8 @@ class PegawaisTableSeeder extends Seeder
             61 => 
             array (
                 'id' => 1062,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01062',
                 'name' => 'Budi Santoso',
                 'no_telp' => '085787973720',
@@ -12770,6 +14894,8 @@ class PegawaisTableSeeder extends Seeder
             62 => 
             array (
                 'id' => 1063,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01063',
                 'name' => 'Rachmad Basuki',
                 'no_telp' => '081549402736',
@@ -12782,6 +14908,8 @@ class PegawaisTableSeeder extends Seeder
             63 => 
             array (
                 'id' => 1064,
+                'nik' => '6409043101660002',
+                'nip' => NULL,
                 'code' => '01064',
                 'name' => 'Achmad Nurcholis',
                 'no_telp' => '081347016840',
@@ -12789,11 +14917,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             64 => 
             array (
                 'id' => 1065,
+                'nik' => '6409040812690003',
+                'nip' => NULL,
                 'code' => '01065',
                 'name' => 'Asikin',
                 'no_telp' => '085346128934',
@@ -12801,11 +14931,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             65 => 
             array (
                 'id' => 1066,
+                'nik' => '6409041003800002',
+                'nip' => NULL,
                 'code' => '01066',
                 'name' => 'Dadang Ariyanto',
                 'no_telp' => '082158588747',
@@ -12813,11 +14945,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             66 => 
             array (
                 'id' => 1067,
+                'nik' => '6409042206820003',
+                'nip' => NULL,
                 'code' => '01067',
                 'name' => 'Fidaus',
                 'no_telp' => '085345694918',
@@ -12825,11 +14959,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             67 => 
             array (
                 'id' => 1068,
+                'nik' => '6409040908910002',
+                'nip' => NULL,
                 'code' => '01068',
                 'name' => 'Hanif Anshorulloh',
                 'no_telp' => '082153203866',
@@ -12837,11 +14973,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             68 => 
             array (
                 'id' => 1069,
+                'nik' => '6409042407690002',
+                'nip' => NULL,
                 'code' => '01069',
                 'name' => 'Kasidi',
                 'no_telp' => '082159106945',
@@ -12849,11 +14987,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:38',
             ),
             69 => 
             array (
                 'id' => 1070,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01070',
                 'name' => 'Marwan',
                 'no_telp' => '082157888041',
@@ -12866,6 +15006,8 @@ class PegawaisTableSeeder extends Seeder
             70 => 
             array (
                 'id' => 1071,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01071',
                 'name' => 'Masud',
                 'no_telp' => '081350569312',
@@ -12878,6 +15020,8 @@ class PegawaisTableSeeder extends Seeder
             71 => 
             array (
                 'id' => 1072,
+                'nik' => '6409041007680002',
+                'nip' => NULL,
                 'code' => '01072',
                 'name' => 'Nur Salim',
                 'no_telp' => '081254647214',
@@ -12885,11 +15029,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             72 => 
             array (
                 'id' => 1073,
+                'nik' => '6409041510760004',
+                'nip' => NULL,
                 'code' => '01073',
                 'name' => 'Pitoyo',
                 'no_telp' => '081350501482',
@@ -12897,11 +15043,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             73 => 
             array (
                 'id' => 1074,
+                'nik' => '6409044404750002',
+                'nip' => NULL,
                 'code' => '01074',
                 'name' => 'Poniah',
                 'no_telp' => '081545528885',
@@ -12909,11 +15057,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             74 => 
             array (
                 'id' => 1075,
+                'nik' => '6409042910580002',
+                'nip' => NULL,
                 'code' => '01075',
                 'name' => 'Saiman',
                 'no_telp' => '081250594728',
@@ -12921,11 +15071,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             75 => 
             array (
                 'id' => 1076,
+                'nik' => '6409041312620004',
+                'nip' => NULL,
                 'code' => '01076',
                 'name' => 'Soeparmin Suhanja Tsasono',
                 'no_telp' => '082151927845',
@@ -12933,11 +15085,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             76 => 
             array (
                 'id' => 1077,
+                'nik' => '6409040505680001',
+                'nip' => NULL,
                 'code' => '01077',
                 'name' => 'Sugiman',
                 'no_telp' => '081253744084',
@@ -12945,11 +15099,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             77 => 
             array (
                 'id' => 1078,
+                'nik' => '6409042509590001',
+                'nip' => NULL,
                 'code' => '01078',
                 'name' => 'Sukarmin',
                 'no_telp' => '081253982901',
@@ -12957,11 +15113,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 72,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             78 => 
             array (
                 'id' => 1079,
+                'nik' => NULL,
+                'nip' => '197010302014091001',
                 'code' => '01079',
                 'name' => 'OKTAVIUS JUAN',
                 'no_telp' => '081250547199',
@@ -12969,11 +15127,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 73,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:03',
             ),
             79 => 
             array (
                 'id' => 1080,
+                'nik' => NULL,
+                'nip' => '199707152022021001',
                 'code' => '01080',
                 'name' => 'Tunggal Pamungkas SP',
                 'no_telp' => '081340450169',
@@ -12981,11 +15141,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 73,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:03',
             ),
             80 => 
             array (
                 'id' => 1081,
+                'nik' => '6407032305000001',
+                'nip' => NULL,
                 'code' => '01081',
                 'name' => 'Marselinus Gendang Gering',
                 'no_telp' => '085348115962',
@@ -12993,11 +15155,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 73,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             81 => 
             array (
                 'id' => 1082,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01082',
                 'name' => 'Septi Ody Pratama',
                 'no_telp' => '081256509600',
@@ -13010,6 +15174,8 @@ class PegawaisTableSeeder extends Seeder
             82 => 
             array (
                 'id' => 1083,
+                'nik' => NULL,
+                'nip' => '198709152019031001',
                 'code' => '01083',
                 'name' => 'Dedy Purwanto SST',
                 'no_telp' => '085250805888',
@@ -13017,11 +15183,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 74,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             83 => 
             array (
                 'id' => 1084,
+                'nik' => NULL,
+                'nip' => '199201032022021001',
                 'code' => '01084',
                 'name' => 'Jenos Lembri SP',
                 'no_telp' => '082153228788',
@@ -13029,11 +15197,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 74,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             84 => 
             array (
                 'id' => 1085,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01085',
                 'name' => 'DAMIANUS HIGANG',
                 'no_telp' => '',
@@ -13046,6 +15216,8 @@ class PegawaisTableSeeder extends Seeder
             85 => 
             array (
                 'id' => 1086,
+                'nik' => '6407041811710001',
+                'nip' => NULL,
                 'code' => '01086',
                 'name' => 'HENDRIKUS IRANG',
                 'no_telp' => '082252464431',
@@ -13053,11 +15225,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 74,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             86 => 
             array (
                 'id' => 1087,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01087',
                 'name' => 'IBAU',
                 'no_telp' => '082350013790',
@@ -13070,6 +15244,8 @@ class PegawaisTableSeeder extends Seeder
             87 => 
             array (
                 'id' => 1088,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01088',
                 'name' => 'JULIANA BAWEQ LAHANG',
                 'no_telp' => '',
@@ -13082,6 +15258,8 @@ class PegawaisTableSeeder extends Seeder
             88 => 
             array (
                 'id' => 1089,
+                'nik' => '6407045909910001',
+                'nip' => NULL,
                 'code' => '01089',
                 'name' => 'LITA ELSY DAMAYANTI HASUNG',
                 'no_telp' => '081255460876',
@@ -13089,11 +15267,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 74,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             89 => 
             array (
                 'id' => 1090,
+                'nik' => '6407040101850001',
+                'nip' => NULL,
                 'code' => '01090',
                 'name' => 'LORENSIUS',
                 'no_telp' => '082262046997',
@@ -13101,11 +15281,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 74,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             90 => 
             array (
                 'id' => 1091,
+                'nik' => '6407041111840001',
+                'nip' => NULL,
                 'code' => '01091',
                 'name' => 'NATALIS',
                 'no_telp' => '082255639933',
@@ -13113,11 +15295,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 74,
                 'created_at' => '2023-06-26 14:13:25',
-                'updated_at' => '2023-06-26 14:13:25',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             91 => 
             array (
                 'id' => 1092,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01092',
                 'name' => 'Norsiana Njuk',
                 'no_telp' => '',
@@ -13130,6 +15314,8 @@ class PegawaisTableSeeder extends Seeder
             92 => 
             array (
                 'id' => 1093,
+                'nik' => NULL,
+                'nip' => '198505092015051002',
                 'code' => '01093',
                 'name' => 'ALBERTO SITINJAK SP',
                 'no_telp' => '085359464006',
@@ -13137,11 +15323,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 75,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             93 => 
             array (
                 'id' => 1094,
+                'nik' => NULL,
+                'nip' => '199605052022022001',
                 'code' => '01094',
                 'name' => 'Monica Dea Eugenia Bua Hiit SP',
                 'no_telp' => '082252222965',
@@ -13149,11 +15337,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 75,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:03',
             ),
             94 => 
             array (
                 'id' => 1095,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01095',
                 'name' => 'Agustinus Awang',
                 'no_telp' => '',
@@ -13166,6 +15356,8 @@ class PegawaisTableSeeder extends Seeder
             95 => 
             array (
                 'id' => 1096,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01096',
                 'name' => 'Alexius Nyangun',
                 'no_telp' => '',
@@ -13178,6 +15370,8 @@ class PegawaisTableSeeder extends Seeder
             96 => 
             array (
                 'id' => 1097,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01097',
                 'name' => 'ENGELBERTUS HUVAT',
                 'no_telp' => '085391799744',
@@ -13190,6 +15384,8 @@ class PegawaisTableSeeder extends Seeder
             97 => 
             array (
                 'id' => 1098,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01098',
                 'name' => 'IRENIUS HAJANG',
                 'no_telp' => '082158162451',
@@ -13202,6 +15398,8 @@ class PegawaisTableSeeder extends Seeder
             98 => 
             array (
                 'id' => 1099,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01099',
                 'name' => 'Martinus linge',
                 'no_telp' => '082213731096',
@@ -13214,6 +15412,8 @@ class PegawaisTableSeeder extends Seeder
             99 => 
             array (
                 'id' => 1100,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01100',
                 'name' => 'Nikolaus Ding',
                 'no_telp' => '082157149124',
@@ -13226,6 +15426,8 @@ class PegawaisTableSeeder extends Seeder
             100 => 
             array (
                 'id' => 1101,
+                'nik' => '6407031508940001',
+                'nip' => NULL,
                 'code' => '01101',
                 'name' => 'Sahrun',
                 'no_telp' => '082195734276',
@@ -13233,11 +15435,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 75,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             101 => 
             array (
                 'id' => 1102,
+                'nik' => '6407031701930001',
+                'nip' => NULL,
                 'code' => '01102',
                 'name' => 'YANUARIUS TULUI',
                 'no_telp' => '',
@@ -13245,11 +15449,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 75,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             102 => 
             array (
                 'id' => 1103,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01103',
                 'name' => 'Yohanes Batoq',
                 'no_telp' => '',
@@ -13262,6 +15468,8 @@ class PegawaisTableSeeder extends Seeder
             103 => 
             array (
                 'id' => 1104,
+                'nik' => NULL,
+                'nip' => '198007092012121002',
                 'code' => '01104',
                 'name' => 'FRANSISKUS MERING',
                 'no_telp' => '082154171938',
@@ -13269,11 +15477,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 76,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             104 => 
             array (
                 'id' => 1105,
+                'nik' => NULL,
+                'nip' => '198404232012121003',
                 'code' => '01105',
                 'name' => 'PASKALIS HINGAN LEDOK',
                 'no_telp' => '081250059772',
@@ -13281,11 +15491,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 76,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:03',
             ),
             105 => 
             array (
                 'id' => 1106,
+                'nik' => NULL,
+                'nip' => '199402022022021001',
                 'code' => '01106',
                 'name' => 'Thomas Yongkinus Aquino Nggala SP',
                 'no_telp' => '085250305659',
@@ -13293,11 +15505,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 76,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:03',
             ),
             106 => 
             array (
                 'id' => 1107,
+                'nik' => NULL,
+                'nip' => '197910162007011007',
                 'code' => '01107',
                 'name' => 'YOHANES JENAU DING',
                 'no_telp' => '',
@@ -13305,11 +15519,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 76,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:03',
             ),
             107 => 
             array (
                 'id' => 1108,
+                'nik' => '6407021205810001',
+                'nip' => NULL,
                 'code' => '01108',
                 'name' => 'ANTONIUS LUHAT LAWING',
                 'no_telp' => '081586091531',
@@ -13317,11 +15533,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 76,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             108 => 
             array (
                 'id' => 1109,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01109',
                 'name' => 'BONIFASIUS HIGANG BANG',
                 'no_telp' => '',
@@ -13334,6 +15552,8 @@ class PegawaisTableSeeder extends Seeder
             109 => 
             array (
                 'id' => 1110,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01110',
                 'name' => 'CASIANUS NYUK HANG',
                 'no_telp' => '082351697118',
@@ -13346,6 +15566,8 @@ class PegawaisTableSeeder extends Seeder
             110 => 
             array (
                 'id' => 1111,
+                'nik' => '6402161003870003',
+                'nip' => NULL,
                 'code' => '01111',
                 'name' => 'HENDRIKUS HANG JAANG',
                 'no_telp' => '',
@@ -13353,11 +15575,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 76,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             111 => 
             array (
                 'id' => 1112,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01112',
                 'name' => 'LEONARDUS LIAH',
                 'no_telp' => '',
@@ -13370,6 +15594,8 @@ class PegawaisTableSeeder extends Seeder
             112 => 
             array (
                 'id' => 1113,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01113',
                 'name' => 'NORSIDAH',
                 'no_telp' => '',
@@ -13382,6 +15608,8 @@ class PegawaisTableSeeder extends Seeder
             113 => 
             array (
                 'id' => 1114,
+                'nik' => '6407020204880001',
+                'nip' => NULL,
                 'code' => '01114',
                 'name' => 'PASKALIS DIAN AVUN',
                 'no_telp' => '',
@@ -13389,11 +15617,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 76,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             114 => 
             array (
                 'id' => 1115,
+                'nik' => '6407020205910004',
+                'nip' => NULL,
                 'code' => '01115',
                 'name' => 'WELLY BROLDUS LANJAU',
                 'no_telp' => '',
@@ -13401,11 +15631,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 76,
                 'created_at' => '2023-06-26 14:13:26',
-                'updated_at' => '2023-06-26 14:13:26',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             115 => 
             array (
                 'id' => 1116,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01116',
                 'name' => 'YULIA DAU LITEN',
                 'no_telp' => '082165385980',
@@ -13418,6 +15650,8 @@ class PegawaisTableSeeder extends Seeder
             116 => 
             array (
                 'id' => 1117,
+                'nik' => NULL,
+                'nip' => '199509152022021001',
                 'code' => '01117',
                 'name' => 'Doloreus Siso SP',
                 'no_telp' => '085349807430',
@@ -13425,11 +15659,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 77,
                 'created_at' => '2023-06-26 14:13:27',
-                'updated_at' => '2023-06-26 14:13:27',
+                'updated_at' => '2023-07-04 07:15:02',
             ),
             117 => 
             array (
                 'id' => 1118,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01118',
                 'name' => 'KORNELIUS KAYA',
                 'no_telp' => '082253689319',
@@ -13442,6 +15678,8 @@ class PegawaisTableSeeder extends Seeder
             118 => 
             array (
                 'id' => 1119,
+                'nik' => '6407012202980001',
+                'nip' => NULL,
                 'code' => '01119',
                 'name' => 'Leonardus Pinang Anang',
                 'no_telp' => '082148254756',
@@ -13449,11 +15687,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 77,
                 'created_at' => '2023-06-26 14:13:27',
-                'updated_at' => '2023-06-26 14:13:27',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             119 => 
             array (
                 'id' => 1120,
+                'nik' => '6407014208870001',
+                'nip' => NULL,
                 'code' => '01120',
                 'name' => 'SISILIA SONG',
                 'no_telp' => '082199447151',
@@ -13461,11 +15701,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 77,
                 'created_at' => '2023-06-26 14:13:27',
-                'updated_at' => '2023-06-26 14:13:27',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             120 => 
             array (
                 'id' => 1121,
+                'nik' => '6407010101930002',
+                'nip' => NULL,
                 'code' => '01121',
                 'name' => 'Yohanes Savang',
                 'no_telp' => '',
@@ -13473,11 +15715,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'thl-tbpp apbd',
                 'kantor_id' => 77,
                 'created_at' => '2023-06-26 14:13:27',
-                'updated_at' => '2023-06-26 14:13:27',
+                'updated_at' => '2023-07-04 07:15:28',
             ),
             121 => 
             array (
                 'id' => 1122,
+                'nik' => NULL,
+                'nip' => '198301152017062002',
                 'code' => '01122',
                 'name' => 'RATNA SARI SP',
                 'no_telp' => '082158750005',
@@ -13485,11 +15729,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 79,
                 'created_at' => '2023-06-26 14:13:28',
-                'updated_at' => '2023-06-26 14:13:28',
+                'updated_at' => '2023-07-04 07:15:03',
             ),
             122 => 
             array (
                 'id' => 1123,
+                'nik' => NULL,
+                'nip' => '199108282020121004',
                 'code' => '01123',
                 'name' => 'WAHYU RIVALDY SP',
                 'no_telp' => '082251083404',
@@ -13497,11 +15743,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 79,
                 'created_at' => '2023-06-26 14:13:28',
-                'updated_at' => '2023-06-26 14:13:28',
+                'updated_at' => '2023-07-04 07:15:03',
             ),
             123 => 
             array (
                 'id' => 1124,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01124',
                 'name' => 'Agus Joko Kis Handoko SP',
                 'no_telp' => '081346498473',
@@ -13514,6 +15762,8 @@ class PegawaisTableSeeder extends Seeder
             124 => 
             array (
                 'id' => 1125,
+                'nik' => '6471035503760004',
+                'nip' => NULL,
                 'code' => '01125',
                 'name' => 'Ayu Wahyuni',
                 'no_telp' => '08125362001',
@@ -13521,11 +15771,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 79,
                 'created_at' => '2023-06-26 14:13:28',
-                'updated_at' => '2023-06-26 14:13:28',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             125 => 
             array (
                 'id' => 1126,
+                'nik' => '6471033112650023',
+                'nip' => NULL,
                 'code' => '01126',
                 'name' => 'Iskandar',
                 'no_telp' => '',
@@ -13533,11 +15785,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 79,
                 'created_at' => '2023-06-26 14:13:28',
-                'updated_at' => '2023-06-26 14:13:28',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             126 => 
             array (
                 'id' => 1127,
+                'nik' => '6471030810630002',
+                'nip' => NULL,
                 'code' => '01127',
                 'name' => 'Mulyo',
                 'no_telp' => '081348799195',
@@ -13545,11 +15799,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 79,
                 'created_at' => '2023-06-26 14:13:28',
-                'updated_at' => '2023-06-26 14:13:28',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             127 => 
             array (
                 'id' => 1128,
+                'nik' => '6471030409830003',
+                'nip' => NULL,
                 'code' => '01128',
                 'name' => 'Supardi',
                 'no_telp' => '',
@@ -13557,11 +15813,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 79,
                 'created_at' => '2023-06-26 14:13:28',
-                'updated_at' => '2023-06-26 14:13:28',
+                'updated_at' => '2023-07-04 07:12:39',
             ),
             128 => 
             array (
                 'id' => 1129,
+                'nik' => NULL,
+                'nip' => '196909051994031007',
                 'code' => '01129',
                 'name' => 'AGUNG PRABOWO A.Md',
                 'no_telp' => '082158216355',
@@ -13569,11 +15827,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 80,
                 'created_at' => '2023-06-26 14:13:31',
-                'updated_at' => '2023-06-26 14:13:31',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             129 => 
             array (
                 'id' => 1130,
+                'nik' => NULL,
+                'nip' => '198302172017062001',
                 'code' => '01130',
                 'name' => 'DWI RAHAYU MULYANINGSIH SP',
                 'no_telp' => '085247977689',
@@ -13581,11 +15841,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 80,
                 'created_at' => '2023-06-26 14:13:31',
-                'updated_at' => '2023-06-26 14:13:31',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             130 => 
             array (
                 'id' => 1131,
+                'nik' => NULL,
+                'nip' => '198309052015031001',
                 'code' => '01131',
                 'name' => 'MARTONO GUA SP',
                 'no_telp' => '081230581490',
@@ -13593,11 +15855,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 80,
                 'created_at' => '2023-06-26 14:13:31',
-                'updated_at' => '2023-06-26 14:13:31',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             131 => 
             array (
                 'id' => 1132,
+                'nik' => NULL,
+                'nip' => '196604121989031018',
                 'code' => '01132',
                 'name' => 'SODIK SP',
                 'no_telp' => '085250880556',
@@ -13605,11 +15869,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 80,
                 'created_at' => '2023-06-26 14:13:31',
-                'updated_at' => '2023-06-26 14:13:31',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             132 => 
             array (
                 'id' => 1133,
+                'nik' => NULL,
+                'nip' => '197710052007012027',
                 'code' => '01133',
                 'name' => 'SUMIATI SP',
                 'no_telp' => '081347659637',
@@ -13617,11 +15883,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 80,
                 'created_at' => '2023-06-26 14:13:31',
-                'updated_at' => '2023-06-26 14:13:31',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             133 => 
             array (
                 'id' => 1134,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01134',
                 'name' => 'Preti Kusumaningtyas SP',
                 'no_telp' => '081311022649',
@@ -13634,6 +15902,8 @@ class PegawaisTableSeeder extends Seeder
             134 => 
             array (
                 'id' => 1135,
+                'nik' => '6472010810650003',
+                'nip' => NULL,
                 'code' => '01135',
                 'name' => 'Aswi Yani',
                 'no_telp' => '085393307274',
@@ -13641,11 +15911,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 80,
                 'created_at' => '2023-06-26 14:13:31',
-                'updated_at' => '2023-06-26 14:13:31',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             135 => 
             array (
                 'id' => 1136,
+                'nik' => '6472012303640001',
+                'nip' => NULL,
                 'code' => '01136',
                 'name' => 'Chalimi',
                 'no_telp' => '081331863185',
@@ -13653,11 +15925,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 80,
                 'created_at' => '2023-06-26 14:13:31',
-                'updated_at' => '2023-06-26 14:13:31',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             136 => 
             array (
                 'id' => 1137,
+                'nik' => '6472000511610001',
+                'nip' => NULL,
                 'code' => '01137',
                 'name' => 'SUKAMAT',
                 'no_telp' => '081255169076',
@@ -13665,11 +15939,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 80,
                 'created_at' => '2023-06-26 14:13:31',
-                'updated_at' => '2023-06-26 14:13:31',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             137 => 
             array (
                 'id' => 1138,
+                'nik' => '6472016305720001',
+                'nip' => NULL,
                 'code' => '01138',
                 'name' => 'SULIYAH LILIN MAIDAH',
                 'no_telp' => '081347693192',
@@ -13677,11 +15953,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 80,
                 'created_at' => '2023-06-26 14:13:31',
-                'updated_at' => '2023-06-26 14:13:31',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             138 => 
             array (
                 'id' => 1139,
+                'nik' => NULL,
+                'nip' => '196804292005011002',
                 'code' => '01139',
                 'name' => 'ASTA JENAR',
                 'no_telp' => '085250150391',
@@ -13689,11 +15967,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 81,
                 'created_at' => '2023-06-26 14:13:33',
-                'updated_at' => '2023-06-26 14:13:33',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             139 => 
             array (
                 'id' => 1140,
+                'nik' => NULL,
+                'nip' => '198212062015032001',
                 'code' => '01140',
                 'name' => 'ELY SUSANA SP',
                 'no_telp' => '085250591312',
@@ -13701,11 +15981,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 81,
                 'created_at' => '2023-06-26 14:13:33',
-                'updated_at' => '2023-06-26 14:13:33',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             140 => 
             array (
                 'id' => 1141,
+                'nik' => NULL,
+                'nip' => '198801142017062001',
                 'code' => '01141',
                 'name' => 'RIA KARTIKA',
                 'no_telp' => '082153440798',
@@ -13713,11 +15995,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 81,
                 'created_at' => '2023-06-26 14:13:33',
-                'updated_at' => '2023-06-26 14:13:33',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             141 => 
             array (
                 'id' => 1142,
+                'nik' => NULL,
+                'nip' => '198506172017061001',
                 'code' => '01142',
                 'name' => 'SYAHRANI',
                 'no_telp' => '085251535870',
@@ -13725,23 +16009,27 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 81,
                 'created_at' => '2023-06-26 14:13:33',
-                'updated_at' => '2023-06-26 14:13:33',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             142 => 
             array (
                 'id' => 1143,
+                'nik' => '6407061308810001',
+                'nip' => NULL,
                 'code' => '01143',
                 'name' => 'ZAINAL ABIDIN A.Md',
-                'no_telp' => '082255137690',
+                'no_telp' => '085350507192',
                 'email' => 'zainalamd86@gmail.com',
                 'type' => 'penyuluh pns',
                 'kantor_id' => 81,
                 'created_at' => '2023-06-26 14:13:33',
-                'updated_at' => '2023-06-26 14:13:33',
+                'updated_at' => '2023-07-04 07:15:23',
             ),
             143 => 
             array (
                 'id' => 1144,
+                'nik' => '6472041011580010',
+                'nip' => NULL,
                 'code' => '01144',
                 'name' => 'H. ARIS KASDI',
                 'no_telp' => '082155424042',
@@ -13749,11 +16037,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 81,
                 'created_at' => '2023-06-26 14:13:33',
-                'updated_at' => '2023-06-26 14:13:33',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             144 => 
             array (
                 'id' => 1145,
+                'nik' => '6472052705760002',
+                'nip' => NULL,
                 'code' => '01145',
                 'name' => 'HELDIANSYAH',
                 'no_telp' => '081346652163',
@@ -13761,11 +16051,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 81,
                 'created_at' => '2023-06-26 14:13:33',
-                'updated_at' => '2023-06-26 14:13:33',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             145 => 
             array (
                 'id' => 1146,
+                'nik' => '6472040807730002',
+                'nip' => NULL,
                 'code' => '01146',
                 'name' => 'MULYONO',
                 'no_telp' => '082384288868',
@@ -13773,11 +16065,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 81,
                 'created_at' => '2023-06-26 14:13:33',
-                'updated_at' => '2023-06-26 14:13:33',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             146 => 
             array (
                 'id' => 1147,
+                'nik' => '6472040202780006',
+                'nip' => NULL,
                 'code' => '01147',
                 'name' => 'SUTOMO',
                 'no_telp' => '085784684373',
@@ -13785,11 +16079,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 81,
                 'created_at' => '2023-06-26 14:13:33',
-                'updated_at' => '2023-06-26 14:13:33',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             147 => 
             array (
                 'id' => 1148,
+                'nik' => NULL,
+                'nip' => '198302172017061004',
                 'code' => '01148',
                 'name' => 'KALEB KIHIN',
                 'no_telp' => '081251811722',
@@ -13797,11 +16093,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 82,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             148 => 
             array (
                 'id' => 1149,
+                'nik' => NULL,
+                'nip' => '196309041987091002',
                 'code' => '01149',
                 'name' => 'SURIANSYAH S.Pt.',
                 'no_telp' => '082246321128',
@@ -13809,11 +16107,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 82,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             149 => 
             array (
                 'id' => 1150,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01150',
                 'name' => 'Warsito S, PKP',
                 'no_telp' => '081346456464',
@@ -13826,6 +16126,8 @@ class PegawaisTableSeeder extends Seeder
             150 => 
             array (
                 'id' => 1151,
+                'nik' => '6472021906720005',
+                'nip' => NULL,
                 'code' => '01151',
                 'name' => 'AHMAD',
                 'no_telp' => '085332281924',
@@ -13833,11 +16135,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 82,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             151 => 
             array (
                 'id' => 1152,
+                'nik' => '6472024111810002',
+                'nip' => NULL,
                 'code' => '01152',
                 'name' => 'Mamik Dwi Jaematun Ningrum',
                 'no_telp' => '082157201410',
@@ -13845,11 +16149,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 82,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             152 => 
             array (
                 'id' => 1153,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01153',
                 'name' => 'SAMSUNI',
                 'no_telp' => '085250958812',
@@ -13862,6 +16168,8 @@ class PegawaisTableSeeder extends Seeder
             153 => 
             array (
                 'id' => 1154,
+                'nik' => '6472062912890004',
+                'nip' => NULL,
                 'code' => '01154',
                 'name' => 'ZAINUL ROHMAN',
                 'no_telp' => '081345160492',
@@ -13869,11 +16177,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 82,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             154 => 
             array (
                 'id' => 1155,
+                'nik' => NULL,
+                'nip' => '198610152017062001',
                 'code' => '01155',
                 'name' => 'LEDIANA HELMI',
                 'no_telp' => '081338927698',
@@ -13881,11 +16191,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             155 => 
             array (
                 'id' => 1156,
+                'nik' => NULL,
+                'nip' => '198205302017061001',
                 'code' => '01156',
                 'name' => 'MUHAMMAD RIZDHYAN SP',
                 'no_telp' => '085246850172',
@@ -13893,11 +16205,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             156 => 
             array (
                 'id' => 1157,
+                'nik' => NULL,
+                'nip' => '196806302005012001',
                 'code' => '01157',
                 'name' => 'RATNA DIANA SST',
                 'no_telp' => '085386466141',
@@ -13905,11 +16219,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             157 => 
             array (
                 'id' => 1158,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01158',
                 'name' => 'SUKADI',
                 'no_telp' => '082157222046',
@@ -13922,6 +16238,8 @@ class PegawaisTableSeeder extends Seeder
             158 => 
             array (
                 'id' => 1159,
+                'nik' => NULL,
+                'nip' => '196502111987091002',
                 'code' => '01159',
                 'name' => 'SURIANSYAH SP',
                 'no_telp' => '085386803825',
@@ -13929,11 +16247,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             159 => 
             array (
                 'id' => 1160,
+                'nik' => NULL,
+                'nip' => '196612292009011004',
                 'code' => '01160',
                 'name' => 'IR TAUFIQ RAHMANI',
                 'no_telp' => '085250114175',
@@ -13941,11 +16261,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             160 => 
             array (
                 'id' => 1161,
+                'nik' => NULL,
+                'nip' => '198210162017062002',
                 'code' => '01161',
                 'name' => 'ZULHIJRIANI SP',
                 'no_telp' => '081250357877',
@@ -13953,11 +16275,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:15:04',
             ),
             161 => 
             array (
                 'id' => 1162,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01162',
                 'name' => 'Mardawia SP',
                 'no_telp' => '08125473386',
@@ -13970,6 +16294,8 @@ class PegawaisTableSeeder extends Seeder
             162 => 
             array (
                 'id' => 1163,
+                'nik' => '6472050110780010',
+                'nip' => NULL,
                 'code' => '01163',
                 'name' => 'DIDIK SUKRISNO',
                 'no_telp' => '085247038675',
@@ -13977,11 +16303,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             163 => 
             array (
                 'id' => 1164,
+                'nik' => '6472052706610003',
+                'nip' => NULL,
                 'code' => '01164',
                 'name' => 'H. DARWIS',
                 'no_telp' => '082250073197',
@@ -13989,11 +16317,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             164 => 
             array (
                 'id' => 1165,
+                'nik' => '6472051010520007',
+                'nip' => NULL,
                 'code' => '01165',
                 'name' => 'ISHADI',
                 'no_telp' => '081347365320',
@@ -14001,11 +16331,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             165 => 
             array (
                 'id' => 1166,
+                'nik' => '6472',
+                'nip' => NULL,
                 'code' => '01166',
                 'name' => 'JUMAT',
                 'no_telp' => '081350071829',
@@ -14013,11 +16345,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             166 => 
             array (
                 'id' => 1167,
+                'nik' => '6472052309610002',
+                'nip' => NULL,
                 'code' => '01167',
                 'name' => 'SAFRUDIN',
                 'no_telp' => '081347074446',
@@ -14025,11 +16359,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             167 => 
             array (
                 'id' => 1168,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01168',
                 'name' => 'SUTRISNO',
                 'no_telp' => '081347146080',
@@ -14042,6 +16378,8 @@ class PegawaisTableSeeder extends Seeder
             168 => 
             array (
                 'id' => 1169,
+                'nik' => '6472051004650007',
+                'nip' => NULL,
                 'code' => '01169',
                 'name' => 'Tukijo',
                 'no_telp' => '081346307928',
@@ -14049,11 +16387,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh swadaya',
                 'kantor_id' => 83,
                 'created_at' => '2023-06-26 14:13:35',
-                'updated_at' => '2023-06-26 14:13:35',
+                'updated_at' => '2023-07-04 07:12:40',
             ),
             169 => 
             array (
                 'id' => 1170,
+                'nik' => NULL,
+                'nip' => '197402102006041006',
                 'code' => '01170',
                 'name' => 'Abdul Mustafa SP.MP',
                 'no_telp' => '081347721083',
@@ -14061,11 +16401,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 84,
                 'created_at' => '2023-06-26 14:13:36',
-                'updated_at' => '2023-06-26 14:13:36',
+                'updated_at' => '2023-07-04 07:15:05',
             ),
             170 => 
             array (
                 'id' => 1171,
+                'nik' => NULL,
+                'nip' => '197704272002121009',
                 'code' => '01171',
                 'name' => 'Bambang Tridaryono SST',
                 'no_telp' => '08125490044',
@@ -14073,11 +16415,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 84,
                 'created_at' => '2023-06-26 14:13:36',
-                'updated_at' => '2023-06-26 14:13:36',
+                'updated_at' => '2023-07-04 07:15:05',
             ),
             171 => 
             array (
                 'id' => 1172,
+                'nik' => NULL,
+                'nip' => '198303132010012006',
                 'code' => '01172',
                 'name' => 'Wahyu Devi Puspitasari S.Pt',
                 'no_telp' => '0812-2788-2990',
@@ -14085,11 +16429,13 @@ class PegawaisTableSeeder extends Seeder
                 'type' => 'penyuluh pns',
                 'kantor_id' => 84,
                 'created_at' => '2023-06-26 14:13:36',
-                'updated_at' => '2023-06-26 14:13:36',
+                'updated_at' => '2023-07-04 07:15:05',
             ),
             172 => 
             array (
                 'id' => 1173,
+                'nik' => NULL,
+                'nip' => NULL,
                 'code' => '01173',
                 'name' => 'Endah Susilowati SP',
                 'no_telp' => '082156300704',

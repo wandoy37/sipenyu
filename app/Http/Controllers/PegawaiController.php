@@ -19,6 +19,8 @@ class PegawaiController extends Controller
             'thl-tbpp apbd' => 'Penyuluh THL-TBPP APBD',
             'penyuluh swadaya'=>'Penyuluh Swadaya',
             'penyuluh swasta'=> 'Penyuluh Swasta',
+            'petugas popt'=>'Petugas POPT',
+            'petugas pbt'=>'Petugas PBT',
         ];
     }
     /**
