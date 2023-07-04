@@ -12,6 +12,11 @@ class HomeController extends Controller
     {
         $kabkotas = KabKota::latest()->get();
         $saranMasukans = SaranMasukan::latest()->get();
-        return view('home.index', compact('kabkotas','saranMasukans'));
+        return view('home.index', compact('kabkotas', 'saranMasukans'));
+    }
+
+    public function layanan()
+    {
+        return view('coming-soon');
     }
 }

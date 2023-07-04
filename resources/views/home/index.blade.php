@@ -60,7 +60,7 @@
                 <p>Provinsi Kalimantan Timur</p>
                 <div class="row">
                     <div class="col-md-12">
-                        <h3>List Kabupaten/Kota</h3>
+                        <h3 class="font-title-2">List Kabupaten/Kota</h3>
                         <div class="form-group">
                             <label for="kabkota">Pilih Kabupaten/Kota</label>
                             <select name="kabkota" id="kabkota" class="form-control">
@@ -72,9 +72,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="display: none;" id="pilih-kecamatan">
+                <div class="row mt-4" style="display: none;" id="pilih-kecamatan">
                     <div class="col-md-12">
-                        <h3>List Kecamatan</h3>
+                        <h3 class="font-title-2">List Kecamatan</h3>
                         <div class="form-group">
                             <label for="kecamatan">Pilih Kecamatan</label>
                             <select name="kecamatan" id="kecamatan" class="form-control">
@@ -84,9 +84,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="display: none;" id="pilih-kantor">
+                <div class="row mt-4" style="display: none;" id="pilih-kantor">
                     <div class="col-md-12">
-                        <h3>List Kantor</h3>
+                        <h3 class="font-title-2">List Kantor</h3>
                         <div class="form-group">
                             <label for="kantor">Pilih Kantor</label>
                             <select name="kantor" id="kantor" class="form-control">
@@ -120,7 +120,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4>Daftar Penyuluh:</h4>
-                        <table class="table">
+                        <table class="table table-striped table-hover" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>
@@ -128,6 +128,12 @@
                                     </th>
                                     <th>
                                         Nama
+                                    </th>
+                                    <th>
+                                        NIP
+                                    </th>
+                                    <th>
+                                        NIK
                                     </th>
                                     <th>
                                         Jenis

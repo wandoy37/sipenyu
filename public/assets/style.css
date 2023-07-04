@@ -1,0 +1,288 @@
+/* Globals Settings */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+/* ======================================= */
+
+/* Section Navbar */
+.nav-bg-green {
+    background-color: #013220;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .img-navbar {
+        width: 24px;
+    }
+}
+
+li .active {
+    font-weight: 700;
+}
+
+li a:hover {
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.input-custom {
+    border-radius: 25px;
+}
+/* ======================================= */
+
+/* Section Hero/Carousel */
+.image-carousel-custom {
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    text-align: left;
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    background: rgba(27, 27, 27, 0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        font-size: 16px;
+    }
+
+    .btn-style-1 {
+        display: none !important;
+    }
+}
+/* ======================================= */
+
+/* Custom Components */
+.btn-style-1 {
+    background-color: #00a859; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+.btn-style-1 a:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.bg-green {
+    background-color: #00a859;
+}
+
+.section-muted {
+    background-color: #f5f5f5;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.font-title-1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.font-title-2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@media (max-width: 576px) {
+    .font-title-1 {
+        font-size: 28px;
+    }
+
+    .text-muted {
+        font-size: 16px;
+    }
+}
+
+.border-radius-20 {
+    border-radius: 20px;
+}
+
+.list-no-bullet {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================================= */
+
+/* Section Contents */
+
+/* Tickers */
+.breaking-news {
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    margin-top: 8vh;
+}
+.news {
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #00a859;
+    font-weight: 700;
+}
+.news-scroll a {
+    text-decoration: none;
+    color: #000;
+}
+.badge-categories {
+    padding: 8px 8px;
+    border-radius: 15px;
+    background-color: #00a859;
+    color: white;
+    font-weight: 700;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+/* Col news and Col side */
+.col-news,
+.col-side {
+    margin-top: 8vh;
+}
+
+.news-category {
+    background-color: #00a859;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+}
+
+.news-list-info {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+.list-info {
+    float: left;
+}
+
+.news-content {
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.news-title {
+    font-weight: 700;
+    color: #000;
+}
+.news-paragraph {
+    color: #888888;
+}
+
+/* Card Col Side */
+.col-side {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (max-width: 576px) {
+    .col-side {
+        background-color: #ffffff;
+        border-radius: 15px;
+    }
+}
+
+.side-title {
+    font-weight: 700;
+    color: #000;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .news {
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .news-paragraph {
+        display: none;
+    }
+}
+
+/* ======================================= */
+
+/* Footer */
+#footer {
+    background-color: #013220;
+    margin-top: 5rem;
+    padding: 2.5rem 2.5rem;
+    color: white;
+}
+
+.font-title-footer {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.text-brand-footer {
+    margin-left: 3.3rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 576px) {
+    .text-brand-footer {
+        margin-left: 0rem;
+    }
+
+    .font-title-footer {
+        font-size: 24px;
+    }
+}
+/* ======================================= */
+
+/* Pagination */
+
+.page-link {
+    color: #00a859;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #00a859;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #00a859;
+    border-color: #00a859;
+}
+/* ======================================= */
