@@ -58,15 +58,23 @@
 
     <div class="bgimg">
         <div class="middle">
-            <h1>COMING SOON</h1>
+            <h1 class="font-style-1"><i>COMING SOON</i></h1>
             <hr>
-            <B>UPTD</B>
-            <B>BALAI PENYULUHAN DAN PENGEMBANGAN SUMBER DAYA MANUSIA PERTANIAN</B>
+            <p>UPTD</p>
+            <p>BALAI PENYULUHAN DAN PENGEMBANGAN SUMBER DAYA MANUSIA PERTANIAN</p>
             </br>
-            <a href="{{ route('index') }}" class="btn btn-outline-warning">
+            <a href="{{ route('index') }}" class="btn btn-outline-warning mb-4">
                 <i class="fas fa-home"></i>
                 BERANDA
             </a>
+            </br>
+            <b class="mt-4">SCAN HERE</p>
+                <div class="mt-2">
+                    {{ QrCode::size(200)->generate(route('index')) }}
+                </div>
+                <div class="mt-4">
+                    <p>SISTEM INFORMASI PENYULUHAN DAN TEKNIS PERTANIAN</p>
+                </div>
         </div>
     </div>
 
