@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{{--  --}}
 
 <head>
     <meta charset="utf-8">
@@ -85,8 +86,7 @@
     </section>
 
     <script src="{{ asset('assets') }}/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
-        integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+
     @stack('scripts')
 </body>
 

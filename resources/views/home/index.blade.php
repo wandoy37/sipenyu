@@ -2,6 +2,8 @@
 @section('title', '')
 
 @push('styles')
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css" />
+
     <style>
         .info {
             padding: 6px 8px;
@@ -120,7 +122,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4>Daftar Penyuluh:</h4>
-                        <table class="table table-striped table-hover" style="width:100%">
+                        <table class="table table-striped table-hover" style="width:100%" id="tables">
                             <thead>
                                 <tr>
                                     <th>
@@ -204,11 +206,13 @@
     </div>
 
     @push('scripts')
-        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <!-- Datatables -->
+        <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.js"></script>
         <script>
             //saran dan komentar
             $(document).ready(function() {
+                $('#tables').DataTable();
                 //prevent submit and send all input inside form with ajax
                 $(document).on('submit', '#saran-form', function(e) {
                     e.preventDefault();
@@ -449,6 +453,7 @@
 
             $("#kantor").change(function() {
                 if ($(this).val() != '') {
+                    $('#tables').DataTable().destroy();
                     const kantor = kantors[$(this).val()];
                     $("#detail-data").show();
                     var kecamatansText = "";
@@ -482,6 +487,7 @@
                     $('html, body').animate({
                         scrollTop: $("#detail-data").offset().top
                     }, 1000);
+                    $('#tables').DataTable().draw();
                 }
 
                 var latitude = $(this).find(":selected").data("latitude");
@@ -490,4 +496,5 @@
             });
         </script>
     @endpush
+
 @endsection
