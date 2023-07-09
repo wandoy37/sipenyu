@@ -17,6 +17,6 @@ class HomeController extends Controller
 
     public function layanan()
     {
-        return view('coming-soon');
+        return view('home.layanan.index');
     }
 }
