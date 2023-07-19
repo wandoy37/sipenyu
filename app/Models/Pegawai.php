@@ -15,4 +15,8 @@ class Pegawai extends Model
     {
         return $this->belongsTo(Kantor::class, 'kantor_id', 'id');
     }
+
+    function loginPegawai() {
+        return $this->hasOne(LoginPegawai::class);
+    }
 }

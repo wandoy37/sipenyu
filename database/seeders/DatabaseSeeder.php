@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             KantorsTableSeeder::class,
             KantorKecamatansTableSeeder::class,
             PegawaisTableSeeder::class,
-            //PegawaiSeeder::class,
+            LoginPegawaisSeeder::class
         ]);
     }
 }

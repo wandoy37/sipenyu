@@ -20,9 +20,7 @@ return new class extends Migration
             $table->date('tanggal_lahir')->nullable();
             $table->text('alamat_rumah')->nullable();
             $table->string('pendidikan_terakhir')->nullable();
-            $table->string('no_telp',15)->nullable();
             $table->string('no_wa',15)->nullable();
-            $table->string('email',100)->nullable();
             $table->enum('agama',['Islam','Kristen','Katolik','Hindu','Budha','Konghucu','Lainnya'])->nullable();
             $table->enum('status_perkawinan',['Belum Kawin','Kawin','Cerai Hidup','Cerai Mati'])->nullable();
             
