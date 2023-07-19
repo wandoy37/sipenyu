@@ -33,6 +33,12 @@ class ApiRegisterController extends Controller
                 'client_name'=>'client name wajib diisi'
             ],
         );
+        if ($validator->fails()) {
+            return response()->json([
+                'message' => 'Silahkan isi data dengan benar',
+                'errors' => $validator->errors()
+            ], 422);
+        }
         
         DB::beginTransaction();
         try {
@@ -47,6 +53,10 @@ class ApiRegisterController extends Controller
             $pegawai = Pegawai::create([
                 'code' => $request->code,
                 'name' => $request->name,
+                'nik' => $request->nik,
+                'nip' => $request->nip,
+                'latitude' => $request->latitude,
+                'longitude' => $request->longitude,
                 'type' => $request->type,
                 'kantor_id' => $request->kantor_id,
                 'jenis_kelamin'=>$request->jenis_kelamin,
@@ -82,7 +92,10 @@ class ApiRegisterController extends Controller
             
         } catch (\Throwable $th) {
             return response()->json([
-                'message' => 'Error : '.$th->getMessage(),
+                'message' => 'Gagal mendaftar',
+                'errors' => [
+                    "system error"=>$th->getMessage()
+                ]
             ],500);
         }
     }

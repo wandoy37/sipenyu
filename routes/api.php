@@ -17,10 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('pegawai', function (Request $request) {
-    return $request->user()->loginPegawai->pegawai;
-});
-Route::group(['middleware'=>'auth:api'],function(){
+
+Route::group(['middleware'=>'auth:api','as'=>'api.'],function(){
+    Route::get('pegawai', [ApiPegawaiController::class,'profil'])->name('pegawai.profil');
     Route::get('/pegawai/{id}/foto-profil/{basename}', [ApiPegawaiController::class,'getFotoProfil'])->name('pegawai.foto-profil');
     Route::get('/pegawai/{id}/foto-spt/{basename}', [ApiPegawaiController::class,'getFotoSpt'])->name('pegawai.foto-spt');
 });
