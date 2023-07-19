@@ -27,19 +27,11 @@ return new class extends Migration
             $table->enum('status_perkawinan',['Belum Kawin','Kawin','Cerai Hidup','Cerai Mati'])->nullable();
             
             //pekerjaan
-            $table->string('nip_nik',30)->nullable();
             $table->string('nama_jabatan')->nullable();
-            $table->string('unit_kerja')->nullable();
             $table->enum('unit_eselon',['I','II','III','IV','V'])->nullable();
             $table->string('pangkat_golongan')->nullable();
-            $table->text('alamat_unit_kerja')->nullable();
-            $table->unsignedBigInteger('kab_kota_id')->index();
             $table->string('foto_profil')->nullable();
             $table->string('foto_stp')->nullable();
-
-            //login
-            $table->string('username')->unique();
-            $table->string('password');
         });
     }
 
@@ -50,6 +42,23 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('pegawais', function (Blueprint $table) {
+            $table->dropColumn('jenis_kelamin');
+            $table->dropColumn('tempat_lahir');
+            $table->dropColumn('tanggal_lahir');
+            $table->dropColumn('alamat_rumah');
+            $table->dropColumn('pendidikan_terakhir');
+            $table->dropColumn('no_telp');
+            $table->dropColumn('no_wa');
+            $table->dropColumn('email');
+            $table->dropColumn('agama');
+            $table->dropColumn('status_perkawinan');
+            $table->dropColumn('nama_jabatan');
+            $table->dropColumn('unit_eselon');
+            $table->dropColumn('pangkat_golongan');
+            $table->dropColumn('foto_profil');
+            $table->dropColumn('foto_stp');
+        });
+
     }
 };
