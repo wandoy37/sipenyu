@@ -15,7 +15,6 @@ class ApiRegisterController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'code' => 'unique:pegawais',
                 'name' => 'required',
                 'type' => 'required',
                 'kantor_id' => 'required',
@@ -24,7 +23,6 @@ class ApiRegisterController extends Controller
                 'client_name'=>'required'
             ],
             [
-                'code' => 'kode tenaga kerja sudah digunakan!',
                 'name' => 'nama wajib diisi',
                 'type' => 'jenis wajib diisi',
                 'kantor_id' => 'kantor wajib diisi',
@@ -50,8 +48,13 @@ class ApiRegisterController extends Controller
             if($request->hasFile('foto_stp')){
                 $foto_stp = $request->file('foto_stp')->store('pegawai/foto_stp');
             }
+            $code = "00001";
+            $lastPegawai = Pegawai::orderBy('code','desc')->first();
+            if($lastPegawai){
+                $code = str_pad((int)$lastPegawai->code+1,5,"0",STR_PAD_LEFT);
+            }
             $pegawai = Pegawai::create([
-                'code' => $request->code,
+                'code' => $code,
                 'name' => $request->name,
                 'nik' => $request->nik,
                 'nip' => $request->nip,

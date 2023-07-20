@@ -41,10 +41,11 @@ Route::get('/polygon', function () {
     return response()->json($indonesia);
 });
 
+Route::get('scrape-simpluh', [ScrapeSimluhController::class,'run']);
 
-Route::get('scrape-kantor', [ScrapeSimluhController::class,'scrapeKantor']);
-Route::get('scrape-penyuluh', [ScrapeSimluhController::class,'scrapePenyuluh']);
-Route::get('lengkapi-penyuluh', [ScrapeSimluhController::class,'lengkapiPenyuluh']);
+// Route::get('scrape-kantor', [ScrapeSimluhController::class,'scrapeKantor']);
+// Route::get('scrape-penyuluh', [ScrapeSimluhController::class,'scrapePenyuluh']);
+// Route::get('lengkapi-penyuluh', [ScrapeSimluhController::class,'lengkapiPenyuluh']);
 
 Route::get('update-koordinat-kantor', function () {
     $url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=formatted_address%2Cname%2Copening_hours%2Cgeometry&inputtype=textquery&key=" . env("GOOGLE_MAP_API_KEY") . "&input=";

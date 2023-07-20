@@ -11,9 +11,342 @@ use DOMXPath;
 use GuzzleHttp\Cookie\CookieJar;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class ScrapeSimluhController extends Controller
 {
+    public $PHPSESSID = "4e6stpqu65qev64juk3uh81pj3";
+
+    public function run()
+    {
+        $cekLogin = $this->login();
+        if ($cekLogin) {
+            // $this->scrapeKantor();
+            // $this->scrapePenyuluh();
+            $datas = $this->get_ketenagaan();
+            DB::beginTransaction();
+            try {
+                foreach ($datas as $data) {
+                    $username = $data['nik'] ?? $data['nip'];
+                    $password = Hash::make($username);
+                    $pegawai = Pegawai::firstOrCreate(
+                        [
+                            "name" => $data['nama'],
+                            "nik" => $data['nik'],
+                            "nip" => $data['nip'],
+                        ],
+                        [
+                            "jenis_kelamin" => $data['jenis_kelamin'],
+                            "tempat_lahir" => $data['tempat_lahir'],
+                            "tanggal_lahir" => date("Y-m-d", strtotime($data['tanggal_lahir'])),
+                            "alamat_rumah" => null,
+                            "pendidikan_terakhir" => $data['pendidikan'],
+                            "no_telp" => $data['no_telp'],
+                            "no_wa" => null,
+                            "email" => $data['email'],
+                            "agama" => null,
+                            "status_perkawinan" => null,
+                            "nama_jabatan" => $data['jabatan'],
+                            "unit_kerja" => $data['unit_kerja'],
+                            "unit_eselon" => null,
+                            "pangkat_golongan" => $data['golongan'],
+                            "alamat_unit_kerja" => null,
+                            "kab_kota_id" => $data['kab_kota_id'],
+                            "foto_profil" => null,
+                            "foto_stp" => null,
+                        ]
+                    );
+
+                    $pegawai->loginPegawai()->firstOrCreate([
+                        'username' => $username,
+                    ], [
+                        'password' => $password,
+                    ]);
+
+                }
+            } catch (\Throwable $th) {
+                DB::rollBack();
+                dd($th);
+                //throw $th;
+            }
+            DB::commit();
+            return response()->json($datas);
+        } else {
+            dd('login gagal');
+        }
+    }
+
+    private function login()
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://app2.pertanian.go.id/simluh2014/index_on.php');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'Host: app2.pertanian.go.id',
+            'Content-Length: 31',
+            'Cache-Control: max-age=0',
+            'Sec-Ch-Ua: "Not:A-Brand";v="99", "Chromium";v="112"',
+            'Sec-Ch-Ua-Mobile: ?0',
+            'Sec-Ch-Ua-Platform: "Windows"',
+            'Upgrade-Insecure-Requests: 1',
+            'Origin: https://app2.pertanian.go.id',
+            'Content-Type: application/x-www-form-urlencoded',
+            'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.50 Safari/537.36',
+            'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'Sec-Fetch-Site: same-origin',
+            'Sec-Fetch-Mode: navigate',
+            'Sec-Fetch-User: ?1',
+            'Sec-Fetch-Dest: document',
+            'Referer: https://app2.pertanian.go.id/simluh2014/index_on.php',
+            'Accept-Encoding: gzip, deflate',
+            'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8',
+            'Connection: close',
+        ]);
+        curl_setopt($ch, CURLOPT_COOKIE, 'PHPSESSID=' . $this->PHPSESSID . ';');
+        curl_setopt($ch, CURLOPT_POSTFIELDS, 'admin=guest&kunci=guest&submit=');
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+
+        $response = curl_exec($ch);
+        //cek status code
+        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $login_success = false;
+        if (str_contains($response, 'gst/welcome.php') && $httpcode == 200) {
+            $login_success = true;
+        } else {
+            $login_success = false;
+        }
+
+        curl_close($ch);
+        return $login_success;
+    }
+
+    private function get_ketenagaan()
+    {
+        $typeUrl = [
+            "pns" => "https://app2.pertanian.go.id/simluh2014/viewreport/viewLuhPnsKabAktif.php?pr=64&satm=",
+            "swadaya" => "https://app2.pertanian.go.id/simluh2014/viewreport/viewLuhSwadaya.php?pr=64&satm=",
+            "apbd" => "https://app2.pertanian.go.id/simluh2014/viewreport/viewLuhThlApbd.php?pr=64&satm=",
+            "apbn" => "https://app2.pertanian.go.id/simluh2014/viewreport/viewLuhThlApbn.php?pr=64&satm=",
+        ];
+        $kabkotas = KabKota::all();
+        $result = [];
+        foreach ($kabkotas as $key => $kabkota) {
+            try {
+                foreach ($typeUrl as $url) {
+                    $url = $url . $kabkota->kode_kab_kota;
+                    $httpClient = new \GuzzleHttp\Client();
+                    $cookieJar = CookieJar::fromArray([
+                        'PHPSESSID' => $this->PHPSESSID
+                    ], 'app2.pertanian.go.id');
+                    $response = $httpClient->request('GET', $url, ['cookies' => $cookieJar]);
+                    $htmlString = (string) $response->getBody();
+                    $htmlString = str_replace(array("\r", "\n"), '', $htmlString);
+                    $dom = new DOMDocument();
+                    libxml_use_internal_errors(true);
+                    $dom->loadHTML($htmlString);
+                    $xpath = new DOMXPath($dom);
+                    //find table with class display
+                    $rows = $xpath->query("//table[@id='datatables']//tr");
+                    $data = [
+                        'nama' => null,
+                        'nik' => null,
+                        "jenis_kelamin" => null,
+                        "tempat_lahir" => null,
+                        "tanggal_lahir" => null,
+                        'nip' => null,
+                        'no_telp' => null,
+                        'email' => null,
+                        'jabatan' => null,
+                        'golongan' => null,
+                        'pendidikan' => null,
+                        'unit_kerja' => null
+
+                    ];
+                    foreach ($rows as $row) {
+                        $data = [
+                            'nama' => null,
+                            'nik' => null,
+                            "jenis_kelamin" => null,
+                            "tempat_lahir" => null,
+                            "tanggal_lahir" => null,
+                            'nip' => null,
+                            'no_telp' => null,
+                            'email' => null,
+                            'jabatan' => null,
+                            'golongan' => null,
+                            'pendidikan' => null,
+                            'unit_kerja' => null
+
+                        ];
+                        $cols = $row->getElementsByTagName('td');
+
+                        if ($cols->length > 0) {
+                            $nama = null;
+                            $nip = null;
+                            $nik = null;
+                            $jenis_kelamin = null;
+                            $tempat_lahir = null;
+                            $tanggal_lahir = null;
+                            $jabatan = null;
+                            $golongan = null;
+                            $pendidikan = null;
+                            $unit_kerja = null;
+                            if ($cols[0]->nodeValue != "No") {
+                                if ($cols->length == 9) {
+                                    $ex = explode("<br></br>", $cols[1]->C14N());
+                                    if (count($ex) > 0) {
+                                        $nama = trim(strip_tags($ex[0]));
+                                        //remove double white
+                                        $nama = preg_replace('/\s+/', ' ', $nama);
+                                    }
+                                    if (count($ex) > 1) {
+                                        $nip = trim(strip_tags($ex[1]));
+                                        if ($nip == "") {
+                                            $nip = null;
+                                        }
+                                    }
+                                    if (count($ex) > 2) {
+                                        $jenis_kelamin = trim(strip_tags($ex[2]));
+                                        if ($jenis_kelamin == "") {
+                                            $jenis_kelamin = null;
+                                        }
+                                    }
+
+                                    $col2 = explode("<br></br>", $cols[2]->C14N());
+                                    if (count($col2) > 0) {
+                                        $tempat_lahir = trim(strip_tags($col2[0]));
+                                        if ($tempat_lahir == "") {
+                                            $tempat_lahir = null;
+                                        }
+                                    }
+                                    if (count($col2) > 1) {
+                                        $tanggal_lahir = trim(strip_tags($col2[1]));
+                                        if ($tanggal_lahir == "") {
+                                            $tanggal_lahir = null;
+                                        }
+                                    }
+
+                                    $col2 = explode("<br></br>", $cols[3]->C14N());
+                                    if (count($col2) > 0) {
+                                        $pendidikan = trim(strip_tags($col2[0]));
+                                        if ($pendidikan == "null") {
+                                            $pendidikan = null;
+                                        }
+                                    }
+
+                                    $col6 = explode("<br></br>", $cols[6]->C14N());
+                                    if (count($col2) > 0) {
+                                        $jabatan = trim(strip_tags($col6[0]));
+                                        if ($jabatan == "") {
+                                            $jabatan = null;
+                                        }
+                                    }
+                                    if (count($col2) > 1) {
+                                        $golongan = trim(strip_tags($col6[1]));
+                                        if ($golongan == "") {
+                                            $golongan = null;
+                                        }
+                                    }
+                                } else if ($cols->length == 12) {
+                                    $ex = explode("<br></br>", $cols[2]->C14N());
+
+                                    if (count($ex) > 0) {
+                                        $nama = trim(strip_tags($ex[0]));
+                                        $nama = preg_replace('/\s+/', ' ', $nama);
+                                    }
+
+                                    $unit_kerja = trim(strip_tags($cols[1]->nodeValue));
+                                    if ($unit_kerja == "") {
+                                        $unit_kerja = null;
+                                    }
+
+                                    if (count($ex) > 2) {
+                                        $_d = explode(",", trim(strip_tags($ex[1])));
+                                        $tempat_lahir = $_d[0];
+                                        $tanggal_lahir = $_d[1];
+                                        if ($tempat_lahir == "") {
+                                            $tempat_lahir = null;
+                                        }
+                                        if ($tanggal_lahir == "" || $tanggal_lahir == "0/0/0") {
+                                            $tanggal_lahir = null;
+                                        }
+                                    }
+                                    if (count($ex) > 2) {
+                                        $jenis_kelamin = trim(strip_tags($ex[2]));
+                                        if ($jenis_kelamin == "") {
+                                            $jenis_kelamin = null;
+                                        }
+                                    }
+                                    $ex1 = explode("<br></br>", $cols[3]->C14N());
+                                    if (count($ex1) > 0) {
+                                        $nik = trim(strip_tags($ex1[0]));
+                                        if ($nik == "") {
+                                            $nik = null;
+                                        }
+                                    }
+                                    $pendidikan = trim(strip_tags($cols[4]->nodeValue));
+                                    if ($pendidikan == "") {
+                                        $pendidikan = null;
+                                    }
+
+                                } else {
+                                    dd($cols[0]->nodeValue);
+                                }
+                                $ex3 = explode("<br></br>", $cols[$cols->length - 1]->C14N());
+                                $no_telp = null;
+                                $email = null;
+                                if (count($ex3) > 0) {
+                                    $no_telp = trim(strip_tags($ex3[0]));
+                                    $no_telp = explode("/", $no_telp);
+                                    $no_telp = explode(" ", $no_telp[0]);
+                                    if ($no_telp[0] == "") {
+                                        $no_telp = null;
+                                    } else {
+                                        $no_telp = $no_telp[0];
+                                    }
+                                }
+                                if (count($ex3) > 1) {
+                                    $email = trim(strip_tags($ex3[1]));
+                                    if ($email == "") {
+                                        $email = null;
+                                    }
+                                }
+
+                                $data['nama'] = $nama;
+                                $data['nip'] = $nip;
+                                $data['nik'] = $nik;
+                                $data['jenis_kelamin'] = $jenis_kelamin;
+                                $data['tempat_lahir'] = $tempat_lahir;
+                                $data['tanggal_lahir'] = $tanggal_lahir;
+                                $data['jabatan'] = $jabatan;
+                                $data['golongan'] = $golongan;
+                                $data['no_telp'] = $no_telp;
+                                $data['email'] = $email;
+                                $data['pendidikan'] = $pendidikan;
+                                $data['kab_kota_id'] = $kabkota->id;
+
+
+                                if ($data['nama'] != null && ($data['nik'] != null || $data['nip'] != null)) {
+
+                                    $result[] = $data;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch (\Throwable $th) {
+                dd([
+                    $kabkota->nama_kab_kota,
+                    $th
+                ]);
+            }
+        }
+        return $result;
+    }
+
     private function convertToDecimalDegrees($coordinate, $minus = 1)
     {
         if (str_contains($coordinate, "-")) {
@@ -176,7 +509,7 @@ class ScrapeSimluhController extends Controller
 
 
                 $cookieJar = CookieJar::fromArray([
-                    'PHPSESSID' => env('PHPSESSID')
+                    'PHPSESSID' => $this->PHPSESSID
                 ], 'app2.pertanian.go.id');
                 $response = $httpClient->request('GET', $url, ['cookies' => $cookieJar]);
                 $htmlString = (string) $response->getBody();
@@ -285,7 +618,7 @@ class ScrapeSimluhController extends Controller
                 $url = 'https://app2.pertanian.go.id/simluh2014/viewreport/daftPenyuluh.php?id_prop=6400&kode_kab=' . $kecamatan->kabkota->code . '&tempat_tugas=' . $kecamatan->code;
                 $httpClient = new \GuzzleHttp\Client();
                 $cookieJar = CookieJar::fromArray([
-                    'PHPSESSID' => env("PHPSESSID")
+                    'PHPSESSID' => $this->PHPSESSID
                 ], 'app2.pertanian.go.id');
                 $response = $httpClient->request('GET', $url, ['cookies' => $cookieJar]);
                 $htmlString = (string) $response->getBody();

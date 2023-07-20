@@ -127,4 +127,35 @@ class ApiPegawaiController extends Controller
             ],402);
         }
     }
+
+    public function dataUmumPegawai(Request $request) {
+        $pegawais = Pegawai::select('id','code','name','jenis_kelamin','status_perkawinan','nama_jabatan','unit_eselon','pangkat_golongan','kantor_id','type')->with('kantor:id,name','kantor.kecamatans.kabkota');
+        if($request->has('search')){
+            $pegawais->where(function($w)use($request){
+                $w->where('name','like','%'.$request->search.'%')
+                ->orWhere('code','like','%'.$request->search.'%')
+                ->orWhere('jenis_kelamin','like','%'.$request->search.'%')
+                ->orWhere('status_perkawinan','like','%'.$request->search.'%')
+                ->orWhere('nama_jabatan','like','%'.$request->search.'%')
+                ->orWhere('unit_eselon','like','%'.$request->search.'%')
+                ->orWhere('pangkat_golongan','like','%'.$request->search.'%')
+                ->orWhereHas('kantor',function($q)use($request){
+                    $q->where('name','like','%'.$request->search.'%');
+                })
+                ->orWhere('type','like','%'.$request->search.'%');
+            });
+        }
+        return $pegawais->paginate(10);
+    }
+
+    public function detailUmumPegawai($id) {
+        $pegawai = Pegawai::select('id','code','name','jenis_kelamin','status_perkawinan','nama_jabatan','unit_eselon','pangkat_golongan','kantor_id','type')
+        ->with('kantor:id,name','kantor.kecamatans.kabkota')
+        ->findOrFail($id);
+        
+        return response()->json([
+            'message' => 'Success!',
+            'data' => $pegawai
+        ],200);
+    }
 }

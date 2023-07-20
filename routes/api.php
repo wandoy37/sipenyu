@@ -18,10 +18,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::group(['middleware'=>'auth:api','as'=>'api.'],function(){
-    Route::get('pegawai', [ApiPegawaiController::class,'profil'])->name('pegawai.profil');
-    Route::get('/pegawai/{id}/foto-profil/{basename}', [ApiPegawaiController::class,'getFotoProfil'])->name('pegawai.foto-profil');
-    Route::get('/pegawai/{id}/foto-spt/{basename}', [ApiPegawaiController::class,'getFotoSpt'])->name('pegawai.foto-spt');
+Route::group(['as'=>'api.'],function(){
+
+    Route::group(['middleware'=>'auth:api'],function(){
+        Route::get('pegawai', [ApiPegawaiController::class,'profil'])->name('pegawai.profil');
+        Route::get('/pegawai/{id}/foto-profil/{basename}', [ApiPegawaiController::class,'getFotoProfil'])->name('pegawai.foto-profil');
+        Route::get('/pegawai/{id}/foto-spt/{basename}', [ApiPegawaiController::class,'getFotoSpt'])->name('pegawai.foto-spt');
+    });
+    
+
+    Route::group(['prefix'=>'data-umum'],function(){
+        Route::get('pegawai', [ApiPegawaiController::class,'dataUmumPegawai'])->name('data-umum.pegawai');
+        Route::get('pegawai/{id}', [ApiPegawaiController::class,'detailUmumPegawai'])->name('data-umum.pegawai.detail');
+    });
+
+    Route::post('login',[ApiLoginController::class,'login']);
+    Route::post('register',[ApiRegisterController::class,'register']);
 });
-Route::post('login',[ApiLoginController::class,'login']);
-Route::post('register',[ApiRegisterController::class,'register']);
+
+
