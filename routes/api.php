@@ -19,11 +19,14 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::group(['as'=>'api.'],function(){
-
+    Route::get('/pegawai/{id}/foto-profil/{basename}', [ApiPegawaiController::class,'getFotoProfil'])->name('pegawai.foto-profil');
+    Route::get('/pegawai/{id}/foto-spt/{basename}', [ApiPegawaiController::class,'getFotoSpt'])->name('pegawai.foto-spt');
+    
     Route::group(['middleware'=>'auth:api'],function(){
-        Route::get('pegawai', [ApiPegawaiController::class,'profil'])->name('pegawai.profil');
-        Route::get('/pegawai/{id}/foto-profil/{basename}', [ApiPegawaiController::class,'getFotoProfil'])->name('pegawai.foto-profil');
-        Route::get('/pegawai/{id}/foto-spt/{basename}', [ApiPegawaiController::class,'getFotoSpt'])->name('pegawai.foto-spt');
+        Route::get('my-profil', [ApiPegawaiController::class,'profil'])->name('pegawai.profil');
+        Route::post('my-profil', [ApiPegawaiController::class,'updateProfil'])->name('pegawai.update-profil');
+        //crud
+        Route::resource('pegawai', ApiPegawaiController::class);
     });
     
 

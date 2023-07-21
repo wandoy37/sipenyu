@@ -58,8 +58,6 @@ class ApiRegisterController extends Controller
                 'name' => $request->name,
                 'nik' => $request->nik,
                 'nip' => $request->nip,
-                'latitude' => $request->latitude,
-                'longitude' => $request->longitude,
                 'type' => $request->type,
                 'kantor_id' => $request->kantor_id,
                 'jenis_kelamin'=>$request->jenis_kelamin,
