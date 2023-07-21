@@ -41,7 +41,7 @@ Route::get('/polygon', function () {
     return response()->json($indonesia);
 });
 
-Route::get('scrape-simpluh', [ScrapeSimluhController::class,'run']);
+Route::get('scrape-simluh', [ScrapeSimluhController::class,'run']);
 
 // Route::get('scrape-kantor', [ScrapeSimluhController::class,'scrapeKantor']);
 // Route::get('scrape-penyuluh', [ScrapeSimluhController::class,'scrapePenyuluh']);
