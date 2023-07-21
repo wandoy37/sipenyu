@@ -476,12 +476,12 @@ class ApiPegawaiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($code)
+    public function destroy($id)
     {
         // if validator success
         DB::beginTransaction();
         try {
-            $pegawai = Pegawai::where('code', $code)->first();
+            $pegawai = Pegawai::findOrFail($id);
             $pegawaiName = $pegawai->name;
 
             $pegawai->delete($pegawai);

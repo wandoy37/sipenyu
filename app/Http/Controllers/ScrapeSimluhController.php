@@ -24,18 +24,31 @@ class ScrapeSimluhController extends Controller
             // $this->scrapeKantor();
             // $this->scrapePenyuluh();
             $datas = $this->get_ketenagaan();
+            
+            $code = "00001";
+            $lastPegawai = Pegawai::orderBy('code','desc')->first();
+            if($lastPegawai){
+                $code = $lastPegawai->code;
+            }
             DB::beginTransaction();
             try {
                 foreach ($datas as $data) {
+                    
+                    
                     $username = $data['nik'] ?? $data['nip'];
                     $password = Hash::make($username);
-                    $pegawai = Pegawai::firstOrCreate(
-                        [
-                            "name" => $data['nama'],
-                            "nik" => $data['nik'],
-                            "nip" => $data['nip'],
-                        ],
-                        [
+                    $cek = Pegawai::where('name',$data['nama'])
+                    ->where('nik',$data['nik'])
+                    ->where('nip',$data['nip'])
+                    ->first();
+                   
+                    if(!$cek){
+                        $code = str_pad((int)$code+1,5,"0",STR_PAD_LEFT);
+                        $pegawai = Pegawai::create([
+                            'code'=>$code,
+                            "name"=>$data['nama'],
+                            "nik"=> $data['nik'],
+                            "nip"=>$data['nip'],
                             "jenis_kelamin" => $data['jenis_kelamin'],
                             "tempat_lahir" => $data['tempat_lahir'],
                             "tanggal_lahir" => date("Y-m-d", strtotime($data['tanggal_lahir'])),
@@ -47,15 +60,32 @@ class ScrapeSimluhController extends Controller
                             "agama" => null,
                             "status_perkawinan" => null,
                             "nama_jabatan" => $data['jabatan'],
-                            "unit_kerja" => $data['unit_kerja'],
                             "unit_eselon" => null,
                             "pangkat_golongan" => $data['golongan'],
-                            "alamat_unit_kerja" => null,
-                            "kab_kota_id" => $data['kab_kota_id'],
                             "foto_profil" => null,
                             "foto_stp" => null,
-                        ]
-                    );
+                        ]);
+                    } else {
+                        $pegawai = $cek;
+                        $pegawai->update([
+                            "jenis_kelamin" => $data['jenis_kelamin'],
+                            "tempat_lahir" => $data['tempat_lahir'],
+                            "tanggal_lahir" => date("Y-m-d", strtotime($data['tanggal_lahir'])),
+                            "alamat_rumah" => null,
+                            "pendidikan_terakhir" => $data['pendidikan'],
+                            "no_telp" => $data['no_telp'],
+                            "no_wa" => null,
+                            "email" => $data['email'],
+                            "agama" => null,
+                            "status_perkawinan" => null,
+                            "nama_jabatan" => $data['jabatan'],
+                            "unit_eselon" => null,
+                            "pangkat_golongan" => $data['golongan'],
+                            "foto_profil" => null,
+                            "foto_stp" => null,
+                        ]);
+                        
+                    }
 
                     $pegawai->loginPegawai()->firstOrCreate([
                         'username' => $username,
