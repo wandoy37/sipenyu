@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ApiKantorController;
 use App\Http\Controllers\Api\ApiLoginController;
 use App\Http\Controllers\Api\ApiPegawaiController;
 use App\Http\Controllers\Api\ApiRegisterController;
@@ -21,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(['as'=>'api.'],function(){
     Route::get('/pegawai/{id}/foto-profil/{basename}', [ApiPegawaiController::class,'getFotoProfil'])->name('pegawai.foto-profil');
     Route::get('/pegawai/{id}/foto-spt/{basename}', [ApiPegawaiController::class,'getFotoSpt'])->name('pegawai.foto-spt');
-    
+
     Route::group(['middleware'=>'auth:api'],function(){
         Route::get('my-profil', [ApiPegawaiController::class,'profil'])->name('pegawai.profil');
         Route::post('my-profil', [ApiPegawaiController::class,'updateProfil'])->name('pegawai.update-profil');
@@ -33,6 +34,7 @@ Route::group(['as'=>'api.'],function(){
     Route::group(['prefix'=>'data-umum'],function(){
         Route::get('pegawai', [ApiPegawaiController::class,'dataUmumPegawai'])->name('data-umum.pegawai');
         Route::get('pegawai/{id}', [ApiPegawaiController::class,'detailUmumPegawai'])->name('data-umum.pegawai.detail');
+        Route::get('kantor', [ApiKantorController::class,'index'])->name('data-umum.kantor');
     });
 
     Route::post('login',[ApiLoginController::class,'login']);
