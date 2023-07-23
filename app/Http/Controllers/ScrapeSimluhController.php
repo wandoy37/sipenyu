@@ -37,7 +37,7 @@ class ScrapeSimluhController extends Controller
                 foreach ($datas as $data) {
                     $username = $data['nik'] ?? $data['nip'];
                     $password = Hash::make($username);
-                    $cek = Pegawai::where('name',$data['nama'])
+                    $cek = Pegawai::where(DB::raw('lower(name)'), '=',strtolower($data['nama']))
                     ->first();
                    
                     if(!$cek){
@@ -481,7 +481,7 @@ class ScrapeSimluhController extends Controller
 
 
                             if ($data['name'] != null) {
-                                $penyuluh = Pegawai::where('name', $data['name'])->first();
+                                $penyuluh = Pegawai::where(DB::raw('lower(name)'), '=',strtolower($data['name']))->first();
                                 $updateColumn = [
                                     "nip" => $data['nip'],
                                     "nik" => $data['nik'],
