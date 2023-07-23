@@ -9,33 +9,34 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class LoginPegawaisSeeder extends Seeder
-{   
-    function unique_multidim_array($array, $key) {
+{
+    function unique_multidim_array($array, $key)
+    {
 
         $temp_array = array();
-    
+
         $i = 0;
-    
+
         $key_array = array();
-    
-        
-    
-        foreach($array as $val) {
-    
+
+
+
+        foreach ($array as $val) {
+
             if (!in_array($val[$key], $key_array)) {
-    
+
                 $key_array[$i] = $val[$key];
-    
+
                 $temp_array[$i] = $val;
-    
+
             }
-    
+
             $i++;
-    
+
         }
-    
+
         return $temp_array;
-    
+
     }
     /**
      * Run the database seeds.
@@ -44,13 +45,22 @@ class LoginPegawaisSeeder extends Seeder
      */
     public function run()
     {
-        $pegawais = Pegawai::where('nik','!=',null)->orWhere('nik','!=',null)->get();
+        $pegawais = Pegawai::where(function($w){
+            $w->whereNotNull('nik')->orWhereNotNull('nip');
+        })->doesntHave('loginPegawai')->get();
         $insertData = [];
         foreach ($pegawais as $pegawai) {
-            if($pegawai->nip != "" || $pegawai->nik != ""){
+            if ($pegawai->nip != "" || $pegawai->nik != "") {
                 $_data = $pegawai->nip ?? $pegawai->nik;
                 //check _data is exist in $insertData['usename']
-                if(array_search($_data, array_column($insertData, 'username')) !== TRUE){
+                if (array_search($_data, array_column($insertData, 'username')) !== TRUE) {
+                    LoginPegawai::firstOrCreate([
+
+                        'username' => $_data,
+                    ], [
+                        'pegawai_id' => $pegawai->id,
+                        'password' => bcrypt($_data)
+                    ]);
                     $insertData[] = [
                         'pegawai_id' => $pegawai->id,
                         'username' => $_data,
@@ -58,10 +68,10 @@ class LoginPegawaisSeeder extends Seeder
                     ];
                 }
 
-                
+
             }
         }
-        $insertQuery = $this->unique_multidim_array($insertData,'username');
-        LoginPegawai::insert($insertQuery);
+        $insertQuery = $this->unique_multidim_array($insertData, 'username');
+        // LoginPegawai::insert($insertQuery);
     }
 }
