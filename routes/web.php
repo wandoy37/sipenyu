@@ -15,6 +15,7 @@ use App\Models\Kantor;
 use App\Models\Kecamatan;
 use App\Models\Pegawai;
 use GuzzleHttp\Cookie\CookieJar;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
@@ -132,4 +133,14 @@ Route::group(['prefix' => 'ajax'], function () {
     // Route::get('kantor/{kode_kab_kota}', [AjaxController::class,'kantor'])->name('ajax.feature-kabkota');
     Route::get('kantor/{kode_kab_kota}/{kode_kecamatan}', [AjaxController::class, 'kantorByKecamatan'])->name('ajax.feature-kabkota');
     Route::post('saran-masukan', [SaranMasukanController::class, 'store'])->name('ajax.saran-masukan');
+});
+
+Route::get('migrate-fresh',function(){
+    Artisan::call('migrate:fresh');
+    return "ok";
+});
+
+Route::get('db-seed',function(){
+    Artisan::call('db:seed');
+    return "ok";
 });

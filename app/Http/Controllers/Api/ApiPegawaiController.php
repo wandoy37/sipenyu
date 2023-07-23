@@ -58,15 +58,11 @@ class ApiPegawaiController extends Controller
             [
                 'code' => 'unique:pegawais',
                 'name' => 'required',
-                'type' => 'required',
-                'kantor_id' => 'required',
                 'username' => 'required'
             ],
             [
                 'code' => 'kode tenaga kerja sudah digunakan!',
                 'name' => 'nama wajib diisi',
-                'type' => 'jenis wajib diisi',
-                'kantor_id' => 'kantor wajib diisi',
                 'username' => 'username wajib diisi'
             ],
         );
@@ -107,8 +103,8 @@ class ApiPegawaiController extends Controller
                 'name' => $request->name,
                 'nik' => $request->nik,
                 'nip' => $request->nip,
-                'type' => $request->type,
-                'kantor_id' => $request->kantor_id,
+                // 'type' => $request->type,
+                // 'kantor_id' => $request->kantor_id,
                 'jenis_kelamin'=>$request->jenis_kelamin,
                 'tempat_lahir'=>$request->tempat_lahir,
                 'tanggal_lahir'=>$request->tanggal_lahir,

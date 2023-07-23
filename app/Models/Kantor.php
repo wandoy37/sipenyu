@@ -20,7 +20,9 @@ class Kantor extends Model
 
     public function KabKota(): BelongsTo
     {
-        return $this->belongsTo(KabKota::class, 'kabkota_id', 'id');
+        return $this->belongsTo(KabKota::class, 'kabkota_id', 'id')->withDefault([
+            'name' => "Tidak ada kabupaten/kota"
+        ]);
     }
 
     function pegawais() {

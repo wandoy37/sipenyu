@@ -13,7 +13,9 @@ class Pegawai extends Model
 
     public function kantor(): BelongsTo
     {
-        return $this->belongsTo(Kantor::class, 'kantor_id', 'id');
+        return $this->belongsTo(Kantor::class, 'kantor_id', 'id')->withDefault([
+            'name'=>"Tidak ada kantor"
+        ]);
     }
 
     function loginPegawai() {

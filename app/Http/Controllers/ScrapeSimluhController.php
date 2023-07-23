@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\KabKota;
 use App\Models\Kantor;
 use App\Models\Kecamatan;
+use App\Models\LoginPegawai;
 use App\Models\Pegawai;
 use DOMDocument;
 use DOMXPath;
@@ -21,8 +22,9 @@ class ScrapeSimluhController extends Controller
     {
         $cekLogin = $this->login();
         if ($cekLogin) {
-            // $this->scrapeKantor();
-            // $this->scrapePenyuluh();
+            
+            $this->scrapePenyuluh();
+            $this->scrapeKantor();
             $datas = $this->get_ketenagaan();
             
             $code = "00001";
@@ -33,13 +35,9 @@ class ScrapeSimluhController extends Controller
             DB::beginTransaction();
             try {
                 foreach ($datas as $data) {
-                    
-                    
                     $username = $data['nik'] ?? $data['nip'];
                     $password = Hash::make($username);
                     $cek = Pegawai::where('name',$data['nama'])
-                    ->where('nik',$data['nik'])
-                    ->where('nip',$data['nip'])
                     ->first();
                    
                     if(!$cek){
@@ -52,44 +50,33 @@ class ScrapeSimluhController extends Controller
                             "jenis_kelamin" => $data['jenis_kelamin'],
                             "tempat_lahir" => $data['tempat_lahir'],
                             "tanggal_lahir" => date("Y-m-d", strtotime($data['tanggal_lahir'])),
-                            "alamat_rumah" => null,
                             "pendidikan_terakhir" => $data['pendidikan'],
                             "no_telp" => $data['no_telp'],
-                            "no_wa" => null,
                             "email" => $data['email'],
-                            "agama" => null,
-                            "status_perkawinan" => null,
                             "nama_jabatan" => $data['jabatan'],
-                            "unit_eselon" => null,
                             "pangkat_golongan" => $data['golongan'],
-                            "foto_profil" => null,
-                            "foto_stp" => null,
                         ]);
                     } else {
                         $pegawai = $cek;
                         $pegawai->update([
+                            "nik"=> $data['nik'] ?? $pegawai->nik,
+                            "nip"=>$data['nip'] ?? $pegawai->nip,
                             "jenis_kelamin" => $data['jenis_kelamin'],
                             "tempat_lahir" => $data['tempat_lahir'],
                             "tanggal_lahir" => date("Y-m-d", strtotime($data['tanggal_lahir'])),
-                            "alamat_rumah" => null,
                             "pendidikan_terakhir" => $data['pendidikan'],
                             "no_telp" => $data['no_telp'],
-                            "no_wa" => null,
                             "email" => $data['email'],
-                            "agama" => null,
-                            "status_perkawinan" => null,
                             "nama_jabatan" => $data['jabatan'],
-                            "unit_eselon" => null,
                             "pangkat_golongan" => $data['golongan'],
-                            "foto_profil" => null,
-                            "foto_stp" => null,
                         ]);
                         
                     }
 
-                    $pegawai->loginPegawai()->firstOrCreate([
+                    LoginPegawai::firstOrCreate([
                         'username' => $username,
                     ], [
+                        "pegawai_id" => $pegawai->id,
                         'password' => $password,
                     ]);
 
@@ -165,7 +152,7 @@ class ScrapeSimluhController extends Controller
         foreach ($kabkotas as $key => $kabkota) {
             try {
                 foreach ($typeUrl as $url) {
-                    $url = $url . $kabkota->kode_kab_kota;
+                    $url = $url . $kabkota->code;
                     $httpClient = new \GuzzleHttp\Client();
                     $cookieJar = CookieJar::fromArray([
                         'PHPSESSID' => $this->PHPSESSID
@@ -631,8 +618,8 @@ class ScrapeSimluhController extends Controller
     {
         $result = [];
         $kecamatans = Kecamatan::with('kabkota')->get();
-        $lastKantor = Kantor::all()->count();
-        $lastPegawai = Pegawai::all()->count();
+        $lastKantor = Kantor::count();
+        $lastPegawai = Pegawai::count();
         $types = [
             "Penyuluh Pertanian PNS (Aktif)" => "penyuluh pns",
             "Penyuluh Pertanian PPPK" => "penyuluh pppk",

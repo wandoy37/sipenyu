@@ -167,6 +167,15 @@ class PegawaiController extends Controller
                 'email' => $request->email,
             ]);
 
+            try {
+                if($pegawai->loginPegawai->loginPegawaiApiToken->web_hook != null){
+                    $client = new \GuzzleHttp\Client();
+                    $client->request('GET', $pegawai->loginPegawai->loginPegawaiApiToken->web_hook."?api_token=".$pegawai->loginPegawai->loginPegawaiApiToken->api_token);
+                }
+            } catch (\Throwable $th) {
+                //throw $th;
+            }
+
             return redirect()->route('pegawai.index')->with('success', $pegawai->name . ' telah di update.');
         } catch (\Throwable $th) {
             DB::rollBack();
