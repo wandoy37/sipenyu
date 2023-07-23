@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\LoginPegawai;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
@@ -32,11 +33,13 @@ class ApiLoginController extends Controller
             $token = $data->loginPegawaiApiToken()->updateOrCreate([
                 'client_name' => $request->client_name
             ],[
-                'api_token' => hash('sha256',$api_token )
+                'api_token' => hash('sha256',$api_token ),
+                'web_hook'=>$request->web_hook
             ]);
             return response()->json([
                 'message' => 'Berhasil login',
-                'api_token' => $api_token
+                'api_token' => $api_token,
+                'data'=>LoginPegawai::with('pegawai.kantor')->where('id',$token->login_pegawai_id)->first()
             ],200);
         } else {
             return response()->json([
@@ -44,7 +47,7 @@ class ApiLoginController extends Controller
                 'errors' => [
                     'username' => ['Username atau password salah']
                 ]
-            ],402);
+            ],404);
         }
     }
 }

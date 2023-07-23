@@ -126,6 +126,14 @@ class ApiPegawaiController extends Controller
                 'foto_stp'=>$foto_stp,
             ]);
             DB::commit();
+            try {
+                if($pegawai->loginPegawai->loginPegawaiApiToken->web_hook != null){
+                    $client = new \GuzzleHttp\Client();
+                    $client->request('GET', $pegawai->loginPegawai->loginPegawaiApiToken->web_hook."?api_token=".$pegawai->loginPegawai->loginPegawaiApiToken->api_token);
+                }
+            } catch (\Throwable $th) {
+                //throw $th;
+            }
             return response()->json([
                 'message' => 'Berhasil update profil',
                 'data' => $pegawai
