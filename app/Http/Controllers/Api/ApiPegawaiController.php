@@ -7,13 +7,14 @@ use App\Models\Kantor;
 use App\Models\Pegawai;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 
 class ApiPegawaiController extends Controller
 {   
 
     function profil() {
-        return Pegawai::with('kantor:id,name','kantor.kecamatans.kabkota')->findOrFail(auth()->user()->loginPegawai->pegawai_id);
+        return response()->json(Pegawai::with('kantor:id,name','kantor.kecamatans.kabkota')->findOrFail(auth()->user()->loginPegawai->pegawai_id));
     }
 
     function getFotoProfil($id,$basename) {
@@ -123,12 +124,15 @@ class ApiPegawaiController extends Controller
             ]);
             DB::commit();
             try {
-                if($pegawai->loginPegawai->loginPegawaiApiToken->web_hook != null){
-                    $client = new \GuzzleHttp\Client();
-                    $client->request('GET', $pegawai->loginPegawai->loginPegawaiApiToken->web_hook."?api_token=".$pegawai->loginPegawai->loginPegawaiApiToken->api_token);
+                foreach ($pegawai->loginPegawai->loginPegawaiApiToken as $key => $apiToken) {
+                    if($apiToken->web_hook != null){
+                        $client = new \GuzzleHttp\Client();
+                        $client->request('GET', $apiToken->web_hook."?code=".$pegawai->code);
+                    }
                 }
+                
             } catch (\Throwable $th) {
-                //throw $th;
+                Log::error($th);
             }
             return response()->json([
                 'message' => 'Berhasil update profil',

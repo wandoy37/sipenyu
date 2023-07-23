@@ -7,6 +7,7 @@ use App\Models\Pegawai;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class PegawaiController extends Controller
 {
@@ -168,12 +169,15 @@ class PegawaiController extends Controller
             ]);
 
             try {
-                if($pegawai->loginPegawai->loginPegawaiApiToken->web_hook != null){
-                    $client = new \GuzzleHttp\Client();
-                    $client->request('GET', $pegawai->loginPegawai->loginPegawaiApiToken->web_hook."?api_token=".$pegawai->loginPegawai->loginPegawaiApiToken->api_token);
+                foreach ($pegawai->loginPegawai->loginPegawaiApiToken as $key => $apiToken) {
+                    if($apiToken->web_hook != null){
+                        $client = new \GuzzleHttp\Client();
+                        $client->request('GET', $apiToken->web_hook."?code=".$pegawai->code);
+                    }
                 }
+                
             } catch (\Throwable $th) {
-                //throw $th;
+                Log::error($th);
             }
 
             return redirect()->route('pegawai.index')->with('success', $pegawai->name . ' telah di update.');
