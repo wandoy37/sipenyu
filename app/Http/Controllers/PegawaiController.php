@@ -59,13 +59,11 @@ class PegawaiController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'code' => 'unique:pegawais',
                 'name' => 'required',
                 'type' => 'required',
                 'kantor' => 'required',
             ],
             [
-                'code' => 'kode tenaga kerja sudah digunakan!',
                 'name' => 'nama wajib diisi',
                 'type' => 'jenis wajib diisi',
                 'kantor' => 'kantor wajib diisi',
@@ -80,7 +78,7 @@ class PegawaiController extends Controller
         // if validator success
         DB::beginTransaction();
         try {
-            $lastPegawai = Pegawai::all()->count();
+            $lastPegawai = Pegawai::orderBy('code', 'desc')->first()->code;
             $lastPegawai++;
 
             Pegawai::create([
@@ -95,7 +93,8 @@ class PegawaiController extends Controller
             return redirect()->route('pegawai.index')->with('success', $request->name . ' telah di tambahkan.');
         } catch (\Throwable $th) {
             DB::rollBack();
-            return redirect()->back()->with('error', $request->name . ' gagal di tambahkan.')->withInput($request->all());
+            Log::error($th);
+            return redirect()->back()->with('error', $request->name . ' gagal di tambahkan. Error : '.$th->getMessage())->withInput($request->all());
         } finally {
             DB::commit();
         }

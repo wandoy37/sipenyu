@@ -20,10 +20,10 @@ class DatabaseSeeder extends Seeder
             AdminSeeder::class,
             KabKotasSeeder::class,
             KecamatansSeeder::class,
-            // KantorsTableSeeder::class,
-            // KantorKecamatansTableSeeder::class,
-            // PegawaisTableSeeder::class,
-            // LoginPegawaisSeeder::class
+            KantorsTableSeeder::class,
+            KantorKecamatansTableSeeder::class,
+            PegawaisTableSeeder::class,
+            LoginPegawaisSeeder::class
         ]);
     }
 }
