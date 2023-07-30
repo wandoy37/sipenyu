@@ -22,14 +22,38 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header">
-                        <h3>
-                            <i class="fas fa-map"></i>
-                            PETA
-                        </h3>
-                    </div>
                     <div class="card-body">
-                        <div id="map"></div>
+                        <table id="tables" class="display table table-striped table-hover" cellspacing="0"
+                            width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="15%">Tanggal</th>
+                                    <th>Nama</th>
+                                    <th>Saran & Masukan</th>
+                                    {{-- <th class="text-center">Aksi</th> --}}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($saran_masukan as $masukan)
+                                    <tr>
+                                        <td>{{ $masukan->created_at->format('d M Y') }}</td>
+                                        <td>{{ $masukan->nama }}</td>
+                                        <td>{{ $masukan->saran_masukan }}</td>
+                                        {{-- <td width="15%" class="text-center">
+                                            <form action="{{ route('pegawai.delete', $pagawai->code) }}" method="POST">
+                                                @csrf @method('DELETE')
+                                                <a href="{{ route('pegawai.edit', $pagawai->code) }}" class="text-warning">
+                                                    <i class="fas fa-pen"></i>
+                                                </a>
+                                                <button type="submit" class="ms-4 btn btn-link text-danger">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </form>
+                                        </td> --}}
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -37,40 +61,10 @@
     </div>
 
     @push('scripts')
-        <script type="text/javascript" src="{{ asset('geojson/kaltim.js') }}"></script>
         <script>
-            const map = L.map('map');
-
-            map.createPane('labels');
-
-            // This pane is above markers but below popups
-            map.getPane('labels').style.zIndex = 650;
-
-            // Layers in this pane are non-interactive and do not obscure mouse/touch events
-            map.getPane('labels').style.pointerEvents = 'none';
-
-            const cartodbAttribution =
-                '&copy; <a href="https://www.openstreetmap.org/copyright">Dinas Pangan, Tanaman Pangan dan Hortikultura</a>, &copy; <a href="https://carto.com/attribution">BPPSDMP</a>';
-
-            const positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
-                attribution: cartodbAttribution
-            }).addTo(map);
-
-            const positronLabels = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
-                attribution: cartodbAttribution,
-                pane: 'labels'
-            }).addTo(map);
-
-            /* polygon kaltim */
-            const geojson = L.geoJson(provinsi).addTo(map);
-            // Marker 
-            L.marker([-0.5017800563824011, 117.13930893505301]).addTo(map);
-
-
-            map.setView({
-                lat: 0.3923907,
-                lng: 117.4408816
-            }, 6);
+            $(document).ready(function() {
+                $('#tables').DataTable();
+            });
         </script>
     @endpush
 @endsection
