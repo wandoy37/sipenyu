@@ -32,23 +32,25 @@
         </section>
 
         <section class="my-4">
-            <div class="card">
-                <div class="card-body shadow">
-                    <form action="{{ route('pegawai.update', $pegawai->code) }}" method="POST">
+            <form action="{{ route('pegawai.update', $pegawai->code) }}" method="POST">
+                <div class="card">
+                    <div class="card-body shadow">
+
                         @csrf
                         @method('PATCH')
-                        
+
                         <div class="mb-3">
                             <label for="name">Nama Pegawai <small class="text-danger">*</small></label>
                             <input type="text" name="name" class="form-control" id="name"
                                 placeholder="Nama Pegawai" value="{{ old('name', $pegawai->name) }}" required>
                         </div>
                         <div class="mb-3">
-                            <label for="type">Jenis  <small class="text-danger">*</small></label>
+                            <label for="type">Jenis <small class="text-danger">*</small></label>
                             <select class="form-control" id="type" name="type" required>
                                 <option value="">-pilih Jenis-</option>
                                 @foreach ($roles as $key => $value)
-                                    <option value="{{ $key }}" {{ old('type',$pegawai->type) == $key ? 'selected' : null }}>
+                                    <option value="{{ $key }}"
+                                        {{ old('type', $pegawai->type) == $key ? 'selected' : null }}>
                                         {{ $value }}</option>
                                 @endforeach
                             </select>
@@ -76,15 +78,18 @@
                             <input type="email" name="email" class="form-control" id="email"
                                 placeholder="Email Pegawai" value="{{ old('email', $pegawai->email) }}">
                         </div>
-                        <div class="mb-3 float-end">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-sync"></i>
-                                Update
-                            </button>
-                        </div>
-                    </form>
+
+
+                    </div>
                 </div>
-            </div>
+                @include('pegawai._form')
+                <div class="mb-3 float-end">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-sync"></i>
+                        Update
+                    </button>
+                </div>
+            </form>
         </section>
 
     </div>

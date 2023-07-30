@@ -32,9 +32,10 @@
         </section>
 
         <section class="my-4">
-            <div class="card">
-                <div class="card-body shadow">
-                    <form action="{{ route('pegawai.store') }}" method="POST">
+            <form action="{{ route('pegawai.store') }}" method="POST">
+                <div class="card">
+                    <div class="card-body shadow">
+
                         @csrf
                         <div class="mb-3">
                             <label for="name">Nama Pegawai <small class="text-danger">*</small></label>
@@ -42,7 +43,7 @@
                                 placeholder="Nama Pegawai" value="{{ old('name') }}" required>
                         </div>
                         <div class="mb-3">
-                            <label for="type">Jenis  <small class="text-danger">*</small></label>
+                            <label for="type">Jenis <small class="text-danger">*</small></label>
                             <select class="form-control" id="type" name="type" required>
                                 <option value="">-pilih Jenis-</option>
                                 @foreach ($roles as $key => $value)
@@ -63,7 +64,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="no_telp">No Telp</label>
-                            <input type="number" name="no_telp" class="form-control" id="no_telp"
+                            <input type="text" name="no_telp" class="form-control" id="no_telp"
                                 placeholder="No Telp Pegawai" value="{{ old('no_telp') }}">
                         </div>
                         <div class="mb-3">
@@ -71,18 +72,25 @@
                             <input type="email" name="email" class="form-control" id="email"
                                 placeholder="Email Pegawai" value="{{ old('email') }}">
                         </div>
-                        <div class="mb-3 float-end">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-plus"></i>
-                                Tambah
-                            </button>
-                        </div>
-                    </form>
+
+
+                    </div>
                 </div>
-            </div>
+                @include('pegawai._form')
+                <div class="mb-3 float-end">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Tambah
+                    </button>
+                </div>
+            </form>
         </section>
 
+
+
     </div>
+
+
 
     @push('scripts')
         <script>

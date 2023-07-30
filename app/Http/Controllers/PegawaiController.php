@@ -81,14 +81,46 @@ class PegawaiController extends Controller
             $lastPegawai = (int)Pegawai::orderBy('id', 'desc')->first()->code;
             $lastPegawai++;
 
-            Pegawai::create([
+            $foto_profil = null;
+            $foto_spt = null;
+            if($request->hasFile('foto_profil')){
+                $foto_profil = $request->file('foto_profil')->store('pegawai/foto_profil');
+            }
+            if($request->hasFile('foto_spt')){
+                $foto_spt = $request->file('foto_spt')->store('pegawai/foto_spt');
+            }
+
+            $pegawai = Pegawai::create([
                 'code' => str_pad($lastPegawai, 5, '0', STR_PAD_LEFT),
                 'name' => $request->name,
                 'type' => $request->type,
                 'kantor_id' => $request->kantor,
                 'no_telp' => $request->no_telp,
                 'email' => $request->email,
+                "jenis_kelamin"=>$request->jenis_kelamin,
+                "tempat_lahir"=>$request->tempat_lahir,
+                "tanggal_lahir"=>$request->tanggal_lahir,
+                "alamat_rumah"=>$request->alamat_rumah,
+                "pendidikan_terakhir"=>$request->pendidikan_terakhir,
+                "no_wa"=>$request->no_wa,
+                "agama"=>$request->agama,
+                "status_perkawinan"=>$request->status_perkawinan,
+                "nip"=>$request->nip,
+                "nik"=>$request->nik,
+                "nama_jabatan"=>$request->nama_jabatan,
+                "unit_eselon"=>$request->unit_eselon,
+                "pangkat_golongan"=>$request->pangkat_golongan,
+                "alamat_unit_kerja"=>$request->alamat_unit_kerja,
+                "foto_profil"=>$foto_profil,
+                "foto_spt"=>$foto_spt,
             ]);
+
+            if($request->has("username") && $request->username != ""){
+                $pegawai->loginPegawai()->create([
+                    "username"=>$request->username,
+                    "password"=>bcrypt($request->password),
+                ]);
+            }
 
             return redirect()->route('pegawai.index')->with('success', $request->name . ' telah di tambahkan.');
         } catch (\Throwable $th) {
@@ -157,15 +189,57 @@ class PegawaiController extends Controller
         // if validator success
         DB::beginTransaction();
         try {
+            
             $pegawai = Pegawai::where('code', $code)->first();
-
+            $foto_profil = $pegawai->foto_profil;
+            $foto_spt = $pegawai->foto_spt;
+            if($request->hasFile('foto_profil')){
+                $foto_profil = $request->file('foto_profil')->store('pegawai/foto_profil');
+            }
+            if($request->hasFile('foto_spt')){
+                $foto_spt = $request->file('foto_spt')->store('pegawai/foto_spt');
+            }
             $pegawai->update([
                 'name' => $request->name,
                 'type' => $request->type,
                 'kantor_id' => $request->kantor,
                 'no_telp' => $request->no_telp,
                 'email' => $request->email,
+                "jenis_kelamin"=>$request->jenis_kelamin,
+                "tempat_lahir"=>$request->tempat_lahir,
+                "tanggal_lahir"=>$request->tanggal_lahir,
+                "alamat_rumah"=>$request->alamat_rumah,
+                "pendidikan_terakhir"=>$request->pendidikan_terakhir,
+                "no_wa"=>$request->no_wa,
+                "agama"=>$request->agama,
+                "status_perkawinan"=>$request->status_perkawinan,
+                "nip"=>$request->nip,
+                "nik"=>$request->nik,
+                "nama_jabatan"=>$request->nama_jabatan,
+                "unit_eselon"=>$request->unit_eselon,
+                "pangkat_golongan"=>$request->pangkat_golongan,
+                "alamat_unit_kerja"=>$request->alamat_unit_kerja,
+                "foto_profil"=>$foto_profil,
+                "foto_spt"=>$foto_spt,
             ]);
+
+            if($request->has("username") && $request->username != ""){
+                if($pegawai->loginPegawai == null && $request->password_baru != ""){
+                    $pegawai->loginPegawai()->create([
+                        "username"=>$request->username,
+                        "password_baru"=>bcrypt($request->password_baru),
+                    ]);
+                } else if($request->password_baru != "") {
+                    $pegawai->loginPegawai->update([
+                        "username"=>$request->username,
+                        "password_baru"=>bcrypt($request->password_baru),
+                    ]);
+                } else {
+                    $pegawai->loginPegawai->update([
+                        "username"=>$request->username,
+                    ]);
+                }
+            }
 
             try {
                 foreach ($pegawai->loginPegawai->loginPegawaiApiToken as $key => $apiToken) {
