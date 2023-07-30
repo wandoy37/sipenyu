@@ -25,5 +25,7 @@
 
 https://documenter.getpostman.com/view/7785980/2s946k5qhy
 
-- api menggunakan token auth, untuk menggunakannya harus login terlebih dahulu dan mendapatkan token
+- api menggunakan token auth
 - gunakan token pada header `Authorization` dengan value `Bearer {token}`
+- token untuk peserta di dapatkan saat peserta login
+- token untuk crud semua data pegawai di dapatkan di menu "API Token" di bagian admin

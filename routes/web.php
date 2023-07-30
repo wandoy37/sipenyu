@@ -155,3 +155,8 @@ Route::get('db-seed',function(){
     Artisan::call('db:seed');
     return "ok";
 });
+
+Route::get('clear-cache',function(){
+    Artisan::call('optimize:clear');
+    return "ok";
+});
