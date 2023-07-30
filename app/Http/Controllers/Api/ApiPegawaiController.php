@@ -349,7 +349,9 @@ class ApiPegawaiController extends Controller
      */
     public function show($id)
     {
-        $pegawai = Pegawai::with('kantor.KabKota')->findOrFail($id);
+        $pegawai = Pegawai::with('kantor.KabKota')->where(function($w)use($id){
+            $w->where('id',$id)->orWhere('code',$id);
+        })->first();
         return response()->json([
             'message' => 'Success!',
             'data' =>$pegawai
@@ -389,30 +391,10 @@ class ApiPegawaiController extends Controller
         if(auth()->user()->client_name !== $request->client_name){
             return abort(404);
         }
-        // Validator
-        $validator = Validator::make(
-            $request->all(),
-            [
-                'name' => 'required',
-                'type' => 'required',
-                'kantor' => 'required',
-            ],
-            [
-                'name' => 'nama wajib diisi',
-                'type' => 'jenis wajib diisi',
-                'kantor' => 'kantor wajib diisi',
-            ],
-        );
-
-        // if validator fails.
-        if ($validator->fails()) {
-            return response()->json([
-                'message' => 'Silahkan isi data dengan benar',
-                'errors' => $validator->errors()
-            ], 422);
-        }
-
-        $pegawai = Pegawai::findOrFail($id);
+       
+        $pegawai = Pegawai::with('kantor.KabKota')->where(function($w)use($id){
+            $w->where('id',$id)->orWhere('code',$id);
+        })->first();
 
         $foto_profil = $pegawai->foto_profil;
         $foto_stp = $pegawai->foto_stp;
@@ -434,32 +416,10 @@ class ApiPegawaiController extends Controller
         // if validator success
         DB::beginTransaction();
         try {
-            
-
-            $pegawai->update([
-                'name' => $request->name,
-                'type' => $request->type,
-                'kantor_id' => $request->kantor,
-                'no_telp' => $request->no_telp,
-                'nik' => $request->nik,
-                'nip' => $request->nip,
-                'latitude' => $request->latitude,
-                'longitude' => $request->longitude,
-                'jenis_kelamin'=>$request->jenis_kelamin,
-                'tempat_lahir'=>$request->tempat_lahir,
-                'tanggal_lahir'=>$request->tanggal_lahir,
-                'alamat_rumah'=>$request->alamat_rumah,
-                'pendidikan_terakhir'=>$request->pendidikan_terakhir,
-                'email' => $request->email,
-                'no_wa'=>$request->no_wa,
-                'agama'=>$request->agama,
-                'status_perkawinan'=>$request->status_perkawinan,
-                'nama_jabatan'=>$request->nama_jabatan,
-                'unit_eselon'=>$request->unit_eselon,
-                'pangkat_golongan'=>$request->pangkat_golongan,
-                'foto_profil'=>$foto_profil,
-                'foto_stp'=>$foto_stp,
-            ]);
+            $data = $request->all();
+            $data['foto_profil'] = $foto_profil;
+            $data['foto_stp'] = $foto_stp;
+            $pegawai->update($data);
             DB::commit();
             return response()->json([
                 'message' => 'Berhasil update pegawai',

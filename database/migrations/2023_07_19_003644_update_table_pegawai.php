@@ -21,7 +21,7 @@ return new class extends Migration
             $table->text('alamat_rumah')->nullable();
             $table->string('pendidikan_terakhir')->nullable();
             $table->string('no_wa',15)->nullable();
-            $table->enum('agama',['Islam','Kristen','Katolik','Hindu','Budha','Konghucu','Lainnya'])->nullable();
+            $table->enum('agama',['Islam','Kristen','Katolik','Hindu','Budha','Konghucu'])->nullable();
             $table->enum('status_perkawinan',['Belum Kawin','Kawin','Cerai Hidup','Cerai Mati'])->nullable();
             
             //pekerjaan
