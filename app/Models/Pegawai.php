@@ -43,4 +43,20 @@ class Pegawai extends Model
     function loginPegawai() {
         return $this->hasOne(LoginPegawai::class);
     }
+
+    function getLinkFotoProfilAttribute() {
+        if($this->foto_profil != null){
+            $basename = basename($this->foto_profil);
+            return route('api.pegawai.foto-profil',[$this->id,$basename]);
+        }
+        return null;
+    }
+
+    function getLinkFotoSptAttribute() {
+        if($this->foto_spt != null){
+            $basename = basename($this->foto_spt);
+            return route('api.pegawai.foto-spt',[$this->id,$basename]);
+        }
+        return null;
+    }
 }

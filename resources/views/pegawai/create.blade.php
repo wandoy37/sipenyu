@@ -32,7 +32,7 @@
         </section>
 
         <section class="my-4">
-            <form action="{{ route('pegawai.store') }}" method="POST">
+            <form action="{{ route('pegawai.store') }}" method="POST" enctype="multipart/form-data">
                 <div class="card">
                     <div class="card-body shadow">
 

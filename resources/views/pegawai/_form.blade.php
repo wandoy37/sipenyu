@@ -283,7 +283,7 @@
                     <img id="preview_foto_profil" src="#" alt="Preview" style="display: none;"
                         class="mx-auto">
                 </label>
-                @if (isset($peserta) && $pegawai->link_foto_profil != null)
+                @if (isset($pegawai) && $pegawai->link_foto_profil != null)
                     <img src="{{ $pegawai->link_foto_profil }}" alt="foto kegiatan"
                         class="img-fluid">
                 @endif
@@ -308,7 +308,7 @@
                     <img id="preview_foto_spt" src="#" alt="Preview" style="display: none;"
                         class="mx-auto">
                 </label>
-                @if (isset($peserta) && $pegawai->link_foto_spt != null)
+                @if (isset($pegawai) && $pegawai->link_foto_spt != null)
                     <button type="button" class="btn btn-danger btn-sm"
                         onclick="document.getElementById('old_foto_spt').remove();this.remove();"><i
                             class="fas fa-trash"></i> Hapus File</button>
