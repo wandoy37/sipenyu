@@ -53,6 +53,12 @@
                         <p>Tenaga Kerja</p>
                     </a>
                 </li>
+                <li class="nav-item {{ request()->segment(1) == 'api-token' ? 'active' : '' }}">
+                    <a href="{{ route('api-token.index') }}">
+                        <i class="fas fa-key"></i>
+                        <p>API Token</p>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

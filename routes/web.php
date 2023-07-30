@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AjaxController;
+use App\Http\Controllers\ApiTokenController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GeojsonController;
 use App\Http\Controllers\HomeController;
@@ -119,6 +120,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/tenaga-kerja/{code}/edit', [PegawaiController::class, 'edit'])->name('pegawai.edit');
     Route::patch('/tenaga-kerja/{code}/update', [PegawaiController::class, 'update'])->name('pegawai.update');
     Route::delete('/tenaga-kerja/{code}/delete', [PegawaiController::class, 'destroy'])->name('pegawai.delete');
+
+    Route::get('/api-token', [ApiTokenController::class, 'index'])->name('api-token.index');
+    Route::post('/api-token/store', [ApiTokenController::class, 'store'])->name('api-token.store');
+    Route::put('/api-token/{code}/update', [ApiTokenController::class, 'update'])->name('api-token.update');
+    Route::delete('/api-token/{code}/delete', [ApiTokenController::class, 'destroy'])->name('api-token.delete');
 });
 
 Route::group(['prefix' => 'geojson'], function () {
@@ -133,6 +139,11 @@ Route::group(['prefix' => 'ajax'], function () {
     // Route::get('kantor/{kode_kab_kota}', [AjaxController::class,'kantor'])->name('ajax.feature-kabkota');
     Route::get('kantor/{kode_kab_kota}/{kode_kecamatan}', [AjaxController::class, 'kantorByKecamatan'])->name('ajax.feature-kabkota');
     Route::post('saran-masukan', [SaranMasukanController::class, 'store'])->name('ajax.saran-masukan');
+});
+
+Route::get('migrate',function(){
+    Artisan::call('migrate');
+    return "ok";
 });
 
 Route::get('migrate-fresh',function(){

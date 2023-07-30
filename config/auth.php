@@ -44,10 +44,15 @@ return [
             'driver' => 'session',
             'provider' => 'login_pegawai',
         ],
-        'api' => [
+        'api_pegawai' => [
             'driver' => 'token',
             'provider' => 'login_pegawai_api_token',
             'hash' => true,
+        ],
+        'api' => [
+            'driver' => 'token',
+            'provider' => 'api_token',
+            'hash' => false,
         ],
     ],
 
@@ -80,6 +85,10 @@ return [
         'login_pegawai_api_token' => [
             'driver' => 'eloquent',
             'model' => App\Models\LoginPegawaiApiToken::class,
+        ],
+        'api_token' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\ApiToken::class,
         ],
 
         // 'users' => [

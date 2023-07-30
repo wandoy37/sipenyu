@@ -78,7 +78,7 @@ class PegawaiController extends Controller
         // if validator success
         DB::beginTransaction();
         try {
-            $lastPegawai = Pegawai::orderBy('code', 'desc')->first()->code;
+            $lastPegawai = (int)Pegawai::orderBy('id', 'desc')->first()->code;
             $lastPegawai++;
 
             Pegawai::create([
