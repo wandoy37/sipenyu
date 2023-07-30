@@ -349,9 +349,7 @@ class ApiPegawaiController extends Controller
      */
     public function show($id)
     {
-        $pegawai = Pegawai::findOrFail($id);
-        $roles = $this->roles();
-        $kantors = Kantor::all();
+        $pegawai = Pegawai::with('kantor.KabKota')->findOrFail($id);
         return response()->json([
             'message' => 'Success!',
             'data' =>$pegawai
