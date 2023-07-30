@@ -22,6 +22,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
+                    <div class="card-header">
+                        <h3 class="fw-bold">Saran & Masukan</h3>
+                    </div>
                     <div class="card-body">
                         <table id="tables" class="display table table-striped table-hover" cellspacing="0"
                             width="100%">
