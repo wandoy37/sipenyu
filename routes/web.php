@@ -43,7 +43,7 @@ Route::get('/polygon', function () {
     return response()->json($indonesia);
 });
 
-Route::get('scrape-simluh', [ScrapeSimluhController::class,'run']);
+Route::get('scrape-simluh', [ScrapeSimluhController::class, 'run']);
 
 // Route::get('scrape-kantor', [ScrapeSimluhController::class,'scrapeKantor']);
 // Route::get('scrape-penyuluh', [ScrapeSimluhController::class,'scrapePenyuluh']);
@@ -79,6 +79,7 @@ Route::get('update-koordinat-kantor', function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/layanan', [HomeController::class, 'layanan'])->name('layanan');
+Route::get('/layanan/uptd-bppsdmp', [HomeController::class, 'layananShow'])->name('layanan.show');
 // ======================================================================================================================== //
 Route::middleware('auth')->group(function () {
     // dashboard
@@ -141,22 +142,22 @@ Route::group(['prefix' => 'ajax'], function () {
     Route::post('saran-masukan', [SaranMasukanController::class, 'store'])->name('ajax.saran-masukan');
 });
 
-Route::get('migrate',function(){
+Route::get('migrate', function () {
     Artisan::call('migrate');
     return "ok";
 });
 
-Route::get('migrate-fresh',function(){
+Route::get('migrate-fresh', function () {
     Artisan::call('migrate:fresh');
     return "ok";
 });
 
-Route::get('db-seed',function(){
+Route::get('db-seed', function () {
     Artisan::call('db:seed');
     return "ok";
 });
 
-Route::get('clear-cache',function(){
+Route::get('clear-cache', function () {
     Artisan::call('optimize:clear');
     return "ok";
 });

@@ -91,6 +91,10 @@ li a:hover {
     background-color: #00a859;
 }
 
+.bg-green-two {
+    background-color: #013220;
+}
+
 .section-muted {
     background-color: #f5f5f5;
     padding-top: 7vh;
