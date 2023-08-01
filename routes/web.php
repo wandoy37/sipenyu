@@ -11,6 +11,7 @@ use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\SaranMasukanController;
 use App\Http\Controllers\ScrapeSimluhController;
+use App\Http\Controllers\UptdController;
 use App\Models\KabKota;
 use App\Models\Kantor;
 use App\Models\Kecamatan;
@@ -79,7 +80,7 @@ Route::get('update-koordinat-kantor', function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/layanan', [HomeController::class, 'layanan'])->name('layanan');
-Route::get('/layanan/uptd-bppsdmp', [HomeController::class, 'layananShow'])->name('layanan.show');
+Route::get('/layanan/{slug}', [HomeController::class, 'layananShow'])->name('layanan.show');
 // ======================================================================================================================== //
 Route::middleware('auth')->group(function () {
     // dashboard
@@ -126,6 +127,14 @@ Route::middleware('auth')->group(function () {
     Route::post('/api-token/store', [ApiTokenController::class, 'store'])->name('api-token.store');
     Route::put('/api-token/{code}/update', [ApiTokenController::class, 'update'])->name('api-token.update');
     Route::delete('/api-token/{code}/delete', [ApiTokenController::class, 'destroy'])->name('api-token.delete');
+
+    // Layanan UPTD
+    Route::get('/daftar-uptd', [UptdController::class, 'index'])->name('daftar.uptd.index');
+    Route::get('/daftar-uptd/create', [UptdController::class, 'create'])->name('daftar.uptd.create');
+    Route::post('/daftar-uptd/store', [UptdController::class, 'store'])->name('daftar.uptd.store');
+    Route::get('/daftar-uptd/{slug}/edit', [UptdController::class, 'edit'])->name('daftar.uptd.edit');
+    Route::patch('/daftar-uptd/{slug}/update', [UptdController::class, 'update'])->name('daftar.uptd.update');
+    Route::delete('/daftar-uptd/{slug}/delete', [UptdController::class, 'destroy'])->name('daftar.uptd.delete');
 });
 
 Route::group(['prefix' => 'geojson'], function () {

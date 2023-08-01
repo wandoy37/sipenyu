@@ -15,50 +15,19 @@
             </div>
             <div class="container text-center">
                 <div class="row justify-content-md-center" style="margin-top: 50px;">
-                    <div class="col-md-3">
-                        <div class="">
-                            <img src="{{ asset('assets/img/new-bppsdmp2023.jpg') }}" class="img-fluid"
-                                style="border-radius: 20px;" alt="">
+                    @foreach ($uptds as $uptd)
+                        <div class="col-md-3">
+                            <div class="">
+                                <img src="{{ asset('uptd/' . $uptd->thumbnail) }}" class="img-fluid"
+                                    style="border-radius: 20px;" alt="">
+                            </div>
+                            <div class="my-4">
+                                <h3 class="font-title-2" style="color: #013220">{{ $uptd->title }}</h3>
+                                <a href="{{ route('layanan.show', $uptd->slug) }}" class="btn btn-outline-success"
+                                    style="border-radius: 20px;">Lihat Layanan</a>
+                            </div>
                         </div>
-                        <div class="my-4">
-                            <h3 class="font-title-2" style="color: #013220">UPTD BPPSDMP</h3>
-                            <a href="{{ route('layanan.show') }}" class="btn btn-outline-success"
-                                style="border-radius: 20px;">Lihat Layanan</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="">
-                            <img src="{{ asset('assets/img/new-bppsdmp2023.jpg') }}" class="img-fluid"
-                                style="border-radius: 20px;" alt="">
-                        </div>
-                        <div class="my-4">
-                            <h3 class="font-title-2" style="color: #013220">UPTD BPPSDMP</h3>
-                            <a href="{{ route('layanan.show') }}" class="btn btn-outline-success"
-                                style="border-radius: 20px;">Lihat Layanan</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="">
-                            <img src="{{ asset('assets/img/new-bppsdmp2023.jpg') }}" class="img-fluid"
-                                style="border-radius: 20px;" alt="">
-                        </div>
-                        <div class="my-4">
-                            <h3 class="font-title-2" style="color: #013220">UPTD BPPSDMP</h3>
-                            <a href="{{ route('layanan.show') }}" class="btn btn-outline-success"
-                                style="border-radius: 20px;">Lihat Layanan</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="">
-                            <img src="{{ asset('assets/img/new-bppsdmp2023.jpg') }}" class="img-fluid"
-                                style="border-radius: 20px;" alt="">
-                        </div>
-                        <div class="my-4">
-                            <h3 class="font-title-2" style="color: #013220">UPTD BPPSDMP</h3>
-                            <a href="{{ route('layanan.show') }}" class="btn btn-outline-success"
-                                style="border-radius: 20px;">Lihat Layanan</a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

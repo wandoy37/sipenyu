@@ -6,10 +6,14 @@
         <div class="container">
             <div class="row my-4" style="padding-top: 25px;">
                 <div class="col-lg-12">
+                    <a href="{{ route('layanan') }}" class="text-decoration-none text-success fw-bold">
+                        <i class="fas fa-arrow-left"></i>
+                        Kembali
+                    </a>
                     <h5>
                         Informasi penyedia Aset Properti Pemerintah Provinsi Kalimantan TImur
                     </h5>
-                    <h1 class="font-title-1">UPTD BPPSDMP</h1>
+                    <h1 class="font-title-1">{{ $uptd->title }}</h1>
                 </div>
                 <div class="col-md-6">
                     <img src="{{ asset('assets/img/new-bppsdmp2023.jpg') }}" class="img-fluid" style="border-radius: 20px;"
@@ -22,13 +26,23 @@
                             Informasi
                         </div>
                         <div class="card-body">
-                            <span>UPTD Balai Penyuluhan dan Pengembangan Sumber Daya Manusia
-                                Pertanian (BPPSDMP) Provinsi Kalimantan Timur</span>
-                            <div class="my-4">
-                                <span>Alamat</span>
-                                <br>
-                                <span>
-                                    Jl. Thoyib Hadiwijaya No.36, Sempaja Selatan, Samarinda - Kalimantan Timur
+                            {!! $uptd->keterangan !!}
+                            <div class="list-group my-1">
+                                <span class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 fw-bold">Alamat</h5>
+                                    </div>
+                                    <small>{{ $uptd->alamat }}</small>
+                                </span>
+                                <span class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 fw-bold">No. Handphone / <i>Whatsapp</i></h5>
+                                    </div>
+                                    <a href="tel:{{ $uptd->no_hp }}" class="btn btn-outline-success"
+                                        style="border-radius: 30px;">
+                                        <i class="fas fa-phone"></i>
+                                    </a>
+                                    <small>{{ $uptd->no_hp }}</small>
                                 </span>
                             </div>
                         </div>
@@ -37,92 +51,6 @@
             </div>
         </div>
     </section>
-    {{-- <section style="background-color: #F6FFF6">
-        <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Informasi penyedia Aset Properti milik UPTD BPPSDMP Provinsi Kalimantan TImur</p>
-                    <h1 class="font-title-1">Aset Properti</h1>
-                </div>
-            </div>
-            <div class="row justify-content-md-center">
-                <div class="col-md-3 text-center my-4">
-                    <img src="{{ asset('assets/img/asrama.png') }}" class="img-fluid" width="100%"
-                        style="border-radius: 20px;" alt="">
-                    <div class="info mt-4">
-                        <span class="span-title">Asrama</span>
-                    </div>
-                </div>
-                <div class="col-md-3 text-center my-4">
-                    <img src="{{ asset('assets/img/mess.png') }}" class="img-fluid" width="100%"
-                        style="border-radius: 20px;" alt="">
-                    <div class="info mt-4">
-                        <span class="span-title">Mess</span>
-                    </div>
-                </div>
-                <div class="col-md-3 text-center my-4">
-                    <img src="{{ asset('assets/img/aula.png') }}" class="img-fluid" width="100%"
-                        style="border-radius: 20px;" alt="">
-                    <div class="info mt-4">
-                        <span class="span-title">Aula</span>
-                    </div>
-                </div>
-                <div class="col-md-3 text-center my-4">
-                    <img src="{{ asset('assets/img/kelas.png') }}" class="img-fluid" width="100%"
-                        style="border-radius: 20px;" alt="">
-                    <div class="info mt-4">
-                        <span class="span-title">Kelas</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Informasi penyedia Aset Properti milik UPTD BPPSDMP Provinsi Kalimantan TImur</p>
-                    <h1 class="font-title-1">Daftar </h1>
-                </div>
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <table class="table table-hover table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
 
     <section>
         <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
