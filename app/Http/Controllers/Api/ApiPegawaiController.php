@@ -208,6 +208,8 @@ class ApiPegawaiController extends Controller
             $pegawais->where(function($w)use($request){
                 $w->where('name','like','%'.$request->search.'%')
                 ->orWhere('code','like','%'.$request->search.'%')
+                ->orWhere('nip','like','%'.$request->search.'%')
+                ->orWhere('nik','like','%'.$request->search.'%')
                 ->orWhere('jenis_kelamin','like','%'.$request->search.'%')
                 ->orWhere('status_perkawinan','like','%'.$request->search.'%')
                 ->orWhere('nama_jabatan','like','%'.$request->search.'%')
