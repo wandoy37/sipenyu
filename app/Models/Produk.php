@@ -5,14 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class uptd extends Model
+class Produk extends Model
 {
     use HasFactory;
 
     protected $guarded = [];
 
-    public function products()
+    public function uptd()
     {
-        return $this->hasMany(Produk::class);
+        return $this->belongsTo(uptd::class);
     }
 }
