@@ -221,7 +221,7 @@ class ApiPegawaiController extends Controller
                 ->orWhere('type','like','%'.$request->search.'%');
             });
         }
-        return $pegawais->paginate(10);
+        return $pegawais->paginate(10)->appends($request->all());
     }
 
     /**

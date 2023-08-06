@@ -17,7 +17,7 @@ class ApiRegisterController extends Controller
             [
                 'name' => 'required',
                 'type' => 'required',
-                'kantor_id' => 'required',
+                // 'kantor_id' => 'required',
                 'username' => 'required|min:6',
                 'password'=>'required|min:6',
                 'client_name'=>'required'
@@ -25,7 +25,7 @@ class ApiRegisterController extends Controller
             [
                 'name' => 'nama wajib diisi',
                 'type' => 'jenis wajib diisi',
-                'kantor_id' => 'kantor wajib diisi',
+                // 'kantor_id' => 'kantor wajib diisi',
                 'username' => 'username wajib diisi',
                 'password'=>'password wajib diisi',
                 'client_name'=>'client name wajib diisi'
