@@ -71,6 +71,12 @@
                         <p>Daftar UPTD</p>
                     </a>
                 </li>
+                <li class="nav-item {{ request()->segment(1) == 'produk' ? 'active' : '' }}">
+                    <a href="{{ route('produk.index') }}">
+                        <i class="fab fa-product-hunt"></i>
+                        <p>Produk UPTD</p>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

@@ -1,15 +1,15 @@
 @extends('layouts.app')
-@section('title', 'Daftar UPTD')
+@section('title', 'Produk UPTD')
 
 @section('content')
 
     <div class="page-inner">
         <div class="page-header">
-            <h4 class="page-title">Daftar UPTD</h4>
+            <h4 class="page-title">Produk UPTD</h4>
             <ul class="breadcrumbs">
                 <li class="nav-home">
                     <span>
-                        <i class="fas fa-building"></i>
+                        <i class="fab fa-product-hunt"></i>
                     </span>
                 </li>
             </ul>
@@ -19,12 +19,12 @@
             @include('flash-message')
         </div>
 
-        <section class="my-2">
+        {{-- <section class="my-2">
             <a href="{{ route('daftar.uptd.create') }}" class="btn btn-outline-primary">
                 <i class="fas fa-plus"></i>
                 UPTD
             </a>
-        </section>
+        </section> --}}
 
         <section class="my-4">
             <div class="card">
@@ -32,41 +32,34 @@
                     <table id="tables" class="display" style="width:100%">
                         <thead>
                             <tr class="text-center">
-                                <th width="20%">UPTD</th>
-                                <th width="15%">email</th>
-                                <th>No. HP</th>
+                                <th width="20%">Produk</th>
+                                <th width="15%">Harga</th>
+                                <th>Satuan</th>
+                                <th>UPTD</th>
                                 <th>Thumbnail</th>
-                                <th>Total Layanan</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($uptds as $uptd)
+                            @foreach ($products as $product)
                                 <tr class="text-center">
-                                    <td>{{ $uptd->title }}</td>
-                                    <td>{{ $uptd->email }}</td>
-                                    <td>{{ $uptd->no_hp }}</td>
+                                    <td>{{ $product->title }}</td>
+                                    <td>Rp {{ $product->harga }}</td>
+                                    <td>{{ $product->satuan }}</td>
                                     <td>
-                                        <img src="{{ asset('uptd/' . $uptd->thumbnail) }}" class="img-thumbnail"
+                                        <img src="{{ asset('produk/' . $product->thumbnail) }}" class="img-thumbnail"
                                             width="50%" alt="">
                                     </td>
-                                    <td>
-                                        {{ $uptd->products->count() }}
-                                    </td>
+                                    <td>{{ $product->uptd->title }}</td>
                                     <td width="25%">
-                                        <form id="form-delete-{{ $uptd->id }}"
-                                            action="{{ route('daftar.uptd.delete', $uptd->slug) }}" method="POST">
+                                        <form id="form-delete-{{ $product->id }}"
+                                            action="{{ route('produk.delete', $product->id) }}" method="POST">
                                             @csrf @method('DELETE')
-                                            <a href="{{ route('produk.create', $uptd->id) }}"
-                                                class="btn btn-info btn-sm mr-4" style="border-radius: 25px;">
-                                                <i class="fas fa-plus"></i>
-                                                Produk
-                                            </a>
-                                            <a href="{{ route('daftar.uptd.edit', $uptd->slug) }}" class="text-warning">
+                                            <a href="{{ route('produk.edit', $product->id) }}" class="text-warning">
                                                 <i class="fas fa-pen"></i>
                                             </a>
                                             <button type="submit" class="ms-4 btn btn-link text-danger"
-                                                onclick="btnDelete( {{ $uptd->id }} )">
+                                                onclick="btnDelete( {{ $product->id }} )">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </form>

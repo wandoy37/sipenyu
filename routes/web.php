@@ -8,7 +8,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KabKotaController;
 use App\Http\Controllers\KantorController;
 use App\Http\Controllers\KecamatanController;
+use App\Http\Controllers\LayananController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\SaranMasukanController;
 use App\Http\Controllers\ScrapeSimluhController;
 use App\Http\Controllers\UptdController;
@@ -135,6 +137,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/daftar-uptd/{slug}/edit', [UptdController::class, 'edit'])->name('daftar.uptd.edit');
     Route::patch('/daftar-uptd/{slug}/update', [UptdController::class, 'update'])->name('daftar.uptd.update');
     Route::delete('/daftar-uptd/{slug}/delete', [UptdController::class, 'destroy'])->name('daftar.uptd.delete');
+
+    // Tambah Produk
+    Route::get('/produk', [ProdukController::class, 'index'])->name('produk.index');
+    Route::get('/produk/create/{id}', [ProdukController::class, 'create'])->name('produk.create');
+    Route::post('/produk/store', [ProdukController::class, 'store'])->name('produk.store');
+    Route::get('/produk/edit/{id}', [ProdukController::class, 'edit'])->name('produk.edit');
+    Route::patch('/produk/update/{id}', [ProdukController::class, 'update'])->name('produk.update');
+    Route::delete('/produk/delete/{id}', [ProdukController::class, 'destroy'])->name('produk.delete');
 });
 
 Route::group(['prefix' => 'geojson'], function () {
