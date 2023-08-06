@@ -8,11 +8,18 @@ use Illuminate\Http\Request;
 
 class ApiKantorController extends Controller
 {
-    function index() {
-        $kantors = Kantor::with('kecamatans.kabkota')->get();
+    function index(Request $request) {
+        $kantors = Kantor::with('kecamatans.kabkota');
+        if($request->has('search')){
+            $kantors->where(function($w)use($request){
+                $w->where('name','like','%'.$request->search.'%')
+                ->orWhere('alamat','like','%'.$request->search.'%');
+
+            });
+        }
         return response()->json([
             'message' => 'Berhasil menampilkan data kantor',
-            'data' => $kantors
+            'data' => $kantors->paginate(10)->appends($request->all())
         ],200);
     }
 }
