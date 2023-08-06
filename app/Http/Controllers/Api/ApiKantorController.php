@@ -11,10 +11,9 @@ class ApiKantorController extends Controller
     function index(Request $request) {
         $kantors = Kantor::with('kecamatans.kabkota');
         if($request->has('search')){
-            $kantors->where(function($w)use($request){
+            $kantors = $kantors->where(function($w)use($request){
                 $w->where('name','like','%'.$request->search.'%')
                 ->orWhere('alamat','like','%'.$request->search.'%');
-
             });
         }
         return response()->json([

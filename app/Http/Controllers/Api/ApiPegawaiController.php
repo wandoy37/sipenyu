@@ -205,7 +205,7 @@ class ApiPegawaiController extends Controller
         }
         $pegawais = Pegawai::with('kantor:id,name','kantor.kecamatans.kabkota');
         if($request->has('search')){
-            $pegawais->where(function($w)use($request){
+            $pegawais = $pegawais->where(function($w)use($request){
                 $w->where('name','like','%'.$request->search.'%')
                 ->orWhere('code','like','%'.$request->search.'%')
                 ->orWhere('nip','like','%'.$request->search.'%')
