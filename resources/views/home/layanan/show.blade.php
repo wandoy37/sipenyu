@@ -5,12 +5,12 @@
     <style>
         /* Product Custom */
         /* body {
-                                                                                                                background-color: mintcream;
-                                                                                                                display: flex;
-                                                                                                                align-items: center;
-                                                                                                                justify-content: center;
-                                                                                                                flex-direction: column;
-                                                                                                            } */
+                                                                                                                        background-color: mintcream;
+                                                                                                                        display: flex;
+                                                                                                                        align-items: center;
+                                                                                                                        justify-content: center;
+                                                                                                                        flex-direction: column;
+                                                                                                                    } */
         .card {
             /* max-width: 30em; */
             flex-direction: row;
@@ -140,7 +140,8 @@
                                 </div>
                                 <div class="cta-section">
                                     <div class="fw-bold">{{ $product->harga }}</div>
-                                    <a href="#" class="btn btn-outline-success">Pesan</a>
+                                    <a href="{{ route('produk.pesan', $product->id) }}"
+                                        class="btn btn-outline-success">Pesan</a>
                                 </div>
                             </div>
                         </div>

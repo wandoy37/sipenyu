@@ -86,6 +86,8 @@
     </section>
 
     <script src="{{ asset('assets') }}/js/bootstrap.bundle.min.js"></script>
+    @include('sweetalert::alert')
+
 
     @stack('scripts')
 </body>

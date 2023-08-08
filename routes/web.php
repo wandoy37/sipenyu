@@ -10,6 +10,7 @@ use App\Http\Controllers\KantorController;
 use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\PesananController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\SaranMasukanController;
 use App\Http\Controllers\ScrapeSimluhController;
@@ -83,6 +84,12 @@ Route::get('update-koordinat-kantor', function () {
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/layanan', [HomeController::class, 'layanan'])->name('layanan');
 Route::get('/layanan/{slug}', [HomeController::class, 'layananShow'])->name('layanan.show');
+
+// Client Buat Pesanan
+Route::get('/produk/pesan/{id}', [PesananController::class, 'create'])->name('produk.pesan');
+Route::post('/pesan/produk/{id}', [PesananController::class, 'store'])->name('pesan.produk');
+
+
 // ======================================================================================================================== //
 Route::middleware('auth')->group(function () {
     // dashboard
@@ -145,6 +152,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/produk/edit/{id}', [ProdukController::class, 'edit'])->name('produk.edit');
     Route::patch('/produk/update/{id}', [ProdukController::class, 'update'])->name('produk.update');
     Route::delete('/produk/delete/{id}', [ProdukController::class, 'destroy'])->name('produk.delete');
+
+    // Pesanan
+    Route::get('/pesanan', [PesananController::class, 'index'])->name('pesanan.index');
 });
 
 Route::group(['prefix' => 'geojson'], function () {
