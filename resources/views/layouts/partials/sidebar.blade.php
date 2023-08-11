@@ -77,6 +77,12 @@
                         <p>Produk UPTD</p>
                     </a>
                 </li>
+                <li class="nav-item {{ request()->segment(1) == 'pesanan' ? 'active' : '' }}">
+                    <a href="{{ route('pesanan.index') }}">
+                        <i class="fa fa-bell"></i>
+                        <p>Pesanan</p>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
