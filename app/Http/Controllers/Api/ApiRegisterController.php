@@ -7,6 +7,7 @@ use App\Models\Pegawai;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 
 class ApiRegisterController extends Controller
@@ -88,10 +89,13 @@ class ApiRegisterController extends Controller
             ]);
             return response()->json([
                 'message' => 'Berhasil mendaftar!',
-                'api_token' => $api_token
+                'api_token' => $api_token,
+                'code'=>$code
             ],200);
             
         } catch (\Throwable $th) {
+            DB::rollBack();
+            Log::error($th);
             return response()->json([
                 'message' => 'Gagal mendaftar',
                 'errors' => [
