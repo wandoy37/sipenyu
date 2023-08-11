@@ -49,11 +49,9 @@ class ApiRegisterController extends Controller
             if($request->hasFile('foto_stp')){
                 $foto_stp = $request->file('foto_stp')->store('pegawai/foto_stp');
             }
-            $code = "00001";
-            $lastPegawai = Pegawai::orderBy('code','desc')->first();
-            if($lastPegawai){
-                $code = str_pad((int)$lastPegawai->code+1,5,"0",STR_PAD_LEFT);
-            }
+            $lastPegawai = (int)(Pegawai::orderBy('id', 'desc')->first()->code ?? 0);
+            $lastPegawai++;
+            $code = str_pad($lastPegawai, 5, '0', STR_PAD_LEFT);
             $pegawai = Pegawai::create([
                 'code' => $code,
                 'name' => $request->name,
