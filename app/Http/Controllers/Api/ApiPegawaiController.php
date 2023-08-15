@@ -295,7 +295,7 @@ class ApiPegawaiController extends Controller
         // if validator success
         DB::beginTransaction();
         try {
-            $lastPegawai = Pegawai::all()->count();
+            $lastPegawai = (int)(Pegawai::orderBy('id', 'desc')->first()->code ?? 0);
             $lastPegawai++;
 
             $foto_profil = null;

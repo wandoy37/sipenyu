@@ -70,7 +70,7 @@ class KantorController extends Controller
         DB::beginTransaction();
         try {
             // Last data
-            $lastKantor = Kantor::all()->count();
+            $lastKantor = (int)(Kantor::orderBy('id', 'desc')->first()->code ?? 0);
             $lastKantor++;
 
             $kantor = Kantor::create([
