@@ -425,10 +425,31 @@ class ApiPegawaiController extends Controller
         // if validator success
         DB::beginTransaction();
         try {
-            $data = $request->all();
-            $data['foto_profil'] = $foto_profil;
-            $data['foto_stp'] = $foto_stp;
-            $pegawai->update($data);
+            $pegawai->update([
+                'name' => $request->name,
+                'nik' => $request->nik,
+                'nip' => $request->nip,
+                'type' => $request->type,
+                'kantor_id' => $request->kantor_id,
+                'jenis_kelamin'=>$request->jenis_kelamin,
+                'tempat_lahir'=>$request->tempat_lahir,
+                'tanggal_lahir'=>$request->tanggal_lahir,
+                'alamat_rumah'=>$request->alamat_rumah,
+                'pendidikan_terakhir'=>$request->pendidikan_terakhir,
+                'no_telp' => $request->no_telp,
+                'email' => $request->email,
+                'no_wa'=>$request->no_wa,
+                'agama'=>$request->agama,
+                'status_perkawinan'=>$request->status_perkawinan,
+                'nama_jabatan'=>$request->nama_jabatan,
+                'unit_eselon'=>$request->unit_eselon,
+                'pangkat_golongan'=>$request->pangkat_golongan,
+                'foto_profil'=>$foto_profil,
+                'foto_stp'=>$foto_stp,
+            ]);
+            $pegawai->loginPegawai->update([
+                'username'=> $request->username,
+            ]);
             DB::commit();
             return response()->json([
                 'message' => 'Berhasil update pegawai',
