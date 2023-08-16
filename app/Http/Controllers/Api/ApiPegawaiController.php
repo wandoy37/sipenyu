@@ -413,14 +413,9 @@ class ApiPegawaiController extends Controller
         if($request->hasFile('foto_stp')){
             $foto_stp = $request->file('foto_stp')->store('peserta/foto_stp');
         }
-        if($request->has("password_baru") && $request->password_baru != ""){
-            $request->validate([
-                "password_baru"=>'required|min:5',
-            ]);
-            $pegawai->loginPegawai->update([
-                "password"=>bcrypt($request->password_baru),
-            ]);
-        }
+
+        
+        
 
         // if validator success
         DB::beginTransaction();
@@ -447,9 +442,23 @@ class ApiPegawaiController extends Controller
                 'foto_profil'=>$foto_profil,
                 'foto_stp'=>$foto_stp,
             ]);
-            $pegawai->loginPegawai->update([
-                'username'=> $request->username,
-            ]);
+            if($request->has("username") && $request->username != ""){
+                $request->validate([
+                    "username"=>'required|unique:login_pegawais,username,'.$pegawai->loginPegawai->id,
+                ]);
+                $pegawai->loginPegawai->update([
+                    'username'=> $request->username,
+                ]);
+            }
+            
+            if($request->has("password_baru") && $request->password_baru != ""){
+                $request->validate([
+                    "password_baru"=>'required|min:5',
+                ]);
+                $pegawai->loginPegawai->update([
+                    "password"=>bcrypt($request->password_baru),
+                ]);
+            }
             DB::commit();
             return response()->json([
                 'message' => 'Berhasil update pegawai',
