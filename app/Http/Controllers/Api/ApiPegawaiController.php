@@ -415,7 +415,7 @@ class ApiPegawaiController extends Controller
         }
         if($request->has("password_baru") && $request->password_baru != ""){
             $request->validate([
-                "password"=>'required|min:5',
+                "password_baru"=>'required|min:5',
             ]);
             $pegawai->loginPegawai->update([
                 "password"=>bcrypt($request->password_baru),
