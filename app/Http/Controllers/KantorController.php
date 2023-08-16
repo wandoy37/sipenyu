@@ -90,7 +90,7 @@ class KantorController extends Controller
             return redirect()->route('kantor.index')->with('success', $request->name . ' telah di tambahkan.');
         } catch (\Throwable $th) {
             DB::rollBack();
-            return redirect()->back()->with('error', 'gagal update kantor ' . $request->name)->withInput($request->all());
+            return redirect()->back()->with('error', 'gagal menambah kantor ' . $request->name)->withInput($request->all());
         } finally {
             DB::commit();
         }
