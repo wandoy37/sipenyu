@@ -41,7 +41,7 @@ Route::group(['as'=>'api.'],function(){
         Route::get('pegawai/{id}', [ApiPegawaiController::class,'detailUmumPegawai'])->name('data-umum.pegawai.detail');
         Route::get('kantor', [ApiKantorController::class,'index'])->name('data-umum.kantor');
     });
-
+    Route::get('get-foto/{main}/{sub}/{file}', [ApiPegawaiController::class,'getFoto'])->name('pegawai.get-foto');
     Route::post('login',[ApiLoginController::class,'login']);
     Route::post('register',[ApiRegisterController::class,'register']);
 });

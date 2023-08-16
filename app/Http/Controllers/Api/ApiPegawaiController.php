@@ -509,7 +509,17 @@ class ApiPegawaiController extends Controller
         }
     }
 
-    function getStorage() : Returntype {
-        
+    public function getFoto($main,$sub,$file) {
+        $extension = pathinfo(storage_path('app/'.$main.'/'.$sub.'/'.$file), PATHINFO_EXTENSION);
+        if(!in_array($extension,['jpg','jpeg','png','gif'])){
+            return abort(404);
+        }
+        if(file_exists(storage_path('app/'.$main.'/'.$sub.'/'.$file))){
+            
+            //return file
+            return response()->file(storage_path('app/'.$main.'/'.$sub.'/'.$file));
+        } else {
+            return abort(404);
+        }
     }
 }
