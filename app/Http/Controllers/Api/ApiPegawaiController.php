@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Kantor;
+use App\Models\LoginPegawai;
 use App\Models\Pegawai;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -57,12 +58,10 @@ class ApiPegawaiController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'code' => 'unique:pegawais',
                 'name' => 'required',
                 'username' => 'required'
             ],
             [
-                'code' => 'kode tenaga kerja sudah digunakan!',
                 'name' => 'nama wajib diisi',
                 'username' => 'username wajib diisi'
             ],
@@ -74,27 +73,20 @@ class ApiPegawaiController extends Controller
             ], 422);
         }
         $pegawai = auth()->user()->loginPegawai->pegawai;
-        if($request->has("password_baru") && $request->password_baru != ""){
-            $request->validate([
-                "password"=>'required|min:5',
-            ]);
-            $pegawai->loginPegawai->update([
-                "password"=>bcrypt($request->password_baru),
-            ]);
-        }
+        
         DB::beginTransaction();
         try {
             $foto_profil = $pegawai->foto_profil;
-            $foto_stp = $pegawai->foto_stp;
+            $foto_spt = $pegawai->foto_spt;
             if($request->hasFile('foto_profil')){
-                $foto_profil = $request->file('foto_profil')->store('peserta/foto_profil');
+                $foto_profil = $request->file('foto_profil')->store('pegawai/foto_profil');
             }
-            if($request->hasFile('foto_stp')){
-                $foto_stp = $request->file('foto_stp')->store('peserta/foto_stp');
+            if($request->hasFile('foto_spt')){
+                $foto_spt = $request->file('foto_spt')->store('pegawai/foto_spt');
             }
             if($request->has("password_baru") && $request->password_baru != ""){
                 $request->validate([
-                    "password"=>'required|min:5',
+                    "password_baru"=>'required|min:5',
                 ]);
                 $pegawai->loginPegawai->update([
                     "password"=>bcrypt($request->password_baru),
@@ -127,7 +119,7 @@ class ApiPegawaiController extends Controller
                 'unit_eselon'=>$request->unit_eselon,
                 'pangkat_golongan'=>$request->pangkat_golongan,
                 'foto_profil'=>$foto_profil,
-                'foto_stp'=>$foto_stp,
+                'foto_spt'=>$foto_spt,
             ]);
             DB::commit();
             try {
@@ -299,12 +291,12 @@ class ApiPegawaiController extends Controller
             $lastPegawai++;
 
             $foto_profil = null;
-            $foto_stp = null;
+            $foto_spt = null;
             if($request->hasFile('foto_profil')){
-                $foto_profil = $request->file('foto_profil')->store('peserta/foto_profil');
+                $foto_profil = $request->file('foto_profil')->store('pegawai/foto_profil');
             }
-            if($request->hasFile('foto_stp')){
-                $foto_stp = $request->file('foto_stp')->store('peserta/foto_stp');
+            if($request->hasFile('foto_spt')){
+                $foto_spt = $request->file('foto_spt')->store('pegawai/foto_spt');
             }
 
             $pegawai = Pegawai::create([
@@ -328,7 +320,7 @@ class ApiPegawaiController extends Controller
                 'unit_eselon'=>$request->unit_eselon,
                 'pangkat_golongan'=>$request->pangkat_golongan,
                 'foto_profil'=>$foto_profil,
-                'foto_stp'=>$foto_stp,
+                'foto_spt'=>$foto_spt,
             ]);
             $pegawai->loginPegawai()->create([
                 'username'=> $request->username,
@@ -406,12 +398,12 @@ class ApiPegawaiController extends Controller
         })->first();
 
         $foto_profil = $pegawai->foto_profil;
-        $foto_stp = $pegawai->foto_stp;
+        $foto_spt = $pegawai->foto_spt;
         if($request->hasFile('foto_profil')){
-            $foto_profil = $request->file('foto_profil')->store('peserta/foto_profil');
+            $foto_profil = $request->file('foto_profil')->store('pegawai/foto_profil');
         }
-        if($request->hasFile('foto_stp')){
-            $foto_stp = $request->file('foto_stp')->store('peserta/foto_stp');
+        if($request->hasFile('foto_spt')){
+            $foto_spt = $request->file('foto_spt')->store('pegawai/foto_spt');
         }
 
         
@@ -440,14 +432,14 @@ class ApiPegawaiController extends Controller
                 'unit_eselon'=>$request->unit_eselon,
                 'pangkat_golongan'=>$request->pangkat_golongan,
                 'foto_profil'=>$foto_profil,
-                'foto_stp'=>$foto_stp,
+                'foto_spt'=>$foto_spt,
             ]);
             if($request->has("username") && $request->username != ""){
                 $request->validate([
                     "username"=>'required|unique:login_pegawais,username,'.$pegawai->loginPegawai->id,
                 ]);
-                $pegawai->loginPegawai->update([
-                    'username'=> $request->username,
+                LoginPegawai::where('pegawai_id',$pegawai->id)->update([
+                    "username"=>$request->username,
                 ]);
             }
             
@@ -455,11 +447,22 @@ class ApiPegawaiController extends Controller
                 $request->validate([
                     "password_baru"=>'required|min:5',
                 ]);
-                $pegawai->loginPegawai->update([
+                LoginPegawai::where('pegawai_id',$pegawai->id)->update([
                     "password"=>bcrypt($request->password_baru),
                 ]);
             }
             DB::commit();
+            try {
+                foreach ($pegawai->loginPegawai->loginPegawaiApiToken as $key => $apiToken) {
+                    if($apiToken->web_hook != null){
+                        $client = new \GuzzleHttp\Client();
+                        $client->request('GET', $apiToken->web_hook."?code=".$pegawai->code);
+                    }
+                }
+                
+            } catch (\Throwable $th) {
+                Log::error($th);
+            }
             return response()->json([
                 'message' => 'Berhasil update pegawai',
                 'data' =>  $pegawai
@@ -504,5 +507,9 @@ class ApiPegawaiController extends Controller
                 ]
             ],402);
         }
+    }
+
+    function getStorage() : Returntype {
+        
     }
 }
