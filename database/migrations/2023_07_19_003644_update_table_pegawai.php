@@ -29,7 +29,7 @@ return new class extends Migration
             $table->enum('unit_eselon',['I','II','III','IV','V'])->nullable();
             $table->string('pangkat_golongan')->nullable();
             $table->string('foto_profil')->nullable();
-            $table->string('foto_stp')->nullable();
+            $table->string('foto_spt')->nullable();
         });
     }
 
@@ -55,7 +55,7 @@ return new class extends Migration
             $table->dropColumn('unit_eselon');
             $table->dropColumn('pangkat_golongan');
             $table->dropColumn('foto_profil');
-            $table->dropColumn('foto_stp');
+            $table->dropColumn('foto_spt');
         });
 
     }
