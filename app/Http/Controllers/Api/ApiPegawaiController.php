@@ -202,7 +202,7 @@ class ApiPegawaiController extends Controller
         if(auth()->user()->client_name !== $request->client_name){
             return abort(404);
         }
-        $pegawais = Pegawai::with('kantor:id,name','kantor.kecamatans.kabkota');
+        $pegawais = Pegawai::with('kantor:id,name','kantor.kecamatans.kabkota','kantor.KabKota');
         if($request->has('search')){
             $pegawais = $pegawais->where(function($w)use($request){
                 $w->where('name','like','%'.$request->search.'%')
