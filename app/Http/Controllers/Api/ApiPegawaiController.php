@@ -397,6 +397,15 @@ class ApiPegawaiController extends Controller
             $w->where('code',$code);
         })->first();
 
+        if($pegawai == null){
+            return response()->json([
+                'message' => 'Pegawai tidak ditemukan',
+                'errors' => [
+                    "system error"=>"Pegawai tidak ditemukan"
+                ]
+            ],402);
+        }
+
         $foto_profil = $pegawai->foto_profil;
         $foto_spt = $pegawai->foto_spt;
         if($request->hasFile('foto_profil')){
@@ -434,23 +443,37 @@ class ApiPegawaiController extends Controller
                 'foto_profil'=>$foto_profil,
                 'foto_spt'=>$foto_spt,
             ]);
-            if($request->has("username") && $request->username != ""){
+            if($pegawai->loginPegawai != null){
+                if($request->has("username") && $request->username != ""){
+                    $request->validate([
+                        "username"=>'required|unique:login_pegawais,username,'.$pegawai->loginPegawai->id,
+                    ]);
+                    LoginPegawai::where('pegawai_id',$pegawai->id)->update([
+                        "username"=>$request->username,
+                    ]);
+                }
+                if($request->has("password_baru") && $request->password_baru != ""){
+                    $request->validate([
+                        "password_baru"=>'required|min:5',
+                    ]);
+                    LoginPegawai::where('pegawai_id',$pegawai->id)->update([
+                        "password"=>bcrypt($request->password_baru),
+                    ]);
+                }
+                
+            } else {
                 $request->validate([
-                    "username"=>'required|unique:login_pegawais,username,'.$pegawai->loginPegawai->id,
+                    "username"=>'required|unique:login_pegawais,username',
+                    "password_baru"=>'required|min:5',
                 ]);
-                LoginPegawai::where('pegawai_id',$pegawai->id)->update([
+                LoginPegawai::create([
                     "username"=>$request->username,
+                    "password"=>bcrypt($request->password),
+                    "pegawai_id"=>$pegawai->id,
                 ]);
             }
             
-            if($request->has("password_baru") && $request->password_baru != ""){
-                $request->validate([
-                    "password_baru"=>'required|min:5',
-                ]);
-                LoginPegawai::where('pegawai_id',$pegawai->id)->update([
-                    "password"=>bcrypt($request->password_baru),
-                ]);
-            }
+            
             DB::commit();
             try {
                 foreach ($pegawai->loginPegawai->loginPegawaiApiToken as $key => $apiToken) {
@@ -469,6 +492,7 @@ class ApiPegawaiController extends Controller
             ],200);
         } catch (\Throwable $th) {
             DB::rollBack();
+            Log::error($th);
             return response()->json([
                 'message' => 'Gagal update pegawai',
                 'errors' => [
