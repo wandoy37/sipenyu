@@ -274,6 +274,7 @@ class PegawaiController extends Controller
         DB::beginTransaction();
         try {
             $pegawai = Pegawai::where('code', $code)->first();
+            $pegawai->loginPegawai()->delete();
             $pegawaiName = $pegawai->name;
 
             $pegawai->delete($pegawai);

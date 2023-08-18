@@ -345,13 +345,13 @@ class ApiPegawaiController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $code
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($code)
     {
-        $pegawai = Pegawai::with('kantor.KabKota')->where(function($w)use($id){
-            $w->where('id',$id)->orWhere('code',$id);
+        $pegawai = Pegawai::with('kantor.KabKota')->where(function($w)use($code){
+            $w->where('code',$code);
         })->first();
         return response()->json([
             'message' => 'Success!',
@@ -362,12 +362,12 @@ class ApiPegawaiController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $code
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($code)
     {
-        $pegawai = Pegawai::findOrFail($id);
+        $pegawai = Pegawai::findOrFail($code);
         $roles = $this->roles();
         $kantors = Kantor::all();
         return response()->json([
@@ -384,17 +384,17 @@ class ApiPegawaiController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  int  $code
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $code)
     {   
         if(auth()->user()->client_name !== $request->client_name){
             return abort(404);
         }
        
-        $pegawai = Pegawai::with('kantor.KabKota')->where(function($w)use($id){
-            $w->where('id',$id)->orWhere('code',$id);
+        $pegawai = Pegawai::with('kantor.KabKota')->where(function($w)use($code){
+            $w->where('code',$code);
         })->first();
 
         $foto_profil = $pegawai->foto_profil;
@@ -481,15 +481,16 @@ class ApiPegawaiController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int  $code
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($code)
     {
         // if validator success
         DB::beginTransaction();
         try {
-            $pegawai = Pegawai::findOrFail($id);
+            $pegawai = Pegawai::where('code',$code)->first();
+            $pegawai->loginPegawai()->delete();
             $pegawaiName = $pegawai->name;
 
             $pegawai->delete($pegawai);
