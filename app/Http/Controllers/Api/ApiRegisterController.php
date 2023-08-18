@@ -42,12 +42,12 @@ class ApiRegisterController extends Controller
         DB::beginTransaction();
         try {
             $foto_profil = null;
-            $foto_stp = null;
+            $foto_spt = null;
             if($request->hasFile('foto_profil')){
                 $foto_profil = $request->file('foto_profil')->store('pegawai/foto_profil');
             }
-            if($request->hasFile('foto_stp')){
-                $foto_stp = $request->file('foto_stp')->store('pegawai/foto_stp');
+            if($request->hasFile('foto_spt')){
+                $foto_spt = $request->file('foto_spt')->store('pegawai/foto_spt');
             }
             $lastPegawai = (int)(Pegawai::orderBy('id', 'desc')->first()->code ?? 0);
             $lastPegawai++;
@@ -71,7 +71,7 @@ class ApiRegisterController extends Controller
                 'unit_eselon'=>$request->unit_eselon,
                 'pangkat_golongan'=>$request->pangkat_golongan,
                 'foto_profil'=>$foto_profil,
-                'foto_stp'=>$foto_stp,
+                'foto_spt'=>$foto_spt,
 
             ]);
             $pegawai->loginPegawai()->create([
