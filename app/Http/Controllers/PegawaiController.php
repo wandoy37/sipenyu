@@ -227,14 +227,14 @@ class PegawaiController extends Controller
                 if($pegawai->loginPegawai == null && $request->password_baru != ""){
                     $pegawai->loginPegawai()->create([
                         "username"=>$request->username,
-                        "password_baru"=>bcrypt($request->password_baru),
+                        "password"=>bcrypt($request->password_baru),
                     ]);
                 } else if($request->password_baru != "") {
                     $pegawai->loginPegawai->update([
                         "username"=>$request->username,
-                        "password_baru"=>bcrypt($request->password_baru),
+                        "password"=>bcrypt($request->password_baru),
                     ]);
-                } else {
+                } elseif($pegawai->loginPegawai != null) {
                     $pegawai->loginPegawai->update([
                         "username"=>$request->username,
                     ]);
@@ -256,6 +256,7 @@ class PegawaiController extends Controller
             return redirect()->route('pegawai.index')->with('success', $pegawai->name . ' telah di update.');
         } catch (\Throwable $th) {
             DB::rollBack();
+            Log::error($th);
             return redirect()->back()->with('error', $pegawai->name . ' gagal di update.')->withInput($request->all());
         } finally {
             DB::commit();

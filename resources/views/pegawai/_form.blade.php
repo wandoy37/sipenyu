@@ -238,7 +238,7 @@
                 @if (isset($pegawai))
                     <div class="form-group">
                         <label>Password Baru</label>
-                        <input class="form-control" placeholder="Password Baru..." type="password"  minlength="5"/>
+                        <input class="form-control" placeholder="Password Baru..." type="password" name="password_baru"  minlength="5"/>
                         @error('password_baru')
                             <span class="text-xs text-danger">
                                 {{ $message }}
@@ -248,7 +248,7 @@
                 @else
                     <div class="form-group">
                         <label>Password</label>
-                        <input class="form-control" placeholder="Password..." type="password"  minlength="5"/>
+                        <input class="form-control" placeholder="Password..." type="password" name="password"  minlength="5"/>
                         @error('password')
                             <span class="text-xs text-danger">
                                 {{ $message }}
