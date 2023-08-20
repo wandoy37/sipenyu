@@ -32,6 +32,7 @@ Route::group(['as'=>'api.'],function(){
     //crud
     Route::group(['middleware'=>'auth:api'],function(){
         Route::resource('pegawai', ApiPegawaiController::class);
+        Route::post('pegawai/{code}/delete-foto', [ApiPegawaiController::class,'deleteFoto'])->name('pegawai.delete-foto');
     });
     
     

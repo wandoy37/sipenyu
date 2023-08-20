@@ -547,4 +547,39 @@ class ApiPegawaiController extends Controller
             return abort(404);
         }
     }
+
+    public function deleteFoto($id,Request $request){
+        try {
+            $pegawai = Pegawai::findOrFail($id);
+            if($request->has('foto_profil') && $request->foto_profil == 'true'){
+                $pegawai->update([
+                    'foto_profil'=>null,
+                ]);
+                $path = storage_path('app/'.$pegawai->foto_profil);
+                if(file_exists($path)){
+                    unlink($path);
+                }
+            }
+            if($request->has('foto_spt') && $request->foto_spt == 'true'){
+                $pegawai->update([
+                    'foto_spt'=>null,
+                ]);
+                $path = storage_path('app/'.$pegawai->foto_spt);
+                if(file_exists($path)){
+                    unlink($path);
+                }
+            }
+            return response()->json([
+                'message' => 'Berhasil menghapus foto pegawai',
+                'data' =>  $pegawai
+            ],200);
+        } catch (\Throwable $th) {
+            return response()->json([
+                'message' => 'Gagal menghapus foto pegawai',
+                'errors' => [
+                    "system error"=>$th->getMessage()
+                ]
+            ],402);
+        }
+    }
 }
