@@ -548,38 +548,50 @@ class ApiPegawaiController extends Controller
         }
     }
 
-    public function deleteFoto($id,Request $request){
+    public function deleteFoto($code,Request $request){
         try {
-            $pegawai = Pegawai::findOrFail($id);
-            if($request->has('foto_profil') && $request->foto_profil == 'true'){
-                $pegawai->update([
-                    'foto_profil'=>null,
-                ]);
+            $pegawai = Pegawai::where('code',$code)->first();
+            if(!$pegawai){
+                return response()->json([
+                    'message' => 'Gagal menghapus foto pegawai',
+                    'errors' => [
+                        "system error"=>"Pegawai tidak ditemukan"
+                    ]
+                ],404);
+            }
+            if($request->has('foto_profil') && $request->foto_profil == 'true' && $pegawai->foto_profil != null){
+                
                 $path = storage_path('app/'.$pegawai->foto_profil);
                 if(file_exists($path)){
                     unlink($path);
                 }
-            }
-            if($request->has('foto_spt') && $request->foto_spt == 'true'){
                 $pegawai->update([
-                    'foto_spt'=>null,
+                    'foto_profil'=>null,
                 ]);
+            }
+            if($request->has('foto_spt') && $request->foto_spt == 'true' && $pegawai->foto_spt != null){
+                
                 $path = storage_path('app/'.$pegawai->foto_spt);
                 if(file_exists($path)){
                     unlink($path);
                 }
+                $pegawai->update([
+                    'foto_spt'=>null,
+                ]);
+                
             }
             return response()->json([
                 'message' => 'Berhasil menghapus foto pegawai',
                 'data' =>  $pegawai
             ],200);
         } catch (\Throwable $th) {
+            Log::error($th);
             return response()->json([
                 'message' => 'Gagal menghapus foto pegawai',
                 'errors' => [
                     "system error"=>$th->getMessage()
                 ]
-            ],402);
+            ],500);
         }
     }
 }
