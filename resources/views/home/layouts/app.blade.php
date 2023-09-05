@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SIPP @yield('title')</title>
-    <link href="{{ asset('assets') }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Style (Custome UPTD BPPSDMP) -->
-    <link rel="stylesheet" href="{{ asset('assets') }}/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets') }}/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/logo.png') }}">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,7 +85,7 @@
         </div>
     </section>
 
-    <script src="{{ asset('assets') }}/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
     @include('sweetalert::alert')
 
 
