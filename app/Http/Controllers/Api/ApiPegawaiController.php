@@ -98,13 +98,15 @@ class ApiPegawaiController extends Controller
                 if($kantor != null){
                     $kantor_id = $kantor->id;
                 }
+            } else {
+                $kantor_id = $request->kantor_id ?? $pegawai->kantor_id;
             }
             $pegawai->update([
                 'name' => $request->name,
                 'nik' => $request->nik,
                 'nip' => $request->nip,
                 'type' => $request->type ?? $pegawai->type,
-                'kantor_id' => $request->kantor_id ?? $pegawai->kantor_id,
+                'kantor_id' => $kantor_id,
                 'jenis_kelamin'=>$request->jenis_kelamin ?? $pegawai->jenis_kelamin,
                 'tempat_lahir'=>$request->tempat_lahir,
                 'tanggal_lahir'=>$request->tanggal_lahir,
