@@ -472,16 +472,26 @@
                     tbody.html('');
                     for (let i = 0; i < kantor.pegawais.length; i++) {
                         const pegawai = kantor.pegawais[i];
+                        let nik = pegawai.nik ?? '-';
+                        if (nik.length > 4) {
+                            // Mengganti karakter kecuali 4 karakter terakhir dengan asterisk (*)
+                            nik = '*'.repeat(nik.length - 4) + nik.slice(-4);
+                        }
+
+                        let nip = pegawai.nip ?? '-';
+                        if (nip.length > 4) {
+                            // Mengganti karakter kecuali 4 karakter terakhir dengan asterisk (*)
+                            nip = '*'.repeat(nip.length - 4) + nip.slice(-4);
+                        }
                         tbody.append(`
                             <tr>
-                                <td>${i+1}</td>
+                                <td>${i + 1}</td>
                                 <td>${pegawai.name}</td>
-                                <td>${pegawai.nip ?? '-'}</td>
-                                <td>${pegawai.nik ?? '-'}</td>
+                                <td>${nip}</td>
+                                <td>${nik}</td> <!-- Menampilkan nik yang telah diubah -->
                                 <td>${pegawai.type}</td>
                             </tr>
                         `);
-
                     }
                     //scroll to bottom
                     $('html, body').animate({
