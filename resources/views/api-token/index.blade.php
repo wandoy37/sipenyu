@@ -37,7 +37,7 @@
         <section class="my-4">
             <div class="card">
                 <div class="card-body shadow">
-                    <table id="tables" class="display" style="width:100%">
+                    <table id="tables" class="display table table-striped table-hover" cellspacing="0" width="100%">
                         <thead>
                             <tr>
                                 <th>Client Code</th>
@@ -51,17 +51,19 @@
                                     <td>{{ $apiToken->client_code }}</td>
                                     <td>{{ $apiToken->api_token }}</td>
 
-                                    <td class="d-flex">
-                                        <form action="{{ route('api-token.update', $apiToken->id) }}" method="POST" class="mx-1">
+                                    <td class="d-flex align-items-center">
+                                        <form action="{{ route('api-token.update', $apiToken->id) }}" method="POST"
+                                            class="mx-1">
                                             @csrf @method('PUT')
-                                            
+
                                             <button type="submit" class="btn-warning btn btn-sm">
                                                 Reset <i class="fas fa-recycle"></i>
                                             </button>
                                         </form>
-                                        <form action="{{ route('api-token.delete', $apiToken->id) }}" method="POST"  class="mx-1">
+                                        <form action="{{ route('api-token.delete', $apiToken->id) }}" method="POST"
+                                            class="mx-1">
                                             @csrf @method('DELETE')
-                                            
+
                                             <button type="submit" class="btn btn-sm btn-danger">
                                                 Hapus <i class="fas fa-trash"></i>
                                             </button>

@@ -34,7 +34,7 @@
         <section class="my-4">
             <div class="card">
                 <div class="card-body shadow">
-                    <table id="tables" class="display" style="width:100%">
+                    <table id="tables" class="display table table-striped table-hover" cellspacing="0" width="100%">
                         <thead>
                             <tr>
                                 <th class="text-center">Kode</th>
@@ -51,7 +51,7 @@
                                     <td class="text-center">{{ $kantor->code }}</td>
                                     <td>{{ $kantor->name }}</td>
                                     <td>{{ $kantor->alamat }}</td>
-                                    <td>{{ implode(",",$kantor->kecamatans->pluck('name')->toArray()) }}</td>
+                                    <td>{{ implode(',', $kantor->kecamatans->pluck('name')->toArray()) }}</td>
                                     <td>{{ $kantor->kabkota->name }}</td>
                                     <td width="15%" class="text-center">
                                         <form action="{{ route('kantor.delete', $kantor->code) }}" method="POST">

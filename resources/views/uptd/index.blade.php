@@ -29,7 +29,7 @@
         <section class="my-4">
             <div class="card">
                 <div class="card-body shadow">
-                    <table id="tables" class="display" style="width:100%">
+                    <table id="tables" class="display table table-striped table-hover" cellspacing="0" width="100%">
                         <thead>
                             <tr class="text-center">
                                 <th width="20%">UPTD</th>

@@ -150,7 +150,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-md-12">
                 <hr>
             </div>
@@ -202,7 +202,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 
     @push('scripts')
@@ -473,15 +473,15 @@
                     for (let i = 0; i < kantor.pegawais.length; i++) {
                         const pegawai = kantor.pegawais[i];
                         let nik = pegawai.nik ?? '-';
-                        if (nik.length > 4) {
+                        if (nik.length > 8) {
                             // Mengganti karakter kecuali 4 karakter terakhir dengan asterisk (*)
-                            nik = '*'.repeat(nik.length - 4) + nik.slice(-4);
+                            nik = '*'.repeat(nik.length - 8) + nik.slice(-8);
                         }
 
                         let nip = pegawai.nip ?? '-';
-                        if (nip.length > 4) {
+                        if (nip.length > 8) {
                             // Mengganti karakter kecuali 4 karakter terakhir dengan asterisk (*)
-                            nip = '*'.repeat(nip.length - 4) + nip.slice(-4);
+                            nip = '*'.repeat(nip.length - 8) + nip.slice(-8);
                         }
                         tbody.append(`
                             <tr>
