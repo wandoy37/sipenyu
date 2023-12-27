@@ -417,7 +417,15 @@ class ApiPegawaiController extends Controller
             $foto_spt = $request->file('foto_spt')->store('pegawai/foto_spt');
         }
 
-        
+        $kantor_id = $pegawai->kantor_id;
+        if($request->has('unit_kerja')){
+            $kantor = Kantor::where('name',$request->unit_kerja)->first();
+            if($kantor != null){
+                $kantor_id = $kantor->id;
+            }
+        } else {
+            $kantor_id = $request->kantor_id ?? $pegawai->kantor_id;
+        }
         
 
         // if validator success
@@ -428,7 +436,7 @@ class ApiPegawaiController extends Controller
                 'nik' => $request->nik,
                 'nip' => $request->nip,
                 'type' => $request->type ?? $pegawai->type,
-                'kantor_id' => $request->kantor_id ?? $pegawai->kantor_id,
+                'kantor_id' => $request->kantor_id ?? $kantor_id,
                 'jenis_kelamin'=>$request->jenis_kelamin ?? $pegawai->jenis_kelamin,
                 'tempat_lahir'=>$request->tempat_lahir,
                 'tanggal_lahir'=>$request->tanggal_lahir,
