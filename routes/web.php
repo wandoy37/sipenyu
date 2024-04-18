@@ -40,6 +40,18 @@ use Illuminate\Support\Facades\URL;
 //     return view('welcome');
 // });
 
+Route::view('/maintenance', 'maintenance')->name('maintenance');
+Route::get('/maintenance/down', function () {
+    \Artisan::call('down');
+    return "Aplikasi dalam mode perawatan.";
+});
+
+// Route::get('/maintenance/up', function () {
+//     \Artisan::call('up');
+//     return "Aplikasi telah diaktifkan kembali.";
+// });
+
+
 
 
 Route::get('/polygon', function () {
