@@ -15,6 +15,7 @@ use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\SaranMasukanController;
 use App\Http\Controllers\ScrapeSimluhController;
 use App\Http\Controllers\UptdController;
+use App\Http\Controllers\UserController;
 use App\Models\KabKota;
 use App\Models\Kantor;
 use App\Models\Kecamatan;
@@ -41,10 +42,10 @@ use Illuminate\Support\Facades\URL;
 // });
 
 Route::view('/maintenance', 'maintenance')->name('maintenance');
-Route::get('/maintenance/down', function () {
-    \Artisan::call('down');
-    return "Aplikasi dalam mode perawatan.";
-});
+// Route::get('/maintenance/down', function () {
+//     \Artisan::call('down');
+//     return "Aplikasi dalam mode perawatan.";
+// });
 
 // Route::get('/maintenance/up', function () {
 //     \Artisan::call('up');
@@ -104,6 +105,20 @@ Route::post('/pesan/produk/{id}', [PesananController::class, 'store'])->name('pe
 
 // ======================================================================================================================== //
 Route::middleware('auth')->group(function () {
+
+    // User Manage
+    Route::resource('pengguna', UserController::class);
+    // Route::middleware(['role:admin'])->group(function () {
+    //     Route::get('pengguna', [UserController::class, 'index'])->name('pengguna.index');
+    //     Route::get('pengguna/create', [UserController::class, 'create'])->name('pengguna.create');
+    //     Route::post('pengguna/store', [UserController::class, 'store'])->name('pengguna.store');
+    //     Route::delete('pengguna/{pengguna}', [UserController::class, 'destroy'])->name('pengguna.destroy');
+    // });
+    // Route::get('pengguna/{id}/edit', [UserController::class, 'edit'])->name('pengguna.edit');
+    // Route::patch('pengguna/{id}', [UserController::class, 'update'])->name('pengguna.update');
+
+
+
     // dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 

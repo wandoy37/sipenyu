@@ -6,7 +6,7 @@
                     <img src="{{ asset('assets2/img/profile.jpg') }}" alt="..." class="avatar-img rounded-circle">
                 </div>
                 <div class="info">
-                    <a data-toggle="collapse" href="{{ route('dashboard.index') }}" aria-expanded="true">
+                    <a data-toggle="collapse" href="{{ route('pengguna.edit', Auth::user()->id) }}" aria-expanded="true">
                         <span class="text-capitalize">
                             {{ Auth::user()->name }}
                             <span class="user-level">{{ Auth::user()->role }}</span>
@@ -27,6 +27,12 @@
                     <a href="{{ route('dashboard.index') }}">
                         <i class="fas fa-tachometer-alt"></i>
                         <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item {{ request()->segment(1) == 'pengguna' ? 'active' : '' }}">
+                    <a href="{{ route('pengguna.index') }}">
+                        <i class="fas fa-users"></i>
+                        <p>Pengguna</p>
                     </a>
                 </li>
                 <li class="nav-item {{ request()->segment(1) == 'kabupaten-kota' ? 'active' : '' }}">
