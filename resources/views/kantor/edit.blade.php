@@ -84,7 +84,8 @@
                             </div>
                         </div> --}}
                         <div class="mb-3">
-                            <label for="" class="form-label">Pilih Lokasi/Koordinat </label> <button type="button" class="btn btn-sm btn-default m-1" onclick="resetLocation()">Reset</button>
+                            <label for="" class="form-label">Pilih Lokasi/Koordinat </label> <button type="button"
+                                class="btn btn-sm btn-default m-1" onclick="resetLocation()">Reset</button>
                             <div id="map" style="height:70vh;width:100%;"></div>
                             <input type="hidden" name="latitude" id="latitude"
                                 value="{{ old('longitude', @$kantor->latitude) }}">
@@ -124,10 +125,13 @@
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
         <script src="https://unpkg.com/leaflet-geosearch@3.6.1/dist/geosearch.umd.js"></script>
         <script>
+            $('#kabkota').select2({
+                placeholder: "-pilih kabupaten-"
+            });
+
+
             var kode = document.getElementById('kabkota').value;
-            var oldKecamatans = {!! json_encode(
-                $kantor->kecamatans()->pluck('kecamatans.id')->toArray(),
-            ) !!};
+            var oldKecamatans = {!! json_encode($kantor->kecamatans()->pluck('kecamatans.id')->toArray()) !!};
             var oldLatitude = {{ @$kantor->latitude }};
             var oldLongitude = {{ @$kantor->longitude }};
             // Show -select kecamatan-
@@ -279,7 +283,6 @@
 
             resetLocation();
         </script>
-
     @endpush
 
 @endsection

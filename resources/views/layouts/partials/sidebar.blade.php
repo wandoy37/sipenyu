@@ -56,7 +56,7 @@
                 <li class="nav-item {{ request()->segment(1) == 'tenaga-kerja' ? 'active' : '' }}">
                     <a href="{{ route('pegawai.index') }}">
                         <i class="fas fa-users"></i>
-                        <p>Tenaga Kerja</p>
+                        <p>Data Penyuluh</p>
                     </a>
                 </li>
                 <li class="nav-item {{ request()->segment(1) == 'api-token' ? 'active' : '' }}">
@@ -65,7 +65,7 @@
                         <p>API Token</p>
                     </a>
                 </li>
-                <li class="nav-section">
+                {{-- <li class="nav-section">
                     <span class="sidebar-mini-icon">
                         <i class="fa fa-ellipsis-h"></i>
                     </span>
@@ -88,7 +88,7 @@
                         <i class="fa fa-bell"></i>
                         <p>Pesanan</p>
                     </a>
-                </li>
+                </li> --}}
             </ul>
         </div>
     </div>

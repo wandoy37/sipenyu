@@ -37,7 +37,7 @@
                     <form action="{{ route('kecamatan.store') }}" method="POST">
                         @csrf
                         <div class="mb-3">
-                            <select class="form-control" name="kabkota_id" aria-label="Default select example">
+                            <select id="select_kabupaten" class="form-control" name="kabkota_id">
                                 <option selected>-pilih kabupaten-</option>
                                 @foreach ($kabkotas as $kabkota)
                                     <option value="{{ $kabkota->code }}">{{ $kabkota->name }}</option>
@@ -63,3 +63,11 @@
     </div>
 
 @endsection
+
+@push('scripts')
+    <script>
+        $('#select_kabupaten').select2({
+            theme: "bootstrap"
+        });
+    </script>
+@endpush

@@ -1,10 +1,10 @@
 @extends('layouts.app')
-@section('title', 'Penyuluh Pertanian')
+@section('title', 'Tenaga Kerja')
 
 @section('content')
     <div class="page-inner">
         <div class="page-header">
-            <h4 class="page-title">Tambah | Penyuluh Pertanian</h4>
+            <h4 class="page-title">Edit | Tenaga Kerja</h4>
             <ul class="breadcrumbs">
                 <li class="nav-home">
                     <a href="#">
@@ -32,75 +32,51 @@
         </section>
 
         <section class="my-4">
-            <form action="{{ route('pegawai.store') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('pegawai.update', $pegawai->code) }}" method="POST"  enctype="multipart/form-data">
                 <div class="card">
                     <div class="card-body shadow">
 
                         @csrf
+                        @method('PATCH')
+
                         <div class="mb-3">
-                            <label for="name">Nama Penyuluh <small class="text-danger">*</small></label>
-                            @error('name')
-                                <span class="text-danger">
-                                    <i class="fas fa-exclamation"></i>
-                                    {{ $message }}
-                                </span>
-                            @enderror
+                            <label for="name">Nama Pegawai <small class="text-danger">*</small></label>
                             <input type="text" name="name" class="form-control" id="name"
-                                placeholder="Nama Penyuluh" value="{{ old('name') }}" required>
+                                placeholder="Nama Pegawai" value="{{ old('name', $pegawai->name) }}" required>
                         </div>
                         <div class="mb-3">
                             <label for="type">Jenis <small class="text-danger">*</small></label>
-                            @error('type')
-                                <span class="text-danger">
-                                    <i class="fas fa-exclamation"></i>
-                                    {{ $message }}
-                                </span>
-                            @enderror
-                            <select class="form-control" id="select_type" name="type" required>
+                            <select class="form-control" id="type" name="type" required>
                                 <option value="">-pilih Jenis-</option>
                                 @foreach ($roles as $key => $value)
-                                    <option value="{{ $key }}" {{ old('type') == $key ? 'selected' : null }}>
+                                    <option value="{{ $key }}"
+                                        {{ old('type', $pegawai->type) == $key ? 'selected' : null }}>
                                         {{ $value }}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="mb-3">
                             <label for="kantor">Kantor <small class="text-danger">*</small></label>
-                            @error('kantor')
-                                <span class="text-danger">
-                                    <i class="fas fa-exclamation"></i>
-                                    {{ $message }}
-                                </span>
-                            @enderror
-                            <select class="form-control" id="select_kantor" name="kantor" required>
+                            <select class="form-control" id="kantor" name="kantor" required>
                                 <option value="">-pilih kantor-</option>
                                 @foreach ($kantors as $kantor)
-                                    <option value="{{ $kantor->id }}" {{ old('kantor') == $key ? 'selected' : null }}>
-                                        {{ $kantor->name }}</option>
+                                    @if (old($kantor->id, $pegawai->kantor_id) == $kantor->id)
+                                        <option value="{{ $kantor->id }}" selected>{{ $kantor->name }}</option>
+                                    @else
+                                        <option value="{{ $kantor->id }}">{{ $kantor->name }}</option>
+                                    @endif
                                 @endforeach
                             </select>
                         </div>
                         <div class="mb-3">
                             <label for="no_telp">No Telp</label>
-                            @error('no_telp')
-                                <span class="text-danger">
-                                    <i class="fas fa-exclamation"></i>
-                                    {{ $message }}
-                                </span>
-                            @enderror
-                            <input type="text" name="no_telp" class="form-control" id="no_telp"
-                                placeholder="No Telp Pegawai" value="{{ old('no_telp') }}">
+                            <input type="number" name="no_telp" class="form-control" id="no_telp"
+                                placeholder="No Telp Pegawai" value="{{ old('no_telp', $pegawai->no_telp) }}">
                         </div>
                         <div class="mb-3">
                             <label for="email">Email</label>
-                            @error('email')
-                                <span class="text-danger">
-                                    <i class="fas fa-exclamation"></i>
-                                    {{ $message }}
-                                </span>
-                            @enderror
-                            <input type="text" name="email" class="form-control" id="email"
-                                placeholder="Email Pegawai" value="{{ old('email') }}">
+                            <input type="email" name="email" class="form-control" id="email"
+                                placeholder="Email Pegawai" value="{{ old('email', $pegawai->email) }}">
                         </div>
 
 
@@ -109,29 +85,16 @@
                 @include('pegawai._form')
                 <div class="mb-3 float-end">
                     <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-plus"></i>
-                        Tambah
+                        <i class="fas fa-sync"></i>
+                        Update
                     </button>
                 </div>
             </form>
         </section>
 
-
-
     </div>
 
-
-
     @push('scripts')
-        <script>
-            $('#select_type').select2({
-                theme: "bootstrap"
-            });
-
-            $('#select_kantor').select2({
-                theme: "bootstrap"
-            });
-        </script>
         <script>
             $("#kabkota").change(function() {
                 var id = $(this).val();

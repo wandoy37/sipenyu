@@ -38,7 +38,8 @@
                         @csrf
                         @method('PATCH')
                         <div class="mb-3">
-                            <select class="form-control" name="kabkota_id" aria-label="Default select example">
+                            <select id="select_kabupaten" class="form-control" name="kabkota_id"
+                                aria-label="Default select example">
                                 <option selected>-pilih kabupaten-</option>
                                 @foreach ($kabkotas as $kabkota)
                                     @if (old($kabkota->id, $kecamatan->kabkota_id) == $kabkota->id)
@@ -69,3 +70,11 @@
 
 
 @endsection
+
+@push('scripts')
+    <script>
+        $('#select_kabupaten').select2({
+            theme: "bootstrap"
+        });
+    </script>
+@endpush

@@ -34,7 +34,7 @@
         <section class="my-4">
             <div class="card">
                 <div class="card-body shadow">
-                    <table id="tables" class="display" style="width:100%">
+                    <table id="tables" class="display table table-striped table-hover" cellspacing="1" width="100%">
                         <thead>
                             <tr>
                                 <th class="text-center">No</th>
@@ -56,7 +56,7 @@
                                     <td>{{ $user->username }}</td>
                                     <td>{{ $user->email }}</td>
                                     <td>{{ $user->role }}</td>
-                                    <td width="25%" class="text-center">
+                                    <td width="15%" class="text-center">
                                         <form action="{{ route('pengguna.destroy', $user->id) }}" method="POST">
                                             @csrf @method('DELETE')
                                             <a href="{{ route('pengguna.edit', $user->id) }}" class="text-warning">
