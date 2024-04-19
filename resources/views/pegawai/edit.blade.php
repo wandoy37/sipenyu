@@ -32,27 +32,32 @@
         </section>
 
         <section class="my-4">
-            <div class="card">
-                <div class="card-body shadow">
-                    <form action="{{ route('pegawai.update', $pegawai->code) }}" method="POST">
+            <form action="{{ route('pegawai.update', $pegawai->code) }}" method="POST"  enctype="multipart/form-data">
+                <div class="card">
+                    <div class="card-body shadow">
+
                         @csrf
                         @method('PATCH')
+
                         <div class="mb-3">
-                            <input type="text" name="name" class="form-control" id="nama"
-                                placeholder="Nama Pegawai" value="{{ old('name', $pegawai->name) }}">
+                            <label for="name">Nama Pegawai <small class="text-danger">*</small></label>
+                            <input type="text" name="name" class="form-control" id="name"
+                                placeholder="Nama Pegawai" value="{{ old('name', $pegawai->name) }}" required>
                         </div>
                         <div class="mb-3">
-                            <select class="form-control" id="role" name="role">
-                                <option value="">-pilih role-</option>
+                            <label for="type">Jenis <small class="text-danger">*</small></label>
+                            <select class="form-control" id="type" name="type" required>
+                                <option value="">-pilih Jenis-</option>
                                 @foreach ($roles as $key => $value)
                                     <option value="{{ $key }}"
-                                        {{ old('role', $pegawai->role) == $key ? 'selected' : null }}>
+                                        {{ old('type', $pegawai->type) == $key ? 'selected' : null }}>
                                         {{ $value }}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="mb-3">
-                            <select class="form-control" id="kantor" name="kantor">
+                            <label for="kantor">Kantor <small class="text-danger">*</small></label>
+                            <select class="form-control" id="kantor" name="kantor" required>
                                 <option value="">-pilih kantor-</option>
                                 @foreach ($kantors as $kantor)
                                     @if (old($kantor->id, $pegawai->kantor_id) == $kantor->id)
@@ -63,15 +68,28 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="mb-3 float-end">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-sync"></i>
-                                Update
-                            </button>
+                        <div class="mb-3">
+                            <label for="no_telp">No Telp</label>
+                            <input type="number" name="no_telp" class="form-control" id="no_telp"
+                                placeholder="No Telp Pegawai" value="{{ old('no_telp', $pegawai->no_telp) }}">
                         </div>
-                    </form>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="form-control" id="email"
+                                placeholder="Email Pegawai" value="{{ old('email', $pegawai->email) }}">
+                        </div>
+
+
+                    </div>
                 </div>
-            </div>
+                @include('pegawai._form')
+                <div class="mb-3 float-end">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-sync"></i>
+                        Update
+                    </button>
+                </div>
+            </form>
         </section>
 
     </div>

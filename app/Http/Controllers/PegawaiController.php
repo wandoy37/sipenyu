@@ -7,16 +7,21 @@ use App\Models\Pegawai;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class PegawaiController extends Controller
 {
     private function roles()
     {
         return [
-            'penyuluh pns' => 'penyuluh pns',
-            'penyuluh swadaya' => 'penyuluh swadaya',
-            'penyuluh swasta' => 'penyuluh swasta',
-            'thl-tbpp' => 'thl-tbpp',
+            'penyuluh pns' => 'Penyuluh Pertanian PNS (Aktif)',
+            'penyuluh pppk' => 'Penyuluh Pertanian PPPK',
+            'thl-tbpp apbn' => 'Penyuluh THL-TBPP APBN',
+            'thl-tbpp apbd' => 'Penyuluh THL-TBPP APBD',
+            'penyuluh swadaya'=>'Penyuluh Swadaya',
+            'penyuluh swasta'=> 'Penyuluh Swasta',
+            'petugas popt'=>'Petugas POPT',
+            'petugas pbt'=>'Petugas PBT',
         ];
     }
     /**
@@ -54,15 +59,13 @@ class PegawaiController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'code' => 'unique:pegawais',
                 'name' => 'required',
-                'role' => 'required',
+                'type' => 'required',
                 'kantor' => 'required',
             ],
             [
-                'code' => 'kode tenaga kerja sudah digunakan!',
                 'name' => 'nama wajib diisi',
-                'role' => 'role wajib diisi',
+                'type' => 'jenis wajib diisi',
                 'kantor' => 'kantor wajib diisi',
             ],
         );
@@ -75,20 +78,55 @@ class PegawaiController extends Controller
         // if validator success
         DB::beginTransaction();
         try {
-            $lastPegawai = Pegawai::all()->count();
+            $lastPegawai = (int)(Pegawai::orderBy('id', 'desc')->first()->code ?? 0);
             $lastPegawai++;
 
-            Pegawai::create([
+            $foto_profil = null;
+            $foto_spt = null;
+            if($request->hasFile('foto_profil')){
+                $foto_profil = $request->file('foto_profil')->store('pegawai/foto_profil');
+            }
+            if($request->hasFile('foto_spt')){
+                $foto_spt = $request->file('foto_spt')->store('pegawai/foto_spt');
+            }
+
+            $pegawai = Pegawai::create([
                 'code' => str_pad($lastPegawai, 5, '0', STR_PAD_LEFT),
                 'name' => $request->name,
-                'role' => $request->role,
+                'type' => $request->type,
                 'kantor_id' => $request->kantor,
+                'no_telp' => $request->no_telp,
+                'email' => $request->email,
+                "jenis_kelamin"=>$request->jenis_kelamin,
+                "tempat_lahir"=>$request->tempat_lahir,
+                "tanggal_lahir"=>$request->tanggal_lahir,
+                "alamat_rumah"=>$request->alamat_rumah,
+                "pendidikan_terakhir"=>$request->pendidikan_terakhir,
+                "no_wa"=>$request->no_wa,
+                "agama"=>$request->agama,
+                "status_perkawinan"=>$request->status_perkawinan,
+                "nip"=>$request->nip,
+                "nik"=>$request->nik,
+                "nama_jabatan"=>$request->nama_jabatan,
+                "unit_eselon"=>$request->unit_eselon,
+                "pangkat_golongan"=>$request->pangkat_golongan,
+                "alamat_unit_kerja"=>$request->alamat_unit_kerja,
+                "foto_profil"=>$foto_profil,
+                "foto_spt"=>$foto_spt,
             ]);
+
+            if($request->has("username") && $request->username != ""){
+                $pegawai->loginPegawai()->create([
+                    "username"=>$request->username,
+                    "password"=>bcrypt($request->password),
+                ]);
+            }
 
             return redirect()->route('pegawai.index')->with('success', $request->name . ' telah di tambahkan.');
         } catch (\Throwable $th) {
             DB::rollBack();
-            return redirect()->route('pegawai.index')->with('fails', $request->name . ' gagal di tambahkan.');
+            Log::error($th);
+            return redirect()->back()->with('error', $request->name . ' gagal di tambahkan. Error : '.$th->getMessage())->withInput($request->all());
         } finally {
             DB::commit();
         }
@@ -133,12 +171,12 @@ class PegawaiController extends Controller
             $request->all(),
             [
                 'name' => 'required',
-                'role' => 'required',
+                'type' => 'required',
                 'kantor' => 'required',
             ],
             [
                 'name' => 'nama wajib diisi',
-                'role' => 'role wajib diisi',
+                'type' => 'jenis wajib diisi',
                 'kantor' => 'kantor wajib diisi',
             ],
         );
@@ -151,18 +189,75 @@ class PegawaiController extends Controller
         // if validator success
         DB::beginTransaction();
         try {
+            
             $pegawai = Pegawai::where('code', $code)->first();
-
+            $foto_profil = $pegawai->foto_profil;
+            $foto_spt = $pegawai->foto_spt;
+            if($request->hasFile('foto_profil')){
+                $foto_profil = $request->file('foto_profil')->store('pegawai/foto_profil');
+            }
+            if($request->hasFile('foto_spt')){
+                $foto_spt = $request->file('foto_spt')->store('pegawai/foto_spt');
+            }
             $pegawai->update([
                 'name' => $request->name,
-                'role' => $request->role,
+                'type' => $request->type,
                 'kantor_id' => $request->kantor,
+                'no_telp' => $request->no_telp,
+                'email' => $request->email,
+                "jenis_kelamin"=>$request->jenis_kelamin,
+                "tempat_lahir"=>$request->tempat_lahir,
+                "tanggal_lahir"=>$request->tanggal_lahir,
+                "alamat_rumah"=>$request->alamat_rumah,
+                "pendidikan_terakhir"=>$request->pendidikan_terakhir,
+                "no_wa"=>$request->no_wa,
+                "agama"=>$request->agama,
+                "status_perkawinan"=>$request->status_perkawinan,
+                "nip"=>$request->nip,
+                "nik"=>$request->nik,
+                "nama_jabatan"=>$request->nama_jabatan,
+                "unit_eselon"=>$request->unit_eselon,
+                "pangkat_golongan"=>$request->pangkat_golongan,
+                "alamat_unit_kerja"=>$request->alamat_unit_kerja,
+                "foto_profil"=>$foto_profil,
+                "foto_spt"=>$foto_spt,
             ]);
+
+            if($request->has("username") && $request->username != ""){
+                if($pegawai->loginPegawai == null && $request->password_baru != ""){
+                    $pegawai->loginPegawai()->create([
+                        "username"=>$request->username,
+                        "password"=>bcrypt($request->password_baru),
+                    ]);
+                } else if($request->password_baru != "") {
+                    $pegawai->loginPegawai->update([
+                        "username"=>$request->username,
+                        "password"=>bcrypt($request->password_baru),
+                    ]);
+                } elseif($pegawai->loginPegawai != null) {
+                    $pegawai->loginPegawai->update([
+                        "username"=>$request->username,
+                    ]);
+                }
+            }
+
+            try {
+                foreach ($pegawai->loginPegawai->loginPegawaiApiToken as $key => $apiToken) {
+                    if($apiToken->web_hook != null){
+                        $client = new \GuzzleHttp\Client();
+                        $client->request('GET', $apiToken->web_hook."?code=".$pegawai->code);
+                    }
+                }
+                
+            } catch (\Throwable $th) {
+                Log::error($th);
+            }
 
             return redirect()->route('pegawai.index')->with('success', $pegawai->name . ' telah di update.');
         } catch (\Throwable $th) {
             DB::rollBack();
-            return redirect()->route('pegawai.index')->with('fails', $pegawai->name . ' gagal di update.');
+            Log::error($th);
+            return redirect()->back()->with('error', $pegawai->name . ' gagal di update.')->withInput($request->all());
         } finally {
             DB::commit();
         }
@@ -180,6 +275,7 @@ class PegawaiController extends Controller
         DB::beginTransaction();
         try {
             $pegawai = Pegawai::where('code', $code)->first();
+            $pegawai->loginPegawai()->delete();
             $pegawaiName = $pegawai->name;
 
             $pegawai->delete($pegawai);

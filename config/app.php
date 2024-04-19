@@ -163,7 +163,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        Intervention\Image\ImageServiceProvider::class,
+        RealRashid\SweetAlert\SweetAlertServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -192,7 +193,8 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // ...
+        'Image'     => Intervention\Image\Facades\Image::class,
+        'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
     ])->toArray(),
 
 ];

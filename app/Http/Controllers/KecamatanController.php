@@ -63,7 +63,7 @@ class KecamatanController extends Controller
         DB::beginTransaction();
         try {
             // Last data
-            $lastKecamatan = Kecamatan::all()->count();
+            $lastKecamatan = (int)(Kecamatan::orderBy('id', 'desc')->first()->code ?? 0);
             $lastKecamatan++;
 
             Kecamatan::create([

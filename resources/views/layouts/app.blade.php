@@ -54,6 +54,8 @@
             max-height: 100%;
         }
     </style>
+
+    @stack('styles')
 </head>
 
 <body>
@@ -105,8 +107,8 @@
                 {{-- Section Footer --}}
                 <div class="container-fluid">
                     <div class="copyright ml-auto">
-                        {{ date('Y') }}, made with <i class="fa fa-heart heart text-danger"></i> by
-                        <span class="text-secondary">Muhammad Riswandi</span>
+                        2023 - {{ date('Y') }}, made with <i class="fa fa-heart heart text-danger"></i> by
+                        <span class="text-secondary">UPTD BPPSDMP KALTIM PROV</span>
                     </div>
                 </div>
                 {{-- /Section Footer --}}
@@ -114,7 +116,7 @@
         </div>
     </div>
 
-    @stack('scripts')
+
 
     <!--   Core JS Files   -->
     <script src="{{ asset('assets2/js/core/jquery.3.2.1.min.js') }}"></script>
@@ -191,6 +193,7 @@
 
     <!-- Atlantis JS -->
     <script src="{{ asset('assets2/js/atlantis.min.js') }}"></script>
+    @stack('scripts')
 </body>
 
 </html>

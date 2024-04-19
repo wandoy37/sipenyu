@@ -40,6 +40,20 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'login_pegawai' => [
+            'driver' => 'session',
+            'provider' => 'login_pegawai',
+        ],
+        'api_pegawai' => [
+            'driver' => 'token',
+            'provider' => 'login_pegawai_api_token',
+            'hash' => true,
+        ],
+        'api' => [
+            'driver' => 'token',
+            'provider' => 'api_token',
+            'hash' => false,
+        ],
     ],
 
     /*
@@ -63,6 +77,18 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+        'login_pegawai' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\LoginPegawai::class,
+        ],
+        'login_pegawai_api_token' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\LoginPegawaiApiToken::class,
+        ],
+        'api_token' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\ApiToken::class,
         ],
 
         // 'users' => [

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\SaranMasukan;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -13,7 +14,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard.index');
+        $saran_masukan = SaranMasukan::latest()->get();
+        return view('dashboard.index', compact('saran_masukan'));
     }
 
     /**

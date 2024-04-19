@@ -6,7 +6,7 @@
                     <img src="{{ asset('assets2/img/profile.jpg') }}" alt="..." class="avatar-img rounded-circle">
                 </div>
                 <div class="info">
-                    <a data-toggle="collapse" href="{{ route('dashboard.index') }}" aria-expanded="true">
+                    <a data-toggle="collapse" href="{{ route('pengguna.edit', Auth::user()->id) }}" aria-expanded="true">
                         <span class="text-capitalize">
                             {{ Auth::user()->name }}
                             <span class="user-level">{{ Auth::user()->role }}</span>
@@ -27,6 +27,12 @@
                     <a href="{{ route('dashboard.index') }}">
                         <i class="fas fa-tachometer-alt"></i>
                         <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item {{ request()->segment(1) == 'pengguna' ? 'active' : '' }}">
+                    <a href="{{ route('pengguna.index') }}">
+                        <i class="fas fa-users"></i>
+                        <p>Pengguna</p>
                     </a>
                 </li>
                 <li class="nav-item {{ request()->segment(1) == 'kabupaten-kota' ? 'active' : '' }}">
@@ -51,6 +57,36 @@
                     <a href="{{ route('pegawai.index') }}">
                         <i class="fas fa-users"></i>
                         <p>Tenaga Kerja</p>
+                    </a>
+                </li>
+                <li class="nav-item {{ request()->segment(1) == 'api-token' ? 'active' : '' }}">
+                    <a href="{{ route('api-token.index') }}">
+                        <i class="fas fa-key"></i>
+                        <p>API Token</p>
+                    </a>
+                </li>
+                <li class="nav-section">
+                    <span class="sidebar-mini-icon">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </span>
+                    <h4 class="text-section">Layanan UPTD</h4>
+                </li>
+                <li class="nav-item {{ request()->segment(1) == 'daftar-uptd' ? 'active' : '' }}">
+                    <a href="{{ route('daftar.uptd.index') }}">
+                        <i class="fas fa-building"></i>
+                        <p>Daftar UPTD</p>
+                    </a>
+                </li>
+                <li class="nav-item {{ request()->segment(1) == 'produk' ? 'active' : '' }}">
+                    <a href="{{ route('produk.index') }}">
+                        <i class="fab fa-product-hunt"></i>
+                        <p>Produk UPTD</p>
+                    </a>
+                </li>
+                <li class="nav-item {{ request()->segment(1) == 'pesanan' ? 'active' : '' }}">
+                    <a href="{{ route('pesanan.index') }}">
+                        <i class="fa fa-bell"></i>
+                        <p>Pesanan</p>
                     </a>
                 </li>
             </ul>
