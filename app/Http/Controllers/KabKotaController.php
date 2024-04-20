@@ -14,6 +14,12 @@ class KabKotaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    function __construct()
+    {
+        $this->middleware('admin')->only('index', 'create', 'store', 'edit', 'update', 'destroy');
+    }
+
     public function index()
     {
         $kabkotas = KabKota::latest()->get();

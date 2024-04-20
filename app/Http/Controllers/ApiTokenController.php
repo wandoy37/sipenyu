@@ -13,6 +13,13 @@ class ApiTokenController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+    function __construct()
+    {
+        $this->middleware('admin')->only('index', 'create', 'store', 'edit', 'update', 'destroy');
+    }
+
     public function index()
     {
         $apiTokens = ApiToken::latest()->get();
@@ -42,7 +49,7 @@ class ApiTokenController extends Controller
             'client_code' => Str::random(10),
             'api_token' => $api_token,
         ]);
-        return redirect()->back()->with('success','Berhasil menambahkan api token baru, token: '.$api_token);
+        return redirect()->back()->with('success', 'Berhasil menambahkan api token baru, token: ' . $api_token);
     }
 
     /**
@@ -80,7 +87,7 @@ class ApiTokenController extends Controller
         ApiToken::find($id)->update([
             'api_token' => $api_token,
         ]);
-        return redirect()->back()->with('success','Berhasil mereset api token baru, token: '.$api_token);
+        return redirect()->back()->with('success', 'Berhasil mereset api token baru, token: ' . $api_token);
     }
 
     /**
@@ -90,9 +97,9 @@ class ApiTokenController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {   
+    {
         $apiToken = ApiToken::find($id);
         $apiToken->delete();
-        return redirect()->back()->with('success','Berhasil menghapus api token : '.$apiToken->api_token);
+        return redirect()->back()->with('success', 'Berhasil menghapus api token : ' . $apiToken->api_token);
     }
 }

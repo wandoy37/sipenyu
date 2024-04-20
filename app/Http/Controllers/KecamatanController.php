@@ -16,6 +16,12 @@ class KecamatanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    function __construct()
+    {
+        $this->middleware('admin')->only('index', 'create', 'store', 'edit', 'update', 'destroy');
+    }
+
     public function index()
     {
         $kecamatans = Kecamatan::latest()->get();

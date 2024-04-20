@@ -19,6 +19,12 @@ class KantorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    function __construct()
+    {
+        $this->middleware('admin')->only('index', 'create', 'store', 'edit', 'update', 'destroy');
+    }
+
     public function index()
     {
         $kantors = Kantor::latest()->get();
