@@ -57,6 +57,24 @@
 
 @section('content')
     <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="{{ asset('assets/img/logo-sipp.png') }}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h1>
+                    <strong style="color: #013220">SIPP</strong>
+                </h1>
+                <h1>Sistem Informasi Penyuluh Pertanian</h1>
+                <p>
+                    "SIPP" merupakan pemanfaatan Teknologi Informasi Berbasis Geospasial, yang menyajikan Data Sebaran
+                    Penyuluh Pertanian Provinsi Kalimantan Timur, guna menyajikan informasi penyuluh pertanian.
+                </p>
+            </div>
+            <div class="col-lg-12">
+                <hr class="my-4">
+            </div>
+        </div>
         <div class="row my-4">
             <div class="col-lg-4">
                 <p>Provinsi Kalimantan Timur</p>

@@ -5,6 +5,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SIPP - Sistem Informasi Penyuluh Pertanian Kalimantan Timur">
+    <meta name="keywords"
+        content="SIPP, SIPP Kaltim, SIPP BPPSDMP Sempaja, Sistem Informasi Penyuluh Pertanian Kalimantan Timur">
+    <meta name="author" content="bppsdmp kaltim">
+    <meta name="webcrawlers" content="all">
+
+
     <title>SIPP @yield('title')</title>
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Style (Custome UPTD BPPSDMP) -->
@@ -67,7 +74,7 @@
                     <span class="font-title-2">Kontak Kami</span>
                     <ul class="list-no-bullet" style="margin-top: 1rem;">
                         <li>(+62) 821 4872 2747</li>
-                        <li>bppsdmpsempaja@gmail.com</li>
+                        <li>uptdbppsdmp.kaltimprov@gmail.com</li>
                         <li>@uptd_bppsdmpsempaja</li>
                     </ul>
                 </div>

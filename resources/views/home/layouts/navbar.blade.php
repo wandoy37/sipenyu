@@ -13,23 +13,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item ms-4">
+                    {{-- <li class="nav-item ms-4">
                         <a class="nav-link {{ request()->segment(1) == '' ? 'active' : '' }}" aria-current="page"
                             href="{{ route('index') }}">
                             <i class="fas fa-home"></i>
                             Home
                         </a>
-                    </li>
-
-                    <li class="nav-item ms-4">
-                        <a class="nav-link {{ request()->segment(1) == 'layanan' ? 'active' : '' }}"
-                            href="{{ route('layanan') }}">
-                            Layanan
-                        </a>
-                    </li>
+                    </li> --}}
                 </ul>
                 <div class="d-flex ms-4">
-                    <a href="{{ route('login') }}" class="btn btn-warning">Oprator</a>
+                    <a href="{{ route('login') }}" class="btn btn-warning" style="border-radius: 15px;">Oprator</a>
                 </div>
             </div>
         </div>

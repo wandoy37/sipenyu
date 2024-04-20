@@ -95,12 +95,12 @@ Route::get('update-koordinat-kantor', function () {
 // HOME CONTROLLER
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::get('/layanan', [HomeController::class, 'layanan'])->name('layanan');
-Route::get('/layanan/{slug}', [HomeController::class, 'layananShow'])->name('layanan.show');
+// Route::get('/layanan', [HomeController::class, 'layanan'])->name('layanan');
+// Route::get('/layanan/{slug}', [HomeController::class, 'layananShow'])->name('layanan.show');
 
-// Client Buat Pesanan
-Route::get('/produk/pesan/{id}', [PesananController::class, 'create'])->name('produk.pesan');
-Route::post('/pesan/produk/{id}', [PesananController::class, 'store'])->name('pesan.produk');
+
+// Route::get('/produk/pesan/{id}', [PesananController::class, 'create'])->name('produk.pesan');
+// Route::post('/pesan/produk/{id}', [PesananController::class, 'store'])->name('pesan.produk');
 
 
 // ======================================================================================================================== //
