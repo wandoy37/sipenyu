@@ -64,9 +64,11 @@
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue2">
 
-                <a href="index.html" class="logo">
+                <a href="{{ route('dashboard.index') }}" class="logo">
                     <span class="text-light fw-bold">
                         <div class="text-center">
+                            <img src="{{ asset('assets2/img/logo-pemprov.png') }}" class="img-fluid" width="30px"
+                                alt="">
                             SIPP
                         </div>
                     </span>
@@ -106,6 +108,16 @@
             <footer class="footer">
                 {{-- Section Footer --}}
                 <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.google.com">
+                                    <i class="fas fa-info"></i>
+                                    Documentation
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                     <div class="copyright ml-auto">
                         2023 - {{ date('Y') }}, made with <i class="fa fa-heart heart text-danger"></i> by
                         <span class="text-secondary">UPTD BPPSDMP KALTIM PROV</span>

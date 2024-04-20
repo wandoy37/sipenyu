@@ -74,6 +74,16 @@
                         </a>
                     </li>
                 @endif
+                <li class="nav-item {{ request()->segment(1) == 'api-token' ? 'active' : '' }}">
+                    <a href="{{ route('logout') }}"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <i class="fas fa-undo text-danger"></i>
+                        <p class="text-danger">Logout</p>
+                    </a>
+                    <form action="{{ route('logout') }}" id="logout-form" method="POST">
+                        @csrf
+                    </form>
+                </li>
                 {{-- <li class="nav-section">
                     <span class="sidebar-mini-icon">
                         <i class="fa fa-ellipsis-h"></i>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\KabKota;
 use App\Models\Kantor;
 use App\Models\Pegawai;
 use Illuminate\Http\Request;
