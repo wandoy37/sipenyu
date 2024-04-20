@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Kantor;
 use App\Models\Pegawai;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -18,10 +19,10 @@ class PegawaiController extends Controller
             'penyuluh pppk' => 'Penyuluh Pertanian PPPK',
             'thl-tbpp apbn' => 'Penyuluh THL-TBPP APBN',
             'thl-tbpp apbd' => 'Penyuluh THL-TBPP APBD',
-            'penyuluh swadaya'=>'Penyuluh Swadaya',
-            'penyuluh swasta'=> 'Penyuluh Swasta',
-            'petugas popt'=>'Petugas POPT',
-            'petugas pbt'=>'Petugas PBT',
+            'penyuluh swadaya' => 'Penyuluh Swadaya',
+            'penyuluh swasta' => 'Penyuluh Swasta',
+            'petugas popt' => 'Petugas POPT',
+            'petugas pbt' => 'Petugas PBT',
         ];
     }
     /**
@@ -31,7 +32,50 @@ class PegawaiController extends Controller
      */
     public function index()
     {
-        $pegawais = Pegawai::latest()->get();
+        if (Auth::user()->kabkota_id !== 'admin') {
+            // Query Builder Data Penyuluh Berdasarkan Kabupaten/Kota
+            $pegawais = DB::table('pegawais')
+                ->join('kantors', 'pegawais.kantor_id', '=', 'kantors.id')
+                ->join('kab_kotas', 'kantors.kabkota_id', '=', 'kab_kotas.id')
+                ->join('kecamatans', 'kab_kotas.id', '=', 'kecamatans.kabkota_id')
+                ->select(
+                    'pegawais.code',
+                    'pegawais.name',
+                    'pegawais.nik',
+                    'pegawais.nip',
+                    'pegawais.type',
+                    'kantors.name AS kantor',
+                    'pegawais.no_telp',
+                    'pegawais.email',
+                    'kab_kotas.name AS kabkota',
+                    DB::raw('MAX(kecamatans.name) AS kecamatan') // Menggunakan fungsi agregat
+                )
+                ->where('kab_kotas.id', Auth::user()->kabkota_id)
+                ->groupBy('pegawais.code', 'pegawais.name', 'pegawais.nik', 'pegawais.nip', 'pegawais.type', 'kantor', 'pegawais.no_telp', 'pegawais.email', 'kabkota')
+                ->distinct()
+                ->get();
+        } else {
+            $pegawais = DB::table('pegawais')
+                ->join('kantors', 'pegawais.kantor_id', '=', 'kantors.id')
+                ->join('kab_kotas', 'kantors.kabkota_id', '=', 'kab_kotas.id')
+                ->join('kecamatans', 'kab_kotas.id', '=', 'kecamatans.kabkota_id')
+                ->select(
+                    'pegawais.code',
+                    'pegawais.name',
+                    'pegawais.nik',
+                    'pegawais.nip',
+                    'pegawais.type',
+                    'kantors.name AS kantor',
+                    'pegawais.no_telp',
+                    'pegawais.email',
+                    'kab_kotas.name AS kabkota',
+                    DB::raw('MAX(kecamatans.name) AS kecamatan') // Menggunakan fungsi agregat
+                )
+                ->groupBy('pegawais.code', 'pegawais.name', 'pegawais.nik', 'pegawais.nip', 'pegawais.type', 'kantor', 'pegawais.no_telp', 'pegawais.email', 'kabkota')
+                ->distinct()
+                ->get();
+        }
+
         return view('pegawai.index', compact('pegawais'));
     }
 
@@ -43,7 +87,13 @@ class PegawaiController extends Controller
     public function create()
     {
         $roles = $this->roles();
-        $kantors = Kantor::all();
+
+        if (Auth::user()->kabkota_id !== 'admin') {
+            $kantors = Kantor::where('kabkota_id', Auth::user()->kabkota_id)->get();
+        } else {
+            $kantors = Kantor::all();
+        }
+
         return view('pegawai.create', compact('roles', 'kantors'));
     }
 
@@ -83,10 +133,10 @@ class PegawaiController extends Controller
 
             $foto_profil = null;
             $foto_spt = null;
-            if($request->hasFile('foto_profil')){
+            if ($request->hasFile('foto_profil')) {
                 $foto_profil = $request->file('foto_profil')->store('pegawai/foto_profil');
             }
-            if($request->hasFile('foto_spt')){
+            if ($request->hasFile('foto_spt')) {
                 $foto_spt = $request->file('foto_spt')->store('pegawai/foto_spt');
             }
 
@@ -97,28 +147,28 @@ class PegawaiController extends Controller
                 'kantor_id' => $request->kantor,
                 'no_telp' => $request->no_telp,
                 'email' => $request->email,
-                "jenis_kelamin"=>$request->jenis_kelamin,
-                "tempat_lahir"=>$request->tempat_lahir,
-                "tanggal_lahir"=>$request->tanggal_lahir,
-                "alamat_rumah"=>$request->alamat_rumah,
-                "pendidikan_terakhir"=>$request->pendidikan_terakhir,
-                "no_wa"=>$request->no_wa,
-                "agama"=>$request->agama,
-                "status_perkawinan"=>$request->status_perkawinan,
-                "nip"=>$request->nip,
-                "nik"=>$request->nik,
-                "nama_jabatan"=>$request->nama_jabatan,
-                "unit_eselon"=>$request->unit_eselon,
-                "pangkat_golongan"=>$request->pangkat_golongan,
-                "alamat_unit_kerja"=>$request->alamat_unit_kerja,
-                "foto_profil"=>$foto_profil,
-                "foto_spt"=>$foto_spt,
+                "jenis_kelamin" => $request->jenis_kelamin,
+                "tempat_lahir" => $request->tempat_lahir,
+                "tanggal_lahir" => $request->tanggal_lahir,
+                "alamat_rumah" => $request->alamat_rumah,
+                "pendidikan_terakhir" => $request->pendidikan_terakhir,
+                "no_wa" => $request->no_wa,
+                "agama" => $request->agama,
+                "status_perkawinan" => $request->status_perkawinan,
+                "nip" => $request->nip,
+                "nik" => $request->nik,
+                "nama_jabatan" => $request->nama_jabatan,
+                "unit_eselon" => $request->unit_eselon,
+                "pangkat_golongan" => $request->pangkat_golongan,
+                "alamat_unit_kerja" => $request->alamat_unit_kerja,
+                "foto_profil" => $foto_profil,
+                "foto_spt" => $foto_spt,
             ]);
 
-            if($request->has("username") && $request->username != ""){
+            if ($request->has("username") && $request->username != "") {
                 $pegawai->loginPegawai()->create([
-                    "username"=>$request->username,
-                    "password"=>bcrypt($request->password),
+                    "username" => $request->username,
+                    "password" => bcrypt($request->password),
                 ]);
             }
 
@@ -126,7 +176,7 @@ class PegawaiController extends Controller
         } catch (\Throwable $th) {
             DB::rollBack();
             Log::error($th);
-            return redirect()->back()->with('error', $request->name . ' gagal di tambahkan. Error : '.$th->getMessage())->withInput($request->all());
+            return redirect()->back()->with('error', $request->name . ' gagal di tambahkan. Error : ' . $th->getMessage())->withInput($request->all());
         } finally {
             DB::commit();
         }
@@ -189,14 +239,14 @@ class PegawaiController extends Controller
         // if validator success
         DB::beginTransaction();
         try {
-            
+
             $pegawai = Pegawai::where('code', $code)->first();
             $foto_profil = $pegawai->foto_profil;
             $foto_spt = $pegawai->foto_spt;
-            if($request->hasFile('foto_profil')){
+            if ($request->hasFile('foto_profil')) {
                 $foto_profil = $request->file('foto_profil')->store('pegawai/foto_profil');
             }
-            if($request->hasFile('foto_spt')){
+            if ($request->hasFile('foto_spt')) {
                 $foto_spt = $request->file('foto_spt')->store('pegawai/foto_spt');
             }
             $pegawai->update([
@@ -205,50 +255,49 @@ class PegawaiController extends Controller
                 'kantor_id' => $request->kantor,
                 'no_telp' => $request->no_telp,
                 'email' => $request->email,
-                "jenis_kelamin"=>$request->jenis_kelamin,
-                "tempat_lahir"=>$request->tempat_lahir,
-                "tanggal_lahir"=>$request->tanggal_lahir,
-                "alamat_rumah"=>$request->alamat_rumah,
-                "pendidikan_terakhir"=>$request->pendidikan_terakhir,
-                "no_wa"=>$request->no_wa,
-                "agama"=>$request->agama,
-                "status_perkawinan"=>$request->status_perkawinan,
-                "nip"=>$request->nip,
-                "nik"=>$request->nik,
-                "nama_jabatan"=>$request->nama_jabatan,
-                "unit_eselon"=>$request->unit_eselon,
-                "pangkat_golongan"=>$request->pangkat_golongan,
-                "alamat_unit_kerja"=>$request->alamat_unit_kerja,
-                "foto_profil"=>$foto_profil,
-                "foto_spt"=>$foto_spt,
+                "jenis_kelamin" => $request->jenis_kelamin,
+                "tempat_lahir" => $request->tempat_lahir,
+                "tanggal_lahir" => $request->tanggal_lahir,
+                "alamat_rumah" => $request->alamat_rumah,
+                "pendidikan_terakhir" => $request->pendidikan_terakhir,
+                "no_wa" => $request->no_wa,
+                "agama" => $request->agama,
+                "status_perkawinan" => $request->status_perkawinan,
+                "nip" => $request->nip,
+                "nik" => $request->nik,
+                "nama_jabatan" => $request->nama_jabatan,
+                "unit_eselon" => $request->unit_eselon,
+                "pangkat_golongan" => $request->pangkat_golongan,
+                "alamat_unit_kerja" => $request->alamat_unit_kerja,
+                "foto_profil" => $foto_profil,
+                "foto_spt" => $foto_spt,
             ]);
 
-            if($request->has("username") && $request->username != ""){
-                if($pegawai->loginPegawai == null && $request->password_baru != ""){
+            if ($request->has("username") && $request->username != "") {
+                if ($pegawai->loginPegawai == null && $request->password_baru != "") {
                     $pegawai->loginPegawai()->create([
-                        "username"=>$request->username,
-                        "password"=>bcrypt($request->password_baru),
+                        "username" => $request->username,
+                        "password" => bcrypt($request->password_baru),
                     ]);
-                } else if($request->password_baru != "") {
+                } else if ($request->password_baru != "") {
                     $pegawai->loginPegawai->update([
-                        "username"=>$request->username,
-                        "password"=>bcrypt($request->password_baru),
+                        "username" => $request->username,
+                        "password" => bcrypt($request->password_baru),
                     ]);
-                } elseif($pegawai->loginPegawai != null) {
+                } elseif ($pegawai->loginPegawai != null) {
                     $pegawai->loginPegawai->update([
-                        "username"=>$request->username,
+                        "username" => $request->username,
                     ]);
                 }
             }
 
             try {
                 foreach ($pegawai->loginPegawai->loginPegawaiApiToken as $key => $apiToken) {
-                    if($apiToken->web_hook != null){
+                    if ($apiToken->web_hook != null) {
                         $client = new \GuzzleHttp\Client();
-                        $client->request('GET', $apiToken->web_hook."?code=".$pegawai->code);
+                        $client->request('GET', $apiToken->web_hook . "?code=" . $pegawai->code);
                     }
                 }
-                
             } catch (\Throwable $th) {
                 Log::error($th);
             }

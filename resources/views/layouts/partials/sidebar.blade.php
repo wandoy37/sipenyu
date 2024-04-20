@@ -29,42 +29,51 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li class="nav-item {{ request()->segment(1) == 'pengguna' ? 'active' : '' }}">
-                    <a href="{{ route('pengguna.index') }}">
-                        <i class="fas fa-users"></i>
-                        <p>Pengguna</p>
-                    </a>
-                </li>
-                <li class="nav-item {{ request()->segment(1) == 'kabupaten-kota' ? 'active' : '' }}">
-                    <a href="{{ route('kabkota.index') }}">
-                        <i class="fas fa-file-contract"></i>
-                        <p>Kab Kota</p>
-                    </a>
-                </li>
-                <li class="nav-item {{ request()->segment(1) == 'kecamatan' ? 'active' : '' }}">
-                    <a href="{{ route('kecamatan.index') }}">
-                        <i class="fas fa-file-alt"></i>
-                        <p>Kecamatan</p>
-                    </a>
-                </li>
-                <li class="nav-item {{ request()->segment(1) == 'kantor' ? 'active' : '' }}">
-                    <a href="{{ route('kantor.index') }}">
-                        <i class="fas fa-layer-group"></i>
-                        <p>Kantor BPP</p>
-                    </a>
-                </li>
                 <li class="nav-item {{ request()->segment(1) == 'tenaga-kerja' ? 'active' : '' }}">
                     <a href="{{ route('pegawai.index') }}">
                         <i class="fas fa-users"></i>
                         <p>Data Penyuluh</p>
                     </a>
                 </li>
-                <li class="nav-item {{ request()->segment(1) == 'api-token' ? 'active' : '' }}">
-                    <a href="{{ route('api-token.index') }}">
-                        <i class="fas fa-key"></i>
-                        <p>API Token</p>
-                    </a>
-                </li>
+                @if (Auth::user()->role == 'admin')
+                    <li class="nav-section">
+                        <span class="sidebar-mini-icon">
+                            <i class="fa fa-ellipsis-h"></i>
+                        </span>
+                        <h4 class="text-section">MENU MASTER</h4>
+                    </li>
+                    <li class="nav-item {{ request()->segment(1) == 'pengguna' ? 'active' : '' }}">
+                        <a href="{{ route('pengguna.index') }}">
+                            <i class="fas fa-users"></i>
+                            <p>Pengguna</p>
+                        </a>
+                    </li>
+                    <li class="nav-item {{ request()->segment(1) == 'kabupaten-kota' ? 'active' : '' }}">
+                        <a href="{{ route('kabkota.index') }}">
+                            <i class="fas fa-file-contract"></i>
+                            <p>Kab Kota</p>
+                        </a>
+                    </li>
+                    <li class="nav-item {{ request()->segment(1) == 'kecamatan' ? 'active' : '' }}">
+                        <a href="{{ route('kecamatan.index') }}">
+                            <i class="fas fa-file-alt"></i>
+                            <p>Kecamatan</p>
+                        </a>
+                    </li>
+                    <li class="nav-item {{ request()->segment(1) == 'kantor' ? 'active' : '' }}">
+                        <a href="{{ route('kantor.index') }}">
+                            <i class="fas fa-layer-group"></i>
+                            <p>Kantor BPP</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item {{ request()->segment(1) == 'api-token' ? 'active' : '' }}">
+                        <a href="{{ route('api-token.index') }}">
+                            <i class="fas fa-key"></i>
+                            <p>API Token</p>
+                        </a>
+                    </li>
+                @endif
                 {{-- <li class="nav-section">
                     <span class="sidebar-mini-icon">
                         <i class="fa fa-ellipsis-h"></i>

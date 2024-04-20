@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->enum('role', ['admin', 'operator'])->after('email')->nullable();
+            $table->string('kabkota_id')->nullable();
         });
     }
 

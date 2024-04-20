@@ -187,43 +187,45 @@
                     @enderror
                     <select name="pangkat_golongan" class="form-control" id="select_pangkat_golongan">
                         <option value="">Pilih Pangkat Golongan</option>
-                        <option value="ii.a" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'ii.a') selected @endif>Pengatur
+                        <option value="ii.a" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'ii.a') selected @endif>Pengatur
                             Muda / II.a</option>
-                        <option value="ii.b" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'ii.b') selected @endif>Pengatur
+                        <option value="ii.b" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'ii.b') selected @endif>Pengatur
                             Muda Tk. I / II.b</option>
-                        <option value="ii.c" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'ii.c') selected @endif>Pengatur /
+                        <option value="ii.c" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'ii.c') selected @endif>Pengatur /
                             II.c</option>
-                        <option value="ii.d" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'ii.d') selected @endif>Pengatur Tk.
+                        <option value="ii.d" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'ii.d') selected @endif>Pengatur Tk.
                             I / II.d</option>
-                        <option value="iii.a" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'iii.a') selected @endif>Penata Muda
+                        <option value="iii.a" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'iii.a') selected @endif>Penata Muda
                             / III.a</option>
-                        <option value="iii.b" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'iii.b') selected @endif>Penata Muda
+                        <option value="iii.b" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'iii.b') selected @endif>Penata Muda
                             Tk. I / III.b</option>
-                        <option value="iii.c" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'iii.c') selected @endif>Penata /
+                        <option value="iii.c" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'iii.c') selected @endif>Penata /
                             III.c</option>
-                        <option value="iii.d" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'iii.d') selected @endif>Penata Tk. I
+                        <option value="iii.d" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'iii.d') selected @endif>Penata Tk. I
                             / III.d</option>
-                        <option value="iv.a" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'iv.a') selected @endif>Pembina /
+                        <option value="iv.a" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'iv.a') selected @endif>Pembina /
                             IV.a</option>
-                        <option value="iv.b" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'iv.b') selected @endif>Pembina Tk.
+                        <option value="iv.b" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'iv.b') selected @endif>Pembina Tk.
                             I / IV.b</option>
-                        <option value="iv.c" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'iv.c') selected @endif>Pembina
+                        <option value="iv.c" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'iv.c') selected @endif>Pembina
                             Utama Muda / IV.c</option>
-                        <option value="v" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'v') selected @endif>Golongan V</option>
-                        <option value="vi" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'vi') selected @endif>Golongan VI</option>
-                        <option value="vii" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'vii') selected @endif>Golongan VII
+                        <option value="v" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'v') selected @endif>Golongan V</option>
+                        <option value="vi" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'vi') selected @endif>Golongan VI</option>
+                        <option value="vii" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'vii') selected @endif>Golongan VII
                         </option>
-                        <option value="viii" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'viii') selected @endif>Golongan VIII
+                        <option value="viii" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'viii') selected @endif>Golongan VIII
                         </option>
-                        <option value="ix" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'ix') selected @endif>Golongan IX</option>
-                        <option value="x" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'x') selected @endif>Golongan X</option>
-                        <option value="xi" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'xi') selected @endif>Golongan XI</option>
-                        <option value="xii" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'xii') selected @endif>Golongan XII
+                        <option value="ix" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'ix') selected @endif>Golongan IX</option>
+                        <option value="x" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'x') selected @endif>Golongan X</option>
+                        <option value="xi" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'xi') selected @endif>Golongan XI</option>
+                        <option value="xii" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'xii') selected @endif>Golongan XII
                         </option>
-                        <option value="tk2d" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'tk2d') selected @endif>Tenaga Kerja Kontrak
+                        <option value="tk2d" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) == 'tk2d') selected @endif>Tenaga Kerja Kontrak
                             Daerah</option>
-                        <option value="THL-TBPP" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'THL-TBPP') selected @endif>THL-TBPP</option>
-                        <option value="non-asn" @if (old('pangkat_golongan', $pegawai->pangkat_golongan, @$peserta->peserta_biodata->pangkat_golongan) == 'non-asn') selected @endif>Non ASN</option>
+                        <option value="THL-TBPP" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) ==
+                                'THL-TBPP') selected @endif>THL-TBPP</option>
+                        <option value="non-asn" @if (old('pangkat_golongan', $pegawai->pangkat_golongan ?? '', @$peserta->peserta_biodata->pangkat_golongan) ==
+                                'non-asn') selected @endif>Non ASN</option>
                     </select>
                 </div>
             </div>

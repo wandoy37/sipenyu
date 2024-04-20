@@ -49,16 +49,17 @@
                             </tr>
                         </thead>
                         <tbody>
+
                             @foreach ($pegawais as $pagawai)
                                 <tr>
                                     <td class="text-center">{{ $pagawai->code }}</td>
                                     <td>{{ $pagawai->name }}</td>
                                     <td>{{ $pagawai->nip ?? '-' }}<br>{{ $pagawai->nik ?? '-' }}</td>
                                     <td>{{ $pagawai->type }}</td>
-                                    <td>{{ $pagawai->kantor->name }}</td>
+                                    <td>{{ $pagawai->kantor }}</td>
                                     <td>{{ $pagawai->no_telp ?? '-' }}<br>{{ $pagawai->email ?? '-' }}</td>
-                                    <td>{{ $pagawai->kantor->kabkota->name }}</td>
-                                    <td>{{ implode(',', $pagawai->kantor->kecamatans->pluck('name')->toArray()) }}</td>
+                                    <td>{{ $pagawai->kabkota }}</td>
+                                    <td>{{ $pagawai->kecamatan }}</td>
                                     <td width="15%" class="text-center">
                                         <form action="{{ route('pegawai.delete', $pagawai->code) }}" method="POST">
                                             @csrf @method('DELETE')
