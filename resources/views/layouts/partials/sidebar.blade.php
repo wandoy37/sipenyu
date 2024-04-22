@@ -74,7 +74,7 @@
                         </a>
                     </li>
                 @endif
-                <li class="nav-item {{ request()->segment(1) == 'api-token' ? 'active' : '' }}">
+                <li class="nav-item">
                     <a href="{{ route('logout') }}"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <i class="fas fa-undo text-danger"></i>
