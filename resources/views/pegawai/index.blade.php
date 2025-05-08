@@ -1,10 +1,10 @@
 @extends('layouts.app')
-@section('title', 'Tenaga Kerja')
+@section('title', 'Penyuluh Pertanian')
 
 @section('content')
     <div class="page-inner">
         <div class="page-header">
-            <h4 class="page-title">Tenaga Kerja</h4>
+            <h4 class="page-title">Penyuluh Pertanian</h4>
             <ul class="breadcrumbs">
                 <li class="nav-home">
                     <a href="#">
@@ -27,34 +27,39 @@
         <section class="my-2">
             <a href="{{ route('pegawai.create') }}" class="btn btn-outline-primary">
                 <i class="fas fa-plus"></i>
-                Tenaga Kerja
+                Penyuluh
             </a>
         </section>
 
         <section class="my-4">
             <div class="card">
                 <div class="card-body shadow">
-                    <table id="tables" class="display" style="width:100%">
+                    <table id="tables" class="display table table-striped table-hover" cellspacing="1" width="100%">
                         <thead>
                             <tr>
-                                <th class="text-center">Kode Pegawai</th>
-                                <th>Nama Pegawai</th>
-                                <th>Role</th>
+                                <th class="text-center">Kode Penyuluh</th>
+                                <th>Nama Penyuluh</th>
+                                <th>NIP / NIK</th>
+                                <th>Jenis</th>
                                 <th>WKPP</th>
+                                <th>No Telp / Email</th>
                                 <th>Kab/Kota</th>
                                 <th>Kecamatan</th>
                                 <th class="text-center">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
+
                             @foreach ($pegawais as $pagawai)
                                 <tr>
                                     <td class="text-center">{{ $pagawai->code }}</td>
                                     <td>{{ $pagawai->name }}</td>
-                                    <td>{{ $pagawai->role }}</td>
-                                    <td>{{ $pagawai->kantor->name }}</td>
-                                    <td>{{ $pagawai->kantor->kabkota->name }}</td>
-                                    <td>{{ $pagawai->kantor->kecamatan->name }}</td>
+                                    <td>{{ $pagawai->nip ?? '-' }}<br>{{ $pagawai->nik ?? '-' }}</td>
+                                    <td>{{ $pagawai->type }}</td>
+                                    <td>{{ $pagawai->kantor }}</td>
+                                    <td>{{ $pagawai->no_telp ?? '-' }}<br>{{ $pagawai->email ?? '-' }}</td>
+                                    <td>{{ $pagawai->kabkota }}</td>
+                                    <td>{{ $pagawai->kecamatan }}</td>
                                     <td width="15%" class="text-center">
                                         <form action="{{ route('pegawai.delete', $pagawai->code) }}" method="POST">
                                             @csrf @method('DELETE')

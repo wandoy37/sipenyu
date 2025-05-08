@@ -14,6 +14,12 @@ class KabKotaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    function __construct()
+    {
+        $this->middleware('admin')->only('index', 'create', 'store', 'edit', 'update', 'destroy');
+    }
+
     public function index()
     {
         $kabkotas = KabKota::latest()->get();
@@ -61,7 +67,7 @@ class KabKotaController extends Controller
         DB::beginTransaction();
         try {
             // Last data
-            $lastKabKota = KabKota::all()->count();
+            $lastKabKota = (int)(KabKota::orderBy('id', 'desc')->first()->code ?? 0);
             $lastKabKota++;
 
             KabKota::create([

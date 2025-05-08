@@ -1,10 +1,10 @@
 @extends('layouts.app')
-@section('title', 'Tenaga Kerja')
+@section('title', 'Penyuluh Pertanian')
 
 @section('content')
     <div class="page-inner">
         <div class="page-header">
-            <h4 class="page-title">Tambah | Tenaga Kerja</h4>
+            <h4 class="page-title">Tambah | Penyuluh Pertanian</h4>
             <ul class="breadcrumbs">
                 <li class="nav-home">
                     <a href="#">
@@ -32,25 +32,47 @@
         </section>
 
         <section class="my-4">
-            <div class="card">
-                <div class="card-body shadow">
-                    <form action="{{ route('pegawai.store') }}" method="POST">
+            <form action="{{ route('pegawai.store') }}" method="POST" enctype="multipart/form-data">
+                <div class="card">
+                    <div class="card-body shadow">
+
                         @csrf
                         <div class="mb-3">
-                            <input type="text" name="name" class="form-control" id="nama"
-                                placeholder="Nama Pegawai" value="{{ old('name') }}">
+                            <label for="name">Nama Penyuluh <small class="text-danger">*</small></label>
+                            @error('name')
+                                <span class="text-danger">
+                                    <i class="fas fa-exclamation"></i>
+                                    {{ $message }}
+                                </span>
+                            @enderror
+                            <input type="text" name="name" class="form-control" id="name"
+                                placeholder="Nama Penyuluh" value="{{ old('name') }}" required>
                         </div>
                         <div class="mb-3">
-                            <select class="form-control" id="role" name="role">
-                                <option value="">-pilih role-</option>
+                            <label for="type">Jenis <small class="text-danger">*</small></label>
+                            @error('type')
+                                <span class="text-danger">
+                                    <i class="fas fa-exclamation"></i>
+                                    {{ $message }}
+                                </span>
+                            @enderror
+                            <select class="form-control" id="select_type" name="type" required>
+                                <option value="">-pilih Jenis-</option>
                                 @foreach ($roles as $key => $value)
-                                    <option value="{{ $key }}" {{ old('role') == $key ? 'selected' : null }}>
+                                    <option value="{{ $key }}" {{ old('type') == $key ? 'selected' : null }}>
                                         {{ $value }}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="mb-3">
-                            <select class="form-control" id="kantor" name="kantor">
+                            <label for="kantor">Kantor <small class="text-danger">*</small></label>
+                            @error('kantor')
+                                <span class="text-danger">
+                                    <i class="fas fa-exclamation"></i>
+                                    {{ $message }}
+                                </span>
+                            @enderror
+                            <select class="form-control" id="select_kantor" name="kantor" required>
                                 <option value="">-pilih kantor-</option>
                                 @foreach ($kantors as $kantor)
                                     <option value="{{ $kantor->id }}" {{ old('kantor') == $key ? 'selected' : null }}>
@@ -58,20 +80,58 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="mb-3 float-end">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-plus"></i>
-                                Tambah
-                            </button>
+                        <div class="mb-3">
+                            <label for="no_telp">No Telp</label>
+                            @error('no_telp')
+                                <span class="text-danger">
+                                    <i class="fas fa-exclamation"></i>
+                                    {{ $message }}
+                                </span>
+                            @enderror
+                            <input type="text" name="no_telp" class="form-control" id="no_telp"
+                                placeholder="No Telp Pegawai" value="{{ old('no_telp') }}">
                         </div>
-                    </form>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            @error('email')
+                                <span class="text-danger">
+                                    <i class="fas fa-exclamation"></i>
+                                    {{ $message }}
+                                </span>
+                            @enderror
+                            <input type="text" name="email" class="form-control" id="email"
+                                placeholder="Email Pegawai" value="{{ old('email') }}">
+                        </div>
+
+
+                    </div>
                 </div>
-            </div>
+                @include('pegawai._form')
+                <div class="mb-3 float-end">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Tambah
+                    </button>
+                </div>
+            </form>
         </section>
+
+
 
     </div>
 
+
+
     @push('scripts')
+        <script>
+            $('#select_type').select2({
+                theme: "bootstrap"
+            });
+
+            $('#select_kantor').select2({
+                theme: "bootstrap"
+            });
+        </script>
         <script>
             $("#kabkota").change(function() {
                 var id = $(this).val();

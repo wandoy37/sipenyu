@@ -16,4 +16,8 @@ class Kecamatan extends Model
     {
         return $this->belongsTo(KabKota::class);
     }
+
+    function kantors() {
+        return $this->belongsToMany(Kantor::class,'kantor_kecamatans','kecamatan_id','kantor_id');
+    }
 }

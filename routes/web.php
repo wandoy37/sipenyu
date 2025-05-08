@@ -1,11 +1,28 @@
 <?php
 
+use App\Http\Controllers\AjaxController;
+use App\Http\Controllers\ApiTokenController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\GeojsonController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KabKotaController;
 use App\Http\Controllers\KantorController;
 use App\Http\Controllers\KecamatanController;
+use App\Http\Controllers\LayananController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\PesananController;
+use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\SaranMasukanController;
+use App\Http\Controllers\ScrapeSimluhController;
+use App\Http\Controllers\UptdController;
+use App\Http\Controllers\UserController;
+use App\Models\KabKota;
+use App\Models\Kantor;
+use App\Models\Kecamatan;
+use App\Models\Pegawai;
+use GuzzleHttp\Cookie\CookieJar;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 
@@ -24,17 +41,84 @@ use Illuminate\Support\Facades\URL;
 //     return view('welcome');
 // });
 
+Route::view('/maintenance', 'maintenance')->name('maintenance');
+// Route::get('/maintenance/down', function () {
+//     \Artisan::call('down');
+//     return "Aplikasi dalam mode perawatan.";
+// });
+
+// Route::get('/maintenance/up', function () {
+//     \Artisan::call('up');
+//     return "Aplikasi telah diaktifkan kembali.";
+// });
+
+
+
+
 Route::get('/polygon', function () {
     $indonesia = URL('https://raw.githubusercontent.com/superpikar/indonesia-geojson/master/indonesia-province.json');
     return response()->json($indonesia);
+});
+
+Route::get('scrape-simluh', [ScrapeSimluhController::class, 'run']);
+
+// Route::get('scrape-kantor', [ScrapeSimluhController::class,'scrapeKantor']);
+// Route::get('scrape-penyuluh', [ScrapeSimluhController::class,'scrapePenyuluh']);
+// Route::get('lengkapi-penyuluh', [ScrapeSimluhController::class,'lengkapiPenyuluh']);
+
+Route::get('update-koordinat-kantor', function () {
+    $url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=formatted_address%2Cname%2Copening_hours%2Cgeometry&inputtype=textquery&key=" . env("GOOGLE_MAP_API_KEY") . "&input=";
+    $kantors = Kantor::with('kabkota')->get();
+    foreach ($kantors as $kantor) {
+        $name = $kantor->name;
+        if (!str_contains($name, "Bpp") && !str_contains($name, "BPP") && !str_contains($name, "bpp")) {
+            $name = "Bpp " . $name;
+        }
+        $newUrl = URL($url . "Kantor Pemerintahan," . $name . "," . $kantor->kabkota->name);
+        $httpClient = new \GuzzleHttp\Client();
+        $response = $httpClient->request('GET', $newUrl);
+        $json = json_decode($response->getBody());
+        if (count($json->candidates) > 0) {
+            if ($json->candidates[0]->geometry && $json->candidates[0]->geometry->location) {
+                $kantor->update([
+                    'name' => $name,
+                    'latitude' => $json->candidates[0]->geometry->location->lat,
+                    'longitude' => $json->candidates[0]->geometry->location->lng,
+                ]);
+            }
+        }
+    }
+    return "ok";
 });
 
 // ======================================================================================================================== //
 // HOME CONTROLLER
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
+// Route::get('/layanan', [HomeController::class, 'layanan'])->name('layanan');
+// Route::get('/layanan/{slug}', [HomeController::class, 'layananShow'])->name('layanan.show');
+
+
+// Route::get('/produk/pesan/{id}', [PesananController::class, 'create'])->name('produk.pesan');
+// Route::post('/pesan/produk/{id}', [PesananController::class, 'store'])->name('pesan.produk');
+
+
 // ======================================================================================================================== //
 Route::middleware('auth')->group(function () {
+
+    // User Manage
+    Route::resource('pengguna', UserController::class);
+    // Route::middleware(['role:admin'])->group(function () {
+    //     Route::get('pengguna', [UserController::class, 'index'])->name('pengguna.index');
+    //     Route::get('pengguna/create', [UserController::class, 'create'])->name('pengguna.create');
+    //     Route::post('pengguna/store', [UserController::class, 'store'])->name('pengguna.store');
+    //     Route::delete('pengguna/{pengguna}', [UserController::class, 'destroy'])->name('pengguna.destroy');
+    // });
+    // Route::get('pengguna/{id}/edit', [UserController::class, 'edit'])->name('pengguna.edit');
+    // Route::patch('pengguna/{id}', [UserController::class, 'update'])->name('pengguna.update');
+
+
+
     // dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 
@@ -74,4 +158,62 @@ Route::middleware('auth')->group(function () {
     Route::get('/tenaga-kerja/{code}/edit', [PegawaiController::class, 'edit'])->name('pegawai.edit');
     Route::patch('/tenaga-kerja/{code}/update', [PegawaiController::class, 'update'])->name('pegawai.update');
     Route::delete('/tenaga-kerja/{code}/delete', [PegawaiController::class, 'destroy'])->name('pegawai.delete');
+
+    Route::get('/api-token', [ApiTokenController::class, 'index'])->name('api-token.index');
+    Route::post('/api-token/store', [ApiTokenController::class, 'store'])->name('api-token.store');
+    Route::put('/api-token/{code}/update', [ApiTokenController::class, 'update'])->name('api-token.update');
+    Route::delete('/api-token/{code}/delete', [ApiTokenController::class, 'destroy'])->name('api-token.delete');
+
+    // Layanan UPTD
+    Route::get('/daftar-uptd', [UptdController::class, 'index'])->name('daftar.uptd.index');
+    Route::get('/daftar-uptd/create', [UptdController::class, 'create'])->name('daftar.uptd.create');
+    Route::post('/daftar-uptd/store', [UptdController::class, 'store'])->name('daftar.uptd.store');
+    Route::get('/daftar-uptd/{slug}/edit', [UptdController::class, 'edit'])->name('daftar.uptd.edit');
+    Route::patch('/daftar-uptd/{slug}/update', [UptdController::class, 'update'])->name('daftar.uptd.update');
+    Route::delete('/daftar-uptd/{slug}/delete', [UptdController::class, 'destroy'])->name('daftar.uptd.delete');
+
+    // Tambah Produk
+    Route::get('/produk', [ProdukController::class, 'index'])->name('produk.index');
+    Route::get('/produk/create/{id}', [ProdukController::class, 'create'])->name('produk.create');
+    Route::post('/produk/store', [ProdukController::class, 'store'])->name('produk.store');
+    Route::get('/produk/edit/{id}', [ProdukController::class, 'edit'])->name('produk.edit');
+    Route::patch('/produk/update/{id}', [ProdukController::class, 'update'])->name('produk.update');
+    Route::delete('/produk/delete/{id}', [ProdukController::class, 'destroy'])->name('produk.delete');
+
+    // Pesanan
+    Route::get('/pesanan', [PesananController::class, 'index'])->name('pesanan.index');
+});
+
+Route::group(['prefix' => 'geojson'], function () {
+    Route::get('feature-kabkota', [GeojsonController::class, 'featureKabKota'])->name('geojson.feature-kabkota');
+    Route::get('feature-kecamatan', [GeojsonController::class, 'featureKecamatan'])->name('geojson.feature-kecamatan');
+    Route::get('feature-kecamatan/{kode_kab_kota}', [GeojsonController::class, 'featureKecamatanByKabKota'])->name('geojson.feature-kecamatan-by-kab-kota');
+    Route::get('feature-kecamatan/{kode_kab_kota}/{kode_kecamatan}', [GeojsonController::class, 'featureKecamatanSingle'])->name('geojson.feature-kecamatan-single');
+});
+
+Route::group(['prefix' => 'ajax'], function () {
+    Route::get('kecamatan/{kode_kab_kota}', [AjaxController::class, 'kecamatanByKabKota'])->name('ajax.feature-kabkota');
+    // Route::get('kantor/{kode_kab_kota}', [AjaxController::class,'kantor'])->name('ajax.feature-kabkota');
+    Route::get('kantor/{kode_kab_kota}/{kode_kecamatan}', [AjaxController::class, 'kantorByKecamatan'])->name('ajax.feature-kabkota');
+    Route::post('saran-masukan', [SaranMasukanController::class, 'store'])->name('ajax.saran-masukan');
+});
+
+Route::get('migrate', function () {
+    Artisan::call('migrate');
+    return "ok";
+});
+
+Route::get('migrate-fresh', function () {
+    Artisan::call('migrate:fresh');
+    return "ok";
+});
+
+Route::get('db-seed', function () {
+    Artisan::call('db:seed');
+    return "ok";
+});
+
+Route::get('clear-cache', function () {
+    Artisan::call('optimize:clear');
+    return "ok";
 });
